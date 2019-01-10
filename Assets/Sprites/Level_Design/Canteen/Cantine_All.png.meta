@@ -1,18 +1,21 @@
 fileFormatVersion: 2
-guid: 71fb1f7d521716349ba83413ad54c526
+guid: eca14aa33f5b06c42bb5dffa953ab765
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Cantine_Tables_0
-    21300002: Cantine_Tables_1
-    21300004: Cantine_Tables_2
-    21300006: Cantine_Tables_3
-    21300008: Cantine_Tables_4
-    21300010: Cantine_Tables_5
-    21300012: Cantine_Tables_6
-    21300014: Cantine_Tables_7
-    21300016: Cantine_Tables_8
-    21300018: Cantine_Tables_9
-    21300020: Cantine_Tables_10
+    21300000: Cantine_All_0
+    21300002: Cantine_All_1
+    21300004: Cantine_All_2
+    21300006: Cantine_All_3
+    21300008: Cantine_All_4
+    21300010: Cantine_All_5
+    21300012: Cantine_All_6
+    21300014: Cantine_All_7
+    21300016: Cantine_All_8
+    21300018: Cantine_All_9
+    21300020: Cantine_All_10
+    21300022: Cantine_All_11
+    21300024: Cantine_All_12
+    21300026: Cantine_All_13
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -95,11 +98,11 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cantine_Tables_0
+      name: Cantine_All_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 81
+        x: 7
+        y: 165
         width: 32
         height: 15
       alignment: 0
@@ -109,17 +112,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8ac50794eda72c64ab2cc6b1ab72c0b9
+      spriteID: 4c25b568550312e49a69c3a5e3c404d2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_1
+      name: Cantine_All_1
       rect:
         serializedVersion: 2
-        x: 45
-        y: 73
+        x: 48
+        y: 157
         width: 13
         height: 32
       alignment: 0
@@ -129,19 +132,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 44578be9cb84d12429d0e1db38951f38
+      spriteID: ca3cdbf5c4b3cfb45b4e8abe233cdad6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_2
+      name: Cantine_All_2
       rect:
         serializedVersion: 2
-        x: 71
-        y: 94
-        width: 9
-        height: 6
+        x: 75
+        y: 0
+        width: 32
+        height: 192
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -149,19 +152,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54576978095dd4c4496bad2a2740afa1
+      spriteID: 8f7d80aa4a9df8540863d5a136ea34f1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_3
+      name: Cantine_All_3
       rect:
         serializedVersion: 2
-        x: 90
-        y: 94
-        width: 6
-        height: 8
+        x: 122
+        y: 24
+        width: 32
+        height: 154
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -169,57 +172,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f333c897d1f8f24aba6c7b7f0e28742
+      spriteID: af088abaff8cd58499ea985ac4db587d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_4
+      name: Cantine_All_4
       rect:
         serializedVersion: 2
-        x: 71
-        y: 81
-        width: 9
-        height: 6
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8612b34887cdf574d8c6845e70af4857
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cantine_Tables_5
-      rect:
-        serializedVersion: 2
-        x: 90
-        y: 79
-        width: 6
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 39c4244becf94954986f54437516b4d9
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Cantine_Tables_6
-      rect:
-        serializedVersion: 2
-        x: 3
-        y: 42
+        x: 6
+        y: 126
         width: 32
         height: 28
       alignment: 0
@@ -229,17 +192,117 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fd4b4f13de8787e4f8faa6b3e0cd07be
+      spriteID: 116aa60b937a6a242bb607ed909cb256
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_7
+      name: Cantine_All_5
       rect:
         serializedVersion: 2
-        x: 39
-        y: 39
+        x: 46
+        y: 135
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d9ed0dbf3717f41a9917dca6eef2c5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cantine_All_6
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 87
+        width: 30
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6be36885c8686f3459bf152e441bd298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cantine_All_7
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 116
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 936c6b89a8c3a1546bc01312c8d3fa4f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cantine_All_8
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 97
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5306c143d869b9a4fa7dc8214060f3c2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cantine_All_9
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 87
+        width: 8
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74332857b189fbe41af6d7140338b41b
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cantine_All_10
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 43
         width: 24
         height: 32
       alignment: 0
@@ -249,17 +312,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7d1237df3adbb04186d8973b0bfc920
+      spriteID: 6118e014bebd71d46a785d040f31f1dc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_8
+      name: Cantine_All_11
       rect:
         serializedVersion: 2
-        x: 72
-        y: 39
+        x: 42
+        y: 43
         width: 24
         height: 33
       alignment: 0
@@ -269,17 +332,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c141cf5e0514a1e4ab3480b83f1afe10
+      spriteID: 3e208819ef44d78438b928836d4b65ec
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_9
+      name: Cantine_All_12
       rect:
         serializedVersion: 2
-        x: 2
-        y: 3
+        x: 8
+        y: 7
         width: 30
         height: 34
       alignment: 0
@@ -289,19 +352,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 35e38ed4d070db744ab6846aca07c031
+      spriteID: bfc17ae76b8d85b4f8b493686e3f1aab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Cantine_Tables_10
+      name: Cantine_All_13
       rect:
         serializedVersion: 2
-        x: 39
-        y: 3
-        width: 30
-        height: 34
+        x: 50
+        y: 13
+        width: 9
+        height: 17
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -309,7 +372,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: baf515606f057854d83e71426bd3cb68
+      spriteID: ef42802ea5b18944583caa512cb15843
       vertices: []
       indices: 
       edges: []
@@ -317,7 +380,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 44ae4146de289314582756bc0e28a5fd
+    spriteID: c90e02c73b2d3934abca9871cae8ae86
     vertices: []
     indices: 
     edges: []
