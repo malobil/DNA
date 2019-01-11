@@ -1,21 +1,19 @@
 fileFormatVersion: 2
-guid: 454ea17ebfde21044a75b652bc600d6b
+guid: 17bd00b18793be94eaecba45df6b090a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Canteen_Bench_Horizontal
-    21300002: Canteen_Bench_Vertical
-    21300004: Canteen_Self
-    21300006: Canteen_Table_Horizontal
-    21300008: Canteen_Meal_Tray_Horizontal_2
-    21300010: Canteen_Reversed_Table_Horizontal_1
-    21300012: Canteen_Meal_Tray_Horizontal_1
-    21300014: Canteen_Meal_Tray_Vertical_2
-    21300016: Canteen_Meal_Tray_Vertical_1
-    21300018: Canteen_Table_Vertical
-    21300020: Canteen_Reversed_Table_Vertical
-    21300022: Canteen_Kitchen
-    21300024: Canteen_Reversed_Table_Horizontal_2
-    21300026: Canteen_Trash_Can
+    21300000: Cam_Est_Top
+    21300002: Cam_West_Top
+    21300004: Cam_North_Left
+    21300006: Cam_North_Mid
+    21300008: Cam_North_Right
+    21300010: Cam_Est_Mid
+    21300012: Cam_West_Mid
+    21300014: Cam_Est_Down
+    21300016: Cam_West_Down
+    21300018: Cam_South_Left
+    21300020: Cam_South_Mid
+    21300022: Cam_South_Right
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -59,7 +57,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,281 +96,241 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Canteen_Bench_Horizontal
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 165
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be32e2feed250314b90dd2f648cdfb4a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Bench_Vertical
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 157
-        width: 13
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c292bc5d1eb4e784ebef78a4cc9c6ea0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Self
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 99
-        width: 16
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12e56877794af4c42a099a9c02e4b69e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Table_Horizontal
-      rect:
-        serializedVersion: 2
-        x: 6
-        y: 126
-        width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d05cab4d9d5c6b4ea19f41fa66018dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Meal_Tray_Horizontal_2
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 135
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bfd5fc840a8176449fdac589c48312f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Reversed_Table_Horizontal_1
+      name: Cam_Est_Top
       rect:
         serializedVersion: 2
         x: 5
-        y: 87
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 29
+        width: 11
+        height: 8
+      alignment: 9
+      pivot: {x: 0.85755444, y: 0.67963743}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0201e4a0f42daf348b3b3a42e4626239
+      spriteID: 20443916c55344844a58deb287d15abf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Meal_Tray_Horizontal_1
+      name: Cam_West_Top
       rect:
         serializedVersion: 2
-        x: 56
-        y: 116
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 20
+        y: 29
+        width: 11
+        height: 8
+      alignment: 9
+      pivot: {x: 0.14244547, y: 0.67963696}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e1f04ddfc0e782b40ac7385546f4d81b
+      spriteID: 32b1ca9e6dcbd3d48872df7bdbf4fb76
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Meal_Tray_Vertical_2
+      name: Cam_North_Left
       rect:
         serializedVersion: 2
-        x: 44
-        y: 97
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 36
+        y: 23
+        width: 9
+        height: 11
+      alignment: 9
+      pivot: {x: 0.7823266, y: 0.89546895}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f3884b5e2a9e59749bdfb07fbdfe033b
+      spriteID: 64692c5ffa51d1148b834304798a6943
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Meal_Tray_Vertical_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 87
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62d15a03fa2f955468121b5e27500af3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Table_Vertical
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 43
-        width: 24
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: d2d055f8bd7b9aa44960a01afb9742d0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Reversed_Table_Vertical
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 43
-        width: 24
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 2e84cd2099553ac458fceb00e8457372
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Kitchen
-      rect:
-        serializedVersion: 2
-        x: 75
-        y: 9
-        width: 16
-        height: 77
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 262c4dd60510f3b4fb4f06559b4f3ecf
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Reversed_Table_Horizontal_2
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 4
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3723aebd39a7bb7479d5c4ab6abda549
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Trash_Can
+      name: Cam_North_Mid
       rect:
         serializedVersion: 2
         x: 50
-        y: 13
-        width: 9
-        height: 17
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 21
+        width: 4
+        height: 13
+      alignment: 9
+      pivot: {x: 0.51323795, y: 0.91417164}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f457ca310c50bc498ea811c8eb6ecdb
+      spriteID: 43e01066ae0c26f44a92298defea84a2
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_North_Right
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 23
+        width: 9
+        height: 11
+      alignment: 9
+      pivot: {x: 0.2294409, y: 0.90406173}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09a77227ddcd3e14d815aa27f9371c15
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_Est_Mid
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 19
+        width: 12
+        height: 7
+      alignment: 9
+      pivot: {x: 0.88448566, y: 0.64046776}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f63d495514cfc6e4f8c71f9c7d69b447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_West_Mid
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 19
+        width: 12
+        height: 7
+      alignment: 9
+      pivot: {x: 0.13442342, y: 0.662078}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350a0cc0b74a67c44a462f4c980e7e5f
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_Est_Down
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 4
+        width: 13
+        height: 11
+      alignment: 9
+      pivot: {x: 0.889819, y: 0.77504194}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8785cc876ab71734bae26546adfdd520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_West_Down
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 4
+        width: 13
+        height: 11
+      alignment: 9
+      pivot: {x: 0.12763551, y: 0.7750418}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f73535a9053174241927f59ecfe34a28
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_South_Left
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 6
+        width: 5
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 0.008363247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9da353eae4c1d4140987a07452783e86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_South_Mid
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 6
+        width: 4
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 0.008363247}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d789b50ebfdf77740b12a2f229bb8770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cam_South_Right
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 6
+        width: 5
+        height: 2
+      alignment: 9
+      pivot: {x: 0.5, y: 0.08399987}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f13f4d0136533914f9a4e8ab2c96e184
       vertices: []
       indices: 
       edges: []
@@ -380,7 +338,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: bccc607d34ef8e84cba84ad6487235e2
+    spriteID: 0df0b3e5e17e7d8468d3e6f8f0221338
     vertices: []
     indices: 
     edges: []

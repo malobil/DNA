@@ -1,21 +1,16 @@
 fileFormatVersion: 2
-guid: 454ea17ebfde21044a75b652bc600d6b
+guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Canteen_Bench_Horizontal
-    21300002: Canteen_Bench_Vertical
-    21300004: Canteen_Self
-    21300006: Canteen_Table_Horizontal
-    21300008: Canteen_Meal_Tray_Horizontal_2
-    21300010: Canteen_Reversed_Table_Horizontal_1
-    21300012: Canteen_Meal_Tray_Horizontal_1
-    21300014: Canteen_Meal_Tray_Vertical_2
-    21300016: Canteen_Meal_Tray_Vertical_1
-    21300018: Canteen_Table_Vertical
-    21300020: Canteen_Reversed_Table_Vertical
-    21300022: Canteen_Kitchen
-    21300024: Canteen_Reversed_Table_Horizontal_2
-    21300026: Canteen_Trash_Can
+    21300000: Door_Set_0
+    21300002: Door_Set_1
+    21300004: Door_Set_2
+    21300006: Door_Set_3
+    21300008: Door_Set_4
+    21300010: Door_Set_5
+    21300012: Door_Set_6
+    21300014: Door_Set_7
+    21300016: Door_Set_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -59,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 24
+  spritePixelsToUnits: 32
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -98,281 +93,181 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Canteen_Bench_Horizontal
-      rect:
-        serializedVersion: 2
-        x: 7
-        y: 165
-        width: 32
-        height: 15
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: be32e2feed250314b90dd2f648cdfb4a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Bench_Vertical
-      rect:
-        serializedVersion: 2
-        x: 48
-        y: 157
-        width: 13
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c292bc5d1eb4e784ebef78a4cc9c6ea0
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Self
-      rect:
-        serializedVersion: 2
-        x: 76
-        y: 99
-        width: 16
-        height: 96
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 12e56877794af4c42a099a9c02e4b69e
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Table_Horizontal
+      name: Door_Set_0
       rect:
         serializedVersion: 2
         x: 6
-        y: 126
+        y: 90
         width: 32
-        height: 28
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3d05cab4d9d5c6b4ea19f41fa66018dd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Meal_Tray_Horizontal_2
-      rect:
-        serializedVersion: 2
-        x: 46
-        y: 135
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5bfd5fc840a8176449fdac589c48312f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Reversed_Table_Horizontal_1
-      rect:
-        serializedVersion: 2
-        x: 5
-        y: 87
-        width: 30
-        height: 31
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0201e4a0f42daf348b3b3a42e4626239
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Meal_Tray_Horizontal_1
-      rect:
-        serializedVersion: 2
-        x: 56
-        y: 116
-        width: 13
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: e1f04ddfc0e782b40ac7385546f4d81b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Meal_Tray_Vertical_2
-      rect:
-        serializedVersion: 2
-        x: 44
-        y: 97
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f3884b5e2a9e59749bdfb07fbdfe033b
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Meal_Tray_Vertical_1
-      rect:
-        serializedVersion: 2
-        x: 60
-        y: 87
-        width: 8
-        height: 14
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 62d15a03fa2f955468121b5e27500af3
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Canteen_Table_Vertical
-      rect:
-        serializedVersion: 2
-        x: 9
-        y: 43
-        width: 24
         height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d2d055f8bd7b9aa44960a01afb9742d0
+      spriteID: 3ee704132bcebd3469dadbf7e84e03bf
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Reversed_Table_Vertical
+      name: Door_Set_1
       rect:
         serializedVersion: 2
-        x: 42
-        y: 43
-        width: 24
-        height: 33
+        x: 54
+        y: 90
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2e84cd2099553ac458fceb00e8457372
+      spriteID: 74140c87d6464e64a963cee083bc4d5f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Kitchen
+      name: Door_Set_2
       rect:
         serializedVersion: 2
-        x: 75
-        y: 9
-        width: 16
-        height: 77
+        x: 101
+        y: 90
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 262c4dd60510f3b4fb4f06559b4f3ecf
+      spriteID: 0fa7dca2ec4e9064ba1bea44ed92875e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Reversed_Table_Horizontal_2
+      name: Door_Set_3
       rect:
         serializedVersion: 2
         x: 7
-        y: 4
-        width: 30
-        height: 31
+        y: 48
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3723aebd39a7bb7479d5c4ab6abda549
+      spriteID: c1f4ed0381011df43a29af5e46e1f115
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Canteen_Trash_Can
+      name: Door_Set_4
       rect:
         serializedVersion: 2
-        x: 50
-        y: 13
-        width: 9
-        height: 17
+        x: 53
+        y: 48
+        width: 32
+        height: 32
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f457ca310c50bc498ea811c8eb6ecdb
+      spriteID: d3960f2fbb4e77746b3f5010c82e3e86
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Set_5
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 47
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03839d23dd27b7143984b9ec28f919f5
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Set_6
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1ef5b9991c3679479542eab8c2e8eac
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Set_7
+      rect:
+        serializedVersion: 2
+        x: 53
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9758242049769e74b820aa0911e8263c
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Door_Set_8
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 6
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc2ad5c71f381df4f82c5d53cc8bbed8
       vertices: []
       indices: 
       edges: []
@@ -380,7 +275,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: bccc607d34ef8e84cba84ad6487235e2
+    spriteID: 0f8eca6f13f530a4aa51a3f88b55eb99
     vertices: []
     indices: 
     edges: []
