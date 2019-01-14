@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class Script_UI_Manager : MonoBehaviour
 {
@@ -10,8 +11,10 @@ public class Script_UI_Manager : MonoBehaviour
     #region Notes
 
     [Header ("Note")]
-    public Text t_note_title;
-    public Text t_note_description;
+    public TextMeshProUGUI t_note_title;
+    public TextMeshProUGUI t_note_description;
+    public GameObject g_note;
+    private bool b_note_to_show = false;
 
     #endregion
 
@@ -30,7 +33,15 @@ public class Script_UI_Manager : MonoBehaviour
 
     public void ShowNote (Note_Data c_note_to_show)
     {
+        g_note.SetActive(true);
+        b_note_to_show = true;
         t_note_title.text = c_note_to_show.s_note_title;
         t_note_description.text = c_note_to_show.s_note_description;
+        
+        if(Input.GetKeyDown("i") && b_note_to_show)
+        {
+            g_note.SetActive(false);
+            b_note_to_show = false;
+        }
     }
 }
