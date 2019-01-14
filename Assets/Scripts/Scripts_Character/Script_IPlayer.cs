@@ -14,21 +14,39 @@ public class Script_IPlayer : MonoBehaviour
 
     #endregion
 
+    #region Interaction variables
+
+    public Transform t_interaction_holder_trigger;
+    public List<Script_IObject> list_interactible_objects;
+    public Script_IObject obj_current_target;
+
+    #endregion
+
     #region Animation variable
 
-    private Animator player_animator;
+    private Animator a_player_animator;
 
     #endregion
 
     private void Start()
     {
         player_rb = GetComponent<Rigidbody2D>();
-        player_animator = GetComponent<Animator>();
+        a_player_animator = GetComponent<Animator>();
     }
 
-    public virtual void FixedUpdate()
+    public virtual void Update()
     {
         Move();
+
+        if(Input.GetKeyDown(KeyCode.A) && obj_current_target != null)
+        {
+            Interaction();
+        }
+    }
+
+    public virtual void Interaction()
+    {
+        obj_current_target.Interact();
     }
 
     public virtual void Move()
@@ -40,14 +58,51 @@ public class Script_IPlayer : MonoBehaviour
 
         if(f_horizontal_move == 0 && f_vertical_move ==0)
         {
-            player_animator.SetBool("Idle", true);
+            a_player_animator.SetBool("Idle", true);
         }
         else
         {
-            player_animator.SetBool("Idle", false);
+            a_player_animator.SetBool("Idle", false);
         }
 
-        player_animator.SetFloat("horizontal_movement", f_horizontal_move);
-        player_animator.SetFloat("vertical_movement", f_vertical_move);
+        #region Interaction rotation
+
+        if (f_vertical_move >= 0.5f)
+        {
+            t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 180);
+        }
+        else if(f_vertical_move <= -0.5f)
+        {
+            t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 0);
+        }
+        else if(f_vertical_move < 1 || f_vertical_move > -1)
+        {
+            
+            if(f_horizontal_move > 0)
+            {
+                t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 90);
+            }
+            else if (f_horizontal_move < 0)
+            {
+                t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, -90);
+            }
+
+        }
+
+        #endregion Interaction 
+
+
+        a_player_animator.SetFloat("horizontal_movement", f_horizontal_move);
+        a_player_animator.SetFloat("vertical_movement", f_vertical_move);
+    }
+
+    public void AddInteractibleObject(Script_IObject obj_interactible_object)
+    {
+        list_interactible_objects.Add(obj_interactible_object);
+    }
+
+    public void RemoveInteractibleObject(Script_IObject obj_interactible_object)
+    {
+        list_interactible_objects.Remove(obj_interactible_object);
     }
 }
