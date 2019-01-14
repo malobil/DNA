@@ -6,7 +6,7 @@ public class Script_Trigger_Door : Script_ITrigger
 {
     #region Door
 
-    public GameObject g_door;
+    
 
     #endregion
 

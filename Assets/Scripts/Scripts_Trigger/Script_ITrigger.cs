@@ -9,6 +9,16 @@ public class Script_ITrigger : MonoBehaviour
 
     }
 
+    public virtual void OnTriggerExit2D (Collider2D other)
+    {
+
+    }
+
+    public virtual void OnTriggerStay2D (Collider2D other)
+    {
+
+    }
+
     public virtual void TriggerEvent()
     {
 
