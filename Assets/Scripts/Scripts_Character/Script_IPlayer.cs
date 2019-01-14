@@ -48,7 +48,8 @@ public class Script_IPlayer : MonoBehaviour
             }
             else if (obj_current_target.b_special_case)
             {
-                Interaction();
+                SpecialInteraction();
+                Debug.Log("DDD");
             }
         }
 
@@ -61,7 +62,8 @@ public class Script_IPlayer : MonoBehaviour
         {
             if(obj_current_object_hold != null)
             {
-                Interaction();
+                // Use the interaction of the object
+                Interact();
             }
             else
             {
@@ -78,15 +80,13 @@ public class Script_IPlayer : MonoBehaviour
     }
 
     #region Interact
-    public virtual void Interaction()
+
+    public virtual void SpecialInteraction()
     {
-        if (!b_is_interacting && obj_current_object_hold != null)
-        {
-            obj_current_object_hold.Interact();
+            obj_current_target.Interact();
             Debug.Log("test");
             b_is_interacting = true;
             b_can_move = false;
-        }
     }
   
     public virtual void UnInteract()
@@ -94,6 +94,11 @@ public class Script_IPlayer : MonoBehaviour
             obj_current_target.UnInteract();
             b_is_interacting = false;
             b_can_move = true;
+    }
+
+    public virtual void Interact()
+    {
+        obj_current_object_hold.Interact();
     }
     #endregion
 

@@ -51,7 +51,7 @@ public class Script_UI_Manager : MonoBehaviour
 
     public void PauseGame()
     {
-        //Time.timeScale = 0.0001f;
+        Time.timeScale = 0.0001f;
     }
 
     public void ResumeGame()
