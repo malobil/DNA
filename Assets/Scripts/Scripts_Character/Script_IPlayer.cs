@@ -18,7 +18,7 @@ public class Script_IPlayer : MonoBehaviour
     #region Interaction variables
 
     public Transform t_interaction_holder_trigger;
-    public List<Script_IObject> list_interactible_objects;
+    private List<Script_IObject> list_interactible_objects = new List<Script_IObject>() ;
     public Script_IObject obj_current_target;
     private bool b_is_interacting = false;
 
@@ -40,9 +40,16 @@ public class Script_IPlayer : MonoBehaviour
 
     public virtual void Update()
     {
-        if (Input.GetButtonDown("Interact") && obj_current_target != null)
+        if (Input.GetButtonDown("Hold") && obj_current_target != null && !b_is_interacting)
         {
-            Interaction();
+            if(obj_current_target.b_can_be_hold)
+            {
+                Hold();
+            }
+            else if (obj_current_target.b_special_case)
+            {
+                Interaction();
+            }
         }
 
         if(Input.GetButtonDown("UnInteract") && b_is_interacting)
@@ -50,9 +57,21 @@ public class Script_IPlayer : MonoBehaviour
             UnInteract();
         }
 
-        if(Input.GetButtonDown("Hold/Attack") && obj_current_target != null)
+        if(Input.GetButtonDown("Attack") && !b_is_interacting)
         {
-            Hold();
+            if(obj_current_object_hold != null)
+            {
+                Interaction();
+            }
+            else
+            {
+                Debug.Log("ATTACK");
+            }
+        }
+
+        if (Input.GetButtonDown("Throw") && obj_current_object_hold != null && !b_is_interacting)
+        {
+                Throw();
         }
 
         Move();
@@ -61,9 +80,10 @@ public class Script_IPlayer : MonoBehaviour
     #region Interact
     public virtual void Interaction()
     {
-        if (!b_is_interacting)
+        if (!b_is_interacting && obj_current_object_hold != null)
         {
-            obj_current_target.Interact();
+            obj_current_object_hold.Interact();
+            Debug.Log("test");
             b_is_interacting = true;
             b_can_move = false;
         }
@@ -160,7 +180,20 @@ public class Script_IPlayer : MonoBehaviour
     private void Hold()
     {
         obj_current_object_hold = obj_current_target;
+        list_interactible_objects.Remove(obj_current_target);
+        obj_current_target = null;
         obj_current_object_hold.transform.SetParent(transform);
         obj_current_object_hold.gameObject.SetActive(false);
+        obj_current_object_hold.transform.localPosition = new Vector2(0, 0); 
+        Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite);
+    }
+
+    private void Throw()
+    {
+        
+        obj_current_object_hold.transform.SetParent(null);
+        obj_current_object_hold.gameObject.SetActive(true);
+        Script_UI_Manager.Instance.NewObjectHold(null);
+        obj_current_object_hold = null;
     }
 }

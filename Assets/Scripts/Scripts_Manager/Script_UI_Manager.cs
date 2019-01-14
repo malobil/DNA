@@ -17,6 +17,8 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
+    public Image hold_object;
+
     private void Awake()
     {
         if (Instance == null)
@@ -42,9 +44,14 @@ public class Script_UI_Manager : MonoBehaviour
         g_note.SetActive(false);
     }
 
+    public void NewObjectHold(Sprite new_object)
+    {
+        hold_object.sprite = new_object;
+    }
+
     public void PauseGame()
     {
-        Time.timeScale = 0f;
+        //Time.timeScale = 0.0001f;
     }
 
     public void ResumeGame()

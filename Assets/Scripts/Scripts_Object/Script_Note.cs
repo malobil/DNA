@@ -1,18 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
-using System;
-
-[Serializable]
-public class Note_Data
-{
-    #region Note Variables
-
-    public string s_note_title = "Test title";
-    public string s_note_description = "Test description" ;
-
-    #endregion
-}
+﻿using System;
 
 public class Script_Note : Script_IObject
 {
@@ -28,5 +14,17 @@ public class Script_Note : Script_IObject
     {
         Script_UI_Manager.Instance.ResumeGame();
         Script_UI_Manager.Instance.UnShowNote();
+        Destroy(gameObject);
     }
+}
+
+[Serializable]
+public class Note_Data
+{
+    #region Note Variables
+
+    public string s_note_title = "Test title";
+    public string s_note_description = "Test description";
+
+    #endregion
 }
