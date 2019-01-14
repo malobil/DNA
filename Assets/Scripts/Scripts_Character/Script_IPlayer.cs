@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cakeslice;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Script_IPlayer : MonoBehaviour
@@ -42,7 +43,7 @@ public class Script_IPlayer : MonoBehaviour
     {
         if (Input.GetButtonDown("Hold") && obj_current_target != null && !b_is_interacting)
         {
-            if(obj_current_target.b_can_be_hold)
+            if(obj_current_target.b_can_be_hold && obj_current_object_hold == null)
             {
                 Hold();
             }
@@ -163,13 +164,34 @@ public class Script_IPlayer : MonoBehaviour
 
         if(obj_current_target == null)
         {
-            obj_current_target = obj_interactible_object;
+           SelectTarget(obj_interactible_object);
         }
+    }
+
+    public void SelectTarget(Script_IObject target)
+    {
+        obj_current_target = target;
+
+        if(obj_current_target.GetComponent<Outline>())
+        {
+            obj_current_target.GetComponent<Outline>().EnableOutline();
+        }
+        else
+        {
+            Debug.LogError("!NO OUTLINE!");
+        }
+        
     }
 
     public void RemoveInteractibleObject(Script_IObject obj_interactible_object)
     {
         list_interactible_objects.Remove(obj_interactible_object);
+
+        if(obj_interactible_object.GetComponent<Outline>())
+        {
+            obj_interactible_object.GetComponent<Outline>().DisableOutline();
+        }
+        
 
         if (obj_interactible_object == obj_current_target)
         {
@@ -177,7 +199,7 @@ public class Script_IPlayer : MonoBehaviour
 
             if(list_interactible_objects.Count > 0)
             {
-                obj_current_target = list_interactible_objects[0];
+                SelectTarget(list_interactible_objects[0]);
             } 
         }
     }

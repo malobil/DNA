@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 1986982814}
   - component: {fileID: 1986982816}
   - component: {fileID: 1986982815}
+  - component: {fileID: 1796634935}
   m_Layer: 0
   m_Name: Interaction_Trigger
   m_TagString: Untagged
@@ -137,6 +138,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.3333334}
   m_EdgeRadius: 0
+--- !u!114 &1796634935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986982813}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05e82e367fefbff4087aafe1f74c9f10, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  associate_player: {fileID: 6758610693441428339}
 --- !u!1 &3982266727382998039
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,8 +249,8 @@ MonoBehaviour:
   f_move_speed_horizontal: 5
   f_move_speed_vertical: 5
   t_interaction_holder_trigger: {fileID: 793496116}
-  list_interactible_objects: []
   obj_current_target: {fileID: 0}
+  obj_current_object_hold: {fileID: 0}
 --- !u!50 &1963872225632755627
 Rigidbody2D:
   serializedVersion: 4

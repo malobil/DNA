@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Script_IObject : MonoBehaviour
 {
     public bool b_can_be_hold = true;

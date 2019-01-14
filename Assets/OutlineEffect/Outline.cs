@@ -47,7 +47,7 @@ namespace cakeslice
             Renderer = GetComponent<Renderer>();
         }
 
-        void OnEnable()
+        public void EnableOutline()
         {
 			IEnumerable<OutlineEffect> effects = Camera.allCameras.AsEnumerable()
 				.Select(c => c.GetComponent<OutlineEffect>())
@@ -59,7 +59,7 @@ namespace cakeslice
             }
         }
 
-        void OnDisable()
+        public void DisableOutline()
         {
 			IEnumerable<OutlineEffect> effects = Camera.allCameras.AsEnumerable()
 				.Select(c => c.GetComponent<OutlineEffect>())
