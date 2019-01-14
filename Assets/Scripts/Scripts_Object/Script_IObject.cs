@@ -6,6 +6,6 @@ public class Script_IObject : MonoBehaviour
 {
     public virtual void Interact()
     {
-        Debug.Log("Interaction");
+        Debug.Log("INTERACTION");
     }  
 }
