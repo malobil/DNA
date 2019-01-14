@@ -27,7 +27,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4295802959978689209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -1.3864005, y: -4.0327134, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1492842234397491187}
@@ -59,7 +59,7 @@ Camera:
   far clip plane: 5000
   field of view: 40
   orthographic: 1
-  orthographic size: 10
+  orthographic size: 6
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -170,20 +170,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6ad980451443d70438faac0bc6c235a0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_LookaheadTime: 0.5
-  m_LookaheadSmoothing: 17
-  m_XDamping: 1
-  m_YDamping: 0.6
+  m_LookaheadTime: 0.527
+  m_LookaheadSmoothing: 21.1
+  m_XDamping: 0.5
+  m_YDamping: 0.5
   m_ZDamping: 0
   m_ScreenX: 0.5
   m_ScreenY: 0.5
   m_CameraDistance: 10
-  m_DeadZoneWidth: 0.067
-  m_DeadZoneHeight: 0.114
+  m_DeadZoneWidth: 0.081
+  m_DeadZoneHeight: 0.1
   m_DeadZoneDepth: 0
   m_UnlimitedSoftZone: 0
-  m_SoftZoneWidth: 0.55
-  m_SoftZoneHeight: 0.55
+  m_SoftZoneWidth: 1
+  m_SoftZoneHeight: 1
   m_BiasX: 0
   m_BiasY: 0
   m_GroupFramingMode: 2
@@ -222,7 +222,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4295802961229323783}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.3864001, y: -4.0327134, z: -10}
+  m_LocalPosition: {x: -1.3864005, y: -4.0327134, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4295802960915503710}
@@ -250,7 +250,7 @@ MonoBehaviour:
   m_Follow: {fileID: 0}
   m_Lens:
     FieldOfView: 40
-    OrthographicSize: 4.5
+    OrthographicSize: 6
     NearClipPlane: 0.1
     FarClipPlane: 5000
     Dutch: 0
