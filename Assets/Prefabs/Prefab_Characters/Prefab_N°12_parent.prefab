@@ -234,7 +234,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   f_move_speed_horizontal: 5
   f_move_speed_vertical: 5
-  interaction_holder_trigger: {fileID: 793496116}
+  t_interaction_holder_trigger: {fileID: 793496116}
+  list_interactible_objects: []
+  obj_current_target: {fileID: 0}
 --- !u!50 &1963872225632755627
 Rigidbody2D:
   serializedVersion: 4
