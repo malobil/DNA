@@ -2,17 +2,23 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Script_Player_Interaction_Trigger : MonoBehaviour
+public class Script_Player_Interaction_Trigger : Script_ITrigger
 {
-    // Start is called before the first frame update
-    void Start()
+    public Script_IPlayer associate_player;
+
+    public override void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(other.GetComponent<Script_IObject>())
+        {
+            associate_player.AddInteractibleObject(other.GetComponent<Script_IObject>());
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public override void OnTriggerExit2D(Collider2D other)
     {
-        
+        if (other.GetComponent<Script_IObject>())
+        {
+            associate_player.RemoveInteractibleObject(other.GetComponent<Script_IObject>());
+        }
     }
 }

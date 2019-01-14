@@ -21,5 +21,12 @@ public class Script_Note : Script_IObject
     public override void Interact()
     {
         Script_UI_Manager.Instance.ShowNote(c_note);
+        Script_UI_Manager.Instance.PauseGame();
+    }
+
+    public override void UnInteract()
+    {
+        Script_UI_Manager.Instance.ResumeGame();
+        Script_UI_Manager.Instance.UnShowNote();
     }
 }
