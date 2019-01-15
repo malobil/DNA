@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using cakeslice;
 
-
+[RequireComponent(typeof(Outline))]
 public class Script_IObject : MonoBehaviour
 {
     public bool b_can_be_hold = true;

@@ -40,12 +40,12 @@ public class Script_IPlayer : MonoBehaviour
 
     public virtual void Update()
     {
+        Move();
+        Debug.DrawRay(t_interaction_holder_trigger.position, t_interaction_holder_trigger.up, Color.red);
         if (Input.GetButtonDown("UnInteract") && Script_UI_Manager.Instance.IsInMenu())
         {
             UnInteract();
         }
-
-        Move();
 
         if (!Script_UI_Manager.Instance.IsInMenu())
         {
@@ -65,7 +65,6 @@ public class Script_IPlayer : MonoBehaviour
             {
                 if (obj_current_object_hold != null)
                 {
-                    // Use the interaction of the object
                     Interact();
                 }
                 else
@@ -156,6 +155,9 @@ public class Script_IPlayer : MonoBehaviour
         float f_horizontal_move = Input.GetAxis("Horizontal") * f_move_speed_horizontal;
         float f_vertical_move = Input.GetAxis("Vertical") * f_move_speed_vertical;
 
+        float f_horizontal_move_raw = Input.GetAxisRaw("Horizontal");
+        float f_vertical_move_raw = Input.GetAxisRaw("Vertical");
+
         player_rb.velocity = new Vector2(f_horizontal_move, f_vertical_move);
 
         if(f_horizontal_move == 0 && f_vertical_move ==0)
@@ -169,24 +171,23 @@ public class Script_IPlayer : MonoBehaviour
 
         #region Interaction rotation
 
-        if (f_vertical_move >= 0.5f)
-        {
-            t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 180);
-        }
-        else if(f_vertical_move <= -0.5f)
+        if (f_vertical_move_raw > 0)
         {
             t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 0);
         }
-        else if(f_vertical_move < 1 || f_vertical_move > -1)
+        else if(f_vertical_move_raw < 0)
         {
-            
-            if(f_horizontal_move > 0)
-            {
-                t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 90);
-            }
-            else if (f_horizontal_move < 0)
+            t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 180);
+        }
+        else if(f_vertical_move_raw < 1 || f_vertical_move_raw > -1)
+        {
+            if(f_horizontal_move_raw > 0)
             {
                 t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, -90);
+            }
+            else if (f_horizontal_move_raw < 0)
+            {
+                t_interaction_holder_trigger.localRotation = Quaternion.Euler(0, 0, 90);
             }
 
         }
@@ -194,8 +195,8 @@ public class Script_IPlayer : MonoBehaviour
         #endregion Interaction 
 
 
-        a_player_animator.SetFloat("horizontal_movement", Input.GetAxisRaw("Horizontal"));
-        a_player_animator.SetFloat("vertical_movement", Input.GetAxisRaw("Vertical"));
+        a_player_animator.SetFloat("horizontal_movement", f_horizontal_move_raw);
+        a_player_animator.SetFloat("vertical_movement", f_vertical_move_raw);
     }
     #endregion
 
@@ -215,7 +216,6 @@ public class Script_IPlayer : MonoBehaviour
 
     private void Throw()
     {
-        
         obj_current_object_hold.transform.SetParent(null);
         obj_current_object_hold.gameObject.SetActive(true);
         Script_UI_Manager.Instance.NewObjectHold(null);
