@@ -33,6 +33,7 @@ public class Script_Player : MonoBehaviour
     public float f_max_throw_force = 10f;
     public float f_time_to_max_force = 5f;
     public UnityEngine.UI.Image img_throw_feedback;
+    public Transform t_throw_pivot_point;
     private float f_current_force = 0f;
 
     #endregion
@@ -204,16 +205,23 @@ public class Script_Player : MonoBehaviour
         if(f_current_force < f_max_throw_force)
         {
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
-            img_throw_feedback.fillAmount = f_current_force/f_max_throw_force ;
-            
+            img_throw_feedback.fillAmount = f_current_force/f_max_throw_force ; 
         }
+
+        Vector3 mousePosition = Input.mousePosition;
+
+        mousePosition = Camera.main.ScreenToWorldPoint(mousePosition);
+
+        Vector2 direction = new Vector2(mousePosition.x - transform.position.x, mousePosition.y - transform.position.y);
+
+        t_throw_pivot_point.transform.up = -direction;
     }
 
     private void Throw()
     {
         obj_current_object_hold.transform.SetParent(null);
         obj_current_object_hold.gameObject.SetActive(true);
-        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * f_current_force, ForceMode2D.Impulse);
+        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(-t_throw_pivot_point.transform.up * f_current_force, ForceMode2D.Impulse);
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
         f_current_force = 0f;
