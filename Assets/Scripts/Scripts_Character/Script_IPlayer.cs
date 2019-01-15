@@ -218,6 +218,7 @@ public class Script_IPlayer : MonoBehaviour
     {
         obj_current_object_hold.transform.SetParent(null);
         obj_current_object_hold.gameObject.SetActive(true);
+        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * 10, ForceMode2D.Impulse);
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
     }
