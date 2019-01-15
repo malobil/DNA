@@ -4,10 +4,10 @@ using UnityEngine;
 using cakeslice;
 
 [RequireComponent(typeof(Rigidbody2D))]
-public class Script_IPlayer : MonoBehaviour
+public class Script_Player : MonoBehaviour
 {
     #region Movement variables
-
+    [Header("Movement")]
     public float f_move_speed_horizontal = 10f ;
     public float f_move_speed_vertical = 10f ;
     private bool b_can_move = true;
@@ -18,11 +18,22 @@ public class Script_IPlayer : MonoBehaviour
 
     #region Interaction variables
 
+    [Header("Interaction")]
     public Transform t_interaction_holder_trigger;
-    private List<Script_IObject> list_interactible_objects = new List<Script_IObject>() ;
-    public Script_IObject obj_current_target;
+    private List<Script_Interactable> list_interactible_objects = new List<Script_Interactable>() ;
+    private Script_Interactable obj_current_target;
     private bool b_is_interacting = false;
-    private Script_IObject obj_current_object_hold;
+    private GameObject obj_current_object_hold;
+
+    #endregion
+
+    #region Throw variables
+
+    [Header("Throw")]
+    public float f_max_throw_force = 10f;
+    public float f_time_to_max_force = 5f;
+    public UnityEngine.UI.Image img_throw_feedback;
+    private float f_current_force = 0f;
 
     #endregion
 
@@ -38,70 +49,49 @@ public class Script_IPlayer : MonoBehaviour
         a_player_animator = GetComponent<Animator>();
     }
 
-    public virtual void Update()
+    public void Update()
     {
         Move();
-        Debug.DrawRay(t_interaction_holder_trigger.position, t_interaction_holder_trigger.up, Color.red);
-        if (Input.GetButtonDown("UnInteract") && Script_UI_Manager.Instance.IsInMenu())
-        {
-            UnInteract();
-        }
 
         if (!Script_UI_Manager.Instance.IsInMenu())
         {
-            if (Input.GetButtonDown("Hold") && obj_current_target != null)
+            if (Input.GetButtonDown("Interact") && obj_current_target != null)
             {
-                if (obj_current_target.b_can_be_hold && obj_current_object_hold == null)
-                {
-                    Hold();
-                }
-                else if (obj_current_target.b_special_case)
-                {
-                    SpecialInteraction();
-                }
+                Interact();
             }
 
-            if (Input.GetButtonDown("Attack"))
+           /* if (Input.GetButtonDown("Attack"))
             {
                 if (obj_current_object_hold != null)
                 {
-                    Interact();
+                   
                 }
                 else
                 {
                     Debug.Log("ATTACK");
                 }
-            }
+            }*/
 
             if (Input.GetButtonUp("Throw") && obj_current_object_hold != null)
             {
                 Throw();
+            }
+
+            if (Input.GetButton("Throw") && obj_current_object_hold != null)
+            {
+                AddForceToThrow();
             }
         }
     }
 
     #region Interact
 
-    public virtual void SpecialInteraction()
+    public void Interact()
     {
-            obj_current_target.Interact();
-            b_is_interacting = true;
-            b_can_move = false;
-    }
-  
-    public virtual void UnInteract()
-    {
-            obj_current_target.UnInteract();
-            b_is_interacting = false;
-            b_can_move = true;
+        obj_current_target.Interact(this);
     }
 
-    public virtual void Interact()
-    {
-        obj_current_object_hold.Interact();
-    }
-
-    public void AddInteractibleObject(Script_IObject obj_interactible_object)
+    public void AddInteractibleObject(Script_Interactable obj_interactible_object)
     {
         list_interactible_objects.Add(obj_interactible_object);
 
@@ -111,7 +101,7 @@ public class Script_IPlayer : MonoBehaviour
         }
     }
 
-    public void SelectTarget(Script_IObject target)
+    public void SelectTarget(Script_Interactable target)
     {
         obj_current_target = target;
 
@@ -121,15 +111,10 @@ public class Script_IPlayer : MonoBehaviour
         }
     }
 
-    public void RemoveInteractibleObject(Script_IObject obj_interactible_object)
+    public void RemoveInteractibleObject(Script_Interactable obj_interactible_object)
     {
         list_interactible_objects.Remove(obj_interactible_object);
-
-        if (obj_interactible_object.GetComponent<Outline>())
-        {
-            obj_interactible_object.GetComponent<Outline>().DisableOutline();
-        }
-
+        obj_interactible_object.GetComponent<Outline>().DisableOutline();
 
         if (obj_interactible_object == obj_current_target)
         {
@@ -144,7 +129,7 @@ public class Script_IPlayer : MonoBehaviour
     #endregion
 
     #region Movement
-    public virtual void Move()
+    public  void Move()
     {
         if(!b_can_move)
         {
@@ -202,25 +187,36 @@ public class Script_IPlayer : MonoBehaviour
 
     #region Hold & Throw
 
-    private void Hold()
+    public void Hold()
     {
-        obj_current_object_hold = obj_current_target;
-        list_interactible_objects.Remove(obj_current_target);
-        SelectTarget(null);
+        obj_current_object_hold = obj_current_target.gameObject ;
         obj_current_object_hold.transform.SetParent(transform);
         obj_current_object_hold.gameObject.SetActive(false);
         obj_current_object_hold.transform.localPosition = new Vector2(0, 0); 
-        Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite);
-        RemoveInteractibleObject(obj_current_object_hold);
+        Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite); // UI
+        RemoveInteractibleObject(obj_current_target); // Remove object from the list
+        SelectTarget(null); // Remove the target
+    }
+
+    private void AddForceToThrow()
+    {
+        if(f_current_force < f_max_throw_force)
+        {
+            f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
+            img_throw_feedback.fillAmount = f_current_force/f_max_throw_force ;
+            
+        }
     }
 
     private void Throw()
     {
         obj_current_object_hold.transform.SetParent(null);
         obj_current_object_hold.gameObject.SetActive(true);
-        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * 10, ForceMode2D.Impulse);
+        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * f_current_force, ForceMode2D.Impulse);
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
+        f_current_force = 0f;
+        img_throw_feedback.fillAmount = 0;
     }
 
     #endregion

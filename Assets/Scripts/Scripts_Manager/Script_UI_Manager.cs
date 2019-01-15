@@ -34,14 +34,6 @@ public class Script_UI_Manager : MonoBehaviour
         }
     }
 
-    public void ShowNote (Note_Data c_note_to_show)
-    {
-        g_note.SetActive(true);
-        t_note_title.text = c_note_to_show.s_note_title;
-        t_note_description.text = c_note_to_show.s_note_description;
-        b_is_in_menu = true;
-    }
-
     public void UnShowNote()
     {
         g_note.SetActive(false);
