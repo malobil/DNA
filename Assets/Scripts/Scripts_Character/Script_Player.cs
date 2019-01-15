@@ -179,8 +179,8 @@ public class Script_Player : MonoBehaviour
 
         #endregion Interaction 
 
-        Debug.Log(f_horizontal_move_raw);
-        Debug.Log(f_vertical_move_raw);
+        //Debug.Log(f_horizontal_move_raw);
+        //Debug.Log(f_vertical_move_raw);
         a_player_animator.SetFloat("horizontal_movement", f_horizontal_move_raw);
         a_player_animator.SetFloat("vertical_movement", f_vertical_move_raw);
     }
