@@ -8,6 +8,8 @@ public class Script_UI_Manager : MonoBehaviour
 {
     public static Script_UI_Manager Instance { get; private set; }
 
+    private bool b_is_in_menu = false;
+
     #region Notes
 
     [Header ("Note")]
@@ -37,11 +39,13 @@ public class Script_UI_Manager : MonoBehaviour
         g_note.SetActive(true);
         t_note_title.text = c_note_to_show.s_note_title;
         t_note_description.text = c_note_to_show.s_note_description;
+        b_is_in_menu = true;
     }
 
     public void UnShowNote()
     {
         g_note.SetActive(false);
+        b_is_in_menu = false;
     }
 
     public void NewObjectHold(Sprite new_object)
@@ -57,5 +61,10 @@ public class Script_UI_Manager : MonoBehaviour
     public void ResumeGame()
     {
         Time.timeScale = 1f;
+    }
+
+    public bool IsInMenu()
+    {
+        return b_is_in_menu;
     }
 }

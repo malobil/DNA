@@ -22,6 +22,7 @@ public class Script_IPlayer : MonoBehaviour
     private List<Script_IObject> list_interactible_objects = new List<Script_IObject>() ;
     public Script_IObject obj_current_target;
     private bool b_is_interacting = false;
+    private Script_IObject obj_current_object_hold;
 
     #endregion
 
@@ -31,8 +32,6 @@ public class Script_IPlayer : MonoBehaviour
 
     #endregion
 
-    public Script_IObject obj_current_object_hold;
-
     private void Start()
     {
         player_rb = GetComponent<Rigidbody2D>();
@@ -41,43 +40,45 @@ public class Script_IPlayer : MonoBehaviour
 
     public virtual void Update()
     {
-        if (Input.GetButtonDown("Hold") && obj_current_target != null && !b_is_interacting)
-        {
-            if(obj_current_target.b_can_be_hold && obj_current_object_hold == null)
-            {
-                Hold();
-            }
-            else if (obj_current_target.b_special_case)
-            {
-                SpecialInteraction();
-                Debug.Log("DDD");
-            }
-        }
-
-        if(Input.GetButtonDown("UnInteract") && b_is_interacting)
+        if (Input.GetButtonDown("UnInteract") && Script_UI_Manager.Instance.IsInMenu())
         {
             UnInteract();
         }
 
-        if(Input.GetButtonDown("Attack") && !b_is_interacting)
-        {
-            if(obj_current_object_hold != null)
-            {
-                // Use the interaction of the object
-                Interact();
-            }
-            else
-            {
-                Debug.Log("ATTACK");
-            }
-        }
-
-        if (Input.GetButtonDown("Throw") && obj_current_object_hold != null && !b_is_interacting)
-        {
-                Throw();
-        }
-
         Move();
+
+        if (!Script_UI_Manager.Instance.IsInMenu())
+        {
+            if (Input.GetButtonDown("Hold") && obj_current_target != null)
+            {
+                if (obj_current_target.b_can_be_hold && obj_current_object_hold == null)
+                {
+                    Hold();
+                }
+                else if (obj_current_target.b_special_case)
+                {
+                    SpecialInteraction();
+                }
+            }
+
+            if (Input.GetButtonDown("Attack"))
+            {
+                if (obj_current_object_hold != null)
+                {
+                    // Use the interaction of the object
+                    Interact();
+                }
+                else
+                {
+                    Debug.Log("ATTACK");
+                }
+            }
+
+            if (Input.GetButtonUp("Throw") && obj_current_object_hold != null)
+            {
+                Throw();
+            }
+        }
     }
 
     #region Interact
@@ -85,7 +86,6 @@ public class Script_IPlayer : MonoBehaviour
     public virtual void SpecialInteraction()
     {
             obj_current_target.Interact();
-            Debug.Log("test");
             b_is_interacting = true;
             b_can_move = false;
     }
@@ -100,6 +100,47 @@ public class Script_IPlayer : MonoBehaviour
     public virtual void Interact()
     {
         obj_current_object_hold.Interact();
+    }
+
+    public void AddInteractibleObject(Script_IObject obj_interactible_object)
+    {
+        list_interactible_objects.Add(obj_interactible_object);
+
+        if (obj_current_target == null)
+        {
+            SelectTarget(obj_interactible_object);
+        }
+    }
+
+    public void SelectTarget(Script_IObject target)
+    {
+        obj_current_target = target;
+
+        if(target !=null)
+        {
+            obj_current_target.GetComponent<Outline>().EnableOutline();
+        }
+    }
+
+    public void RemoveInteractibleObject(Script_IObject obj_interactible_object)
+    {
+        list_interactible_objects.Remove(obj_interactible_object);
+
+        if (obj_interactible_object.GetComponent<Outline>())
+        {
+            obj_interactible_object.GetComponent<Outline>().DisableOutline();
+        }
+
+
+        if (obj_interactible_object == obj_current_target)
+        {
+            obj_current_target = null;
+
+            if (list_interactible_objects.Count > 0)
+            {
+                SelectTarget(list_interactible_objects[0]);
+            }
+        }
     }
     #endregion
 
@@ -153,66 +194,23 @@ public class Script_IPlayer : MonoBehaviour
         #endregion Interaction 
 
 
-        a_player_animator.SetFloat("horizontal_movement", f_horizontal_move);
-        a_player_animator.SetFloat("vertical_movement", f_vertical_move);
+        a_player_animator.SetFloat("horizontal_movement", Input.GetAxisRaw("Horizontal"));
+        a_player_animator.SetFloat("vertical_movement", Input.GetAxisRaw("Vertical"));
     }
     #endregion
 
-    public void AddInteractibleObject(Script_IObject obj_interactible_object)
-    {
-        list_interactible_objects.Add(obj_interactible_object);
-
-        if(obj_current_target == null)
-        {
-           SelectTarget(obj_interactible_object);
-        }
-    }
-
-    public void SelectTarget(Script_IObject target)
-    {
-        obj_current_target = target;
-
-        if(obj_current_target.GetComponent<Outline>())
-        {
-            obj_current_target.GetComponent<Outline>().EnableOutline();
-        }
-        else
-        {
-            Debug.LogError("!NO OUTLINE!");
-        }
-        
-    }
-
-    public void RemoveInteractibleObject(Script_IObject obj_interactible_object)
-    {
-        list_interactible_objects.Remove(obj_interactible_object);
-
-        if(obj_interactible_object.GetComponent<Outline>())
-        {
-            obj_interactible_object.GetComponent<Outline>().DisableOutline();
-        }
-        
-
-        if (obj_interactible_object == obj_current_target)
-        {
-            obj_current_target = null;
-
-            if(list_interactible_objects.Count > 0)
-            {
-                SelectTarget(list_interactible_objects[0]);
-            } 
-        }
-    }
+    #region Hold & Throw
 
     private void Hold()
     {
         obj_current_object_hold = obj_current_target;
         list_interactible_objects.Remove(obj_current_target);
-        obj_current_target = null;
+        SelectTarget(null);
         obj_current_object_hold.transform.SetParent(transform);
         obj_current_object_hold.gameObject.SetActive(false);
         obj_current_object_hold.transform.localPosition = new Vector2(0, 0); 
         Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite);
+        RemoveInteractibleObject(obj_current_object_hold);
     }
 
     private void Throw()
@@ -223,4 +221,6 @@ public class Script_IPlayer : MonoBehaviour
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
     }
+
+    #endregion
 }
