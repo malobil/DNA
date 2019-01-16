@@ -44,6 +44,11 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
+    #region Distort variable
+
+    private bool b_use_Distort = false ;
+    #endregion
+
     private void Start()
     {
         player_rb = GetComponent<Rigidbody2D>();
@@ -69,6 +74,16 @@ public class Script_Player : MonoBehaviour
             if (Input.GetButton("Throw") && obj_current_object_hold != null)
             {
                 AddForceToThrow();
+            }
+
+            if(Input.GetButton("Distort") && !b_use_Distort)
+            {
+                Distort();
+            }
+
+            if (Input.GetButtonUp("Distort") && !b_use_Distort)
+            {
+                EndDistort();
             }
         }
     }
@@ -215,6 +230,29 @@ public class Script_Player : MonoBehaviour
         f_current_force = 0f;
         img_throw_feedback.fillAmount = 0;
     }
+
+    #endregion
+
+    #region Distort
+
+    private void Distort()
+    {
+        a_player_animator.SetBool("Distort", true);
+        b_can_move = false;
+    }
+
+    public void EndDistort()
+    {
+        a_player_animator.SetBool("Distort", false);
+        b_use_Distort = false ;
+        b_can_move = true;
+    }
+
+    public void CheckDistort()
+    {
+        // check if distort have touch something 
+    }
+
 
     #endregion
 }
