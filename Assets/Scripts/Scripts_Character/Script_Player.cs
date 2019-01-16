@@ -61,18 +61,6 @@ public class Script_Player : MonoBehaviour
                 Interact();
             }
 
-           /* if (Input.GetButtonDown("Attack"))
-            {
-                if (obj_current_object_hold != null)
-                {
-                   
-                }
-                else
-                {
-                    Debug.Log("ATTACK");
-                }
-            }*/
-
             if (Input.GetButtonUp("Throw") && obj_current_object_hold != null)
             {
                 Throw();
@@ -180,8 +168,6 @@ public class Script_Player : MonoBehaviour
 
         #endregion Interaction 
 
-        //Debug.Log(f_horizontal_move_raw);
-        //Debug.Log(f_vertical_move_raw);
         a_player_animator.SetFloat("horizontal_movement", f_horizontal_move_raw);
         a_player_animator.SetFloat("vertical_movement", f_vertical_move_raw);
     }
@@ -207,6 +193,8 @@ public class Script_Player : MonoBehaviour
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
             img_throw_feedback.fillAmount = f_current_force/f_max_throw_force ; 
         }
+
+        /* Direction */
 
         Vector3 mousePosition = Input.mousePosition;
 
