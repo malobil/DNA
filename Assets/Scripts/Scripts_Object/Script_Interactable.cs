@@ -49,7 +49,7 @@ public class Script_Interactable : MonoBehaviour
 
     private void Hold(Script_Player player)
     {
-        Debug.Log("hold");   // do something
+        //Debug.Log("hold");
         player.Hold();
 
     }

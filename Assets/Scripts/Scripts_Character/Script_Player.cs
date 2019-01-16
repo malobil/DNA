@@ -22,7 +22,7 @@ public class Script_Player : MonoBehaviour
     public Transform t_interaction_holder_trigger;
     private List<Script_Interactable> list_interactible_objects = new List<Script_Interactable>() ;
     private Script_Interactable obj_current_target;
-    private bool b_is_interacting = false;
+    private bool b_can_interact = true ;
     private GameObject obj_current_object_hold;
 
     #endregion
@@ -35,6 +35,7 @@ public class Script_Player : MonoBehaviour
     public UnityEngine.UI.Image img_throw_feedback;
     public Transform t_throw_pivot_point;
     private float f_current_force = 0f;
+    private bool b_can_throw = true;
 
     #endregion
 
@@ -46,7 +47,8 @@ public class Script_Player : MonoBehaviour
 
     #region Distort variable
 
-    private bool b_use_Distort = false ;
+    private bool b_can_Distort = true ;
+
     #endregion
 
     private void Start()
@@ -61,27 +63,27 @@ public class Script_Player : MonoBehaviour
 
         if (!Script_UI_Manager.Instance.IsInMenu())
         {
-            if (Input.GetButtonDown("Interact") && obj_current_target != null)
+            if (Input.GetButtonDown("Interact") && obj_current_target != null && b_can_interact)
             {
                 Interact();
             }
 
-            if (Input.GetButtonUp("Throw") && obj_current_object_hold != null)
+            if (Input.GetButtonUp("Throw") && obj_current_object_hold != null && b_can_throw)
             {
                 Throw();
             }
 
-            if (Input.GetButton("Throw") && obj_current_object_hold != null)
+            if (Input.GetButton("Throw") && obj_current_object_hold != null && b_can_throw)
             {
                 AddForceToThrow();
             }
 
-            if(Input.GetButton("Distort") && !b_use_Distort)
+            if(Input.GetButton("Distort") && b_can_Distort)
             {
                 Distort();
             }
 
-            if (Input.GetButtonUp("Distort") && !b_use_Distort)
+            if (Input.GetButtonUp("Distort") && b_can_Distort)
             {
                 EndDistort();
             }
@@ -130,6 +132,17 @@ public class Script_Player : MonoBehaviour
             }
         }
     }
+
+    private void AllowInteract()
+    {
+        b_can_interact = true;
+    }
+
+    private void DisableInteract()
+    {
+        b_can_interact = false;
+    }
+
     #endregion
 
     #region Movement
@@ -186,23 +199,37 @@ public class Script_Player : MonoBehaviour
         a_player_animator.SetFloat("horizontal_movement", f_horizontal_move_raw);
         a_player_animator.SetFloat("vertical_movement", f_vertical_move_raw);
     }
+
+    private void AllowMove()
+    {
+        b_can_move = true;
+    }
+
+    private void DisableMove()
+    {
+        b_can_move = false;
+    }
     #endregion
 
     #region Hold & Throw
 
     public void Hold()
     {
-        obj_current_object_hold = obj_current_target.gameObject ;
-        obj_current_object_hold.transform.SetParent(transform);
-        obj_current_object_hold.gameObject.SetActive(false);
-        obj_current_object_hold.transform.localPosition = new Vector2(0, 0); 
-        Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite); // UI
-        RemoveInteractibleObject(obj_current_target); // Remove object from the list
-        SelectTarget(null); // Remove the target
+        if(obj_current_object_hold == null)
+        {
+            obj_current_object_hold = obj_current_target.gameObject;
+            obj_current_object_hold.transform.SetParent(transform);
+            obj_current_object_hold.gameObject.SetActive(false);
+            obj_current_object_hold.transform.localPosition = new Vector2(0, 0);
+            Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite); // UI
+            RemoveInteractibleObject(obj_current_target); // Remove object from the list
+            SelectTarget(null); // Remove the target
+        }
     }
 
     private void AddForceToThrow()
     {
+        DisableDistort();
         if(f_current_force < f_max_throw_force)
         {
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
@@ -229,6 +256,17 @@ public class Script_Player : MonoBehaviour
         obj_current_object_hold = null;
         f_current_force = 0f;
         img_throw_feedback.fillAmount = 0;
+        AllowDistort();
+    }
+
+    private void AllowThrow()
+    {
+        b_can_throw = true;
+    }
+
+    private void DisableThrow()
+    {
+        b_can_throw = false;
     }
 
     #endregion
@@ -238,19 +276,33 @@ public class Script_Player : MonoBehaviour
     private void Distort()
     {
         a_player_animator.SetBool("Distort", true);
-        b_can_move = false;
+        DisableMove();
+        DisableThrow();
+        DisableInteract();
+       
     }
 
     public void EndDistort()
     {
         a_player_animator.SetBool("Distort", false);
-        b_use_Distort = false ;
-        b_can_move = true;
+        AllowMove();
+        AllowThrow();
+        AllowInteract();
     }
 
     public void CheckDistort()
     {
         // check if distort have touch something 
+    }
+
+    public void AllowDistort()
+    {
+        b_can_Distort = true;
+    }
+
+    public void DisableDistort()
+    {
+        b_can_Distort = false;
     }
 
 
