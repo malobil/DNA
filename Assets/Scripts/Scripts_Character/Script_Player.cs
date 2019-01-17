@@ -10,9 +10,13 @@ public class Script_Player : MonoBehaviour
     [Header("Movement")]
     public float f_move_speed_horizontal = 10f ;
     public float f_move_speed_vertical = 10f ;
+
+    private bool b_can_move = true;
+
+    [Header("Knockback")]
     public float f_knockback_force = 10f;
     public float f_knockback_duration = 10f;
-    private bool b_can_move = true;
+   
     private bool b_is_knockback = false;
     private float f_current_knockback_duration = 0f;
 
@@ -24,6 +28,7 @@ public class Script_Player : MonoBehaviour
 
     [Header("Interaction")]
     public Transform t_interaction_holder_trigger;
+
     private List<GameObject> list_interactible_objects = new List<GameObject>() ;
     private GameObject obj_current_target;
     private bool b_can_interact = true ;
@@ -49,14 +54,21 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
-    #region Distort/Alter variable
+    #region Distort variable
 
     public int playerLevel = 0;
     private bool b_can_Distort = true ;
     private bool b_have_use_distort = false;
-    private GameObject distort_current_distortable_target;
+    private GameObject g_current_distortable_target;
+
+   
+
+    private bool b_can_alter = true;
+    private bool b_have_use_alter = false ;
+    private GameObject g_current_alterable_target;
 
     #endregion
+
 
     private void Start()
     {
@@ -104,6 +116,21 @@ public class Script_Player : MonoBehaviour
             {
                 StopDistort();
             }
+
+           /* if (Input.GetButton("Alter") && b_can_Distort && !b_have_use_distort)
+            {
+                Alter();
+            }
+
+            if (Input.GetButtonDown("Alter") && b_can_Distort)
+            {
+                StartAlter();
+            }
+
+            if (Input.GetButtonUp("Alter") && b_can_Distort)
+            {
+                StopAlter();
+            }*/
         }
     }
 
@@ -312,16 +339,16 @@ public class Script_Player : MonoBehaviour
 
     #region Distort
 
-
     public void StartDistort()
     {
         b_have_use_distort = false;
         DisableMove();
         DisableThrow();
         DisableInteract();
+        DisableAlter();
         if (obj_current_target != null && obj_current_target.GetComponent<Script_Distortable>())
         {
-            distort_current_distortable_target = obj_current_target ;
+            g_current_distortable_target = obj_current_target ;
         }
     }
 
@@ -336,21 +363,22 @@ public class Script_Player : MonoBehaviour
         AllowMove();
         AllowThrow();
         AllowInteract();
+        AllowAlter();
         
     }
 
     public void CheckDistort()
     {
-        if (distort_current_distortable_target != null && distort_current_distortable_target == obj_current_target)
+        if (g_current_distortable_target != null && g_current_distortable_target == obj_current_target)
         {
-            if(playerLevel >= distort_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem().i_item_level)
+            if(playerLevel >= g_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem().i_item_level)
             {
-                Script_Collection.Instance.AddItemToCollection(distort_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem());
-                Destroy(distort_current_distortable_target);
+                Script_Collection.Instance.AddItemToCollection(g_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem());
+                Destroy(g_current_distortable_target);
             }
             else
             {
-                Vector3 ejectDirection = transform.position - distort_current_distortable_target.transform.position;
+                Vector3 ejectDirection = transform.position - g_current_distortable_target.transform.position;
                 ejectDirection = ejectDirection.normalized;
                 Knockback(ejectDirection);
             }
@@ -368,5 +396,68 @@ public class Script_Player : MonoBehaviour
     {
         b_can_Distort = false;
     }
+
+    #endregion
+
+    #region Alter
+
+    public void StartAlter()
+    {
+        b_have_use_alter = false;
+        DisableMove();
+        DisableThrow();
+        DisableInteract();
+        DisableDistort();
+
+        /*if (obj_current_target != null && obj_current_target.GetComponent<Script_Distortable>())
+        {
+            g_current_distortable_target = obj_current_target;
+        }*/
+    }
+
+    private void Alter() // call when the left mouse is hold
+    {
+        a_player_animator.SetBool("Alter", true);
+    }
+
+    public void StopAlter() // is use at end of Alter animation
+    {
+        a_player_animator.SetBool("Alter", false);
+        AllowMove();
+        AllowThrow();
+        AllowInteract();
+        AllowDistort();
+    }
+
+    public void CheckAlter()
+    {
+        if (g_current_alterable_target != null && g_current_alterable_target == obj_current_target)
+        {
+            /*if (playerLevel >= g_current_alterable_target.GetComponent<Script_Distortable>().GetScriptableItem().i_item_level)
+            {
+                Script_Collection.Instance.AddItemToCollection(g_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem());
+                Destroy(g_current_distortable_target);
+            }
+            else
+            {
+                Vector3 ejectDirection = transform.position - g_current_distortable_target.transform.position;
+                ejectDirection = ejectDirection.normalized;
+                Knockback(ejectDirection);
+            }*/
+        }
+
+        b_have_use_alter = true; // to stop the animation if you still hold mouse clic
+    }
+
+    public void AllowAlter()
+    {
+        b_can_alter = true;
+    }
+
+    public void DisableAlter()
+    {
+        b_can_alter = false;
+    }
+
     #endregion
 }
