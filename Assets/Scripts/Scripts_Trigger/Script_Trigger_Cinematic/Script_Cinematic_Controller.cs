@@ -33,6 +33,4 @@ public class Script_Cinematic_Controller : MonoBehaviour
         p_playabledirector.Play(t_timeline_to_play);
         Script_Game_Manager.Instance.SetTimePause();
     }
-
-    
 }
