@@ -4,17 +4,15 @@ using UnityEngine;
 
 public class Script_Cinematic_Manager : MonoBehaviour
 {
-    public enum CinematicType { Maincamera }
+    public enum CinematicType { Resumegame }
 
     public CinematicType c_cinematic_type;
-    public Camera c_main_camera;
-    public Camera c_cinematic_camera;
 
-    public void Start()
+    public void OnEnable()
     {
         switch (c_cinematic_type.ToString(""))
         {
-            case "Maincamera":
+            case "Resumegame":
             BackToMainCamera();
             break;
         }
