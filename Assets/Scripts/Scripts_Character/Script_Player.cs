@@ -20,8 +20,8 @@ public class Script_Player : MonoBehaviour
 
     [Header("Interaction")]
     public Transform t_interaction_holder_trigger;
-    private List<Script_Interactable> list_interactible_objects = new List<Script_Interactable>() ;
-    private Script_Interactable obj_current_target;
+    private List<GameObject> list_interactible_objects = new List<GameObject>() ;
+    private GameObject obj_current_target;
     private bool b_can_interact = true ;
     private GameObject obj_current_object_hold;
 
@@ -48,6 +48,7 @@ public class Script_Player : MonoBehaviour
     #region Distort variable
 
     private bool b_can_Distort = true ;
+    private GameObject distort_current_distortable_target;
 
     #endregion
 
@@ -83,9 +84,14 @@ public class Script_Player : MonoBehaviour
                 Distort();
             }
 
+            if (Input.GetButtonDown("Distort") && b_can_Distort)
+            {
+                StartDistort();
+            }
+
             if (Input.GetButtonUp("Distort") && b_can_Distort)
             {
-                EndDistort();
+                StopDistort();
             }
         }
     }
@@ -94,10 +100,13 @@ public class Script_Player : MonoBehaviour
 
     public void Interact()
     {
-        obj_current_target.Interact(this);
+        if (obj_current_target.GetComponent<Script_Interactable>())
+        {
+            obj_current_target.GetComponent<Script_Interactable>().Interact(this);
+        }
     }
 
-    public void AddInteractibleObject(Script_Interactable obj_interactible_object)
+    public void AddInteractibleObject(GameObject obj_interactible_object)
     {
         list_interactible_objects.Add(obj_interactible_object);
 
@@ -107,17 +116,17 @@ public class Script_Player : MonoBehaviour
         }
     }
 
-    public void SelectTarget(Script_Interactable target)
+    public void SelectTarget(GameObject target)
     {
         obj_current_target = target;
 
-        if(target !=null)
+        if (target != null)
         {
             obj_current_target.GetComponent<Outline>().EnableOutline();
         }
     }
 
-    public void RemoveInteractibleObject(Script_Interactable obj_interactible_object)
+    public void RemoveInteractibleObject(GameObject obj_interactible_object)
     {
         list_interactible_objects.Remove(obj_interactible_object);
         obj_interactible_object.GetComponent<Outline>().DisableOutline();
@@ -162,7 +171,7 @@ public class Script_Player : MonoBehaviour
 
         player_rb.velocity = new Vector2(f_horizontal_move, f_vertical_move);
 
-        if(f_horizontal_move == 0 && f_vertical_move ==0)
+        if(f_horizontal_move == 0 && f_vertical_move == 0)
         {
             a_player_animator.SetBool("Idle", true);
         }
@@ -273,16 +282,24 @@ public class Script_Player : MonoBehaviour
 
     #region Distort
 
+
+    public void StartDistort()
+    {
+        if (obj_current_target != null && obj_current_target.GetComponent<Script_Distortable>())
+        {
+            distort_current_distortable_target = obj_current_target ;
+        }
+    }
+
     private void Distort()
     {
         a_player_animator.SetBool("Distort", true);
         DisableMove();
         DisableThrow();
         DisableInteract();
-       
     }
 
-    public void EndDistort()
+    public void StopDistort()
     {
         a_player_animator.SetBool("Distort", false);
         AllowMove();
@@ -292,7 +309,11 @@ public class Script_Player : MonoBehaviour
 
     public void CheckDistort()
     {
-        // check if distort have touch something 
+        if (distort_current_distortable_target != null && distort_current_distortable_target == obj_current_target)
+        {
+            Debug.Log("DISTORT SUCESS");
+            Destroy(distort_current_distortable_target);
+        }
     }
 
     public void AllowDistort()
@@ -304,7 +325,5 @@ public class Script_Player : MonoBehaviour
     {
         b_can_Distort = false;
     }
-
-
     #endregion
 }
