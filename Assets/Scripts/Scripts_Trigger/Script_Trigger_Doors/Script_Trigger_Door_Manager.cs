@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Script_Trigger_Door_Manager : MonoBehaviour
 {
-    public static Script_Trigger_Door_Manager Instance { get; private set; }
 
     #region Door
     public enum Doortype { Nocard, Tutocard, Bluecard, Redcard, Greencard, Yellowcard }
@@ -15,19 +14,6 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     private bool b_door_is_open = false;
     public List<GameObject> g_character_in_trigger;
     #endregion
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            DontDestroyOnLoad(gameObject);
-            Instance = this;
-        }
-        else if (Instance != this)
-        {
-            Destroy(gameObject);
-        }
-    }
 
     public void VerifyCard(GameObject g_character_detected)
     {
@@ -79,7 +65,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     {
         if (!b_door_is_open)
         {
-            g_door_to_activate.GetComponent<Animator>().Play("Open_Door", 0, f_speed_of_animation);
+            g_door_to_activate.GetComponent<Animator>().SetTrigger("Open");
             b_door_is_open = true;
         }
     }
@@ -88,7 +74,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     {
         if (b_door_is_open)
         {
-            g_door_to_activate.GetComponent<Animator>().Play("Close_Door", 0, f_speed_of_animation);
+            g_door_to_activate.GetComponent<Animator>().SetTrigger("Close");
             b_door_is_open = false;
         }
     }

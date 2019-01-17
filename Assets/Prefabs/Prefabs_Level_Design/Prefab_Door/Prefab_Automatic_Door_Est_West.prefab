@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   d_door_type: 0
-  g_door_to_activate: {fileID: 3455469008164729376}
+  g_door_to_activate: {fileID: 3928636099246058875}
   f_speed_of_animation: 0.5
   g_character_in_trigger: []
 --- !u!1 &3928636099246058875
@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 3928636099246058870}
   - component: {fileID: 3928636099246058873}
   - component: {fileID: 3928636099246058872}
+  - component: {fileID: 1018130596}
   m_Layer: 0
   m_Name: Prefab_Automatic_Door_Est_West
   m_TagString: Untagged
@@ -87,6 +88,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2e72fd8dda317459a808f7d33d5668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_associate_door_manager: {fileID: 3455469007467595495}
+--- !u!95 &1018130596
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3928636099246058875}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 33571c4fa07c2424b9fec1630fbb8616, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3928636099000883144
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -154,8 +175,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1833276720438765033, guid: 88566a1e4af13a54cac66e25aaaa6a63, type: 3}
+    - target: {fileID: 1833276720438765034, guid: 88566a1e4af13a54cac66e25aaaa6a63,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: af5d341c2fc062647a3f2aef73c25831, type: 2}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 88566a1e4af13a54cac66e25aaaa6a63, type: 3}
 --- !u!1 &3455469008164729376 stripped
 GameObject:

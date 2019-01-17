@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   d_door_type: 0
-  g_door_to_activate: {fileID: 1632529562357141042}
+  g_door_to_activate: {fileID: 2543099243735443941}
   f_speed_of_animation: 0.5
   g_character_in_trigger: []
 --- !u!1 &2543099243735443941
@@ -27,6 +27,7 @@ GameObject:
   - component: {fileID: 7490641634409313716}
   - component: {fileID: 7688534639825010806}
   - component: {fileID: 3885040518653093528}
+  - component: {fileID: 2543099243735443942}
   m_Layer: 0
   m_Name: Prefab_Automatic_Door_North
   m_TagString: Untagged
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d2e72fd8dda317459a808f7d33d5668, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  s_associate_door_manager: {fileID: 0}
 --- !u!61 &3885040518653093528
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87,6 +89,25 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 4.992981}
   m_EdgeRadius: 0
+--- !u!95 &2543099243735443942
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2543099243735443941}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 5d95280e8f771b74f96197e8cb748ac8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &3653492635683866994
 PrefabInstance:
   m_ObjectHideFlags: 0

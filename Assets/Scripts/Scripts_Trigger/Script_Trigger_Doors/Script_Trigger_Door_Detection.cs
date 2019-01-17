@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class Script_Trigger_Door_Detection : Script_ITrigger
 {
+    public Script_Trigger_Door_Manager s_associate_door_manager;
+
     public override void OnTriggerEnter2D(Collider2D other)
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ennemy"))
         {
-            Script_Trigger_Door_Manager.Instance.VerifyCard(other.gameObject);
+            s_associate_door_manager.VerifyCard(other.gameObject);
         }
     }
 
@@ -16,7 +18,7 @@ public class Script_Trigger_Door_Detection : Script_ITrigger
     {
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ennemy"))
         {
-            Script_Trigger_Door_Manager.Instance.RemoveCharacterInList(other.gameObject);
+           s_associate_door_manager.RemoveCharacterInList(other.gameObject);
         }
     }
 }
