@@ -43,6 +43,7 @@ GameObject:
   - component: {fileID: 1986982816}
   - component: {fileID: 1986982815}
   - component: {fileID: 1796634935}
+  - component: {fileID: 2137612292}
   m_Layer: 0
   m_Name: Interaction_Trigger
   m_TagString: Untagged
@@ -58,8 +59,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986982813}
   m_LocalRotation: {x: -1, y: -0.000000104308114, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: 0.5, z: 0}
-  m_LocalScale: {x: 1.5625, y: 0.9398338, z: 1}
+  m_LocalPosition: {x: 0, y: 0.396, z: 0}
+  m_LocalScale: {x: 0.63945395, y: 0.591365, z: 0}
   m_Children: []
   m_Father: {fileID: 793496116}
   m_RootOrder: 0
@@ -119,10 +120,10 @@ BoxCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1986982813}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -136,7 +137,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.44189918, y: 1.0853662}
+  m_Size: {x: 1, y: 1.3333334}
   m_EdgeRadius: 0
 --- !u!114 &1796634935
 MonoBehaviour:
@@ -151,6 +152,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   associate_player: {fileID: 1428336696}
+--- !u!58 &2137612292
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1986982813}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.6666667
 --- !u!1 &1160378535888266845
 GameObject:
   m_ObjectHideFlags: 0
@@ -388,11 +405,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   f_move_speed_horizontal: 5
   f_move_speed_vertical: 5
+  f_knockback_force: 5
+  f_knockback_duration: 0.3
   t_interaction_holder_trigger: {fileID: 793496116}
   f_max_throw_force: 25
   f_time_to_max_force: 1
   img_throw_feedback: {fileID: 547937513739777477}
   t_throw_pivot_point: {fileID: 2011188320546394545}
+  playerLevel: 0
 --- !u!1 &4236260653039994427
 GameObject:
   m_ObjectHideFlags: 0

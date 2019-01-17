@@ -225,9 +225,8 @@ public class Script_Player : MonoBehaviour
         b_is_knockback = true;
     }
 
-    void KnockbackEffect()
+    void KnockbackEffect() // call if the player is knockback in update function
     {
-        Debug.Log(f_current_knockback_duration);
         if (f_current_knockback_duration < f_knockback_duration)
         {
             f_current_knockback_duration += Time.deltaTime;
@@ -326,12 +325,12 @@ public class Script_Player : MonoBehaviour
         }
     }
 
-    private void Distort()
+    private void Distort() // call when the right mouse is hold
     {
         a_player_animator.SetBool("Distort", true);
     }
 
-    public void StopDistort()
+    public void StopDistort() // is use at end of Distort animation
     {
         a_player_animator.SetBool("Distort", false);
         AllowMove();
@@ -346,6 +345,7 @@ public class Script_Player : MonoBehaviour
         {
             if(playerLevel >= distort_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem().i_item_level)
             {
+                Script_Collection.Instance.AddItemToCollection(distort_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem());
                 Destroy(distort_current_distortable_target);
             }
             else
@@ -356,7 +356,7 @@ public class Script_Player : MonoBehaviour
             }
         }
 
-        b_have_use_distort = true;
+        b_have_use_distort = true; // to stop the animation if you still hold mouse clic
     }
 
     public void AllowDistort()
