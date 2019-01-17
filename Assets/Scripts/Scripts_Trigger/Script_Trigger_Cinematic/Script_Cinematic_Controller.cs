@@ -7,12 +7,8 @@ using UnityEngine.Timeline;
 public class Script_Cinematic_Controller : MonoBehaviour
 {
     public static Script_Cinematic_Controller Instance { get; private set; }
-    private PlayableDirector p_playabledirector;
 
-    void Start()
-    {
-        p_playabledirector = GetComponent<PlayableDirector>();
-    }
+    private PlayableDirector p_playabledirector;
 
     private void Awake()
     {
@@ -27,9 +23,16 @@ public class Script_Cinematic_Controller : MonoBehaviour
         }
     }
 
+    void Start()
+    {
+        p_playabledirector = GetComponent<PlayableDirector>();
+    }
+
     public void PlayCinematic(TimelineAsset t_timeline_to_play)
     {
-        Time.timeScale = 0f;
         p_playabledirector.Play(t_timeline_to_play);
+        Script_Game_Manager.Instance.SetTimePause();
     }
+
+    
 }
