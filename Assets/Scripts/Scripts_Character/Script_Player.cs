@@ -10,7 +10,11 @@ public class Script_Player : MonoBehaviour
     [Header("Movement")]
     public float f_move_speed_horizontal = 10f ;
     public float f_move_speed_vertical = 10f ;
+    public float f_knockback_force = 10f;
+    public float f_knockback_duration = 10f;
     private bool b_can_move = true;
+    private bool b_is_knockback = false;
+    private float f_current_knockback_duration = 0f;
 
     private Rigidbody2D player_rb;
 
@@ -45,9 +49,11 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
-    #region Distort variable
+    #region Distort/Alter variable
 
+    public int playerLevel = 0;
     private bool b_can_Distort = true ;
+    private bool b_have_use_distort = false;
     private GameObject distort_current_distortable_target;
 
     #endregion
@@ -62,7 +68,12 @@ public class Script_Player : MonoBehaviour
     {
         Move();
 
-        if (!Script_UI_Manager.Instance.IsInMenu())
+        if(b_is_knockback)
+        {
+            KnockbackEffect();
+        }
+
+        if (!Script_UI_Manager.Instance.IsInMenu() && !b_is_knockback)
         {
             if (Input.GetButtonDown("Interact") && obj_current_target != null && b_can_interact)
             {
@@ -79,7 +90,7 @@ public class Script_Player : MonoBehaviour
                 AddForceToThrow();
             }
 
-            if(Input.GetButton("Distort") && b_can_Distort)
+            if(Input.GetButton("Distort") && b_can_Distort && !b_have_use_distort)
             {
                 Distort();
             }
@@ -157,9 +168,8 @@ public class Script_Player : MonoBehaviour
     #region Movement
     public  void Move()
     {
-        if(!b_can_move)
+        if(!b_can_move || b_is_knockback)
         {
-            player_rb.velocity = new Vector2(0, 0);
             return;
         }
 
@@ -209,6 +219,26 @@ public class Script_Player : MonoBehaviour
         a_player_animator.SetFloat("vertical_movement", f_vertical_move_raw);
     }
 
+    void Knockback(Vector3 direction)
+    {
+        player_rb.AddForce(direction * f_knockback_force, ForceMode2D.Impulse);
+        b_is_knockback = true;
+    }
+
+    void KnockbackEffect()
+    {
+        Debug.Log(f_current_knockback_duration);
+        if (f_current_knockback_duration < f_knockback_duration)
+        {
+            f_current_knockback_duration += Time.deltaTime;
+        }
+        else
+        {
+            b_is_knockback = false;
+            f_current_knockback_duration = 0f;
+        }
+    }
+
     private void AllowMove()
     {
         b_can_move = true;
@@ -216,6 +246,7 @@ public class Script_Player : MonoBehaviour
 
     private void DisableMove()
     {
+        player_rb.velocity = Vector3.zero;
         b_can_move = false;
     }
     #endregion
@@ -285,6 +316,10 @@ public class Script_Player : MonoBehaviour
 
     public void StartDistort()
     {
+        b_have_use_distort = false;
+        DisableMove();
+        DisableThrow();
+        DisableInteract();
         if (obj_current_target != null && obj_current_target.GetComponent<Script_Distortable>())
         {
             distort_current_distortable_target = obj_current_target ;
@@ -294,9 +329,6 @@ public class Script_Player : MonoBehaviour
     private void Distort()
     {
         a_player_animator.SetBool("Distort", true);
-        DisableMove();
-        DisableThrow();
-        DisableInteract();
     }
 
     public void StopDistort()
@@ -305,15 +337,26 @@ public class Script_Player : MonoBehaviour
         AllowMove();
         AllowThrow();
         AllowInteract();
+        
     }
 
     public void CheckDistort()
     {
         if (distort_current_distortable_target != null && distort_current_distortable_target == obj_current_target)
         {
-            Debug.Log("DISTORT SUCESS");
-            Destroy(distort_current_distortable_target);
+            if(playerLevel >= distort_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem().i_item_level)
+            {
+                Destroy(distort_current_distortable_target);
+            }
+            else
+            {
+                Vector3 ejectDirection = transform.position - distort_current_distortable_target.transform.position;
+                ejectDirection = ejectDirection.normalized;
+                Knockback(ejectDirection);
+            }
         }
+
+        b_have_use_distort = true;
     }
 
     public void AllowDistort()
