@@ -85,7 +85,11 @@ public class Script_Player : MonoBehaviour
         if (Input.GetButtonDown("Pause"))
         {
             Script_Game_Manager.Instance.TogglePause();
-            
+
+            if(!Script_Game_Manager.Instance.GetGameState())
+            {
+                CheckInputAfterPause();
+            }
         }
 
         if(b_is_knockback && !Script_Game_Manager.Instance.GetGameState())
@@ -467,4 +471,22 @@ public class Script_Player : MonoBehaviour
     }
 
     #endregion
+
+    public void CheckInputAfterPause()
+    {
+        if (!Input.GetButton("Throw") && obj_current_object_hold != null && b_can_throw && f_current_force > 0)
+        {
+            Throw();
+        }
+
+        if (!Input.GetButton("Distort") && b_can_Distort)
+        {
+            StopDistort();
+        }
+
+        if (!Input.GetButton("Alter") && b_can_alter)
+        {
+            StopAlter();
+        }
+    }
 }

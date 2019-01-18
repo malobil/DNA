@@ -63,18 +63,15 @@ public class Script_UI_Manager : MonoBehaviour
         obj_new_tile.GetComponent<Script_Item_Collection_Tile>().SetupTile(item_to_add);
     }
 
-    public void TogglePauseMenu()
+    public void ShowPauseMenu()
     {
-        if(!obj_pause_menu.activeSelf)
-        {
-            obj_pause_menu.SetActive(true);
-            Script_Game_Manager.Instance.SetTimePause();
-        }
-        else
-        {
-            obj_pause_menu.SetActive(false);
-            Script_Game_Manager.Instance.SetTimeResume();
-        }
-       
+           obj_pause_menu.SetActive(true);
     }
+
+    public void HidePauseMenu()
+    {
+        obj_pause_menu.SetActive(false);
+
+    }
+   
 }

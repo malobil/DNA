@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Script_Collection : MonoBehaviour
 {
-
     public List<Script_Scriptable_Item> l_item_in_collection;
 
     public static Script_Collection Instance { get; private set; }
@@ -27,6 +26,7 @@ public class Script_Collection : MonoBehaviour
         if(!l_item_in_collection.Contains(item_to_add))
         {
             l_item_in_collection.Add(item_to_add);
+            Script_UI_Manager.Instance.AddTileToCollection(item_to_add);
         }
     }
 }

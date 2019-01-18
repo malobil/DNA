@@ -26,10 +26,12 @@ public class Script_Game_Manager : MonoBehaviour
         if(GetGameState())
         {
             SetTimeResume();
+            Script_UI_Manager.Instance.HidePauseMenu();
         }
         else
         {
             SetTimePause();
+            Script_UI_Manager.Instance.ShowPauseMenu();
         }
     }
 
