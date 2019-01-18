@@ -82,13 +82,13 @@ public class Script_Player : MonoBehaviour
     {
         Move();
 
-        if(Input.GetButtonDown("Pause"))
+        if (Input.GetButtonDown("Pause"))
         {
             Script_Game_Manager.Instance.TogglePause();
             
         }
 
-        if(b_is_knockback)
+        if(b_is_knockback && !Script_Game_Manager.Instance.GetGameState())
         {
             KnockbackEffect();
         }
@@ -203,7 +203,7 @@ public class Script_Player : MonoBehaviour
     #region Movement
     public  void Move()
     {
-        if(!b_can_move || b_is_knockback)
+        if(!b_can_move || b_is_knockback || Script_Game_Manager.Instance.GetGameState())
         {
             return;
         }

@@ -218,11 +218,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -251,7 +251,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1381028445
 RectTransform:
   m_ObjectHideFlags: 0
@@ -412,11 +412,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5adc4373c8268dc4abdb4228c1152222, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  obj_pause_menu: {fileID: 1381028444}
   t_note_title: {fileID: 4927788845244937717}
   t_note_description: {fileID: 4927788845056770632}
   g_note: {fileID: 4927788844908445576}
-  obj_item_tile_prefab: {fileID: 0}
-  t_collection_layout: {fileID: 0}
+  obj_item_tile_prefab: {fileID: 5574586703368394499, guid: bc3791e3d1928ec4f8157086e47b38a9,
+    type: 3}
+  t_collection_layout: {fileID: 5438065255352748845}
   hold_object: {fileID: 4927788846557946405}
 --- !u!1 &4927788844908445576
 GameObject:
