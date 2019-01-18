@@ -308,6 +308,7 @@ public class Script_Player : MonoBehaviour
     private void AddForceToThrow()
     {
         DisableDistort();
+        DisableAlter();
         if(f_current_force < f_max_throw_force)
         {
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
@@ -335,6 +336,7 @@ public class Script_Player : MonoBehaviour
         f_current_force = 0f;
         img_throw_feedback.fillAmount = 0;
         AllowDistort();
+        AllowAlter();
     }
 
     private void AllowThrow()
