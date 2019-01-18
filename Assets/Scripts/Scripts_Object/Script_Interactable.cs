@@ -6,7 +6,7 @@ using cakeslice;
 [RequireComponent(typeof(Outline))]
 public class Script_Interactable : MonoBehaviour
 {
-    public enum InteractableType {readable, hideable, holdable, talkable}
+    public enum InteractableType {readable, holdable, talkable}
 
     public InteractableType object_type;
 
@@ -16,10 +16,6 @@ public class Script_Interactable : MonoBehaviour
         {
             case "readable":
                 Read();
-                break;
-
-            case "hideable":
-                Hide();
                 break;
 
             case "holdable":

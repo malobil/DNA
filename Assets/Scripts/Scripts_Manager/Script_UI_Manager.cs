@@ -8,17 +8,30 @@ public class Script_UI_Manager : MonoBehaviour
 {
     public static Script_UI_Manager Instance { get; private set; }
 
-    private bool b_is_in_menu = false;
+    #region Pause
+
+    public GameObject obj_pause_menu;
+
+    #endregion
 
     #region Notes
 
-    [Header ("Note")]
+    [Header ("Note UI")]
     public TextMeshProUGUI t_note_title;
     public TextMeshProUGUI t_note_description;
     public GameObject g_note;
 
     #endregion
 
+    #region Collection
+
+    [Header("Collection UI")]
+    public GameObject obj_item_tile_prefab;
+    public Transform t_collection_layout;
+
+    #endregion
+
+    [Header("General UI")]
     public Image hold_object;
 
     private void Awake()
@@ -37,7 +50,6 @@ public class Script_UI_Manager : MonoBehaviour
     public void UnShowNote()
     {
         g_note.SetActive(false);
-        b_is_in_menu = false;
     }
 
     public void NewObjectHold(Sprite new_object)
@@ -45,18 +57,24 @@ public class Script_UI_Manager : MonoBehaviour
         hold_object.sprite = new_object;
     }
 
-    public void PauseGame()
+    public void AddTileToCollection(Script_Scriptable_Item item_to_add)
     {
-        Time.timeScale = 0.0001f;
+        GameObject obj_new_tile = Instantiate(obj_item_tile_prefab, t_collection_layout);
+        obj_new_tile.GetComponent<Script_Item_Collection_Tile>().SetupTile(item_to_add);
     }
 
-    public void ResumeGame()
+    public void TogglePauseMenu()
     {
-        Time.timeScale = 1f;
-    }
-
-    public bool IsInMenu()
-    {
-        return b_is_in_menu;
+        if(!obj_pause_menu.activeSelf)
+        {
+            obj_pause_menu.SetActive(true);
+            Script_Game_Manager.Instance.SetTimePause();
+        }
+        else
+        {
+            obj_pause_menu.SetActive(false);
+            Script_Game_Manager.Instance.SetTimeResume();
+        }
+       
     }
 }

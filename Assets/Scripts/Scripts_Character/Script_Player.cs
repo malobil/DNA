@@ -82,12 +82,18 @@ public class Script_Player : MonoBehaviour
     {
         Move();
 
+        if(Input.GetButtonDown("Pause"))
+        {
+            Script_Game_Manager.Instance.TogglePause();
+            
+        }
+
         if(b_is_knockback)
         {
             KnockbackEffect();
         }
 
-        if (!Script_UI_Manager.Instance.IsInMenu() && !b_is_knockback)
+        if (!Script_Game_Manager.Instance.GetGameState() && !b_is_knockback)
         {
             if (Input.GetButtonDown("Interact") && obj_current_target != null && b_can_interact)
             {
