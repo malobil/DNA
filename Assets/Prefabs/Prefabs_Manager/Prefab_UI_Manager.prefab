@@ -142,11 +142,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -483,7 +483,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1597720166124212326
 RectTransform:
   m_ObjectHideFlags: 0
@@ -791,7 +791,10 @@ MonoBehaviour:
   obj_item_tile_prefab: {fileID: 5574586703368394499, guid: bc3791e3d1928ec4f8157086e47b38a9,
     type: 3}
   t_collection_layout: {fileID: 5438065255352748845}
+  obj_transformation_tile: {fileID: 5574586703368394499, guid: bb6eb45a4c9555841a2f0ce93dbc1cf9,
+    type: 3}
   obj_transformation_choice: {fileID: 1051532243510331806}
+  obj_no_transformation_text: {fileID: 392612025}
   t_transformation_layout: {fileID: 5290375895292311149}
   hold_object: {fileID: 4927788846557946405}
 --- !u!1 &4927788844908445576
@@ -1836,11 +1839,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:

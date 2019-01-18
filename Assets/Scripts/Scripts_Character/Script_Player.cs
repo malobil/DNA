@@ -6,6 +6,8 @@ using cakeslice;
 [RequireComponent(typeof(Rigidbody2D))]
 public class Script_Player : MonoBehaviour
 {
+    public static Script_Player Instance { get; private set; }
+
     #region Movement variables
     [Header("Movement")]
     public float f_move_speed_horizontal = 10f ;
@@ -70,6 +72,19 @@ public class Script_Player : MonoBehaviour
     private GameObject g_current_alterable_target;
 
     #endregion
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            DontDestroyOnLoad(gameObject);
+            Instance = this;
+        }
+        else if (Instance != this)
+        {
+            Destroy(gameObject);
+        }
+    }
 
     private void Start()
     {
@@ -460,6 +475,14 @@ public class Script_Player : MonoBehaviour
         }
 
         b_have_use_alter = true; // to stop the animation if you still hold mouse clic
+    }
+
+    public void AlterTarget(Script_Scriptable_Item transformation_choose)
+    {
+        Instantiate(transformation_choose.g_item_prefab, g_current_alterable_target.transform.position,Quaternion.identity);
+        Destroy(g_current_alterable_target);
+        Script_Game_Manager.Instance.SetTimeResume();
+        Script_UI_Manager.Instance.HideAllMenu();
     }
 
     public void AllowAlter()

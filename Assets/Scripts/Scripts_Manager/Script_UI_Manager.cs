@@ -34,6 +34,7 @@ public class Script_UI_Manager : MonoBehaviour
 
     #region Alter
 
+    public GameObject obj_transformation_tile;
     public GameObject obj_transformation_choice;
     public GameObject obj_no_transformation_text;
     public Transform t_transformation_layout;
@@ -84,8 +85,8 @@ public class Script_UI_Manager : MonoBehaviour
         {
             if(item.i_item_level <= item_to_transform.i_item_level && item != item_to_transform)
             {
-                GameObject obj_new_tile = Instantiate(obj_item_tile_prefab, t_transformation_layout);
-                obj_new_tile.GetComponent<Script_Item_Collection_Tile>().SetupTile(item);
+                GameObject obj_new_tile = Instantiate(obj_transformation_tile, t_transformation_layout);
+                obj_new_tile.GetComponent<Script_Tile_Transformation>().SetupTile(item);
                 obj_no_transformation_text.SetActive(false);
             }
         }

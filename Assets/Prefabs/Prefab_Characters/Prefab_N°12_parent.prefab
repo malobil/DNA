@@ -339,7 +339,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -412,7 +412,7 @@ MonoBehaviour:
   f_time_to_max_force: 1
   img_throw_feedback: {fileID: 547937513739777477}
   t_throw_pivot_point: {fileID: 2011188320546394545}
-  playerLevel: 0
+  playerLevel: 5
 --- !u!1 &4236260653039994427
 GameObject:
   m_ObjectHideFlags: 0
@@ -577,7 +577,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.00941658, y: -0.060964316}
+  m_Offset: {x: 0.017201066, y: -0.08691239}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -588,7 +588,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.29869652, y: 0.65932137}
+  m_Size: {x: 0.34540296, y: 0.7112175}
   m_EdgeRadius: 0
 --- !u!1 &6610188450900657437
 GameObject:
