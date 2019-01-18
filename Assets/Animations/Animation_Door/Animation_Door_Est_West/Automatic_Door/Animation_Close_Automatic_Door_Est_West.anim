@@ -6,7 +6,7 @@ AnimationClip:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Animation_Open_Door_North
+  m_Name: Animation_Close_Automatic_Door_Est_West
   serializedVersion: 6
   m_Legacy: 0
   m_Compressed: 0
@@ -20,25 +20,25 @@ AnimationClip:
   m_PPtrCurves:
   - curve:
     - time: 0
-      value: {fileID: 21300000, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300042, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.05
-      value: {fileID: 21300002, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300040, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.1
-      value: {fileID: 21300006, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300038, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.15
-      value: {fileID: 21300010, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300036, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.2
-      value: {fileID: 21300014, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300034, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.25
-      value: {fileID: 21300018, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300032, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.3
-      value: {fileID: 21300020, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300030, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.35
-      value: {fileID: 21300022, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300028, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     - time: 0.4
-      value: {fileID: 21300024, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+      value: {fileID: 21300026, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
     attribute: m_Sprite
-    path: Door_North
+    path: Door_Est_West
     classID: 212
     script: {fileID: 0}
   m_SampleRate: 60
@@ -49,22 +49,22 @@ AnimationClip:
   m_ClipBindingConstant:
     genericBindings:
     - serializedVersion: 2
-      path: 2737610805
+      path: 1766606600
       attribute: 0
       script: {fileID: 0}
       typeID: 212
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300002, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300006, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300010, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300014, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300018, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300020, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300022, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
-    - {fileID: 21300024, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300042, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300040, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300038, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300036, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300034, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300032, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300030, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300028, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
+    - {fileID: 21300026, guid: 3ceafc6cc54bdfd46aaaa0df5cdb4533, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}

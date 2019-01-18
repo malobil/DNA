@@ -9,11 +9,15 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     public enum Doortype { Nocard, Tutocard, Bluecard, Redcard, Greencard, Yellowcard }
     public Doortype d_door_type;
 
-    public GameObject g_door_to_activate;
-    public float f_speed_of_animation = 0.5f;
+    private Animator a_door_animator;
     private bool b_door_is_open = false;
     public List<GameObject> g_character_in_trigger;
     #endregion
+
+    private void Start()
+    {
+        a_door_animator = GetComponent<Animator>();
+    }
 
     public void VerifyCard(GameObject g_character_detected)
     {
@@ -65,7 +69,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     {
         if (!b_door_is_open)
         {
-            g_door_to_activate.GetComponent<Animator>().SetTrigger("Open");
+            a_door_animator.SetTrigger("Open");
             b_door_is_open = true;
         }
     }
@@ -74,7 +78,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     {
         if (b_door_is_open)
         {
-            g_door_to_activate.GetComponent<Animator>().SetTrigger("Close");
+            a_door_animator.SetTrigger("Close");
             b_door_is_open = false;
         }
     }
