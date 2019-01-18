@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
   m_Name: Item_Exemple
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 21300012, guid: 454ea17ebfde21044a75b652bc600d6b, type: 3}
+  s_item_sprite: {fileID: 21300006, guid: 454ea17ebfde21044a75b652bc600d6b, type: 3}
   s_item_CSV_key: 
   i_item_level: 1
   g_item_prefab: {fileID: 0}

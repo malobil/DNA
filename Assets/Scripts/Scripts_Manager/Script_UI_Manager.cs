@@ -11,6 +11,7 @@ public class Script_UI_Manager : MonoBehaviour
     #region Pause
 
     public GameObject obj_pause_menu;
+    public Transform obj_menu_parent;
 
     #endregion
 
@@ -29,6 +30,13 @@ public class Script_UI_Manager : MonoBehaviour
     public GameObject obj_item_tile_prefab;
     public Transform t_collection_layout;
 
+    #endregion
+
+    #region Alter
+
+    public GameObject obj_transformation_choice;
+    public GameObject obj_no_transformation_text;
+    public Transform t_transformation_layout;
     #endregion
 
     [Header("General UI")]
@@ -63,15 +71,42 @@ public class Script_UI_Manager : MonoBehaviour
         obj_new_tile.GetComponent<Script_Item_Collection_Tile>().SetupTile(item_to_add);
     }
 
+    public void OpenTransformationChoice(Script_Scriptable_Item item_to_transform)
+    {
+        foreach (Transform child in t_transformation_layout)
+        {
+            Destroy(child.gameObject);
+        }
+
+        obj_transformation_choice.SetActive(true);
+
+        foreach(Script_Scriptable_Item item in Script_Collection.Instance.l_item_in_collection)
+        {
+            if(item.i_item_level <= item_to_transform.i_item_level && item != item_to_transform)
+            {
+                GameObject obj_new_tile = Instantiate(obj_item_tile_prefab, t_transformation_layout);
+                obj_new_tile.GetComponent<Script_Item_Collection_Tile>().SetupTile(item);
+                obj_no_transformation_text.SetActive(false);
+            }
+        }
+    }
+
+    public void CloseTransformationChoice(Script_Scriptable_Item item_to_transform)
+    {
+        obj_transformation_choice.SetActive(false);
+    }
+
     public void ShowPauseMenu()
     {
            obj_pause_menu.SetActive(true);
     }
 
-    public void HidePauseMenu()
+    public void HideAllMenu()
     {
-        obj_pause_menu.SetActive(false);
-
+        foreach(Transform child in obj_menu_parent)
+        {
+            child.gameObject.SetActive(false);
+        }
     }
    
 }

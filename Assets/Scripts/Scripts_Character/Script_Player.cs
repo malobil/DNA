@@ -71,7 +71,6 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
-
     private void Start()
     {
         player_rb = GetComponent<Rigidbody2D>();
@@ -449,7 +448,8 @@ public class Script_Player : MonoBehaviour
         {
             if (playerLevel >= g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem().i_item_level)
             {
-                Debug.Log("ALTER");
+                Script_Game_Manager.Instance.SetTimePause();
+                Script_UI_Manager.Instance.OpenTransformationChoice(g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem());
             }
             else
             {
@@ -490,5 +490,10 @@ public class Script_Player : MonoBehaviour
         {
             StopAlter();
         }
+    }
+
+    public int GetPlayerLevel()
+    {
+        return playerLevel;
     }
 }
