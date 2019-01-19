@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(Script_Alter_Wall_Security))]
 public class Script_Alterable : MonoBehaviour
 {
     public Script_Scriptable_Item item_scriptable;

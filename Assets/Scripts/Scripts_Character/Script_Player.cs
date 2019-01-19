@@ -70,8 +70,11 @@ public class Script_Player : MonoBehaviour
     private bool b_can_alter = true;
     private bool b_have_use_alter = false ;
     private GameObject g_current_alterable_target;
+    private GameObject g_last_transformation;
 
     #endregion
+
+    private List<Vector2> v_list_last_position = new List<Vector2>();
 
     private void Awake()
     {
@@ -90,6 +93,7 @@ public class Script_Player : MonoBehaviour
     {
         player_rb = GetComponent<Rigidbody2D>();
         a_player_animator = GetComponent<Animator>();
+        //StartCoroutine(SavePosition());
     }
 
     public void Update()
@@ -158,6 +162,14 @@ public class Script_Player : MonoBehaviour
                 StopAlter();
             }
         }
+    }
+
+    public void RollBack()
+    {
+        /* transform.position = v_list_last_position[0];
+         //v_list_last_position.RemoveAt(v_list_last_position.Count);
+         StopCoroutine(SavePosition()); */
+        //Knockback(transform.up);
     }
 
     #region Interact
@@ -479,10 +491,20 @@ public class Script_Player : MonoBehaviour
 
     public void AlterTarget(Script_Scriptable_Item transformation_choose)
     {
-        Instantiate(transformation_choose.g_item_prefab, g_current_alterable_target.transform.position,Quaternion.identity);
+        GameObject transformation = Instantiate(transformation_choose.g_item_prefab, g_current_alterable_target.transform.position,Quaternion.identity);
+        g_last_transformation = transformation;
         Destroy(g_current_alterable_target);
         Script_Game_Manager.Instance.SetTimeResume();
         Script_UI_Manager.Instance.HideAllMenu();
+    }
+
+    public void GoOutOfWall()
+    {
+        if(g_last_transformation.GetComponent<Script_Alter_Wall_Security>())
+        {
+            transform.position = g_last_transformation.GetComponent<Script_Alter_Wall_Security>().CheckNearPoint();
+            Debug.Log("GO OUT");
+        }
     }
 
     public void AllowAlter()
