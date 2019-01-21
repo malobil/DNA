@@ -65,7 +65,6 @@ public class Script_Game_Manager : MonoBehaviour
     {
         SetTimeResume();
         Script_UI_Manager.Instance.UnshowUIGameOver();
-        //Application.LoadLevel(Application.loadedLevel);
         SceneManager.LoadScene("Scene_Main_Menu");
     }
 
