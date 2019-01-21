@@ -13,6 +13,10 @@ public class Script_Interactable : MonoBehaviour
     public bool b_can_interact = true;
     public Transform t_teleport_point;
 
+    [Header("Dialogue")]
+
+    private bool b_already_talk;
+
     public void Interact(Script_Player player)
     {
         if(b_can_interact)
@@ -45,7 +49,17 @@ public class Script_Interactable : MonoBehaviour
 
     private void Talk()
     {
-        Debug.Log("talk");   // do something
+        if(!b_already_talk)
+        {
+            Script_UI_Manager.Instance.ShowDialogue();
+            Script_Game_Manager.Instance.SetTimePause();
+        }
+        else if (b_already_talk)
+        {
+            Script_UI_Manager.Instance.UnshowDialogue();
+            Script_Game_Manager.Instance.SetTimeResume();
+        }
+
     }
 
     private void Teleport()
