@@ -7,9 +7,9 @@ using System;
 public enum Language { fr, ang }
 
 
-public class Script_CVS_Manager : MonoBehaviour
+public class Script_CSV_Manager : MonoBehaviour
 {
-    public static Script_CVS_Manager Instance { get; private set; }
+    public static Script_CSV_Manager Instance { get; private set; }
 
     public Language playerLanguage; // Variable to store the player language ( can be ask in the game and change here )
 
@@ -30,63 +30,70 @@ public class Script_CVS_Manager : MonoBehaviour
         else
         {
             Instance = this;
+            DontDestroyOnLoad(gameObject);
         }
 
         #region Tutorial csv
-
-        string[] data = csv_tutorial.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
-
-        for (int i = 1; i < data.Length; i++)
+        if(csv_tutorial != null)
         {
-            string[] row = data[i].Split(new char[] { ',' }); // Separate each ',' from a CSV file
-            TutorialExport importRow = new TutorialExport(); // Create a custom class to stock text / id...
-            importRow.keyName = row[0];
-            importRow.titleFr = row[1];
-            importRow.textFr = row[2];
-            importRow.titleEng = row[3];
-            importRow.textEng = row[4];
-            tutorial_key_import.Add(importRow);
-            //Debug.Log(row);
-        }
+            string[] data = csv_tutorial.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
 
+            for (int i = 1; i < data.Length; i++)
+            {
+                string[] row = data[i].Split(new char[] { ',' }); // Separate each ',' from a CSV file
+                TutorialExport importRow = new TutorialExport(); // Create a custom class to stock text / id...
+                importRow.keyName = row[0];
+                importRow.titleFr = row[1];
+                importRow.textFr = row[2];
+                importRow.titleEng = row[3];
+                importRow.textEng = row[4];
+                tutorial_key_import.Add(importRow);
+                //Debug.Log(row);
+            }
+        }
         #endregion
 
         #region Notes csv
 
-        string[] noteData = csv_notes.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
-
-        for (int i = 1; i < data.Length; i++)
+        if (csv_notes != null)
         {
-            string[] row = data[i].Split(new char[] { ',' }); // Separate each ',' from a CSV file
-            NoteExport importRow = new NoteExport(); // Create a custom class to stock text / id...
-            importRow.keyName = row[0];
-            importRow.titleFr = row[1];
-            importRow.textFr = row[2];
-            importRow.titleEng = row[3];
-            importRow.textEng = row[4];
-            notes_key_import.Add(importRow);
-            //Debug.Log(row);
+            string[] noteData = csv_notes.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
+
+            for (int i = 1; i < noteData.Length; i++)
+            {
+                string[] row = noteData[i].Split(new char[] { ',' }); // Separate each ',' from a CSV file
+                NoteExport importRow = new NoteExport(); // Create a custom class to stock text / id...
+                importRow.keyName = row[0];
+                importRow.titleFr = row[1];
+                importRow.textFr = row[2];
+                importRow.titleEng = row[3];
+                importRow.textEng = row[4];
+                notes_key_import.Add(importRow);
+                //Debug.Log(row);
+            }
         }
 
         #endregion
 
         #region Dialog csv
 
-        string[] dialogData = csv_dialog.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
-
-        for (int i = 1; i < data.Length; i++)
+        if (csv_dialog != null)
         {
-            string[] row = data[i].Split(new char[] { ',' }); // Separate each ',' from a CSV file
-            DialogExport importRow = new DialogExport(); // Create a custom class to stock text / id...
-            importRow.keyName = row[0];
-            importRow.titleFr = row[1];
-            importRow.textFr = row[2];
-            importRow.titleEng = row[3];
-            importRow.textEng = row[4];
-            dialog_key_import.Add(importRow);
-            //Debug.Log(row);
-        }
+            string[] dialogData = csv_dialog.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
 
+            for (int i = 1; i < dialogData.Length; i++)
+            {
+                string[] row = dialogData[i].Split(new char[] { ',' }); // Separate each ',' from a CSV file
+                DialogExport importRow = new DialogExport(); // Create a custom class to stock text / id...
+                importRow.keyName = row[0];
+                importRow.titleFr = row[1];
+                importRow.textFr = row[2];
+                importRow.titleEng = row[3];
+                importRow.textEng = row[4];
+                dialog_key_import.Add(importRow);
+                //Debug.Log(row);
+            }
+        }
         #endregion
 
     }
@@ -94,6 +101,49 @@ public class Script_CVS_Manager : MonoBehaviour
     public string ReturnPlayerLanguage() // Return the player language in string
     {
         return playerLanguage.ToString("");
+    }
+
+    public string GetTutorialTitle(string key)
+    {
+        //Debug.Log(key);
+        for (int i = 0; i < tutorial_key_import.Count; i++)
+        {
+            if(key == tutorial_key_import[i].keyName)
+            {
+                if(playerLanguage.ToString() == "fr")
+                {
+                    return tutorial_key_import[i].titleFr;
+                }
+                else if(playerLanguage.ToString() == "ang")
+                {
+                    return tutorial_key_import[i].titleEng;
+                }
+                
+            }
+        }
+
+        return "NO LOCA KEY FOUND";
+    }
+
+    public string GetTutorialDescription(string key)
+    {
+        for (int i = 0; i < tutorial_key_import.Count; i++)
+        {
+            if (key == tutorial_key_import[i].keyName)
+            {
+                if (playerLanguage.ToString() == "fr")
+                {
+                    return tutorial_key_import[i].textFr;
+                }
+                else if (playerLanguage.ToString() == "ang")
+                {
+                    return tutorial_key_import[i].textEng;
+                }
+
+            }
+        }
+
+        return "NO LOCA KEY FOUND";
     }
 }
 

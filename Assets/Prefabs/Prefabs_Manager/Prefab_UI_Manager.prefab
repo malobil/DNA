@@ -377,6 +377,7 @@ GameObject:
   - component: {fileID: 273613305}
   - component: {fileID: 273613307}
   - component: {fileID: 273613306}
+  - component: {fileID: 4537327459544000216}
   m_Layer: 5
   m_Name: Tutorial_Special_Interaction
   m_TagString: Untagged
@@ -443,6 +444,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &4537327459544000216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 273613304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8939809ea761f44684ae01137fc2224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_title: {fileID: 1681940907}
+  text_description: {fileID: 533195878}
+  s_tutorial_key: 
 --- !u!1 &300873816
 GameObject:
   m_ObjectHideFlags: 0
@@ -1667,6 +1683,7 @@ GameObject:
   - component: {fileID: 676369740}
   - component: {fileID: 676369742}
   - component: {fileID: 676369741}
+  - component: {fileID: 676369743}
   m_Layer: 5
   m_Name: Tutorial_Interaction
   m_TagString: Untagged
@@ -1733,6 +1750,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &676369743
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 676369739}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8939809ea761f44684ae01137fc2224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_title: {fileID: 985491503}
+  text_description: {fileID: 1937379269}
+  s_tutorial_key: key_test_01
 --- !u!1 &704316491
 GameObject:
   m_ObjectHideFlags: 0
@@ -4259,6 +4291,7 @@ GameObject:
   - component: {fileID: 1916443072}
   - component: {fileID: 1916443074}
   - component: {fileID: 1916443073}
+  - component: {fileID: 1916443075}
   m_Layer: 5
   m_Name: Tutorial_Throw
   m_TagString: Untagged
@@ -4325,6 +4358,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &1916443075
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1916443071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8939809ea761f44684ae01137fc2224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_title: {fileID: 1814373180}
+  text_description: {fileID: 338799172}
+  s_tutorial_key: key_test_02
 --- !u!1 &1937379267
 GameObject:
   m_ObjectHideFlags: 0
@@ -4730,6 +4778,7 @@ GameObject:
   - component: {fileID: 2088990985}
   - component: {fileID: 2088990987}
   - component: {fileID: 2088990986}
+  - component: {fileID: 2088990988}
   m_Layer: 5
   m_Name: Tutorial_GuardDistraction
   m_TagString: Untagged
@@ -4796,6 +4845,21 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
+--- !u!114 &2088990988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2088990984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8939809ea761f44684ae01137fc2224, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  text_title: {fileID: 977221174}
+  text_description: {fileID: 2079768982}
+  s_tutorial_key: 
 --- !u!1 &1051532243510331806
 GameObject:
   m_ObjectHideFlags: 0
