@@ -1,82 +1,83 @@
 fileFormatVersion: 2
-guid: 92520e3637ff1444abcd7b17aa05dc46
+guid: 02dae01a69ff99c46bff3bfde3eddd9b
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Laboratory_Tileset_Final_0
-    21300002: Laboratory_Tileset_Final_1
-    21300004: Laboratory_Tileset_Final_2
-    21300006: Laboratory_Tileset_Final_3
-    21300008: Laboratory_Tileset_Final_4
-    21300010: Laboratory_Tileset_Final_5
-    21300012: Laboratory_Tileset_Final_6
-    21300014: Laboratory_Tileset_Final_7
-    21300016: Laboratory_Tileset_Final_8
-    21300018: Laboratory_Tileset_Final_9
-    21300020: Laboratory_Tileset_Final_10
-    21300022: Laboratory_Tileset_Final_11
-    21300024: Laboratory_Tileset_Final_12
-    21300026: Laboratory_Tileset_Final_13
-    21300028: Laboratory_Tileset_Final_14
-    21300030: Laboratory_Tileset_Final_15
-    21300032: Laboratory_Tileset_Final_16
-    21300034: Laboratory_Tileset_Final_17
-    21300036: Laboratory_Tileset_Final_18
-    21300038: Laboratory_Tileset_Final_19
-    21300040: Laboratory_Tileset_Final_20
-    21300042: Laboratory_Tileset_Final_21
-    21300044: Laboratory_Tileset_Final_22
-    21300046: Laboratory_Tileset_Final_23
-    21300048: Laboratory_Tileset_Final_24
-    21300050: Laboratory_Tileset_Final_25
-    21300052: Laboratory_Tileset_Final_26
-    21300054: Laboratory_Tileset_Final_27
-    21300056: Laboratory_Tileset_Final_28
-    21300058: Laboratory_Tileset_Final_29
-    21300060: Laboratory_Tileset_Final_30
-    21300062: Laboratory_Tileset_Final_31
-    21300064: Laboratory_Tileset_Final_32
-    21300066: Laboratory_Tileset_Final_33
-    21300068: Laboratory_Tileset_Final_34
-    21300070: Laboratory_Tileset_Final_35
-    21300072: Laboratory_Tileset_Final_36
-    21300074: Laboratory_Tileset_Final_37
-    21300076: Laboratory_Tileset_Final_38
-    21300078: Laboratory_Tileset_Final_39
-    21300080: Laboratory_Tileset_Final_40
-    21300082: Laboratory_Tileset_Final_41
-    21300084: Laboratory_Tileset_Final_42
-    21300086: Laboratory_Tileset_Final_43
-    21300088: Laboratory_Tileset_Final_44
-    21300090: Laboratory_Tileset_Final_45
-    21300092: Laboratory_Tileset_Final_46
-    21300094: Laboratory_Tileset_Final_47
-    21300096: Laboratory_Tileset_Final_48
-    21300098: Laboratory_Tileset_Final_49
-    21300100: Laboratory_Tileset_Final_50
-    21300102: Laboratory_Tileset_Final_51
-    21300104: Laboratory_Tileset_Final_52
-    21300106: Laboratory_Tileset_Final_53
-    21300108: Laboratory_Tileset_Final_54
-    21300110: Laboratory_Tileset_Final_55
-    21300112: Laboratory_Tileset_Final_56
-    21300114: Laboratory_Tileset_Final_57
-    21300116: Laboratory_Tileset_Final_58
-    21300118: Laboratory_Tileset_Final_59
-    21300120: Laboratory_Tileset_Final_60
-    21300122: Laboratory_Tileset_Final_61
-    21300124: Laboratory_Tileset_Final_62
-    21300126: Laboratory_Tileset_Final_63
-    21300128: Laboratory_Tileset_Final_64
-    21300130: Laboratory_Tileset_Final_65
-    21300132: Laboratory_Tileset_Final_66
-    21300134: Laboratory_Tileset_Final_67
-    21300136: Laboratory_Tileset_Final_68
-    21300138: Laboratory_Tileset_Final_69
-    21300140: Laboratory_Tileset_Final_70
-    21300142: Laboratory_Tileset_Final_71
-    21300144: Laboratory_Tileset_Final_72
-    21300146: Laboratory_Tileset_Final_73
-    21300148: Laboratory_Tileset_Final_74
+    21300000: Laboratory_Tileset_0
+    21300002: Laboratory_Tileset_1
+    21300004: Laboratory_Tileset_2
+    21300006: Laboratory_Tileset_3
+    21300008: Laboratory_Tileset_4
+    21300010: Laboratory_Tileset_5
+    21300012: Laboratory_Tileset_6
+    21300014: Laboratory_Tileset_7
+    21300016: Laboratory_Tileset_8
+    21300018: Laboratory_Tileset_9
+    21300020: Laboratory_Tileset_10
+    21300022: Laboratory_Tileset_11
+    21300024: Laboratory_Tileset_12
+    21300026: Laboratory_Tileset_13
+    21300028: Laboratory_Tileset_14
+    21300030: Laboratory_Tileset_15
+    21300032: Laboratory_Tileset_16
+    21300034: Laboratory_Tileset_17
+    21300036: Laboratory_Tileset_18
+    21300038: Laboratory_Tileset_19
+    21300040: Laboratory_Tileset_20
+    21300042: Laboratory_Tileset_21
+    21300044: Laboratory_Tileset_22
+    21300046: Laboratory_Tileset_23
+    21300048: Laboratory_Tileset_24
+    21300050: Laboratory_Tileset_25
+    21300052: Laboratory_Tileset_26
+    21300054: Laboratory_Tileset_27
+    21300056: Laboratory_Tileset_28
+    21300058: Laboratory_Tileset_29
+    21300060: Laboratory_Tileset_30
+    21300062: Laboratory_Tileset_31
+    21300064: Laboratory_Tileset_32
+    21300066: Laboratory_Tileset_33
+    21300068: Laboratory_Tileset_34
+    21300070: Laboratory_Tileset_35
+    21300072: Laboratory_Tileset_36
+    21300074: Laboratory_Tileset_37
+    21300076: Laboratory_Tileset_38
+    21300078: Laboratory_Tileset_39
+    21300080: Laboratory_Tileset_40
+    21300082: Laboratory_Tileset_41
+    21300084: Laboratory_Tileset_42
+    21300086: Laboratory_Tileset_43
+    21300088: Laboratory_Tileset_44
+    21300090: Laboratory_Tileset_45
+    21300092: Laboratory_Tileset_46
+    21300094: Laboratory_Tileset_47
+    21300096: Laboratory_Tileset_48
+    21300098: Laboratory_Tileset_49
+    21300100: Laboratory_Tileset_50
+    21300102: Laboratory_Tileset_51
+    21300104: Laboratory_Tileset_52
+    21300106: Laboratory_Tileset_53
+    21300108: Laboratory_Tileset_54
+    21300110: Laboratory_Tileset_55
+    21300112: Laboratory_Tileset_56
+    21300114: Laboratory_Tileset_57
+    21300116: Laboratory_Tileset_58
+    21300118: Laboratory_Tileset_59
+    21300120: Laboratory_Tileset_60
+    21300122: Laboratory_Tileset_61
+    21300124: Laboratory_Tileset_62
+    21300126: Laboratory_Tileset_63
+    21300128: Laboratory_Tileset_64
+    21300130: Laboratory_Tileset_65
+    21300132: Laboratory_Tileset_66
+    21300134: Laboratory_Tileset_67
+    21300136: Laboratory_Tileset_68
+    21300138: Laboratory_Tileset_69
+    21300140: Laboratory_Tileset_70
+    21300142: Laboratory_Tileset_71
+    21300144: Laboratory_Tileset_72
+    21300146: Laboratory_Tileset_73
+    21300148: Laboratory_Tileset_74
+    21300150: Laboratory_Tileset_75
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -159,7 +160,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_0
+      name: Laboratory_Tileset_0
       rect:
         serializedVersion: 2
         x: 15
@@ -173,13 +174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: affc00f806bcbfc48b6a7e2e10690942
+      spriteID: 21109adc28cd4c442a5082b548482896
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_1
+      name: Laboratory_Tileset_1
       rect:
         serializedVersion: 2
         x: 59
@@ -193,13 +194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd44f03792b7ab248adc8e1925e2bf65
+      spriteID: c366b36268b6195489d879ceb65ff1b1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_2
+      name: Laboratory_Tileset_2
       rect:
         serializedVersion: 2
         x: 107
@@ -213,13 +214,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 751b2b0256288f1438650c370e8bac4b
+      spriteID: 5a304445c130c284ca78d90f6acae054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_3
+      name: Laboratory_Tileset_3
       rect:
         serializedVersion: 2
         x: 151
@@ -233,13 +234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 40b8cba83fe5c1a41ba7b4f2a2803365
+      spriteID: 912bb3b5cfa72c94599eb35525515369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_4
+      name: Laboratory_Tileset_4
       rect:
         serializedVersion: 2
         x: 201
@@ -253,13 +254,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6627a9f8fb78eb64bbfeaf3c658b2983
+      spriteID: 9a8077f11942d62408c54d1c9d282c61
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_5
+      name: Laboratory_Tileset_5
       rect:
         serializedVersion: 2
         x: 247
@@ -273,13 +274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c435366ed11b2b24586fd4a6d677718f
+      spriteID: 200edabadbfbeea47849e36f79daf8e8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_6
+      name: Laboratory_Tileset_6
       rect:
         serializedVersion: 2
         x: 298
@@ -293,13 +294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f0a802b24c7fff439f50c4cbff36891
+      spriteID: 2833684b9a0c6c24ea9680d3c08b11b8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_7
+      name: Laboratory_Tileset_7
       rect:
         serializedVersion: 2
         x: 346
@@ -313,13 +314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34612bb6e35f08643a5b92d5d7e61af6
+      spriteID: 5c0107494910ed849bedec26f065d1f1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_8
+      name: Laboratory_Tileset_8
       rect:
         serializedVersion: 2
         x: 394
@@ -333,13 +334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ee918c701aee57e40b667168f2442350
+      spriteID: f28577553ef1eea41b07a440d371744e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_9
+      name: Laboratory_Tileset_9
       rect:
         serializedVersion: 2
         x: 443
@@ -353,13 +354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78a3e63ef4db7ae40b6557b0d711dad9
+      spriteID: fb88ac0c14296de418fa47b215cf7428
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_10
+      name: Laboratory_Tileset_10
       rect:
         serializedVersion: 2
         x: 492
@@ -373,13 +374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0ba5df3f6cdbe2345a17edd0bbcddae8
+      spriteID: 02b411782952ea045bd639cc583da238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_11
+      name: Laboratory_Tileset_11
       rect:
         serializedVersion: 2
         x: 15
@@ -393,13 +394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: afca42f4cd3e90c4fb11fde73ede3cf3
+      spriteID: c8c23601eac37e54f933ba09f458b855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_12
+      name: Laboratory_Tileset_12
       rect:
         serializedVersion: 2
         x: 59
@@ -413,13 +414,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 689a046a7ae01894c84ab80d56df840f
+      spriteID: 7c6bb9cbc94a5c340ac847e3bd8915a4
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_13
+      name: Laboratory_Tileset_13
       rect:
         serializedVersion: 2
         x: 107
@@ -433,13 +434,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 14271a4883ce4db48979543424c019d8
+      spriteID: cd830d402472a1a4a97add7103f4755e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_14
+      name: Laboratory_Tileset_14
       rect:
         serializedVersion: 2
         x: 151
@@ -453,13 +454,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2caa2c04f9b055342918f8f0036a209f
+      spriteID: 3a67fb175cf9d3f4a8dcb88d99b0769a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_15
+      name: Laboratory_Tileset_15
       rect:
         serializedVersion: 2
         x: 201
@@ -473,13 +474,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 365022967491d8f439e57218b59e8c2e
+      spriteID: fa92277bfb308814b82699f866dd3036
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_16
+      name: Laboratory_Tileset_16
       rect:
         serializedVersion: 2
         x: 247
@@ -493,13 +494,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2f21d7a19d810e84eaaa987963cb8eab
+      spriteID: 3043e126155b71b459ff78c2a29646ed
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_17
+      name: Laboratory_Tileset_17
       rect:
         serializedVersion: 2
         x: 298
@@ -513,13 +514,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a41e0835cb13ad64f9f96ddbe48c8344
+      spriteID: b344fbfde17fbbe4280e49a9a8f80859
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_18
+      name: Laboratory_Tileset_18
       rect:
         serializedVersion: 2
         x: 346
@@ -533,13 +534,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7b34c7973f95d7e42b5afa5db8c6252b
+      spriteID: 0b376fc07ceac9249bf9341a9ab089ad
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_19
+      name: Laboratory_Tileset_19
       rect:
         serializedVersion: 2
         x: 394
@@ -553,13 +554,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6e3fff74e71c4d43ba3fc10e3bd2c01
+      spriteID: 61c125909dbe0464cb6cfeb2540b333e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_20
+      name: Laboratory_Tileset_20
       rect:
         serializedVersion: 2
         x: 443
@@ -573,13 +574,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 025e66660d7d5e447bfa472161ba15e9
+      spriteID: 91e32486754278049b27c8e83c2d355a
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_21
+      name: Laboratory_Tileset_21
       rect:
         serializedVersion: 2
         x: 492
@@ -593,13 +594,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c7568095125dd604ab4f4138ce4e9c92
+      spriteID: 0b02b4c9c632ba74f82d4970acc85a2c
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_22
+      name: Laboratory_Tileset_22
       rect:
         serializedVersion: 2
         x: 15
@@ -613,13 +614,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2af461c485af6aa4882061ff4858acc3
+      spriteID: fce04eec5264fea478fd14dbbf411185
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_23
+      name: Laboratory_Tileset_23
       rect:
         serializedVersion: 2
         x: 59
@@ -633,13 +634,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d7485fed22eb96c44a87136d8e2249ba
+      spriteID: 11ba596e58e57684788dbcfd49494a15
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_24
+      name: Laboratory_Tileset_24
       rect:
         serializedVersion: 2
         x: 107
@@ -653,13 +654,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0238bb2d49eea084e86c475b42486b7b
+      spriteID: ad81ae60f8d3ebf4d800ff6347c2881e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_25
+      name: Laboratory_Tileset_25
       rect:
         serializedVersion: 2
         x: 152
@@ -673,13 +674,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 43a31f90b98984e4287abe163fe41c8e
+      spriteID: 4cfb195b407d2a043857fa2472660c13
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_26
+      name: Laboratory_Tileset_26
       rect:
         serializedVersion: 2
         x: 201
@@ -693,13 +694,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dc48ca494ddd8b54db89a3cf1659cb7c
+      spriteID: d834757048b157a4fb0ce31d3216ee0b
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_27
+      name: Laboratory_Tileset_27
       rect:
         serializedVersion: 2
         x: 247
@@ -713,17 +714,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9d0a0b54c49f66a4e9630206348e6093
+      spriteID: 6a9ab2dc2ec773640986740aacc3e5af
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_28
+      name: Laboratory_Tileset_28
       rect:
         serializedVersion: 2
         x: 298
-        y: 192
+        y: 193
         width: 32
         height: 32
       alignment: 0
@@ -733,17 +734,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 55df6f1c51f90284e8227c9ac7ca9185
+      spriteID: 19260b356ac8b374ca4947b1b9c25687
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_29
+      name: Laboratory_Tileset_29
       rect:
         serializedVersion: 2
         x: 346
-        y: 192
+        y: 193
         width: 32
         height: 32
       alignment: 0
@@ -753,13 +754,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 969f741f3c89fad4ba879c3021fdcad6
+      spriteID: 87c081058ebf4a2479fe8c435e98f008
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_30
+      name: Laboratory_Tileset_30
       rect:
         serializedVersion: 2
         x: 394
@@ -773,16 +774,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 269b3b3be4d7dd14a82cef144614b6c7
+      spriteID: 8e5320fe2fa2b284f992437a429bc2b2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_31
+      name: Laboratory_Tileset_31
       rect:
         serializedVersion: 2
-        x: 443
+        x: 442
         y: 192
         width: 32
         height: 32
@@ -793,16 +794,16 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6abe8db9ce9354140abe545a3aeeb172
+      spriteID: 5f56022786756b849b652d0127f9a855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_32
+      name: Laboratory_Tileset_32
       rect:
         serializedVersion: 2
-        x: 492
+        x: 491
         y: 192
         width: 32
         height: 32
@@ -813,13 +814,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a8dea5ba0e0c1c240bddc409e103aab8
+      spriteID: 15c612c1ab8133948a74a12720bafb4e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_33
+      name: Laboratory_Tileset_33
       rect:
         serializedVersion: 2
         x: 15
@@ -833,13 +834,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 96daad847087c6042b03e0ae0d2d1f1b
+      spriteID: 8eeeb45649fc12949a96f728cc6c4929
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_34
+      name: Laboratory_Tileset_34
       rect:
         serializedVersion: 2
         x: 59
@@ -853,13 +854,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7c8b856accb58b344b6e6b830d0148c1
+      spriteID: 22e61fc772d1d8d4c961e5dad1364ea0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_35
+      name: Laboratory_Tileset_35
       rect:
         serializedVersion: 2
         x: 107
@@ -873,13 +874,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d6195fee86f5b3418e85778e6285e4e
+      spriteID: b9e52bc3901d47b4088d445ed4c9106f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_36
+      name: Laboratory_Tileset_36
       rect:
         serializedVersion: 2
         x: 152
@@ -893,13 +894,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5e33fb0a1bb53224d9e7147f7ad7bd5d
+      spriteID: 453f9c100edb13f45a1ed87425c966a6
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_37
+      name: Laboratory_Tileset_37
       rect:
         serializedVersion: 2
         x: 201
@@ -913,13 +914,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5cb42942c1718e04694901baf76ac0f5
+      spriteID: fb3ebee3f90ce02458908419ffaad01e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_38
+      name: Laboratory_Tileset_38
       rect:
         serializedVersion: 2
         x: 246
@@ -933,13 +934,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4d3c2c797c54bfc49a592c57c735fec1
+      spriteID: fbe49607f2165e44a8a44d36895a0084
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_39
+      name: Laboratory_Tileset_39
       rect:
         serializedVersion: 2
         x: 298
@@ -953,13 +954,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18a7b124ef554dc4eaec1e60a149cfb0
+      spriteID: 6bb1a0892922be942a1844448ec78e8e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_40
+      name: Laboratory_Tileset_40
       rect:
         serializedVersion: 2
         x: 346
@@ -973,13 +974,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c2640f96c72d784e89121d8ed2d27c5
+      spriteID: 60f9497e8c1f7c0408a234842fae7222
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_41
+      name: Laboratory_Tileset_41
       rect:
         serializedVersion: 2
         x: 394
@@ -993,33 +994,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: e987293b3f3c2ce4d87f9e8633aa7ffa
+      spriteID: e6ab80dc9acc4c84db0aab43acbf43fc
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_42
-      rect:
-        serializedVersion: 2
-        x: 443
-        y: 150
-        width: 32
-        height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7f50c11a88fe88a4290c7e9c5c7efd4f
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Laboratory_Tileset_Final_43
+      name: Laboratory_Tileset_42
       rect:
         serializedVersion: 2
         x: 492
@@ -1033,13 +1014,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71584f67955d7fb45bd9cd276ac24a7d
+      spriteID: c93a56a0b55338447b3cedb48ccec9f2
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_44
+      name: Laboratory_Tileset_43
       rect:
         serializedVersion: 2
         x: 15
@@ -1053,13 +1034,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 480857d0e5f912f4fbb947c61ddc57a0
+      spriteID: 79f3aa2eabf173849b50d9b4cb08b6d8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_45
+      name: Laboratory_Tileset_44
       rect:
         serializedVersion: 2
         x: 59
@@ -1073,13 +1054,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6fba9f72ea3563645ba2c8307b1221f7
+      spriteID: 8da97b17f56b89b48909734116642e4d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_46
+      name: Laboratory_Tileset_45
       rect:
         serializedVersion: 2
         x: 107
@@ -1093,13 +1074,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce623e4fa7a29524dbaa57a5b538c4de
+      spriteID: cd6fe939d9a62634185df7159b27339d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_47
+      name: Laboratory_Tileset_46
       rect:
         serializedVersion: 2
         x: 151
@@ -1113,13 +1094,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f1741651eb6991843a8cbec95d9b4fa0
+      spriteID: 89484f6002d9d9b46ad9e027b0af070d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_48
+      name: Laboratory_Tileset_47
       rect:
         serializedVersion: 2
         x: 201
@@ -1133,13 +1114,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 84620f52f25599b469f29028f21547af
+      spriteID: 3cb968c65a46e824a80b827e7c99cecb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_49
+      name: Laboratory_Tileset_48
       rect:
         serializedVersion: 2
         x: 242
@@ -1153,13 +1134,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae827dda995e0f648959bb718c9c5eb6
+      spriteID: af1ecbfc482501f43a5b0dcaf3b20eb5
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_50
+      name: Laboratory_Tileset_49
       rect:
         serializedVersion: 2
         x: 297
@@ -1173,13 +1154,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: acc1913d7bfda0e4197bca5759c30361
+      spriteID: ec931f8fbd3cb3f468a010dcf0d515db
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_51
+      name: Laboratory_Tileset_50
       rect:
         serializedVersion: 2
         x: 346
@@ -1193,13 +1174,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7a3507da4a63a954db8461a2f8814d4b
+      spriteID: b0366ddf2ff671f4da84eb5a767c8377
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_52
+      name: Laboratory_Tileset_51
       rect:
         serializedVersion: 2
         x: 394
@@ -1213,13 +1194,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 36e8b6fb746aaa447935baf69f464211
+      spriteID: 5b7f90d4255484a429bc92ee1cb4512e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_53
+      name: Laboratory_Tileset_52
       rect:
         serializedVersion: 2
         x: 443
@@ -1233,17 +1214,17 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 78f1a97427f49f84181c17e1d671d58a
+      spriteID: 01ec82bc7915a014e9ad6dc9c5fc12a1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_54
+      name: Laboratory_Tileset_53
       rect:
         serializedVersion: 2
         x: 492
-        y: 103
+        y: 105
         width: 32
         height: 32
       alignment: 0
@@ -1253,13 +1234,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ca2e40addafa5db458b6fe16b4948224
+      spriteID: 131688af07028344d9e2d315031610d1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_55
+      name: Laboratory_Tileset_54
       rect:
         serializedVersion: 2
         x: 15
@@ -1273,13 +1254,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bc1af8b8499f75449a398671f56e70e4
+      spriteID: 451a3646cd9fe5a40a337f19ecc4c54f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_56
+      name: Laboratory_Tileset_55
       rect:
         serializedVersion: 2
         x: 59
@@ -1293,13 +1274,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0b4256b241621a64eb209065163f0aa8
+      spriteID: 674494cb86de74742bbb464cf0ee1125
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_57
+      name: Laboratory_Tileset_56
       rect:
         serializedVersion: 2
         x: 107
@@ -1313,13 +1294,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4b019d807eb6fae45a2ca2461859f65c
+      spriteID: f5dc1d79438ffe644a0b771f8efce868
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_58
+      name: Laboratory_Tileset_57
       rect:
         serializedVersion: 2
         x: 152
@@ -1333,13 +1314,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dab14474cb46d274f82b2c4455a8bf3f
+      spriteID: 6d31b1708770e364080e8fcead97da94
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_59
+      name: Laboratory_Tileset_58
       rect:
         serializedVersion: 2
         x: 201
@@ -1353,13 +1334,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4e7a3731cf5470a4c899eac9e588a267
+      spriteID: c6e1705aa954ae84b866c6bf8dd3f07e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_60
+      name: Laboratory_Tileset_59
       rect:
         serializedVersion: 2
         x: 247
@@ -1373,13 +1354,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f80d8bd10e6225f4a9d3c6ded1e2f1e8
+      spriteID: d8c850e07123f5045adc6c4cb761eaab
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_61
+      name: Laboratory_Tileset_60
       rect:
         serializedVersion: 2
         x: 297
@@ -1393,13 +1374,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8996991a33fb18f47a838f9716ae9e94
+      spriteID: 1c6d65ee72580ad46944d460194d733f
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_62
+      name: Laboratory_Tileset_61
       rect:
         serializedVersion: 2
         x: 346
@@ -1413,13 +1394,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b24f6c25f5d3ad845a879438d421f4e8
+      spriteID: 6b5c3e9bfacdcb04b940052426dd7fe0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_63
+      name: Laboratory_Tileset_62
       rect:
         serializedVersion: 2
         x: 394
@@ -1433,13 +1414,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 58e79edd6a6297648b25cd89f5013445
+      spriteID: ace06e141ab19ae4fbbe6c4f60868fae
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_64
+      name: Laboratory_Tileset_63
       rect:
         serializedVersion: 2
         x: 443
@@ -1453,13 +1434,33 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ce9545e5a00acec49b5c981b7eb3a377
+      spriteID: f8e3e8b7d727c78458a3f102daaa5038
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_65
+      name: Laboratory_Tileset_64
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 63
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 191abb280b475ee48b5e212f3650bfb7
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratory_Tileset_65
       rect:
         serializedVersion: 2
         x: 15
@@ -1473,13 +1474,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f6cfaecd8e3dba644b9fee69ce397e83
+      spriteID: 51e96d5fbea2bf44b9b9edce4a5b0275
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_66
+      name: Laboratory_Tileset_66
       rect:
         serializedVersion: 2
         x: 59
@@ -1493,13 +1494,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af607df33685da4498c136362342f9e4
+      spriteID: cc7ff59542b13d640a41a600e31baf59
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_67
+      name: Laboratory_Tileset_67
       rect:
         serializedVersion: 2
         x: 107
@@ -1513,13 +1514,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 846ecab5b83cc344889180f6a3016716
+      spriteID: 7b57c56696b4aec4a9b527dc6e6397eb
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_68
+      name: Laboratory_Tileset_68
       rect:
         serializedVersion: 2
         x: 152
@@ -1533,13 +1534,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4c89b9833236f74a8ae73bdd3dd051c
+      spriteID: a4ad9c84d61763d459916cf565ed78e1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_69
+      name: Laboratory_Tileset_69
       rect:
         serializedVersion: 2
         x: 201
@@ -1553,13 +1554,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3357158d3e99e8342856bfd3a80c73e8
+      spriteID: e40a447399be03b4b91c6ef39458b85d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_70
+      name: Laboratory_Tileset_70
       rect:
         serializedVersion: 2
         x: 247
@@ -1573,13 +1574,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d0b40409d24a84b488005d51dcbc2e8b
+      spriteID: 5b8d3ac075b739a47a2511870473447e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_71
+      name: Laboratory_Tileset_71
       rect:
         serializedVersion: 2
         x: 297
@@ -1593,13 +1594,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4740c3717f9715e428ac60ebf4dbeec5
+      spriteID: a6592bc039ddd8f43b7940af1633fc1d
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_72
+      name: Laboratory_Tileset_72
       rect:
         serializedVersion: 2
         x: 346
@@ -1613,13 +1614,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 888d07cb2854da94d9a37803ae6bcfd3
+      spriteID: 0232db4108d328d4b951db244b0237f8
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_73
+      name: Laboratory_Tileset_73
       rect:
         serializedVersion: 2
         x: 394
@@ -1633,13 +1634,13 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3a4fbc716ee23974f89e4c297ba19b64
+      spriteID: 97469e1fae495df428a363108cafa78e
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Laboratory_Tileset_Final_74
+      name: Laboratory_Tileset_74
       rect:
         serializedVersion: 2
         x: 443
@@ -1653,7 +1654,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 37a9b3fea78b124489ab25364aabacd7
+      spriteID: f8e2cbbc2c46a9f44b0957b6340cf4d8
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Laboratory_Tileset_75
+      rect:
+        serializedVersion: 2
+        x: 492
+        y: 16
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7afa545d09f1e24287f514066e8a8a4
       vertices: []
       indices: 
       edges: []
@@ -1661,7 +1682,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 872a4eea9f73a2e4cb812ee4e32a3ef3
+    spriteID: 9c90fb2c8395c0b4ca49702420d5e6d6
     vertices: []
     indices: 
     edges: []
