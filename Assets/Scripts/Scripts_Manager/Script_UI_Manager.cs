@@ -48,6 +48,46 @@ public class Script_UI_Manager : MonoBehaviour
     public GameObject[] g_all_menu;
     private int i_current_menu;
 
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LauchGame()
+    {
+        SceneManager.LoadScene("Scene_Kevin");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Scene_Arthur");
+    }
+
+    public void ChangeMenu(int i_menu_to_activate)
+    {
+        g_all_menu[i_current_menu].SetActive(false);
+        g_all_menu[i_menu_to_activate].SetActive(true);
+        i_current_menu = i_menu_to_activate;
+    }
+
+
+    #endregion
+
+    #region GameOver
+
+    [Header("Game Over")]
+
+    public GameObject g_game_over;
+
+    public void ShowUIGameOver()
+    {
+        g_game_over.SetActive(true);
+    }
+
+    public void UnshowUIGameOver()
+    {
+        g_game_over.SetActive(false);
+    }
 
     #endregion
 
@@ -125,30 +165,4 @@ public class Script_UI_Manager : MonoBehaviour
             child.gameObject.SetActive(false);
         }
     }
-
-    //MENU MANAGER
-
-    public void QuitGame()
-    {
-        Application.Quit();
-    }
-
-    public void LauchGame()
-    {
-        SceneManager.LoadScene("Scene_Kevin");
-    }
-
-    public void MainMenu()
-    {
-        SceneManager.LoadScene("Scene_Arthur");
-    }
-
-    public void ChangeMenu(int i_menu_to_activate)
-    {
-        g_all_menu[i_current_menu].SetActive(false);
-        g_all_menu[i_menu_to_activate].SetActive(true);
-        i_current_menu = i_menu_to_activate;
-    }
-
-
 }
