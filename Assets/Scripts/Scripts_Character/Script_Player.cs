@@ -93,7 +93,6 @@ public class Script_Player : MonoBehaviour
     {
         player_rb = GetComponent<Rigidbody2D>();
         a_player_animator = GetComponent<Animator>();
-        //StartCoroutine(SavePosition());
     }
 
     public void Update()
@@ -132,6 +131,11 @@ public class Script_Player : MonoBehaviour
                 AddForceToThrow();
             }
 
+            if(Input.GetButtonDown("Use") && obj_current_object_hold != null)
+            {
+                UseItem();
+            }
+
             if(Input.GetButton("Distort") && b_can_Distort && !b_have_use_distort)
             {
                 Distort();
@@ -163,15 +167,7 @@ public class Script_Player : MonoBehaviour
             }
         }
     }
-
-    public void RollBack()
-    {
-        /* transform.position = v_list_last_position[0];
-         //v_list_last_position.RemoveAt(v_list_last_position.Count);
-         StopCoroutine(SavePosition()); */
-        //Knockback(transform.up);
-    }
-
+   
     #region Interact
 
     public void Interact()
@@ -498,14 +494,7 @@ public class Script_Player : MonoBehaviour
         Script_UI_Manager.Instance.HideAllMenu();
     }
 
-    public void GoOutOfWall()
-    {
-        if(g_last_transformation.GetComponent<Script_Alter_Wall_Security>())
-        {
-            transform.position = g_last_transformation.GetComponent<Script_Alter_Wall_Security>().CheckNearPoint();
-            Debug.Log("GO OUT");
-        }
-    }
+    
 
     public void AllowAlter()
     {
@@ -519,7 +508,18 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
-    public void CheckInputAfterPause()
+    #region Use item
+
+    private void UseItem()
+    {
+        obj_current_object_hold.GetComponent<Script_IObject>().Use(obj_current_target);
+    }
+
+    #endregion
+
+    #region Debug / other
+
+    public void CheckInputAfterPause() // Check if your still holding or not Alter/Distort or Throw button, if not stop them
     {
         if (!Input.GetButton("Throw") && obj_current_object_hold != null && b_can_throw && f_current_force > 0)
         {
@@ -537,8 +537,19 @@ public class Script_Player : MonoBehaviour
         }
     }
 
-    public int GetPlayerLevel()
+    public void GoOutOfWall() // Use to set player out of a wall
+    {
+        if (g_last_transformation.GetComponent<Script_Alter_Wall_Security>())
+        {
+            transform.position = g_last_transformation.GetComponent<Script_Alter_Wall_Security>().CheckNearPoint();
+            Debug.Log("GO OUT");
+        }
+    }
+
+    public int GetPlayerLevel() // return the player level
     {
         return playerLevel;
     }
+
+    #endregion
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEngine.SceneManagement;
 
 public class Script_UI_Manager : MonoBehaviour
 {
@@ -40,6 +41,16 @@ public class Script_UI_Manager : MonoBehaviour
     public Transform t_transformation_layout;
     #endregion
 
+    #region Menu Manager
+
+    [Header("Menu Manager")]
+
+    public GameObject[] g_all_menu;
+    private int i_current_menu;
+
+
+    #endregion
+
     [Header("General UI")]
     public Image hold_object;
 
@@ -54,6 +65,11 @@ public class Script_UI_Manager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+
+    private void Start()
+    {
+        i_current_menu = 0;
     }
 
     public void UnShowNote()
@@ -109,5 +125,30 @@ public class Script_UI_Manager : MonoBehaviour
             child.gameObject.SetActive(false);
         }
     }
-   
+
+    //MENU MANAGER
+
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
+
+    public void LauchGame()
+    {
+        SceneManager.LoadScene("Scene_Kevin");
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene("Scene_Arthur");
+    }
+
+    public void ChangeMenu(int i_menu_to_activate)
+    {
+        g_all_menu[i_current_menu].SetActive(false);
+        g_all_menu[i_menu_to_activate].SetActive(true);
+        i_current_menu = i_menu_to_activate;
+    }
+
+
 }
