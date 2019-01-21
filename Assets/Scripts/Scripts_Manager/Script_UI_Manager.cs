@@ -14,6 +14,11 @@ public class Script_UI_Manager : MonoBehaviour
     public GameObject obj_pause_menu;
     public Transform obj_menu_parent;
 
+    public void ShowPauseMenu()
+    {
+        obj_pause_menu.SetActive(true);
+    }
+
     #endregion
 
     #region Notes
@@ -22,6 +27,11 @@ public class Script_UI_Manager : MonoBehaviour
     public TextMeshProUGUI t_note_title;
     public TextMeshProUGUI t_note_description;
     public GameObject g_note;
+
+    public void UnShowNote()
+    {
+        g_note.SetActive(false);
+    }
 
     #endregion
 
@@ -91,6 +101,24 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
+    #region Dialogue
+
+    [Header("Dialogue")]
+
+    public GameObject g_dialogue_menu;
+
+    public void ShowDialogue()
+    {
+        g_dialogue_menu.SetActive(true);
+    }
+
+    public void UnshowDialogue()
+    {
+        g_dialogue_menu.SetActive(false);
+    }
+
+    #endregion
+
     [Header("General UI")]
     public Image hold_object;
 
@@ -112,10 +140,6 @@ public class Script_UI_Manager : MonoBehaviour
         i_current_menu = 0;
     }
 
-    public void UnShowNote()
-    {
-        g_note.SetActive(false);
-    }
 
     public void NewObjectHold(Sprite new_object)
     {
@@ -151,11 +175,6 @@ public class Script_UI_Manager : MonoBehaviour
     public void CloseTransformationChoice(Script_Scriptable_Item item_to_transform)
     {
         obj_transformation_choice.SetActive(false);
-    }
-
-    public void ShowPauseMenu()
-    {
-           obj_pause_menu.SetActive(true);
     }
 
     public void HideAllMenu()
