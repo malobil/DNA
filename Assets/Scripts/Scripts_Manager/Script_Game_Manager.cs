@@ -2,10 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using System;
 
 public class Script_Game_Manager : MonoBehaviour
 {
     public static Script_Game_Manager Instance { get; private set; }
+
+
+    public Tutorial tutorials_state;
 
     private bool b_game_is_pause = false;
 
@@ -24,12 +28,13 @@ public class Script_Game_Manager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown("p"))
+        /*if(Input.GetKeyDown("p"))
         {
             GameOver();
-        }
+        }*/
     }
 
+    #region Pause
     public void TogglePause()
     {
         if(GetGameState())
@@ -43,7 +48,9 @@ public class Script_Game_Manager : MonoBehaviour
             Script_UI_Manager.Instance.ShowPauseMenu();
         }
     }
+    #endregion
 
+    #region Game State
     public void SetTimePause()
     {
         Time.timeScale = 0.0001f;
@@ -61,6 +68,8 @@ public class Script_Game_Manager : MonoBehaviour
         return b_game_is_pause;
     }
 
+    #endregion
+
     public void RestartScene()
     {
         SetTimeResume();
@@ -73,4 +82,17 @@ public class Script_Game_Manager : MonoBehaviour
         SetTimePause();
         Script_UI_Manager.Instance.ShowUIGameOver();
     }
+
+    public Tutorial GetTutorialState()
+    {
+        return tutorials_state;
+    }
+}
+
+[Serializable]
+public class Tutorial
+{
+    public bool b_do_interaction_tuto;
+    public bool b_do_alter_tuto;
+    public bool b_do_distort_tuto;
 }

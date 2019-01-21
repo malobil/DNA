@@ -202,6 +202,11 @@ public class Script_Player : MonoBehaviour
             {
                 target.GetComponent<Script_ISpecialInteraction>().EnableSpecialIndication();
             } 
+
+            if(!Script_Game_Manager.Instance.GetTutorialState().b_do_interaction_tuto)
+            {
+
+            }
         }
     }
 
