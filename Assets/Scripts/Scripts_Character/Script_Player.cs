@@ -74,6 +74,8 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
+    private bool b_can_use_item = true;
+
     private List<Vector2> v_list_last_position = new List<Vector2>();
 
     private void Awake()
@@ -131,7 +133,7 @@ public class Script_Player : MonoBehaviour
                 AddForceToThrow();
             }
 
-            if(Input.GetButtonDown("Use") && obj_current_object_hold != null)
+            if(Input.GetButtonDown("Use") && obj_current_object_hold != null && b_can_use_item)
             {
                 UseItem();
             }
@@ -327,10 +329,18 @@ public class Script_Player : MonoBehaviour
         }
     }
 
+    public void DestroyHoldObject()
+    {
+        Destroy(obj_current_object_hold);
+        Script_UI_Manager.Instance.NewObjectHold(null);
+    }
+
     private void AddForceToThrow()
     {
         DisableDistort();
         DisableAlter();
+        DisableUse();
+        //DisableInteract()
         if(f_current_force < f_max_throw_force)
         {
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
@@ -359,6 +369,7 @@ public class Script_Player : MonoBehaviour
         img_throw_feedback.fillAmount = 0;
         AllowDistort();
         AllowAlter();
+        AllowUse();
     }
 
     private void AllowThrow()
@@ -515,6 +526,16 @@ public class Script_Player : MonoBehaviour
         obj_current_object_hold.GetComponent<Script_IObject>().Use(obj_current_target);
     }
 
+    public void AllowUse()
+    {
+        b_can_use_item = true;
+    }
+
+    public void DisableUse()
+    {
+        b_can_use_item = false;
+    }
+
     #endregion
 
     #region Debug / other
@@ -542,7 +563,6 @@ public class Script_Player : MonoBehaviour
         if (g_last_transformation.GetComponent<Script_Alter_Wall_Security>())
         {
             transform.position = g_last_transformation.GetComponent<Script_Alter_Wall_Security>().CheckNearPoint();
-            Debug.Log("GO OUT");
         }
     }
 

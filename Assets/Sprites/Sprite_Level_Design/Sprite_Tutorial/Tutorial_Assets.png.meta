@@ -8,6 +8,8 @@ TextureImporter:
     21300006: Tutorial_Assets_3
     21300008: Tutorial_Assets_4
     21300010: Tutorial_Assets_5
+    21300012: Tutorial_Assets_6
+    21300014: Tutorial_Assets_7
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -142,7 +144,7 @@ TextureImporter:
         width: 14
         height: 27
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,7 +164,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -182,7 +184,7 @@ TextureImporter:
         width: 15
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,7 +204,7 @@ TextureImporter:
         width: 9
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -218,11 +220,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 4
+        y: 35
         width: 15
-        height: 49
+        height: 18
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -238,9 +240,29 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 60
-        y: 4
+        y: 36
         width: 9
-        height: 51
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d534716d3ae6a2a4b9b1453cec06e625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Assets_6
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 4
+        width: 3
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,7 +270,27 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d534716d3ae6a2a4b9b1453cec06e625
+      spriteID: ac722d9f395f3414fa7bfc9e024ad275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tutorial_Assets_7
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 4
+        width: 3
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d508caf2328b32a4987b75b9e8014ddc
       vertices: []
       indices: 
       edges: []

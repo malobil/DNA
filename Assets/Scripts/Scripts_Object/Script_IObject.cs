@@ -13,4 +13,9 @@ public class Script_IObject : MonoBehaviour
     {
         Debug.Log("Attack");
     }
+
+    public void DestroySelf()
+    {
+        Script_Player.Instance.DestroyHoldObject();
+    }
 }

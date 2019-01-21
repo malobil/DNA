@@ -9,6 +9,7 @@ public class Script_Screwdriver : Script_IObject
         if (player_target != null && player_target.GetComponent<Script_Air_Vent>())
         {
             player_target.GetComponent<Script_Air_Vent>().SpecialInteraction();
+            DestroySelf();
         }
         else
         {

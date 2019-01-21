@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 6466469277610703595}
   - component: {fileID: 6466469277610703592}
   - component: {fileID: 1364594356078199819}
+  - component: {fileID: 2041463659}
+  - component: {fileID: 2041463660}
   m_Layer: 0
   m_Name: Prefab_Air_Vent
   m_TagString: Untagged
@@ -69,7 +71,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300006, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  m_Sprite: {fileID: 21300012, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -97,12 +99,41 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.375, y: 0.7916667}
+    oldSize: {x: 0.125, y: 0.7916667}
     newSize: {x: 0.375, y: 0.7916667}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.375, y: 0.7916667}
+  m_Size: {x: 0.125, y: 0.7916667}
   m_EdgeRadius: 0
+--- !u!114 &2041463659
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466469277610703593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 72d34506e5b140a43bae373edb7f227c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  obj_indication_UI: {fileID: 0}
+--- !u!114 &2041463660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6466469277610703593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
