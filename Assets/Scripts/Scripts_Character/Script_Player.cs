@@ -59,7 +59,7 @@ public class Script_Player : MonoBehaviour
     #region Distort variable
 
     public int playerLevel = 0;
-    private bool b_can_Distort = true ;
+    public bool b_can_Distort = true ;
     private bool b_have_use_distort = false;
     private GameObject g_current_distortable_target;
 
@@ -67,7 +67,7 @@ public class Script_Player : MonoBehaviour
 
     #region Alter variable
 
-    private bool b_can_alter = true;
+    public bool b_can_alter = true;
     private bool b_have_use_alter = false ;
     private GameObject g_current_alterable_target;
     private GameObject g_last_transformation;
@@ -309,6 +309,11 @@ public class Script_Player : MonoBehaviour
             b_is_knockback = false;
             f_current_knockback_duration = 0f;
         }
+    }
+
+    public void Teleport(Vector2 t_new_position)
+    {
+        transform.position = t_new_position;
     }
 
     private void AllowMove()

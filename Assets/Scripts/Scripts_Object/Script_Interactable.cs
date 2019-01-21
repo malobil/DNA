@@ -6,26 +6,36 @@ using cakeslice;
 [RequireComponent(typeof(Outline))]
 public class Script_Interactable : MonoBehaviour
 {
-    public enum InteractableType {readable, holdable, talkable}
+    public enum InteractableType {readable, holdable, talkable, teleport}
 
     public InteractableType object_type;
 
+    public bool b_can_interact = true;
+    public Transform t_teleport_point;
+
     public void Interact(Script_Player player)
     {
-        switch(object_type.ToString(""))
+        if(b_can_interact)
         {
-            case "readable":
-                Read();
-                break;
+            switch (object_type.ToString(""))
+            {
+                case "readable":
+                    Read();
+                    break;
 
-            case "holdable":
-                Hold(player);
-                break;
+                case "holdable":
+                    Hold(player);
+                    break;
 
-            case "talkable":
-                Talk();
-                break;
-        }   
+                case "talkable":
+                    Talk();
+                    break;
+
+                case "teleport":
+                    Teleport();
+                    break;
+            }
+        }
     }
 
     private void Read()
@@ -38,15 +48,25 @@ public class Script_Interactable : MonoBehaviour
         Debug.Log("talk");   // do something
     }
 
-    private void Hide()
+    private void Teleport()
     {
-        Debug.Log("hide");   // do something
+        Debug.Log("teleport");   // do something
+        Script_Player.Instance.Teleport(t_teleport_point.position);
     }
 
     private void Hold(Script_Player player)
     {
         //Debug.Log("hold");
         player.Hold();
+    }
 
+    public void AllowInteraction()
+    {
+        b_can_interact = true;
+    }
+
+    public bool GetInteractPermission()
+    {
+        return b_can_interact;
     }
 }

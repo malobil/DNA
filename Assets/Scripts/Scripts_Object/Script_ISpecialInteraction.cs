@@ -15,11 +15,17 @@ public class Script_ISpecialInteraction : MonoBehaviour
 
     public virtual void EnableSpecialIndication()
     {
-        obj_indication_UI.SetActive(true);
+        if (obj_indication_UI != null)
+        {
+            obj_indication_UI.SetActive(true);
+        }
     }
 
     public virtual void DisableSpecialIndication()
     {
-        obj_indication_UI.SetActive(false);
+        if(obj_indication_UI != null)
+        {
+            obj_indication_UI.SetActive(false);
+        }
     }
 }

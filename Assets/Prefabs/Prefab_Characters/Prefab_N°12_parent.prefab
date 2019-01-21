@@ -483,6 +483,8 @@ MonoBehaviour:
   img_throw_feedback: {fileID: 547937513739777477}
   t_throw_pivot_point: {fileID: 2011188320546394545}
   playerLevel: 5
+  b_can_Distort: 1
+  b_can_alter: 1
 --- !u!1 &4236260653039994427
 GameObject:
   m_ObjectHideFlags: 0
