@@ -1,12 +1,7 @@
 fileFormatVersion: 2
-guid: 3db9ea6099a3fc841ab7afc7aba74ad3
+guid: cb0048514d242a945845dae1032de39d
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: UI_Hold_0
-    21300002: UI_Hold_1
-    21300004: UI_Hold_2
-    21300006: UI_Hold_3
-    21300008: UI_Hold_4
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -45,7 +40,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -87,111 +82,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: UI_Hold_0
-      rect:
-        serializedVersion: 2
-        x: 4
-        y: 7
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8e20baa0e5cb2084b95c8102ad5f9f73
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Hold_1
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 7
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 540ed1a488dc42e4f9c19023843306bd
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Hold_2
-      rect:
-        serializedVersion: 2
-        x: 80
-        y: 7
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4ed8926834ecb58438e16f63fac9c833
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Hold_3
-      rect:
-        serializedVersion: 2
-        x: 122
-        y: 7
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1b58cb7bdfb1ec7499c1609b8cf3422a
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: UI_Hold_4
-      rect:
-        serializedVersion: 2
-        x: 162
-        y: 7
-        width: 30
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: c1e6a5830b189644bb7f2142af730b21
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 02ba7f32ccf0cdb4d905550b36cba67c
+    spriteID: 
     vertices: []
     indices: 
     edges: []
