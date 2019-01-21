@@ -8,10 +8,16 @@ public class Script_Game_Manager : MonoBehaviour
 {
     public static Script_Game_Manager Instance { get; private set; }
 
-
     public Tutorial tutorials_state;
 
     private bool b_game_is_pause = false;
+
+    private Vector2 v_last_checkpoint;
+
+    public Vector2 GetLastCheckpointPosition()
+    {
+        return v_last_checkpoint;
+    }
 
     private void Awake()
     {
@@ -28,10 +34,10 @@ public class Script_Game_Manager : MonoBehaviour
 
     private void Update()
     {
-        /*if(Input.GetKeyDown("p"))
+        if(Input.GetKeyDown("p"))
         {
             GameOver();
-        }*/
+        }
     }
 
     #region Pause
@@ -70,13 +76,6 @@ public class Script_Game_Manager : MonoBehaviour
 
     #endregion
 
-    public void RestartScene()
-    {
-        SetTimeResume();
-        Script_UI_Manager.Instance.UnshowUIGameOver();
-        SceneManager.LoadScene("Scene_Main_Menu");
-    }
-
     public void GameOver()
     {
         SetTimePause();
@@ -112,6 +111,30 @@ public class Script_Game_Manager : MonoBehaviour
     }
 
     #endregion
+
+    #region Save & Load
+
+    public void Save(float f_player_x_position , float f_player_y_position , int i_dna_level)
+    {
+        PlayerPrefs.SetFloat("Player_x_position", f_player_x_position);
+        PlayerPrefs.SetFloat("Player_y_position", f_player_y_position);
+        PlayerPrefs.SetInt("Player_level", i_dna_level);
+        PlayerPrefs.SetInt("Player_floor", SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void Load()
+    {
+        float f_player_x_position = PlayerPrefs.GetFloat("Player_x_position");
+        float f_player_y_position = PlayerPrefs.GetFloat("Player_y_position");
+        int i_player_level = PlayerPrefs.GetInt("Player_level");
+        int i_player_floor = PlayerPrefs.GetInt("Player_floor");
+
+        Script_Player.Instance.LoadData(f_player_x_position, f_player_y_position, i_player_level);
+
+        Debug.Log("LOAD");
+    }
+
+    #endregion
 }
 
 [Serializable]
@@ -121,3 +144,5 @@ public class Tutorial
     public bool b_do_throw_tuto;
     public bool b_do_special_interaction_tuto;
 }
+
+

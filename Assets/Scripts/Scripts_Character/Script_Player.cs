@@ -601,5 +601,16 @@ public class Script_Player : MonoBehaviour
         return playerLevel;
     }
 
+    public void CallSave()
+    {
+        Script_Game_Manager.Instance.Save(transform.position.x , transform.position.y , GetPlayerLevel());
+    }
+
+    public void LoadData(float x_position, float y_position, int player_level)
+    {
+        transform.position = new Vector2 (x_position,y_position);
+        playerLevel = player_level;
+    }
+
     #endregion
 }
