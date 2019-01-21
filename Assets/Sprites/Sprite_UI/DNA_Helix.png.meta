@@ -96,18 +96,18 @@ TextureImporter:
       name: DNA_Helix_0
       rect:
         serializedVersion: 2
-        x: 8
+        x: 15
         y: 8
         width: 16
-        height: 176
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4f1f3feddca75c5498c0baca20dd95d9
+      spriteID: 216215b66a29fd94c86c7183881d756b
       vertices: []
       indices: 
       edges: []
@@ -116,38 +116,38 @@ TextureImporter:
       name: DNA_Helix_1
       rect:
         serializedVersion: 2
-        x: 51
+        x: 49
         y: 8
         width: 16
-        height: 176
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3e611d710d1ea46408841f0ecc0049d2
+      spriteID: 60c3be0b82a9ac246b58743f509b79d0
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DNA_Helix_2
+      name: DNA_Helix_7
       rect:
         serializedVersion: 2
-        x: 87
+        x: 83
         y: 8
         width: 16
-        height: 176
+        height: 111
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6b0636f7fa68e4d499e14d1c68686dca
+      spriteID: d97f24f5277be104a963f001d3db9886
       vertices: []
       indices: 
       edges: []
