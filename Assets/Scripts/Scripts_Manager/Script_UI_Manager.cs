@@ -28,6 +28,13 @@ public class Script_UI_Manager : MonoBehaviour
     public TextMeshProUGUI t_note_description;
     public GameObject g_note;
 
+    public void ShowNote(string loca_key)
+    {
+        t_note_title.text = Script_CSV_Manager.Instance.GetNoteTitle(loca_key);
+        t_note_description.text = Script_CSV_Manager.Instance.GetNoteDescription(loca_key);
+        g_note.SetActive(true);
+    }
+
     public void UnShowNote()
     {
         g_note.SetActive(false);

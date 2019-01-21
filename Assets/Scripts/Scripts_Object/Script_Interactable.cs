@@ -17,6 +17,9 @@ public class Script_Interactable : MonoBehaviour
 
     private bool b_already_talk;
 
+    [Header("Note")]
+    public string note_key;
+
     public void Interact(Script_Player player)
     {
         if(b_can_interact)
@@ -44,7 +47,7 @@ public class Script_Interactable : MonoBehaviour
 
     private void Read()
     {
-        Debug.Log("read");   // do something
+        Script_UI_Manager.Instance.ShowNote(note_key);
     }
 
     private void Talk()
