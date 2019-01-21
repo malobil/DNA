@@ -4,8 +4,13 @@ using UnityEngine;
 
 public class Script_IObject : MonoBehaviour
 {
-    public virtual void Use()
+    public virtual void Use(GameObject player_target)
     {
-        Debug.Log("USE");
+        Attack();
+    }
+
+    public virtual void Attack()
+    {
+        Debug.Log("Attack");
     }
 }
