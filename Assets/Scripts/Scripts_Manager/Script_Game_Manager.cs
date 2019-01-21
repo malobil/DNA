@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Script_Game_Manager : MonoBehaviour
 {
@@ -18,6 +19,14 @@ public class Script_Game_Manager : MonoBehaviour
         else if (Instance != this)
         {
             Destroy(gameObject);
+        }
+    }
+
+    private void Update()
+    {
+        if(Input.GetKeyDown("p"))
+        {
+            GameOver();
         }
     }
 
@@ -50,5 +59,18 @@ public class Script_Game_Manager : MonoBehaviour
     public bool GetGameState()
     {
         return b_game_is_pause;
+    }
+
+    public void RestartScene()
+    {
+        SetTimeResume();
+        Script_UI_Manager.Instance.UnshowUIGameOver();
+        SceneManager.LoadScene("Scene_Main_Menu");
+    }
+
+    public void GameOver()
+    {
+        SetTimePause();
+        Script_UI_Manager.Instance.ShowUIGameOver();
     }
 }
