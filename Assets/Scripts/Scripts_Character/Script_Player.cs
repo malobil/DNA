@@ -197,6 +197,11 @@ public class Script_Player : MonoBehaviour
         if (target != null)
         {
             obj_current_target.GetComponent<Outline>().EnableOutline();
+
+            if(target.GetComponent<Script_ISpecialInteraction>())
+            {
+                target.GetComponent<Script_ISpecialInteraction>().EnableSpecialIndication();
+            } 
         }
     }
 
@@ -204,6 +209,11 @@ public class Script_Player : MonoBehaviour
     {
         list_interactible_objects.Remove(obj_interactible_object);
         obj_interactible_object.GetComponent<Outline>().DisableOutline();
+
+        if (obj_interactible_object.GetComponent<Script_ISpecialInteraction>())
+        {
+            obj_interactible_object.GetComponent<Script_ISpecialInteraction>().DisableSpecialIndication();
+        }
 
         if (obj_interactible_object == obj_current_target)
         {
@@ -340,7 +350,7 @@ public class Script_Player : MonoBehaviour
         DisableDistort();
         DisableAlter();
         DisableUse();
-        //DisableInteract()
+
         if(f_current_force < f_max_throw_force)
         {
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
