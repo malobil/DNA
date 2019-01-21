@@ -2,11 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 using cakeslice;
+using UnityEditor;
+
+public enum InteractableType { readable, holdable, talkable, teleport }
+
 
 [RequireComponent(typeof(Outline))]
 public class Script_Interactable : MonoBehaviour
 {
-    public enum InteractableType {readable, holdable, talkable, teleport}
+  
 
     public InteractableType object_type;
 
@@ -15,7 +19,7 @@ public class Script_Interactable : MonoBehaviour
 
     [Header("Dialogue")]
 
-    private bool b_already_talk;
+    //private bool b_already_talk;
 
     [Header("Note")]
     public string note_key;
@@ -35,7 +39,7 @@ public class Script_Interactable : MonoBehaviour
                     break;
 
                 case "talkable":
-                    Talk();
+                    //Talk();
                     break;
 
                 case "teleport":
@@ -50,7 +54,7 @@ public class Script_Interactable : MonoBehaviour
         Script_UI_Manager.Instance.ShowNote(note_key);
     }
 
-    private void Talk()
+    /*private void Talk()
     {
         if(!b_already_talk)
         {
@@ -63,7 +67,7 @@ public class Script_Interactable : MonoBehaviour
             Script_Game_Manager.Instance.SetTimeResume();
         }
 
-    }
+    }*/
 
     private void Teleport()
     {
