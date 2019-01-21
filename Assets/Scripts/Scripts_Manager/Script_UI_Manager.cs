@@ -119,6 +119,16 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
+    #region Tutorial
+
+    [Header("Tutorial")]
+    public GameObject obj_tutorial_holder;
+    public GameObject obj_interact_tutorial;
+    public GameObject obj_throw_tutorial;
+    public GameObject obj_special_interaction_tutorial;
+
+    #endregion
+
     [Header("General UI")]
     public Image hold_object;
 
@@ -184,4 +194,26 @@ public class Script_UI_Manager : MonoBehaviour
             child.gameObject.SetActive(false);
         }
     }
+
+    #region Tutorial
+
+    public void LaunchInteractionTutorial()
+    {
+        obj_tutorial_holder.SetActive(true);
+        obj_interact_tutorial.SetActive(true);
+    }
+
+    public void LaunchThrowTutorial()
+    {
+        obj_tutorial_holder.SetActive(true);
+        obj_throw_tutorial.SetActive(true);
+    }
+
+    public void LaunchSpecialInteractionTutorial()
+    {
+        obj_tutorial_holder.SetActive(true);
+        obj_special_interaction_tutorial.SetActive(true);
+    }
+
+    #endregion
 }

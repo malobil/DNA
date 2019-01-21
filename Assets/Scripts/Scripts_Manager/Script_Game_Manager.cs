@@ -83,16 +83,41 @@ public class Script_Game_Manager : MonoBehaviour
         Script_UI_Manager.Instance.ShowUIGameOver();
     }
 
+    #region Tutorial
+
+    public void LaunchInteractionTutorial()
+    {
+        SetTimePause();
+        Script_UI_Manager.Instance.LaunchInteractionTutorial();
+        tutorials_state.b_do_interaction_tuto = true;
+    }
+
+    public void LaunchThrowTutorial()
+    {
+        SetTimePause();
+        Script_UI_Manager.Instance.LaunchThrowTutorial();
+        tutorials_state.b_do_throw_tuto = true;
+    }
+
+    public void LaunchSpecialInteractionTutorial()
+    {
+        SetTimePause();
+        Script_UI_Manager.Instance.LaunchSpecialInteractionTutorial();
+        tutorials_state.b_do_special_interaction_tuto = true;
+    }
+
     public Tutorial GetTutorialState()
     {
         return tutorials_state;
     }
+
+    #endregion
 }
 
 [Serializable]
 public class Tutorial
 {
     public bool b_do_interaction_tuto;
-    public bool b_do_alter_tuto;
-    public bool b_do_distort_tuto;
+    public bool b_do_throw_tuto;
+    public bool b_do_special_interaction_tuto;
 }

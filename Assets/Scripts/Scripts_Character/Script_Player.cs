@@ -205,8 +205,13 @@ public class Script_Player : MonoBehaviour
 
             if(!Script_Game_Manager.Instance.GetTutorialState().b_do_interaction_tuto)
             {
-
+                Script_Game_Manager.Instance.LaunchInteractionTutorial();
             }
+            else if(!Script_Game_Manager.Instance.GetTutorialState().b_do_special_interaction_tuto && target.GetComponent<Script_ISpecialInteraction>())
+            {
+                Script_Game_Manager.Instance.LaunchSpecialInteractionTutorial();
+            }
+                
         }
     }
 
@@ -346,6 +351,11 @@ public class Script_Player : MonoBehaviour
             Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite); // UI
             RemoveInteractibleObject(obj_current_target); // Remove object from the list
             SelectTarget(null); // Remove the target
+
+            if(!Script_Game_Manager.Instance.GetTutorialState().b_do_throw_tuto)
+            {
+                Script_Game_Manager.Instance.LaunchThrowTutorial();
+            }
         }
     }
 
