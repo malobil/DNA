@@ -145,6 +145,48 @@ public class Script_CSV_Manager : MonoBehaviour
 
         return "NO LOCA KEY FOUND";
     }
+
+    public string GetNoteTitle(string key)
+    {
+        for (int i = 0; i < notes_key_import.Count; i++)
+        {
+            if (key == notes_key_import[i].keyName)
+            {
+                if (playerLanguage.ToString() == "fr")
+                {
+                    return notes_key_import[i].titleFr;
+                }
+                else if (playerLanguage.ToString() == "ang")
+                {
+                    return notes_key_import[i].titleEng;
+                }
+
+            }
+        }
+
+        return "NO LOCA KEY FOUND";
+    }
+
+    public string GetNoteDescription(string key)
+    {
+        for (int i = 0; i < notes_key_import.Count; i++)
+        {
+            if (key == notes_key_import[i].keyName)
+            {
+                if (playerLanguage.ToString() == "fr")
+                {
+                    return notes_key_import[i].textFr;
+                }
+                else if (playerLanguage.ToString() == "ang")
+                {
+                    return notes_key_import[i].textEng;
+                }
+
+            }
+        }
+
+        return "NO LOCA KEY FOUND";
+    }
 }
 
 [Serializable]
