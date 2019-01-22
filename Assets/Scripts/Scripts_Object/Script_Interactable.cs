@@ -6,9 +6,9 @@ using UnityEditor;
 using TMPro;
 
 
-/*[CanEditMultipleObjects]
+[CanEditMultipleObjects]
 [CustomEditor(typeof(Script_Interactable))]
-public class Script_Interactable_Editor : Editor
+/*public class Script_Interactable_Editor : Editor
 {
     Script_Interactable s_script_interactable;
 
