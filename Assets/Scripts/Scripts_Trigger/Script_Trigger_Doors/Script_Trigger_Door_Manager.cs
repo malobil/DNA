@@ -6,7 +6,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
 {
 
     #region Door
-    public enum Doortype { Nocard, Tutocard, Bluecard, Redcard, Greencard, Yellowcard }
+    public enum Doortype { Nocard, Bluecard, Redcard, Greencard, Yellowcard }
     public Doortype d_door_type;
 
     private Animator a_door_animator;
@@ -27,12 +27,8 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
                 AddCharacterInList(g_character_detected);
                 break;
 
-            case "Tutocard":
-                Debug.Log("Tuto");
-                break;
-
             case "Bluecard":
-                Debug.Log("Blue");
+                BlueCard();
                 break;
 
             case "Redcard":
@@ -62,6 +58,14 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         {
             b_door_is_open = true;
             CloseDoor();
+        }
+    }
+
+    private void BlueCard()
+    {
+        if(Script_Player.Instance.CheckBlueCard())
+        {
+            OpenDoor();
         }
     }
 

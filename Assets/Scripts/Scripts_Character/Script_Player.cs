@@ -74,6 +74,12 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
+    #region Cards variables
+
+    private bool b_have_bluecard = false;
+
+    #endregion
+
     #region Dialog variables
 
     private bool b_is_talking = false;
@@ -355,8 +361,10 @@ public class Script_Player : MonoBehaviour
 
     public void Hold()
     {
-        if(obj_current_object_hold == null)
+        if (obj_current_object_hold != null)
         {
+            Throw();
+        }
             obj_current_object_hold = obj_current_target.gameObject;
             obj_current_object_hold.transform.SetParent(transform);
             obj_current_object_hold.gameObject.SetActive(false);
@@ -369,7 +377,7 @@ public class Script_Player : MonoBehaviour
             {
                 Script_Game_Manager.Instance.LaunchThrowTutorial();
             }
-        }
+        
     }
 
     public void DestroyHoldObject()
@@ -639,6 +647,25 @@ public class Script_Player : MonoBehaviour
     {
         b_is_talking = false;
         s_current_dialog = null;
+    }
+
+    #endregion
+
+    #region Cards
+
+    public bool CheckBlueCard()
+    {
+        return b_have_bluecard;
+    }
+
+    public void ObtainACard(string card)
+    {
+        switch(card)
+        {
+            case "blue":
+                b_have_bluecard = true;
+                break;
+        }
     }
 
     #endregion
