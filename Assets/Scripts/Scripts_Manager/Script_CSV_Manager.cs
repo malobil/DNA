@@ -36,7 +36,7 @@ public class Script_CSV_Manager : MonoBehaviour
         #region Tutorial csv
         if(csv_tutorial != null)
         {
-            string[] data = csv_tutorial.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
+            string[] data = csv_tutorial.text.Split(new char[] { '$' }); // Separate each line of a file ( CSV better )
 
             for (int i = 1; i < data.Length; i++)
             {
@@ -57,7 +57,7 @@ public class Script_CSV_Manager : MonoBehaviour
 
         if (csv_notes != null)
         {
-            string[] noteData = csv_notes.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
+            string[] noteData = csv_notes.text.Split(new char[] { '$' }); // Separate each line of a file ( CSV better )
 
             for (int i = 1; i < noteData.Length; i++)
             {
@@ -79,7 +79,7 @@ public class Script_CSV_Manager : MonoBehaviour
 
         if (csv_dialog != null)
         {
-            string[] dialogData = csv_dialog.text.Split(new char[] { '\n' }); // Separate each line of a file ( CSV better )
+            string[] dialogData = csv_dialog.text.Split(new char[] { '$' }); // Separate each line of a file ( CSV better )
 
             for (int i = 1; i < dialogData.Length; i++)
             {
