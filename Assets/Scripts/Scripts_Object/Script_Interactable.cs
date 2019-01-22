@@ -5,15 +5,54 @@ using cakeslice;
 using UnityEditor;
 using TMPro;
 
-public enum InteractableType { readable, holdable, talkable, teleport }
 
+[CanEditMultipleObjects]
+[CustomEditor(typeof(Script_Interactable))]
+public class Script_Interactable_Editor : Editor
+{
+    Script_Interactable s_script_interactable;
+
+    private void OnEnable()
+    {
+        s_script_interactable = (Script_Interactable)target;
+    }
+
+    public override void OnInspectorGUI()
+    {
+        Undo.RecordObject(target, "Script_Interactable");
+        s_script_interactable.object_type = (InteractableType)EditorGUILayout.EnumPopup("Interactable Type", s_script_interactable.object_type);
+
+        switch (s_script_interactable.object_type)
+        {
+            case InteractableType.readable:
+                s_script_interactable.note_key = EditorGUILayout.TextField("Note Key", s_script_interactable.note_key);
+                break;
+            case InteractableType.holdable:
+                
+                break;
+            case InteractableType.talkable:
+                s_script_interactable.obj_dialog_box = (GameObject)EditorGUILayout.ObjectField("Dialogue Interface", s_script_interactable.obj_dialog_box, typeof(GameObject), true);
+                s_script_interactable.txt_dialog = (TextMeshProUGUI)EditorGUILayout.ObjectField("Dialogue Text", s_script_interactable.txt_dialog,typeof(TextMeshProUGUI),true);
+                //s_script_interactable.s_dialog_key = EditorGUILayout.TextField("Dialogue Key", s_script_interactable.s_dialog_key);
+                break;
+            case InteractableType.teleport:
+                
+                break;
+            default:
+                break;
+        }
+    }
+}
+
+public enum InteractableType { readable, holdable, talkable, teleport }
 
 [RequireComponent(typeof(Outline))]
 public class Script_Interactable : MonoBehaviour
 {
-  
-
     public InteractableType object_type;
+
+    [Header("Note")]
+    public string note_key;
 
     public bool b_can_interact = true;
     public Transform t_teleport_point;
@@ -27,9 +66,6 @@ public class Script_Interactable : MonoBehaviour
 
 
     //private bool b_already_talk;
-
-    [Header("Note")]
-    public string note_key;
 
     public void Interact(Script_Player player)
     {
