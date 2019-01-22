@@ -25,6 +25,7 @@ public class Script_Interactable : MonoBehaviour
     public List<string> s_dialog_key;
     private int i_current_dialog_key = 0;
 
+
     //private bool b_already_talk;
 
     [Header("Note")]
@@ -62,23 +63,35 @@ public class Script_Interactable : MonoBehaviour
 
     public void Talk()
     {
-        if(i_current_dialog_key < s_dialog_key.Count)
+        if(i_current_dialog_key == 0)
         {
-            txt_dialog.text = Script_CSV_Manager.Instance.GetDialogDescription(s_dialog_key[i_current_dialog_key]);
             Script_Game_Manager.Instance.SetTimePause();
-            obj_dialog_box.SetActive(true);
             Script_Player.Instance.EnterADialog(this);
-            i_current_dialog_key++;
+            obj_dialog_box.SetActive(true);
+        }
+
+        if (i_current_dialog_key < s_dialog_key.Count)
+        {
+            NextDialog();
         }
         else
         {
-            Script_Game_Manager.Instance.SetTimeResume();
-            obj_dialog_box.SetActive(false);
-            Script_Player.Instance.LeaveADialog();
-            i_current_dialog_key = 0;
-            return;
-        }
-        
+            StopDialog();
+        }  
+    }
+
+    private void NextDialog()
+    {
+        txt_dialog.text = Script_CSV_Manager.Instance.GetDialogDescription(s_dialog_key[i_current_dialog_key]);
+        i_current_dialog_key++;
+    }
+
+    private void StopDialog()
+    {
+        Script_Game_Manager.Instance.SetTimeResume();
+        Script_Player.Instance.LeaveADialog();
+        obj_dialog_box.SetActive(false);
+        i_current_dialog_key = 0;
     }
 
     private void Teleport()

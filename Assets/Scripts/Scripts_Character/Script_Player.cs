@@ -74,10 +74,10 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
-    #region Talk variables
+    #region Dialog variables
 
+    private bool b_is_talking = false;
     private Script_Interactable s_current_dialog;
-    private bool b_is_talking;
 
     #endregion
 
@@ -108,12 +108,6 @@ public class Script_Player : MonoBehaviour
     {
         Move();
 
-        if(Input.GetButtonDown("Interact") && b_is_talking)
-        {
-            NextDialog();
-            Debug.Log("DFFF");
-        }
-
         if (Input.GetButtonDown("Pause") && !b_is_talking)
         {
             Script_Game_Manager.Instance.TogglePause();
@@ -129,7 +123,13 @@ public class Script_Player : MonoBehaviour
             KnockbackEffect();
         }
 
-        if (!Script_Game_Manager.Instance.GetGameState() && !b_is_knockback && !b_is_talking)
+        if (Input.GetButtonDown("Interact") && b_is_talking)
+        {
+            s_current_dialog.Talk() ;
+            return;
+        }
+
+        if (!Script_Game_Manager.Instance.GetGameState() && !b_is_knockback)
         {
             if (Input.GetButtonDown("Interact") && obj_current_target != null && b_can_interact)
             {
@@ -627,7 +627,7 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
-    #region Talk
+    #region Talk 
 
     public void EnterADialog(Script_Interactable dialog)
     {
@@ -638,11 +638,7 @@ public class Script_Player : MonoBehaviour
     public void LeaveADialog()
     {
         b_is_talking = false;
-    }
-
-    private void NextDialog()
-    {
-        s_current_dialog.Talk();
+        s_current_dialog = null;
     }
 
     #endregion
