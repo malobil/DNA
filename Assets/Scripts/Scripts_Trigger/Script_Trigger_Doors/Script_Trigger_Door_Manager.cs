@@ -19,12 +19,12 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         a_door_animator = GetComponent<Animator>();
     }
 
-    public void VerifyCard(GameObject g_character_detected)
+    public void VerifyCard()
     {
         switch (d_door_type.ToString(""))
         {
             case "Nocard":
-                AddCharacterInList(g_character_detected);
+                OpenDoor();
                 break;
 
             case "Bluecard":
@@ -48,15 +48,19 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     public void AddCharacterInList(GameObject g_character_enter)
     {
         g_character_in_trigger.Add(g_character_enter);
-        OpenDoor();
+
+        if(g_character_enter.CompareTag("Player"))
+        {
+            VerifyCard();
+        }
     }
 
     public void RemoveCharacterInList(GameObject g_character_exit)
     {
         g_character_in_trigger.Remove(g_character_exit);
-        if(g_character_in_trigger.Count == 0)
+
+        if(g_character_in_trigger.Count == 0 && b_door_is_open)
         {
-            b_door_is_open = true;
             CloseDoor();
         }
     }
@@ -80,10 +84,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
 
     public void CloseDoor()
     {
-        if (b_door_is_open)
-        {
             a_door_animator.SetTrigger("Close");
             b_door_is_open = false;
-        }
     }
 }

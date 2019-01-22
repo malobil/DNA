@@ -6,7 +6,7 @@ using UnityEditor;
 using TMPro;
 
 
-[CanEditMultipleObjects]
+/*[CanEditMultipleObjects]
 [CustomEditor(typeof(Script_Interactable))]
 public class Script_Interactable_Editor : Editor
 {
@@ -42,9 +42,10 @@ public class Script_Interactable_Editor : Editor
                 break;
         }
     }
-}
+}*/
 
-public enum InteractableType { readable, holdable, talkable, teleport }
+public enum InteractableType { readable, holdable, talkable, teleport, card }
+public enum CardType { blue }
 
 [RequireComponent(typeof(Outline))]
 public class Script_Interactable : MonoBehaviour
@@ -64,8 +65,8 @@ public class Script_Interactable : MonoBehaviour
     public List<string> s_dialog_key;
     private int i_current_dialog_key = 0;
 
-
-    //private bool b_already_talk;
+    [Header("Card")]
+    public CardType card;
 
     public void Interact(Script_Player player)
     {
@@ -87,6 +88,10 @@ public class Script_Interactable : MonoBehaviour
 
                 case "teleport":
                     Teleport();
+                    break;
+
+                case "card":
+                    AddCard();
                     break;
             }
         }
@@ -114,6 +119,12 @@ public class Script_Interactable : MonoBehaviour
         {
             StopDialog();
         }  
+    }
+
+    private void AddCard()
+    {
+        Script_Player.Instance.ObtainACard(card.ToString(""));
+        Destroy(gameObject);
     }
 
     private void NextDialog()
