@@ -33,7 +33,7 @@ public class Script_Interactable_Editor : Editor
             case InteractableType.talkable:
                 s_script_interactable.obj_dialog_box = (GameObject)EditorGUILayout.ObjectField("Dialogue Interface", s_script_interactable.obj_dialog_box, typeof(GameObject), true);
                 s_script_interactable.txt_dialog = (TextMeshProUGUI)EditorGUILayout.ObjectField("Dialogue Text", s_script_interactable.txt_dialog,typeof(TextMeshProUGUI),true);
-                //s_script_interactable.s_dialog_key = EditorGUILayout.TextField("Dialogue Key", s_script_interactable.s_dialog_key);
+                //s_script_interactable.s_dialog_key = EditorGUILayout.("Dialogue Key", s_script_interactable.s_dialog_key);
                 break;
             case InteractableType.teleport:
                 
