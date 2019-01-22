@@ -35,6 +35,7 @@ public class Script_Player : MonoBehaviour
     private GameObject obj_current_target;
     private bool b_can_interact = true ;
     private GameObject obj_current_object_hold;
+    private int i_current_object_index = 0;
 
     #endregion
 
@@ -152,6 +153,11 @@ public class Script_Player : MonoBehaviour
                 AddForceToThrow();
             }
 
+            if(Input.GetButtonDown("SwitchTarget") && list_interactible_objects.Count > 1)
+            {
+                SwitchTarget();
+            }
+
             if(Input.GetButtonDown("Use") && obj_current_object_hold != null && b_can_use_item)
             {
                 UseItem();
@@ -206,11 +212,29 @@ public class Script_Player : MonoBehaviour
         if (obj_current_target == null)
         {
             SelectTarget(obj_interactible_object);
+            i_current_object_index = 0;
         }
+    }
+
+    public void SwitchTarget()
+    {
+        i_current_object_index++;
+
+        if(i_current_object_index > list_interactible_objects.Count -1)
+        {
+            i_current_object_index = 0;
+        }
+
+        SelectTarget(list_interactible_objects[i_current_object_index]);
     }
 
     public void SelectTarget(GameObject target)
     {
+        if (obj_current_target != null)
+        {
+            obj_current_target.GetComponent<Outline>().DisableOutline();
+        }
+
         obj_current_target = target;
 
         if (target != null)
