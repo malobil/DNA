@@ -30,8 +30,8 @@ public class Script_UI_Manager : MonoBehaviour
 
     public void ShowNote(string loca_key)
     {
-        t_note_title.text = Script_CSV_Manager.Instance.GetNoteTitle(loca_key);
-        t_note_description.text = Script_CSV_Manager.Instance.GetNoteDescription(loca_key);
+        //t_note_title.text = Script_CSV_Manager.Instance.GetNoteTitle(loca_key);
+        //t_note_description.text = Script_CSV_Manager.Instance.GetNoteDescription(loca_key);
         Script_Game_Manager.Instance.SetTimePause();
         g_note.SetActive(true);
     }

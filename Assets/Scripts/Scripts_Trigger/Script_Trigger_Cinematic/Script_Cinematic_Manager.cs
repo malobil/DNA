@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[CanEditMultipleObjects]
+//[CanEditMultipleObjects]
 public enum CinematicType { Resumegame }
 
 public class Script_Cinematic_Manager : MonoBehaviour

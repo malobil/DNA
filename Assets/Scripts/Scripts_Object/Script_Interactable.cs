@@ -6,9 +6,9 @@ using UnityEditor;
 using TMPro;
 
 
-[CanEditMultipleObjects]
+/*[CanEditMultipleObjects]
 [CustomEditor(typeof(Script_Interactable))]
-/*public class Script_Interactable_Editor : Editor
+public class Script_Interactable_Editor : Editor
 {
     Script_Interactable s_script_interactable;
 
@@ -129,7 +129,7 @@ public class Script_Interactable : MonoBehaviour
 
     private void NextDialog()
     {
-        txt_dialog.text = Script_CSV_Manager.Instance.GetDialogDescription(s_dialog_key[i_current_dialog_key]);
+        txt_dialog.text = Script_Localization_Manager.Instance.GetLocalisedText(s_dialog_key[i_current_dialog_key]);
         i_current_dialog_key++;
     }
 
