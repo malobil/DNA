@@ -49,6 +49,9 @@ public class Script_Player : MonoBehaviour
     private float f_current_force = 0f;
     private bool b_can_throw = true;
 
+    private bool b_is_throwing;
+    private Vector2 current_item_velocity = new Vector2();
+
     #endregion
 
     #region Animation variable
@@ -114,6 +117,11 @@ public class Script_Player : MonoBehaviour
     public void Update()
     {
         Move();
+
+        if (!b_is_throwing)
+        {
+            b_is_throwing = false;
+        }
 
         if (Input.GetButtonDown("Pause") && !b_is_talking)
         {
@@ -445,6 +453,12 @@ public class Script_Player : MonoBehaviour
         AllowDistort();
         AllowAlter();
         AllowUse();
+        b_is_throwing = true;
+    }
+
+    public bool ItemIsThrowing()
+    {
+        return b_is_throwing;
     }
 
     private void AllowThrow()

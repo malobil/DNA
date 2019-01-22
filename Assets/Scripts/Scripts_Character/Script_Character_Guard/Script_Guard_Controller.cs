@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Script_Guard_Controller : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    private void OnTriggerEnter2D(Collider2D other)
     {
-        
+        if(Script_Player.Instance.ItemIsThrowing())
+        {
+            MoveToTarget();
+        }
     }
 
-    // Update is called once per frame
-    void Update()
+    public void MoveToTarget()
     {
-        
+
     }
 }
