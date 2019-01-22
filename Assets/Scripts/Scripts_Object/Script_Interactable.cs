@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using cakeslice;
 using UnityEditor;
+using TMPro;
 
 public enum InteractableType { readable, holdable, talkable, teleport }
 
@@ -18,6 +19,11 @@ public class Script_Interactable : MonoBehaviour
     public Transform t_teleport_point;
 
     [Header("Dialogue")]
+
+    public GameObject obj_dialog_box;
+    public TextMeshProUGUI txt_dialog;
+    public List<string> s_dialog_key;
+    private int i_current_dialog_key = 0;
 
     //private bool b_already_talk;
 
@@ -39,7 +45,7 @@ public class Script_Interactable : MonoBehaviour
                     break;
 
                 case "talkable":
-                    //Talk();
+                    Talk();
                     break;
 
                 case "teleport":
@@ -54,20 +60,26 @@ public class Script_Interactable : MonoBehaviour
         Script_UI_Manager.Instance.ShowNote(note_key);
     }
 
-    /*private void Talk()
+    public void Talk()
     {
-        if(!b_already_talk)
+        if(i_current_dialog_key < s_dialog_key.Count)
         {
-            Script_UI_Manager.Instance.ShowDialogue();
+            txt_dialog.text = Script_CSV_Manager.Instance.GetDialogDescription(s_dialog_key[i_current_dialog_key]);
             Script_Game_Manager.Instance.SetTimePause();
+            obj_dialog_box.SetActive(true);
+            Script_Player.Instance.EnterADialog(this);
+            i_current_dialog_key++;
         }
-        else if (b_already_talk)
+        else
         {
-            Script_UI_Manager.Instance.UnshowDialogue();
             Script_Game_Manager.Instance.SetTimeResume();
+            obj_dialog_box.SetActive(false);
+            Script_Player.Instance.LeaveADialog();
+            i_current_dialog_key = 0;
+            return;
         }
-
-    }*/
+        
+    }
 
     private void Teleport()
     {

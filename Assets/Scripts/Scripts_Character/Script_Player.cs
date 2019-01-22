@@ -74,6 +74,13 @@ public class Script_Player : MonoBehaviour
 
     #endregion
 
+    #region Talk variables
+
+    private Script_Interactable s_current_dialog;
+    private bool b_is_talking;
+
+    #endregion
+
     private bool b_can_use_item = true;
 
     private List<Vector2> v_list_last_position = new List<Vector2>();
@@ -101,7 +108,13 @@ public class Script_Player : MonoBehaviour
     {
         Move();
 
-        if (Input.GetButtonDown("Pause"))
+        if(Input.GetButtonDown("Interact") && b_is_talking)
+        {
+            NextDialog();
+            Debug.Log("DFFF");
+        }
+
+        if (Input.GetButtonDown("Pause") && !b_is_talking)
         {
             Script_Game_Manager.Instance.TogglePause();
 
@@ -116,7 +129,7 @@ public class Script_Player : MonoBehaviour
             KnockbackEffect();
         }
 
-        if (!Script_Game_Manager.Instance.GetGameState() && !b_is_knockback)
+        if (!Script_Game_Manager.Instance.GetGameState() && !b_is_knockback && !b_is_talking)
         {
             if (Input.GetButtonDown("Interact") && obj_current_target != null && b_can_interact)
             {
@@ -610,6 +623,26 @@ public class Script_Player : MonoBehaviour
     {
         transform.position = new Vector2 (x_position,y_position);
         playerLevel = player_level;
+    }
+
+    #endregion
+
+    #region Talk
+
+    public void EnterADialog(Script_Interactable dialog)
+    {
+        b_is_talking = true;
+        s_current_dialog = dialog;
+    }
+
+    public void LeaveADialog()
+    {
+        b_is_talking = false;
+    }
+
+    private void NextDialog()
+    {
+        s_current_dialog.Talk();
     }
 
     #endregion

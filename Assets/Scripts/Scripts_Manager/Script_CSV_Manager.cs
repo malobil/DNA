@@ -17,9 +17,9 @@ public class Script_CSV_Manager : MonoBehaviour
     public TextAsset csv_dialog; // public variable to stock the csvFile ( who contains loca / quest... )
     public TextAsset csv_notes; // public variable to stock the csvFile ( who contains loca / quest... )
 
-    public List<TutorialExport> tutorial_key_import; // Stock each key ( line ) in a custom class
-    public List<NoteExport> notes_key_import; // Stock each key ( line ) in a custom class
-    public List<DialogExport> dialog_key_import; // Stock each key ( line ) in a custom class
+    private List<TutorialExport> tutorial_key_import = new List<TutorialExport>(); // Stock each key ( line ) in a custom class
+    private List<NoteExport> notes_key_import = new List<NoteExport>(); // Stock each key ( line ) in a custom class
+    private List<DialogExport> dialog_key_import = new List<DialogExport>(); // Stock each key ( line ) in a custom class
 
     private void Awake()
     {
@@ -182,6 +182,26 @@ public class Script_CSV_Manager : MonoBehaviour
                     return notes_key_import[i].textEng;
                 }
 
+            }
+        }
+
+        return "NO LOCA KEY FOUND";
+    }
+
+    public string GetDialogDescription(string key)
+    {
+        for (int i = 0; i < dialog_key_import.Count; i++)
+        {
+            if (key == dialog_key_import[i].keyName)
+            {
+                if (playerLanguage.ToString() == "fr")
+                {
+                    return dialog_key_import[i].textFr;
+                }
+                else if (playerLanguage.ToString() == "ang")
+                {
+                    return dialog_key_import[i].textEng;
+                }
             }
         }
 
