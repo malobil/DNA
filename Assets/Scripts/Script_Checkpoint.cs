@@ -11,7 +11,6 @@ public class Script_Checkpoint : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             Script_Player.Instance.CallSave();
-            Debug.Log("SAVE POSITION");
         }
     }
 }
