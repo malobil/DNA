@@ -131,6 +131,128 @@ Pour cela, appuyez sur [E] lorsque vous êtes à proximité d'une cible avec laq
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
+	<data name="NG1_1_1" xml:space="preserve">
+		<value>22 janvier 2045 
+
+Il s’est passé une chose assez rare aujourd’hui.Des scientifiques sont venus discuter avec moi dans la chambre. 
+Selon eux avec numéro 1 on est prêt pour la suite.Je ne sais pas quoi en penser...ils reviendront bientôt. Ils nous préparent déjà…
+
+25 Janvier 2045 
+
+Cela fait deux jours que les scientifiques vont et viennent. On n’en avait pas vu autant depuis longtemps. 
+Ils nous font surtout des injections. C’est pour notre bien, ils insistent clairement là-dessus. On pourra bientôt aller à la surface pour aider.
+Ça me tarde d’être utile à quelque chose...
+
+27 Janvier 2045
+
+C’est dans deux jours ! Dans deux jours je passerai le test en compagnie de numéro 1. Nous sommes tellement impatients !
+</value>
+	</data>
+	<data name="NG1_1_1 Title" xml:space="preserve">
+		<value>Journal de Numéro 2</value>
+	</data>
+	<data name="NG1_1_2" xml:space="preserve">
+		<value>[...] l’humanité se meurt les centres de recherches SeArch sont les meilleurs installations pour la sauvegarde de l’humanité.
+Notre priorité c’est vous. Nous pensons que vous êtes l’avenir. Le monde ravagé par la bêtise humaine fait de vous les meilleures espoirs de l’humanité. 
+Soyez fiers d’appartenir au projet “New Dawn” des centres de recherches SeArch.
+C’est cette fierté que vous devez ressentir. La fierté de de reconstruire notre planète.
+</value>
+	</data>
+	<data name="NG1_1_2 Title" xml:space="preserve">
+		<value>Excerpt from "In This Place</value>
+	</data>
+	<data name="NG1_1_3" xml:space="preserve">
+		<value>Voici la liste des rendez-vous médicaux pour ce mois-ci. 
+N’oubliez pas d’être à jeun pour les examens.
+
+Numéro 1 : Dispensé
+Numéro 2 : Dispensé
+Numéro 3 : 2 février
+Numéro 4 : 4 février
+Numéro 5 : 5 février
+Numéro 6 : 7 février
+Numéro 7 : 9 février
+Numéro 8 : 12 février 
+Numéro 9 : 13 février
+Numéro 10 : 15 février
+Numéro 11 : 17 février
+Numéro 12 : 18 février
+</value>
+	</data>
+	<data name="NG1_1_3 Title" xml:space="preserve">
+		<value>Liste des horaires de visite médicale : </value>
+	</data>
+	<data name="NG1_2_1" xml:space="preserve">
+		<value>Numéro 4 : S’est levé à 10h aujourd’hui
+Est resté 1 h à regarder la caméra 
+Complètement fou 
+
+Notes : À surveiller attentivement 
+
+Numéro 12 : N’a pas pris de petit déjeuner
+A fini de lire “A Quest For a Quest” 
+Très discret 
+
+Notes : peu pertinent nécessite moins d’attention
+
+Numéro 3 : A regardé…
+
+(Les notes s’arrêtent là…)
+</value>
+	</data>
+	<data name="NG1_2_1 Title" xml:space="preserve">
+		<value>Rapport d’observation de la zone de vie</value>
+	</data>
+	<data name="NG1_3_1" xml:space="preserve">
+		<value>J’ai travaillé à la zone 04M avant d’être affecté à celle des 08M. L’attention qu’ils leur portent ici est vraiment choquante.
+A la 04M ils sont maltraités. Les scientifiques ne leur portent que peu d’attention et leur zone de vie est beaucoup moins luxueuse.
+Pauvres jeunes…
+</value>
+	</data>
+	<data name="NG1_3_1 Title" xml:space="preserve">
+		<value>Journal d’un garde</value>
+	</data>
+	<data name="NG1_4_1" xml:space="preserve">
+		<value>Numéro 1 a l’air en bonne santé nous n’avons pas testé de numéro depuis longtemps. 
+Cette nouvelle génération devrait être beaucoup plus endurante. Nous espérons vraiment qu’elle comblera toutes nos attentes.
+Pourvu que numéro 1 et un 2 réussissent leurs tests...
+</value>
+	</data>
+	<data name="NG1_4_1 Title " xml:space="preserve">
+		<value>Rapport des tests médicaux de Numéro 1</value>
+	</data>
+	<data name="NG1_4_2" xml:space="preserve">
+		<value>Bonjour Monsieur VILLALBA je vous fais remonter un problème récurrent que nous avons remarqué dans la zone de vie 08M.
+Les numéros semblent développer une sorte de...fascination pour la porte d’entrée de leur zone de vie la considérant comme un genre de divinité.
+D’autres salons de surveillance constatent le même comportement. 
+Restez vigilant et n’oubliez pas de nous faire part de tout retour inquiétant.</value>
+	</data>
+	<data name="NG1_4_2 Title" xml:space="preserve">
+		<value>Remarque sur la vie des numéros</value>
+	</data>
+	<data name="NG1_4_3" xml:space="preserve">
+		<value>(Cela semble être un score de jeu)
+
+Henrick : 22
+Cameron : 18
+James : 14
+</value>
+	</data>
+	<data name="NG1_4_3 Title" xml:space="preserve">
+		<value>Notes griffonnées</value>
+	</data>
+	<data name="NG1_4_4" xml:space="preserve">
+		<value>Salut Henrick c’est pour te dire que je suis maintenant affecté au 09M. Ils sont encore tout jeune mais c’est un travail différent et beaucoup plus apaisant.
+J'espère qu’on pourra bientôt se revoir et retravailler ensemble. Peut être au réfectoire qui sait ? 
+
+Bonne chance avec les 08M j'espère vraiment que ça marchera cette fois...
+
+PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le labo central.
+</value>
+	</data>
+	<data name="NG1_4_4 Title " xml:space="preserve">
+		<value>Notes d’un scientifique</value>
+	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Certains objets peuvent interagir avec plusieurs objets de l'environnement en appuyant sur la touche [Espace].
 Par exemple, vous pouvez utiliser un tournevis sur une grille de ventilation.</value>
