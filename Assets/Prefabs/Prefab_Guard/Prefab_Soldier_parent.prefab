@@ -45,7 +45,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b850cf4eaef71469d415c2842bbe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guard_idle_direction: 1
+  guard_idle_direction: 2
+  obj_guard_sign_of_view: {fileID: 2660854396743074257}
 --- !u!95 &2660854395621751920
 Animator:
   serializedVersion: 3
