@@ -12,6 +12,7 @@ public class Script_Game_Manager : MonoBehaviour
 
     private bool b_game_is_pause = false;
     private bool b_game_is_over = false;
+    private bool b_is_in_cinematic = false;
 
     private Vector2 v_last_checkpoint;
 
@@ -70,6 +71,21 @@ public class Script_Game_Manager : MonoBehaviour
     {
         Time.timeScale = 1f;
         b_game_is_pause = false;
+    }
+
+    public void EnterInACinematic()
+    {
+        b_is_in_cinematic = true;
+    }
+
+    public void LeaveACinematic()
+    {
+        b_is_in_cinematic = false;
+    }
+
+    public bool GetCinematicState()
+    {
+        return b_is_in_cinematic;
     }
 
     public bool GetGameState()

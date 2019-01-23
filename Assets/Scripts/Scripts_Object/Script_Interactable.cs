@@ -4,6 +4,7 @@ using UnityEngine;
 using cakeslice;
 using UnityEditor;
 using TMPro;
+using UnityEngine.Timeline;
 
 
 [CanEditMultipleObjects]
@@ -47,7 +48,7 @@ public class Script_Interactable_Editor : Editor
 
 #endregion
 
-public enum InteractableType { readable, holdable, talkable, teleport, card }
+public enum InteractableType { readable, holdable, talkable, teleport, card, launchCinematic }
 public enum CardType { blue }
 
 [RequireComponent(typeof(Outline))]
@@ -70,6 +71,9 @@ public class Script_Interactable : MonoBehaviour
 
     [Header("Card")]
     public CardType card;
+
+    [Header("Cinematic")]
+    public TimelineAsset cinematic_to_play;
 
     public void Interact(Script_Player player)
     {
@@ -95,6 +99,10 @@ public class Script_Interactable : MonoBehaviour
 
                 case "card":
                     AddCard();
+                    break;
+
+                case "launchCinematic":
+                    Script_Cinematic_Controller.Instance.PlayCinematic(cinematic_to_play);
                     break;
             }
         }

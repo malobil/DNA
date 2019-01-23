@@ -24,5 +24,6 @@ public class Script_Cinematic_Manager : MonoBehaviour
     public void BackToMainCamera()
     {
         Script_Game_Manager.Instance.SetTimeResume();
+        Script_Game_Manager.Instance.LeaveACinematic();
     }
 }
