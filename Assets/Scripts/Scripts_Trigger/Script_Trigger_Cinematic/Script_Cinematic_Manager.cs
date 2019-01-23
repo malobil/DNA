@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 
 //[CanEditMultipleObjects]
-public enum CinematicType { Resumegame }
+public enum CinematicType { Resumegame, LightClip }
 
 public class Script_Cinematic_Manager : MonoBehaviour
 {
@@ -18,6 +18,10 @@ public class Script_Cinematic_Manager : MonoBehaviour
             case "Resumegame":
             BackToMainCamera();
             break;
+
+            case "LightClip":
+                
+                break;
         }
     }
 
@@ -25,5 +29,10 @@ public class Script_Cinematic_Manager : MonoBehaviour
     {
         Script_Game_Manager.Instance.SetTimeResume();
         Script_Game_Manager.Instance.LeaveACinematic();
+    }
+
+    public void ChangeIntensityLight()
+    {
+
     }
 }
