@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Ennemy
   - Wall
+  - Stair
   layers:
   - Default
   - TransparentFX

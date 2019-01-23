@@ -14,6 +14,8 @@ public class Script_Game_Manager : MonoBehaviour
 
     private Vector2 v_last_checkpoint;
 
+    private int i_last_stair_idx = -1;
+
     public Vector2 GetLastCheckpointPosition()
     {
         return v_last_checkpoint;
@@ -138,13 +140,46 @@ public class Script_Game_Manager : MonoBehaviour
 
     #region Change Level
 
-    public void ChangeFloorLevel(int i_stair_number)
-    {
+    public GameObject[] t_stair_list;
 
+    public void ChangeGroundLevel(int i_stair_number, string s_scene_to_load)
+    {
+        i_last_stair_idx = i_stair_number;
+        LoadAScene(s_scene_to_load);
     }
 
+    public void RegisterStair()
+    {
+        t_stair_list = GameObject.FindGameObjectsWithTag("Stair");
+    }
 
+    public void SendPlayerToEntryPoint()
+    {
+        foreach(GameObject stairs in t_stair_list)
+        {
+            if (stairs.GetComponent<Script_Trigger_Stairs>().GetStairIndex() == i_last_stair_idx)
+            {
+                Script_Player.Instance.transform.position = stairs.GetComponent<Script_Trigger_Stairs>().GetApparitionPoint().position;
+            }
+        }
+    }
     #endregion
+
+    public void LoadAScene(string s_scene_to_load)
+    {
+        SceneManager.LoadScene(s_scene_to_load);
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    // called when a scene is load
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        if(i_last_stair_idx > -1)
+        {
+            RegisterStair();
+            SendPlayerToEntryPoint();
+        }
+    }
 }
 
 [Serializable]

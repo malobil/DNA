@@ -649,7 +649,7 @@ public class Script_Player : MonoBehaviour
 
     public void GoOutOfWall() // Use to set player out of a wall
     {
-        if (g_last_transformation.GetComponent<Script_Alter_Wall_Security>())
+        if (g_last_transformation != null && g_last_transformation.GetComponent<Script_Alter_Wall_Security>())
         {
             transform.position = g_last_transformation.GetComponent<Script_Alter_Wall_Security>().CheckNearPoint();
         }
