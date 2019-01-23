@@ -943,7 +943,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   text_title: {fileID: 985491503}
   text_description: {fileID: 1937379269}
-  s_tutorial_key: key_test_01
+  s_title_key: 
+  s_description_key: Tutorial_01
 --- !u!1 &704316491
 GameObject:
   m_ObjectHideFlags: 0
@@ -1433,11 +1434,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -1882,7 +1883,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 84}
-  m_SizeDelta: {x: 800, y: 400}
+  m_SizeDelta: {x: 700, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1210745206
 MonoBehaviour:
@@ -2914,11 +2915,11 @@ MonoBehaviour:
     lineCount: 5
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 0
+  m_havePropertiesChanged: 1
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 0
+  m_isInputParsingRequired: 1
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3502,6 +3503,7 @@ GameObject:
   - component: {fileID: 628834072838554975}
   - component: {fileID: 436045133688278433}
   - component: {fileID: 8894363564936895494}
+  - component: {fileID: 769797265077784663}
   m_Layer: 5
   m_Name: Description_text
   m_TagString: Untagged
@@ -3523,11 +3525,11 @@ RectTransform:
   m_Father: {fileID: 1694926182708537116}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 358.5, y: 0.000091552734}
+  m_SizeDelta: {x: 717, y: 3228.22}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!222 &436045133688278433
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3556,7 +3558,44 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: NOTE_DESCRIPTION
+  m_text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi quis arcu
+    orci. Aenean ut ornare metus. Duis eros turpis, consequat vel congue nec, efficitur
+    et lectus. Aliquam erat volutpat. Vestibulum ante ipsum primis in faucibus orci
+    luctus et ultrices posuere cubilia Curae; Nullam blandit turpis at molestie volutpat.
+    Fusce consectetur tortor felis, at vehicula elit lobortis ac. Sed hendrerit eu
+    ex at scelerisque. Integer scelerisque, orci at blandit posuere, dolor erat tempor
+    leo, in efficitur ipsum libero in ligula. Ut elementum, nulla at maximus gravida,
+    neque nulla ornare enim, nec placerat risus urna at libero. Curabitur volutpat,
+    quam quis tempus sagittis, sem turpis tincidunt sapien, vel condimentum tellus
+    ligula nec leo. Donec ultricies odio id orci venenatis rutrum a ac erat. Duis
+    luctus congue congue. Vivamus scelerisque vitae purus accumsan facilisis.\r\n\r\nNam
+    tempor diam at nisl mollis, sit amet lacinia lectus commodo. Aenean mollis nisl
+    et dapibus lobortis. Nam lobortis lacus iaculis odio pharetra, ac tincidunt quam
+    imperdiet. Ut a venenatis lorem, non pretium sapien. Nullam fermentum tincidunt
+    malesuada. Integer efficitur sem non fermentum facilisis. Morbi egestas dapibus
+    mollis. Duis nec orci id est sagittis venenatis.\r\n\r\nMauris rhoncus ante non
+    elit tincidunt hendrerit. Nulla et felis non leo pharetra suscipit. Ut pellentesque
+    ultricies ultrices. In cursus commodo justo, accumsan cursus ligula condimentum
+    efficitur. Morbi in leo est. Pellentesque venenatis bibendum blandit. Integer
+    nisi arcu, feugiat a rhoncus ac, vehicula malesuada leo. Integer lacus nisl, ullamcorper
+    ut aliquam a, imperdiet in velit. Integer elementum lorem nisl, ac cursus tellus
+    laoreet quis. Vestibulum semper, nibh ac ultrices vestibulum, magna orci interdum
+    est, a blandit magna nulla sed lectus. Duis nec mi magna. Nullam in gravida felis,
+    non iaculis dolor.\r\n\r\nNunc tempus magna sed pellentesque condimentum. Aliquam
+    accumsan auctor justo a sodales. Praesent ultrices posuere mi. Duis volutpat porta
+    magna, id blandit enim maximus sit amet. Morbi quis nunc egestas, congue velit
+    eu, ultricies augue. Praesent iaculis nunc in arcu ornare, at hendrerit lectus
+    rhoncus. Quisque luctus magna in tortor iaculis pharetra gravida sed ligula. Phasellus
+    vehicula at nisl vel mattis. Suspendisse ac dolor viverra, ornare ex non, tristique
+    eros. In fermentum mi nec volutpat pulvinar.\r\n\r\nPellentesque aliquam leo a
+    efficitur vehicula. Quisque ullamcorper viverra tortor id elementum. Nunc egestas
+    malesuada maximus. Nam at sapien vehicula quam tempor bibendum nec id enim. Nulla
+    lobortis ante mi, vel viverra felis volutpat eget. Maecenas posuere placerat velit,
+    at suscipit erat sollicitudin quis. Morbi finibus convallis sapien a scelerisque.
+    Etiam imperdiet nisi libero, vel finibus quam laoreet ac. Mauris dignissim eros
+    nec vulputate finibus. Duis dignissim nec diam quis mattis. Nam tristique ullamcorper
+    eros. Praesent non nisl ac turpis vestibulum hendrerit. Donec lacinia sed odio
+    eget vulputate. Pellentesque faucibus massa ac sagittis egestas."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3625,19 +3664,19 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 8894363564936895494}
-    characterCount: 16
+    characterCount: 3063
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 2
+    spaceCount: 450
+    wordCount: 447
     linkCount: 0
-    lineCount: 1
+    lineCount: 78
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -3651,6 +3690,20 @@ MonoBehaviour:
   - {fileID: 0}
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!114 &769797265077784663
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2556185354706702027}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1741964061, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalFit: 0
+  m_VerticalFit: 2
 --- !u!1 &3483164014060379439
 GameObject:
   m_ObjectHideFlags: 0
@@ -3751,7 +3804,7 @@ MonoBehaviour:
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_textAlignment: 257
+  m_textAlignment: 513
   m_isAlignmentEnumConverted: 1
   m_characterSpacing: 0
   m_wordSpacing: 0
@@ -3782,7 +3835,7 @@ MonoBehaviour:
   m_firstVisibleCharacter: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 25, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 3947292412212513294}
     characterCount: 10
@@ -3793,11 +3846,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -4333,7 +4386,7 @@ RectTransform:
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
   m_AnchoredPosition: {x: -135.7, y: 109}
-  m_SizeDelta: {x: 150, y: 150}
+  m_SizeDelta: {x: 115, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4927788846557946404
 CanvasRenderer:
@@ -4350,7 +4403,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4927788846557946407}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
@@ -4381,6 +4434,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1694926182708537116}
+  - component: {fileID: 2573040031296204927}
+  - component: {fileID: 7481119972215485762}
+  - component: {fileID: 6006290274785465866}
+  - component: {fileID: 5027026036553512504}
   m_Layer: 5
   m_Name: Note_Description_parent
   m_TagString: Untagged
@@ -4404,10 +4461,92 @@ RectTransform:
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.31319147, y: 0.027516061}
-  m_AnchorMax: {x: 0.6863855, y: 0.7381786}
+  m_AnchorMax: {x: 0.6863855, y: 0.78384614}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &2573040031296204927
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512590230411494337}
+  m_CullTransparentMesh: 0
+--- !u!114 &7481119972215485762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512590230411494337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+--- !u!114 &6006290274785465866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512590230411494337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1367256648, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Content: {fileID: 628834072838554975}
+  m_Horizontal: 1
+  m_Vertical: 1
+  m_MovementType: 2
+  m_Elasticity: 0.1
+  m_Inertia: 1
+  m_DecelerationRate: 0.135
+  m_ScrollSensitivity: 1
+  m_Viewport: {fileID: 0}
+  m_HorizontalScrollbar: {fileID: 0}
+  m_VerticalScrollbar: {fileID: 0}
+  m_HorizontalScrollbarVisibility: 0
+  m_VerticalScrollbarVisibility: 0
+  m_HorizontalScrollbarSpacing: 0
+  m_VerticalScrollbarSpacing: 0
+  m_OnValueChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.ScrollRect+ScrollRectEvent, UnityEngine.UI, Version=1.0.0.0,
+      Culture=neutral, PublicKeyToken=null
+--- !u!114 &5027026036553512504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8512590230411494337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1200242548, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ShowMaskGraphic: 0
 --- !u!1 &8514918140910181535
 GameObject:
   m_ObjectHideFlags: 0
