@@ -128,4 +128,16 @@
 	<data name="Throw_1" xml:space="preserve">
 		<value>Throw tutorial</value>
 	</data>
+	<data name="Hold_1_Title" xml:space="preserve">
+		<value>Hold tutorial Title</value>
+	</data>
+	<data name="Interaction_1_Title" xml:space="preserve">
+		<value>Interaction tutorial Title</value>
+	</data>
+	<data name="Special_Interaction_1_Title" xml:space="preserve">
+		<value>Special Interaction tutorial Title</value>
+	</data>
+	<data name="Throw_1_Title" xml:space="preserve">
+		<value>Throw tutorial Title</value>
+	</data>
 </root>
