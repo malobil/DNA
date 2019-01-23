@@ -37,6 +37,14 @@ public class Script_Localization_Manager : MonoBehaviour
                 break;
         }
 
-        return LanguageManager.Instance.GetTextValue(key);
+        if(LanguageManager.Instance.HasKey(key))
+        {
+            return LanguageManager.Instance.GetTextValue(key);
+        }
+        else
+        {
+            return "LO LOCA KEY FOUND";
+        }
+            
     }
 }

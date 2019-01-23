@@ -161,6 +161,15 @@ public class Script_UI_Manager : MonoBehaviour
 
     public void NewObjectHold(Sprite new_object)
     {
+        if(new_object == null)
+        {
+            hold_object.enabled = false;
+        }
+        else
+        {
+            hold_object.enabled = true;
+        }
+       
         hold_object.sprite = new_object;
     }
 
