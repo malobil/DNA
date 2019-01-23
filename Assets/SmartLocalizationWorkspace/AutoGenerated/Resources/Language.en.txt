@@ -116,6 +116,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="G1_1_P1Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G1_1_P2Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G1_1_P3Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G1_1Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G2_1Cut2" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Hold_1" xml:space="preserve">
 		<value>It is possible to take an object with the [E] key. 
 Once the object is recovered, it appears in your HUD.
@@ -133,6 +148,78 @@ For that press [E] when you are near for a target with which you can interact.
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
+	</data>
+	<data name="N3_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N3_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N3_1_P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1_P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1_P3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1_P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N6_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N6_1P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N7_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N7_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N7_1_P10" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N8_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N8_1P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N8_1P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1_P1Cut1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1Cut1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1P2" xml:space="preserve">
+		<value />
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>"January 22 2045
@@ -249,6 +336,84 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	</data>
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist</value>
+	</data>
+	<data name="S1_1_P1Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1_P2Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1P1Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1P2Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1P3Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1P4Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1P5Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S1_1P6Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P1Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P1Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P2Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P2Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P3Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P3Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S2_1P4Cut3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1P1Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1P2Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1P3Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1P4Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1P5Cut4" xml:space="preserve">
+		<value />
+	</data>
+	<data name="S3_1P6Cut4" xml:space="preserve">
+		<value />
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Some objects may interact with multiple objects in the environment.

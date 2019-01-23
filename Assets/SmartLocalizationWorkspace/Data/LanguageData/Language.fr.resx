@@ -116,6 +116,21 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="G1_1_P1Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G1_1_P2Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G1_1_P3Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G1_1Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="G2_1Cut2" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Hold_1" xml:space="preserve">
 		<value>Il est possible de prendre un objet avec la touche [E].
 Une fois l'objet récupéré, il apparait dans votre HUD.
@@ -130,6 +145,78 @@ Pour cela, appuyez sur [E] lorsque vous êtes à proximité d'une cible avec laq
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
+	</data>
+	<data name="N3_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N3_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N3_1_P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1_P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N4_1_P3" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1_P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N5_1Cut2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N6_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N6_1P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N7_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N7_1_P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N7_1_P10" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N8_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N8_1P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N8_1P2" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1_P1Cut1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1Cut1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1P1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="N9_1P2" xml:space="preserve">
+		<value />
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>22 janvier 2045 
@@ -252,6 +339,84 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	</data>
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes d’un scientifique</value>
+	</data>
+	<data name="S1_1_P1Cut4" xml:space="preserve">
+		<value>J’ai bien cru qu’on courait</value>
+	</data>
+	<data name="S1_1_P2Cut4" xml:space="preserve">
+		<value>à la catastrophe avec cette coupure générale.</value>
+	</data>
+	<data name="S1_1Cut3" xml:space="preserve">
+		<value>D’où ça peut venir ?</value>
+	</data>
+	<data name="S1_1Cut4" xml:space="preserve">
+		<value>C’est pas trop tôt</value>
+	</data>
+	<data name="S1_1P1Cut3" xml:space="preserve">
+		<value>Il paraît qu’il y a déjà des évasions.</value>
+	</data>
+	<data name="S1_1P2Cut3" xml:space="preserve">
+		<value>Ça pourrait nous causer des problèmes…</value>
+	</data>
+	<data name="S1_1P3Cut4" xml:space="preserve">
+		<value>Il en a déjà trop vu…</value>
+	</data>
+	<data name="S1_1P4Cut4" xml:space="preserve">
+		<value>Il ne peut pas retourner</value>
+	</data>
+	<data name="S1_1P5Cut4" xml:space="preserve">
+		<value>dans la zone de vie</value>
+	</data>
+	<data name="S1_1P6Cut4" xml:space="preserve">
+		<value>Nous n’avons pas le choix…</value>
+	</data>
+	<data name="S2_1Cut3" xml:space="preserve">
+		<value>Je ne sais pas,</value>
+	</data>
+	<data name="S2_1Cut4" xml:space="preserve">
+		<value>On aurait pu perdre beaucoup plus</value>
+	</data>
+	<data name="S2_1P1Cut3" xml:space="preserve">
+		<value>mais c’est la panique partout en ce moment.</value>
+	</data>
+	<data name="S2_1P1Cut4" xml:space="preserve">
+		<value>si la coupure n’avait durée</value>
+	</data>
+	<data name="S2_1P2Cut3" xml:space="preserve">
+		<value>le niveau -2 est en urgence maximale.</value>
+	</data>
+	<data name="S2_1P2Cut4" xml:space="preserve">
+		<value>ne serait-ce que 10 minutes de plus</value>
+	</data>
+	<data name="S2_1P3Cut3" xml:space="preserve">
+		<value>le niveau -2 est en urgence maximale.</value>
+	</data>
+	<data name="S2_1P3Cut4" xml:space="preserve">
+		<value>C’est une panne générale,</value>
+	</data>
+	<data name="S2_1P4Cut3" xml:space="preserve">
+		<value>l’événement que tout le monde redoutait…</value>
+	</data>
+	<data name="S3_1Cut4" xml:space="preserve">
+		<value>Que faites-vous ici ?</value>
+	</data>
+	<data name="S3_1P1Cut4" xml:space="preserve">
+		<value>Que fait t’on ?</value>
+	</data>
+	<data name="S3_1P2Cut4" xml:space="preserve">
+		<value>On ne peut pas faire ça,</value>
+	</data>
+	<data name="S3_1P3Cut4" xml:space="preserve">
+		<value>nous n’avons pas fait</value>
+	</data>
+	<data name="S3_1P4Cut4" xml:space="preserve">
+		<value>les étapes préliminaires</value>
+	</data>
+	<data name="S3_1P5Cut4" xml:space="preserve">
+		<value>Si ça ne marche pas avec les autres,</value>
+	</data>
+	<data name="S3_1P6Cut4" xml:space="preserve">
+		<value>pourquoi ça marcherait avec lui ?</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Certains objets peuvent interagir avec plusieurs objets de l'environnement en appuyant sur la touche [Espace].
