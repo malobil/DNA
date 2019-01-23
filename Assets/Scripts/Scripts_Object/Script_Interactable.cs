@@ -57,6 +57,7 @@ public class Script_Interactable : MonoBehaviour
     public InteractableType object_type;
 
     [Header("Note")]
+    public string note_key_title;
     public string note_key;
 
     public bool b_can_interact = true;
@@ -110,7 +111,7 @@ public class Script_Interactable : MonoBehaviour
 
     private void Read()
     {
-        Script_UI_Manager.Instance.ShowNote(note_key);
+        Script_UI_Manager.Instance.ShowNote(note_key_title,note_key);
     }
 
     public void Talk()
