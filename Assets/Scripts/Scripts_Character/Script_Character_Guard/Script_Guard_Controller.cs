@@ -6,13 +6,13 @@ public class Script_Guard_Controller : MonoBehaviour
 {
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(Script_Player.Instance.ItemIsThrowing())
+        if(other.CompareTag("Objet") && Script_Player.Instance.ItemIsThrowing())
         {
-            MoveToTarget();
+            MoveToTarget(other.transform);
         }
     }
 
-    public void MoveToTarget()
+    public void MoveToTarget(Transform t_target_position)
     {
 
     }
