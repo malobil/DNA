@@ -6,9 +6,9 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
 {
 
     #region Door
-    public enum Doortype { Nocard, Bluecard, Redcard, Greencard, Yellowcard }
-    public Doortype d_door_type;
+    public enum Doortype { Nocard, BlockedDoor, Bluecard, Redcard, Greencard, Yellowcard }
 
+    public Doortype d_door_type;
     private Animator a_door_animator;
     private bool b_door_is_open = false;
     public List<GameObject> g_character_in_trigger;
@@ -24,7 +24,12 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         switch (d_door_type.ToString(""))
         {
             case "Nocard":
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 OpenDoor();
+                break;
+
+            case "BlockedDoor":
+                Debug.Log("BLOCKED DOOR");
                 break;
 
             case "Bluecard":
@@ -86,5 +91,11 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     {
             a_door_animator.SetTrigger("Close");
             b_door_is_open = false;
+    }
+
+    public void ActivateDoor()
+    {
+        d_door_type = Doortype.Nocard;
+        VerifyCard();
     }
 }

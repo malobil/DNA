@@ -135,6 +135,16 @@ public class Script_Game_Manager : MonoBehaviour
     }
 
     #endregion
+
+    #region Change Level
+
+    public void ChangeFloorLevel(int i_stair_number)
+    {
+
+    }
+
+
+    #endregion
 }
 
 [Serializable]

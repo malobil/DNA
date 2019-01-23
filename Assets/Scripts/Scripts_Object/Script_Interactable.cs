@@ -6,8 +6,9 @@ using UnityEditor;
 using TMPro;
 
 
-/*[CanEditMultipleObjects]
-[CustomEditor(typeof(Script_Interactable))]
+[CanEditMultipleObjects]
+#region EditorGUILayout
+/*[CustomEditor(typeof(Script_Interactable))]
 public class Script_Interactable_Editor : Editor
 {
     Script_Interactable s_script_interactable;
@@ -43,6 +44,8 @@ public class Script_Interactable_Editor : Editor
         }
     }
 }*/
+
+#endregion
 
 public enum InteractableType { readable, holdable, talkable, teleport, card }
 public enum CardType { blue }
