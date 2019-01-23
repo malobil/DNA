@@ -434,10 +434,24 @@ public class Script_Player : MonoBehaviour
         DisableAlter();
         DisableUse();
 
-        if(f_current_force < f_max_throw_force)
+        img_throw_feedback.enabled = true;
+
+        if (f_current_force < f_max_throw_force)
         {
             f_current_force += f_max_throw_force / f_time_to_max_force * Time.deltaTime;
-            img_throw_feedback.fillAmount = f_current_force/f_max_throw_force ; 
+            
+            if(f_current_force < f_max_throw_force/3)
+            {
+                img_throw_feedback.color = Color.green;
+            }
+            else if(f_current_force > f_max_throw_force / 3)
+            {
+                img_throw_feedback.color = Color.yellow;
+            }
+        }
+        else
+        {
+            img_throw_feedback.color = Color.red;
         }
 
         /* Direction */
@@ -459,7 +473,7 @@ public class Script_Player : MonoBehaviour
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
         f_current_force = 0f;
-        img_throw_feedback.fillAmount = 0;
+        img_throw_feedback.enabled = false;
         AllowDistort();
         AllowAlter();
         AllowUse();
