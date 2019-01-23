@@ -116,16 +116,29 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Interaction_1" xml:space="preserve">
-		<value>Interaction tutorial</value>
-	</data>
 	<data name="Hold_1" xml:space="preserve">
-		<value>Hold tutorial</value>
+		<value>It is possible to take an object with the [E] key. 
+Once the object is recovered, it appears in your HUD.
+You can attack with this object with the [SPACE] key.
+</value>
+	</data>
+	<data name="Interaction_1" xml:space="preserve">
+		<value>You can interact with multiple interaction elements. 
+Like NPCs and objects. 
+For that press [E] when you are near for a target with which you can interact.
+</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
-		<value>Special Interaction tutorial</value>
+		<value>Some objects may interact with multiple objects in the environment.
+To do this, press [space] when you are ready for an environment with which an object you own can interact..
+For example you can use a screwdriver on a ventilation grid.
+</value>
 	</data>
 	<data name="Throw_1" xml:space="preserve">
-		<value>Throw tutorial</value>
+		<value>Once the object is recovered.
+You can then launch this object by pressing the [Shift] key at your convenience to dose the throw.
+When you squeeze Shift briefly, the object falls to your feet. 
+The [E] key cancels the throw.
+</value>
 	</data>
 </root>

@@ -1,5 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <SmartCultureCollections xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <version>0</version>
-  <CultureInfos />
+  <CultureInfos>
+    <CultureInfo>
+      <languageCode>en</languageCode>
+      <englishName>English</englishName>
+      <nativeName>English</nativeName>
+      <isRightToLeft>false</isRightToLeft>
+    </CultureInfo>
+    <CultureInfo>
+      <languageCode>fr</languageCode>
+      <englishName>French</englishName>
+      <nativeName>français</nativeName>
+      <isRightToLeft>false</isRightToLeft>
+    </CultureInfo>
+  </CultureInfos>
 </SmartCultureCollections>
