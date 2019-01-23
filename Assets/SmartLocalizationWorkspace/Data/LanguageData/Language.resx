@@ -119,23 +119,77 @@
 	<data name="Hold_1" xml:space="preserve">
 		<value>Hold tutorial</value>
 	</data>
-	<data name="Interaction_1" xml:space="preserve">
-		<value>Interaction tutorial</value>
-	</data>
-	<data name="Special_Interaction_1" xml:space="preserve">
-		<value>Special Interaction tutorial</value>
-	</data>
-	<data name="Throw_1" xml:space="preserve">
-		<value>Throw tutorial</value>
-	</data>
 	<data name="Hold_1_Title" xml:space="preserve">
 		<value>Hold tutorial Title</value>
+	</data>
+	<data name="Interaction_1" xml:space="preserve">
+		<value>Interaction tutorial</value>
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction tutorial Title</value>
 	</data>
+	<data name="NG1_1_1" xml:space="preserve">
+		<value>Texte du Journal de Numéro 2</value>
+	</data>
+	<data name="NG1_1_1 Title" xml:space="preserve">
+		<value>Titre du Journal de Numéro 2 </value>
+	</data>
+	<data name="NG1_1_2" xml:space="preserve">
+		<value>Excerpt of In This Place</value>
+	</data>
+	<data name="NG1_1_2 Title" xml:space="preserve">
+		<value>Excerpt of In This Place Title</value>
+	</data>
+	<data name="NG1_1_3" xml:space="preserve">
+		<value>List of medical visit times</value>
+	</data>
+	<data name="NG1_1_3 Title" xml:space="preserve">
+		<value>List of medical visit times Title</value>
+	</data>
+	<data name="NG1_2_1" xml:space="preserve">
+		<value>Observation report of the living area</value>
+	</data>
+	<data name="NG1_2_1 Title" xml:space="preserve">
+		<value>Observation report of the living area Title</value>
+	</data>
+	<data name="NG1_3_1" xml:space="preserve">
+		<value>Journal of a guard</value>
+	</data>
+	<data name="NG1_3_1 Title" xml:space="preserve">
+		<value>Journal of a guard Title</value>
+	</data>
+	<data name="NG1_4_1" xml:space="preserve">
+		<value>Report of Number 1 Medical Tests</value>
+	</data>
+	<data name="NG1_4_1 Title " xml:space="preserve">
+		<value>Report of Number 1 Medical Tests Title</value>
+	</data>
+	<data name="NG1_4_2" xml:space="preserve">
+		<value>Note on the life of the numbers</value>
+	</data>
+	<data name="NG1_4_2 Title" xml:space="preserve">
+		<value>Note on the life of the numbers Title</value>
+	</data>
+	<data name="NG1_4_3" xml:space="preserve">
+		<value>Scribbled Notes</value>
+	</data>
+	<data name="NG1_4_3 Title" xml:space="preserve">
+		<value>Scribbled Notes Title</value>
+	</data>
+	<data name="NG1_4_4" xml:space="preserve">
+		<value>Notes of a scientist</value>
+	</data>
+	<data name="NG1_4_4 Title " xml:space="preserve">
+		<value>Notes of a scientist Title</value>
+	</data>
+	<data name="Special_Interaction_1" xml:space="preserve">
+		<value>Special Interaction tutorial</value>
+	</data>
 	<data name="Special_Interaction_1_Title" xml:space="preserve">
 		<value>Special Interaction tutorial Title</value>
+	</data>
+	<data name="Throw_1" xml:space="preserve">
+		<value>Throw tutorial</value>
 	</data>
 	<data name="Throw_1_Title" xml:space="preserve">
 		<value>Throw tutorial Title</value>
