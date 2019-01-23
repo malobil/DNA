@@ -117,17 +117,17 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="Hold_1" xml:space="preserve">
-		<value>Il est possible de prendre un objet avec la touche [E] 
+		<value>Il est possible de prendre un objet avec la touche [E].
 Une fois l'objet récupéré, il apparait dans votre HUD.
 Vous pouvez attaquer avec cet objet à l'aide de la touche [ESPACE]</value>
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
 		<value>Vous pouvez interragir avec plusieurs éléments d'interaction comme les PNJ et les objets. 
-Pour cela, appuyez sur [E] lorsque vous êtes à proximité d'une cible avec laquelle vous pouvez interragir</value>
+Pour cela, appuyez sur [E] lorsque vous êtes à proximité d'une cible avec laquelle vous pouvez interragir.</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Certains objets peuvent interagir avec plusieurs objets de l'environnement en appuyant sur la touche [Espace].
- Par exemple, vous pouvez utiliser un tournevis sur une grille de ventilation.</value>
+Par exemple, vous pouvez utiliser un tournevis sur une grille de ventilation.</value>
 	</data>
 	<data name="Throw_1" xml:space="preserve">
 		<value>Une fois l'objet récupéré. Vous pouvez ensuite lancer cet objet en appuyant sur la touche [MAJ] 
