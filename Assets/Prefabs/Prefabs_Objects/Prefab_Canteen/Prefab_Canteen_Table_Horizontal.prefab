@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8259275475813734246}
   - component: {fileID: 510799184651168463}
   - component: {fileID: 8399652075033523420}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Prefab_Canteen_Table_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
