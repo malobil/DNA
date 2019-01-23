@@ -135,58 +135,120 @@ For that press [E] when you are near for a target with which you can interact.
 		<value>Interaction</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
-		<value />
+		<value>"January 22 2045
+
+It happened a rare thing today scientists came to talk with me in the room. For them number 1 and mewe are ready for the next step. I do not know what to think ... they will come back soon they are already preparing us ...
+
+
+January 25 2045
+
+It's been two days since the scientists come from there and from there it's been a long time since we've seen so much. They mostly give us injections they insist that it's for our good we'll soon be able to go to the surface to help.
+Finally it's not so bad ...
+
+
+January 27 2045
+
+It's in two days! In two days we will pass the test with number 1 we are really impatient! Passing the test is finally becoming someone who can help people make me so happy!
+"</value>
 	</data>
-	<data name="NG1_1_1 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_1_1_Title" xml:space="preserve">
+		<value>Journal of Number 2</value>
 	</data>
 	<data name="NG1_1_2" xml:space="preserve">
-		<value />
+		<value>"[...] humanity is dying the SeArch labs are the best facilities for the safeguarding of humanity for us our priority is you because we think you are the future. World is destroyed because of human stupidity you are the best hope of humanity. Be proud to belong to the ""New Dawn"" project of SeArch 
+It's pride you must feel ! The pride of belonging to the New Dawn project and living in a place sheltered from the horrors of life and the surface. [...]
+"</value>
 	</data>
-	<data name="NG1_1_2 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_1_2_Title" xml:space="preserve">
+		<value>Excerpt Ffrom "In This Place"</value>
 	</data>
 	<data name="NG1_1_3" xml:space="preserve">
-		<value />
+		<value>"Here is the list of medical appointments for this month
+Do not forget to be fasting for medical examinations
+
+Number 1: no visit
+Number 2: no visit
+Number 3: February 2th 8:30am
+Number 4: February 4th 10:30am
+Number 5: February 5th 3:30pm
+Number 6: February 7th 11:30am
+Number 7: February 12th 10am
+Number 8: February 14th 11:45am
+Number 9: February 13th 4:45pm
+Number 10: February 15th 5:30pm
+Number 11: February 17th 6:20pm
+Number 12: February 18th 2pm
+"</value>
 	</data>
-	<data name="NG1_1_3 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_1_3_Title" xml:space="preserve">
+		<value>List of medical visit times</value>
 	</data>
 	<data name="NG1_2_1" xml:space="preserve">
-		<value />
+		<value>"Number 4: Woke up at 10am today
+Stayed 1 hour looking at the camera
+Completely crazy
+
+Notes: Watch carefully
+
+Number 12: Did not have breakfast
+Finished reading ""A Quest For Quest""
+Very discretly
+
+Notes: irrelevant requires less attention
+
+Number 3: Looked ...
+
+(There is nothing write after ...)
+"</value>
 	</data>
-	<data name="NG1_2_1 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_2_1_Title" xml:space="preserve">
+		<value>Observation report of the living room</value>
 	</data>
 	<data name="NG1_3_1" xml:space="preserve">
-		<value />
+		<value>"I was assigned to the area of the living room 04M before being assigned to the 08M it is really very shocking the attention that they carry here.
+At the 04M they were very badly treated the scientists paid them little attention and their living area is much less luxurious.
+Poor young people ...
+"</value>
 	</data>
-	<data name="NG1_3_1 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_3_1_Title" xml:space="preserve">
+		<value>Journal of a guard</value>
 	</data>
 	<data name="NG1_4_1" xml:space="preserve">
-		<value />
+		<value>"Number 1 looks healthy we have not tested a number for a long time.This new generation is normally much more enduring we are very proud of it and we really hope that it will reach all the hopes that we have in them
+I really hope that number 1 and a 2 will pass their tests I really hope so ...
+"</value>
 	</data>
-	<data name="NG1_4_1 Title " xml:space="preserve">
-		<value />
+	<data name="NG1_4_1_Title " xml:space="preserve">
+		<value>Report of number 1 medical tests</value>
 	</data>
 	<data name="NG1_4_2" xml:space="preserve">
-		<value />
+		<value>Hello Mr. VILLALBA I make you go back a recurring problem that we noticed since the surveillance room of the zone of life 08M the numbers begin to have a kind of ... fascination for the door of entry and exit of their zone They see it as a kind of divinity. Other watch rooms notice this kind of problem you should pay attention it could quickly become uncontrollable ...</value>
 	</data>
-	<data name="NG1_4_2 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_4_2_Title" xml:space="preserve">
+		<value>Note on the life of the numbers</value>
 	</data>
 	<data name="NG1_4_3" xml:space="preserve">
-		<value />
+		<value>"(This seems to be a score of a game)
+
+Henrick: 22
+Cameron: 18
+James: 14
+"</value>
 	</data>
-	<data name="NG1_4_3 Title" xml:space="preserve">
-		<value />
+	<data name="NG1_4_3_Title" xml:space="preserve">
+		<value>Scribbled notes</value>
 	</data>
 	<data name="NG1_4_4" xml:space="preserve">
-		<value />
+		<value>"Hi Henrick it's to tell you that I am now assigned to the 09M they are still very young but it is a different job and much more soothing.
+I hope we can see each other again and work together again maybe in the refectory who knows?
+
+Good luck with the 08M I really hope it works this time ...
+
+PS: Do not forget that the key to the experimental room is in the central lab.
+"</value>
 	</data>
-	<data name="NG1_4_4 Title " xml:space="preserve">
-		<value />
+	<data name="NG1_4_4_Title " xml:space="preserve">
+		<value>Notes of a scientist</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Some objects may interact with multiple objects in the environment.
