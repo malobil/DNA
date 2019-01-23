@@ -23,6 +23,7 @@ public class Script_Localization_Manager : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
     public string GetLocalisedText(string key)
     {
         switch(language.ToString(""))
