@@ -10,9 +10,10 @@ public class Script_Button : MonoBehaviour
     {
         if (!other.gameObject.CompareTag("Player") || !other.gameObject.CompareTag("Ennemy"))
         {
-            if(other.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude > 0)
+            if(other.gameObject.GetComponent<Rigidbody2D>() && other.gameObject.GetComponent<Rigidbody2D>().velocity.magnitude > 0)
             {
                 ChangeStateDoor();
+                Debug.Log("Open");
             }
         }
     }
