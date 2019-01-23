@@ -118,12 +118,22 @@ public class Script_Player : MonoBehaviour
     {
         Move();
 
+        if(Input.GetKeyDown(KeyCode.R) && Script_Game_Manager.Instance.GetGameOver())
+        {
+            Script_Game_Manager.Instance.Retry();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape) && Script_Game_Manager.Instance.GetGameOver())
+        {
+            Script_Game_Manager.Instance.LoadAScene("Scene_Main_Menu");
+        }
+
         if (!b_is_throwing)
         {
             b_is_throwing = false;
         }
 
-        if (Input.GetButtonDown("Pause") && !b_is_talking)
+        if (Input.GetButtonDown("Pause") && !b_is_talking && !Script_Game_Manager.Instance.GetGameOver())
         {
             Script_Game_Manager.Instance.TogglePause();
 

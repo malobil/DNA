@@ -5,6 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class Script_MainMenu_Manager : MonoBehaviour
 {
+    private void Start()
+    {
+        if(Script_Game_Manager.Instance != null)
+        {
+            Script_Game_Manager.Instance.SetTimeResume();
+            Destroy(Script_Game_Manager.Instance.gameObject);
+        }
+
+        if (Script_UI_Manager.Instance != null)
+        {
+            Destroy(Script_UI_Manager.Instance.gameObject);
+        }
+
+        if (Script_Player.Instance != null)
+        {
+            Destroy(Script_Player.Instance.gameObject);
+        }
+    }
 
     public void QuitGame()
     {

@@ -212,12 +212,7 @@ public class Script_UI_Manager : MonoBehaviour
         }
     }
 
-    public void RestartScene()
-    {
-        Script_Game_Manager.Instance.SetTimeResume();
-        UnshowUIGameOver();
-        Script_Game_Manager.Instance.Load();
-    }
+    
 
     #region Tutorial
 

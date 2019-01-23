@@ -11,6 +11,7 @@ public class Script_Game_Manager : MonoBehaviour
     public Tutorial tutorials_state;
 
     private bool b_game_is_pause = false;
+    private bool b_game_is_over = false;
 
     private Vector2 v_last_checkpoint;
 
@@ -82,6 +83,12 @@ public class Script_Game_Manager : MonoBehaviour
     {
         SetTimePause();
         Script_UI_Manager.Instance.ShowUIGameOver();
+        b_game_is_over = true;
+    }
+
+    public bool GetGameOver()
+    {
+        return b_game_is_over;
     }
 
     #region Tutorial
@@ -171,6 +178,13 @@ public class Script_Game_Manager : MonoBehaviour
     {
         SceneManager.LoadScene(s_scene_to_load);
         SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    public void Retry()
+    {
+        SetTimeResume();
+        Script_UI_Manager.Instance.UnshowUIGameOver();
+        Load();
     }
 
     // called when a scene is load
