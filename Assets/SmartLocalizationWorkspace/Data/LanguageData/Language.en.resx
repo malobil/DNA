@@ -137,7 +137,7 @@ For example you can use a screwdriver on a ventilation grid.
 	<data name="Throw_1" xml:space="preserve">
 		<value>Once the object is recovered.
 You can then launch this object by pressing the [Shift] key at your convenience to dose the throw.
-When you squeeze Shift briefly, the object falls to your feet. 
+When you squeeze Shift briefly,the object falls to your feet. 
 The [E] key cancels the throw.
 </value>
 	</data>

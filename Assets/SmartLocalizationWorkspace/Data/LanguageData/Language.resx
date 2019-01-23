@@ -116,11 +116,11 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-	<data name="Interaction_1" xml:space="preserve">
-		<value>Interaction tutorial</value>
-	</data>
 	<data name="Hold_1" xml:space="preserve">
 		<value>Hold tutorial</value>
+	</data>
+	<data name="Interaction_1" xml:space="preserve">
+		<value>Interaction tutorial</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Special Interaction tutorial</value>
