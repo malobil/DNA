@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 826169452}
   - component: {fileID: 826169451}
   m_Layer: 0
-  m_Name: Stair_Point
+  m_Name: Stair_Point_Up_North
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
