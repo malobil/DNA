@@ -122,6 +122,8 @@ public class Script_Game_Manager : MonoBehaviour
         PlayerPrefs.SetFloat("Player_y_position", f_player_y_position);
         PlayerPrefs.SetInt("Player_level", i_dna_level);
         PlayerPrefs.SetInt("Player_floor", SceneManager.GetActiveScene().buildIndex);
+
+        Debug.Log("SAVE");
     }
 
     public void Load()
