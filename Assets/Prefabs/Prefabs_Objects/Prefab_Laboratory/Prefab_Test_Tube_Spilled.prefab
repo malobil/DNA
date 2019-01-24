@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6203970250290512201}
   - component: {fileID: 6673452011496507495}
   - component: {fileID: 3144807012929451876}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prefab_Test_Tube_Spilled
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -68,7 +68,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300082, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
