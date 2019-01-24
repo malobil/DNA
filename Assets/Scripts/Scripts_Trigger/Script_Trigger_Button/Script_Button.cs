@@ -6,6 +6,7 @@ public class Script_Button : MonoBehaviour
 {
     public Script_Trigger_Door_Manager s_script_trigger_door_manager;
     private bool b_have_been_use = false;
+    public Animator anim_associate_button_animator;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,6 +22,11 @@ public class Script_Button : MonoBehaviour
 
     public void ChangeStateDoor()
     {
-        s_script_trigger_door_manager.ActivateDoor();
+        if(!b_have_been_use)
+        {
+            anim_associate_button_animator.SetTrigger("Use");
+            s_script_trigger_door_manager.ActivateDoor();
+            b_have_been_use = true;
+        } 
     }
 }
