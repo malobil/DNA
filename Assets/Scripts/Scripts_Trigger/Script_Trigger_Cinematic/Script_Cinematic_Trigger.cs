@@ -6,7 +6,6 @@ using UnityEngine.Playables;
 
 public class Script_Cinematic_Trigger : MonoBehaviour
 {
-    public TimelineAsset t_timeline;
     private PlayableDirector p_playabledirector;
 
 
@@ -19,10 +18,7 @@ public class Script_Cinematic_Trigger : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Player"))
         {
-            //Script_Cinematic_Controller.Instance.PlayCinematic(t_timeline);
             PlayCinematic();
-            //Destroy(gameObject);
-            Debug.Log("CINEMATIC");
         }
     }
 
