@@ -58,14 +58,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0.754717, g: 0.754717, b: 0.754717, a: 0.5647059}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: da2ce731eccbed14d9906a26997c13b7, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -463,6 +463,8 @@ MonoBehaviour:
   s_dialog_key: []
   card: 0
   cinematic_to_play: {fileID: 0}
+  obj_to_spawn: {fileID: 0}
+  t_spawn_point: {fileID: 0}
 --- !u!1 &5815110244002715024
 GameObject:
   m_ObjectHideFlags: 0
