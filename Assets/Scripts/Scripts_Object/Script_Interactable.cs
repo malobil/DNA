@@ -48,7 +48,7 @@ public class Script_Interactable_Editor : Editor
 
 #endregion
 
-public enum InteractableType { readable, holdable, talkable, teleport, card, launchCinematic, spawner }
+public enum InteractableType { readable, holdable, talkable, teleport, card, launchCinematic, spawner, button }
 public enum CardType { blue }
 
 [RequireComponent(typeof(Outline))]
@@ -114,6 +114,10 @@ public class Script_Interactable : MonoBehaviour
                 case "spawner":
                     Spawn();
                     break;
+
+                case "button":
+                    ActiveButton();
+                    break;
             }
         }
     }
@@ -128,6 +132,11 @@ public class Script_Interactable : MonoBehaviour
         GameObject spawn_object = Instantiate(obj_to_spawn, t_spawn_point.position, Quaternion.identity);
         Script_Player.Instance.SelectTarget(spawn_object);
         Script_Player.Instance.Hold();
+    }
+
+    private void ActiveButton()
+    {
+        GetComponent<Script_Button>().ChangeStateDoor();
     }
 
     public void Talk()

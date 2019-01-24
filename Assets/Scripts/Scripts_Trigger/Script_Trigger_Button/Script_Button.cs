@@ -5,6 +5,7 @@ using UnityEngine;
 public class Script_Button : MonoBehaviour
 {
     public Script_Trigger_Door_Manager s_script_trigger_door_manager;
+    private bool b_have_been_use = false;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -18,7 +19,7 @@ public class Script_Button : MonoBehaviour
         }
     }
 
-    private void ChangeStateDoor()
+    public void ChangeStateDoor()
     {
         s_script_trigger_door_manager.ActivateDoor();
     }
