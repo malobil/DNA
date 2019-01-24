@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2408595162027969744}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.8, y: 0, z: 0}
+  m_LocalPosition: {x: 6.5, y: -15.46, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 8638094111201265004}
@@ -320,7 +320,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -358,7 +358,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8638094111201265006}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0.182, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3340878586361359008}
@@ -403,7 +403,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300012, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  m_Sprite: {fileID: 21300042, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -454,6 +454,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj_indication_UI: {fileID: 3340878586361359009}
   anim_animator: {fileID: 6030055594409560222}
+  s_corresponding_air_vent: {fileID: 0}
 --- !u!114 &3340878586630618347
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -483,5 +484,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_type: 3
+  note_key_title: 
+  note_key: 
   b_can_interact: 0
   t_teleport_point: {fileID: 5380618464312225902}
+  obj_dialog_box: {fileID: 0}
+  txt_dialog: {fileID: 0}
+  s_dialog_key: []
+  card: 0
+  cinematic_to_play: {fileID: 0}

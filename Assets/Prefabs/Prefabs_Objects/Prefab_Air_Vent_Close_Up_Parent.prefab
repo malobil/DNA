@@ -139,7 +139,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300002, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -328,7 +328,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4792804932196263372}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.54, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 303197287754530695}
@@ -372,8 +372,8 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  m_SortingOrder: 1
+  m_Sprite: {fileID: 21300040, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -424,6 +424,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   obj_indication_UI: {fileID: 3739192114244030886}
   anim_animator: {fileID: 3929772171759494231}
+  s_corresponding_air_vent: {fileID: 0}
 --- !u!114 &1795668456576775926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -452,7 +453,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6ddec914a9a13041a97c127457206b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  object_type: 3
+  object_type: 5
+  note_key_title: 
   note_key: 
   b_can_interact: 0
   t_teleport_point: {fileID: 505580706964355493}
@@ -460,6 +462,7 @@ MonoBehaviour:
   txt_dialog: {fileID: 0}
   s_dialog_key: []
   card: 0
+  cinematic_to_play: {fileID: 0}
 --- !u!1 &5815110244002715024
 GameObject:
   m_ObjectHideFlags: 0
@@ -484,7 +487,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5815110244002715024}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 12.87, y: 0, z: 0}
+  m_LocalPosition: {x: -3, y: 12.15, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4138430957630808161}
