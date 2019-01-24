@@ -46,6 +46,7 @@ public class Script_Player : MonoBehaviour
     public float f_time_to_max_force = 5f;
     public UnityEngine.UI.Image img_throw_feedback;
     public Transform t_throw_pivot_point;
+    public Color c_start_throw_color, c_mid_throw_color, c_max_throw_color;
     private float f_current_force = 0f;
     private bool b_can_throw = true;
 
@@ -443,16 +444,16 @@ public class Script_Player : MonoBehaviour
             
             if(f_current_force < f_max_throw_force/3)
             {
-                img_throw_feedback.color = Color.green;
+                img_throw_feedback.color = c_start_throw_color;
             }
             else if(f_current_force > f_max_throw_force / 3)
             {
-                img_throw_feedback.color = Color.yellow;
+                img_throw_feedback.color = c_mid_throw_color;
             }
         }
         else
         {
-            img_throw_feedback.color = Color.red;
+            img_throw_feedback.color = c_max_throw_color;
         }
 
         /* Direction */
