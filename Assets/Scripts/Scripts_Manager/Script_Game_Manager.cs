@@ -51,6 +51,7 @@ public class Script_Game_Manager : MonoBehaviour
         {
             SetTimeResume();
             Script_UI_Manager.Instance.HideAllMenu();
+            Script_Player.Instance.CheckInputAfterPause();
         }
         else
         {

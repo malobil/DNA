@@ -138,11 +138,6 @@ public class Script_Player : MonoBehaviour
         if (Input.GetButtonDown("Pause") && !b_is_talking && !Script_Game_Manager.Instance.GetGameOver() && !Script_Game_Manager.Instance.GetCinematicState())
         {
             Script_Game_Manager.Instance.TogglePause();
-
-            if(!Script_Game_Manager.Instance.GetGameState())
-            {
-                CheckInputAfterPause();
-            }
         }
 
         if(b_is_knockback && !Script_Game_Manager.Instance.GetGameState())

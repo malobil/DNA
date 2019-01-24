@@ -212,7 +212,17 @@ public class Script_UI_Manager : MonoBehaviour
         }
     }
 
-    
+    public void LeavePause()
+    {
+        Script_Game_Manager.Instance.TogglePause();
+    }
+
+    public void LoadAScene(string s_scene_to_load)
+    {
+        Script_Game_Manager.Instance.LoadAScene(s_scene_to_load);
+    }
+
+
 
     #region Tutorial
 
