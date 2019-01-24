@@ -210,10 +210,10 @@
 		<value>Number 9 Dialog</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
-		<value>Texte du Journal de Numéro 2</value>
+		<value>Journal of Number 2 text</value>
 	</data>
 	<data name="NG1_1_1_Title" xml:space="preserve">
-		<value>Titre du Journal de Numéro 2 </value>
+		<value>Journal of Number 2 text Title</value>
 	</data>
 	<data name="NG1_1_2" xml:space="preserve">
 		<value>Excerpt of In This Place</value>
