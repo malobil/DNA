@@ -414,7 +414,7 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 		<value>Vous pouvez utiliser l'objet que vous portez en appuyant sur la touche [ESPACE]</value>
 	</data>
 	<data name="Special_Interaction_1_Title" xml:space="preserve">
-		<value>Interaction spéciale </value>
+		<value>Utiliser un objet</value>
 	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>Quand vous récupererez un objet, il apparait en bas à droite de votre écran.
