@@ -7,7 +7,7 @@ using TMPro;
 using UnityEngine.Timeline;
 
 
-[CanEditMultipleObjects]
+//[CanEditMultipleObjects]
 #region EditorGUILayout
 /*[CustomEditor(typeof(Script_Interactable))]
 public class Script_Interactable_Editor : Editor
