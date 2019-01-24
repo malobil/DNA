@@ -117,19 +117,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
-		<value />
+		<value>How did you get here?</value>
 	</data>
 	<data name="G1_1_P2Cut2" xml:space="preserve">
 		<value />
 	</data>
 	<data name="G1_1_P3Cut2" xml:space="preserve">
-		<value />
+		<value>Follow me</value>
 	</data>
 	<data name="G1_1Cut2" xml:space="preserve">
-		<value />
+		<value>You do not have to be there!</value>
 	</data>
 	<data name="G2_1Cut2" xml:space="preserve">
-		<value />
+		<value>Everybody is here ?</value>
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
 		<value>You can interact with the haloed elements using the [E] key</value>
@@ -138,76 +138,76 @@
 		<value>Interaction</value>
 	</data>
 	<data name="N3_1" xml:space="preserve">
-		<value />
+		<value>I could not sleep last night</value>
 	</data>
 	<data name="N3_1_P1" xml:space="preserve">
-		<value />
+		<value>did you not hear all the noises</value>
 	</data>
 	<data name="N3_1_P2" xml:space="preserve">
-		<value />
+		<value>near the walls?</value>
 	</data>
 	<data name="N4_1" xml:space="preserve">
-		<value />
+		<value>I know it's to protect us,</value>
 	</data>
 	<data name="N4_1_P1" xml:space="preserve">
-		<value />
+		<value>but it's always weird</value>
 	</data>
 	<data name="N4_1_P2" xml:space="preserve">
-		<value />
+		<value>to feel that you're watching,</value>
 	</data>
 	<data name="N4_1_P3" xml:space="preserve">
-		<value />
+		<value>don’t you think?</value>
 	</data>
 	<data name="N5_1" xml:space="preserve">
-		<value />
+		<value>Do you think there is a hope</value>
 	</data>
 	<data name="N5_1_P1" xml:space="preserve">
-		<value />
+		<value>for people living up there?</value>
 	</data>
 	<data name="N5_1_P2" xml:space="preserve">
-		<value />
+		<value>Poor people…</value>
 	</data>
 	<data name="N5_1Cut2" xml:space="preserve">
-		<value />
+		<value>We saw the door open!</value>
 	</data>
 	<data name="N6_1" xml:space="preserve">
-		<value />
+		<value>Did you read "In This Place" at the library ?</value>
 	</data>
 	<data name="N6_1P1" xml:space="preserve">
-		<value />
+		<value>We are lucky to be here.</value>
 	</data>
 	<data name="N7_1" xml:space="preserve">
-		<value />
+		<value>1 and 2 left surrounded by scientists,</value>
 	</data>
 	<data name="N7_1_P1" xml:space="preserve">
-		<value />
+		<value>two days ago,</value>
 	</data>
 	<data name="N7_1_P10" xml:space="preserve">
-		<value />
+		<value>I hope it's not too bad ...</value>
 	</data>
 	<data name="N8_1" xml:space="preserve">
-		<value />
+		<value>The door has not moved today.</value>
 	</data>
 	<data name="N8_1P1" xml:space="preserve">
-		<value />
+		<value>Number 4 says he has already seen it open,</value>
 	</data>
 	<data name="N8_1P2" xml:space="preserve">
-		<value />
+		<value>it makes me freak you out.</value>
 	</data>
 	<data name="N9_1" xml:space="preserve">
-		<value />
+		<value>There is still a water leak</value>
 	</data>
 	<data name="N9_1_P1Cut1" xml:space="preserve">
-		<value />
+		<value>We can finally see what's behind this door ...</value>
 	</data>
 	<data name="N9_1Cut1" xml:space="preserve">
-		<value />
+		<value>Let's go!</value>
 	</data>
 	<data name="N9_1P1" xml:space="preserve">
-		<value />
+		<value>next to the number 6 bedroom</value>
 	</data>
 	<data name="N9_1P2" xml:space="preserve">
-		<value />
+		<value>this is the second time in 2 weeks.</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>"January 22 2045
@@ -326,79 +326,79 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 		<value>Notes of a scientist</value>
 	</data>
 	<data name="S1_1_P1Cut4" xml:space="preserve">
-		<value />
+		<value>I thought we were running the disaster</value>
 	</data>
 	<data name="S1_1_P2Cut4" xml:space="preserve">
-		<value />
+		<value>with this general cut.</value>
 	</data>
 	<data name="S1_1Cut3" xml:space="preserve">
-		<value />
+		<value>Where can it come from ?</value>
 	</data>
 	<data name="S1_1Cut4" xml:space="preserve">
-		<value />
+		<value>Finally !</value>
 	</data>
 	<data name="S1_1P1Cut3" xml:space="preserve">
-		<value />
+		<value>It even seems that there have already been escapes,</value>
 	</data>
 	<data name="S1_1P2Cut3" xml:space="preserve">
-		<value />
+		<value>some could cause us problems ...</value>
 	</data>
 	<data name="S1_1P3Cut4" xml:space="preserve">
-		<value />
+		<value>He has already seen too much …</value>
 	</data>
 	<data name="S1_1P4Cut4" xml:space="preserve">
-		<value />
+		<value>He can not go back to the living area,</value>
 	</data>
 	<data name="S1_1P5Cut4" xml:space="preserve">
-		<value />
+		<value>I think we have no choice ...</value>
 	</data>
 	<data name="S1_1P6Cut4" xml:space="preserve">
 		<value />
 	</data>
 	<data name="S2_1Cut3" xml:space="preserve">
-		<value />
+		<value>I don’t know,</value>
 	</data>
 	<data name="S2_1Cut4" xml:space="preserve">
-		<value />
+		<value>We could have lost a lot more</value>
 	</data>
 	<data name="S2_1P1Cut3" xml:space="preserve">
-		<value />
+		<value>but it's panic everywhere right now,</value>
 	</data>
 	<data name="S2_1P1Cut4" xml:space="preserve">
-		<value />
+		<value>if the break would have lasted</value>
 	</data>
 	<data name="S2_1P2Cut3" xml:space="preserve">
-		<value />
+		<value>level 2 is in maximum urgency</value>
 	</data>
 	<data name="S2_1P2Cut4" xml:space="preserve">
-		<value />
+		<value>even 10 minutes more</value>
 	</data>
 	<data name="S2_1P3Cut3" xml:space="preserve">
-		<value />
+		<value>This is a general breakdown,</value>
 	</data>
 	<data name="S2_1P3Cut4" xml:space="preserve">
-		<value />
+		<value>How did you get to this floor?</value>
 	</data>
 	<data name="S2_1P4Cut3" xml:space="preserve">
-		<value />
+		<value>the kind of events that everyone feared ...</value>
 	</data>
 	<data name="S3_1Cut4" xml:space="preserve">
-		<value />
+		<value>What are you doing here ?</value>
 	</data>
 	<data name="S3_1P1Cut4" xml:space="preserve">
-		<value />
+		<value>What can we do ?</value>
 	</data>
 	<data name="S3_1P2Cut4" xml:space="preserve">
-		<value />
+		<value>We can’t do that,</value>
 	</data>
 	<data name="S3_1P3Cut4" xml:space="preserve">
-		<value />
+		<value>we did not do the preliminary steps</value>
 	</data>
 	<data name="S3_1P4Cut4" xml:space="preserve">
-		<value />
+		<value>If it does not work with the preliminary stages,</value>
 	</data>
 	<data name="S3_1P5Cut4" xml:space="preserve">
-		<value />
+		<value>why would it work with him?</value>
 	</data>
 	<data name="S3_1P6Cut4" xml:space="preserve">
 		<value />

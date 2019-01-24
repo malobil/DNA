@@ -117,19 +117,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
-		<value />
+		<value>d’être là !</value>
 	</data>
 	<data name="G1_1_P2Cut2" xml:space="preserve">
-		<value />
+		<value>Comment vous êtes-vous échappés ?</value>
 	</data>
 	<data name="G1_1_P3Cut2" xml:space="preserve">
-		<value />
+		<value>Allez, suivez-moi!</value>
 	</data>
 	<data name="G1_1Cut2" xml:space="preserve">
-		<value />
+		<value>Vous n’avez pas l’autorisation</value>
 	</data>
 	<data name="G2_1Cut2" xml:space="preserve">
-		<value />
+		<value>Tout le monde est là ?</value>
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
 		<value>Vous pouvez interragir avec les éléments entourés d'un halo avec la touche [E]</value>
@@ -138,76 +138,77 @@
 		<value>Interaction</value>
 	</data>
 	<data name="N3_1" xml:space="preserve">
-		<value />
+		<value>J’ai pas réussi à dormir hier soir,</value>
 	</data>
 	<data name="N3_1_P1" xml:space="preserve">
-		<value />
+		<value>t’entendais pas tous ces bruits</value>
 	</data>
 	<data name="N3_1_P2" xml:space="preserve">
-		<value />
+		<value>près des murs ?</value>
 	</data>
 	<data name="N4_1" xml:space="preserve">
-		<value />
+		<value>Je sais que c’est pour nous protéger</value>
 	</data>
 	<data name="N4_1_P1" xml:space="preserve">
-		<value />
+		<value>mais ça fait toujours bizarre</value>
 	</data>
 	<data name="N4_1_P2" xml:space="preserve">
-		<value />
+		<value>de se sentir observer</value>
 	</data>
 	<data name="N4_1_P3" xml:space="preserve">
-		<value />
+		<value>tu ne trouves pas ?</value>
 	</data>
 	<data name="N5_1" xml:space="preserve">
-		<value />
+		<value>Tu penses qu’il y’a un espoir</value>
 	</data>
 	<data name="N5_1_P1" xml:space="preserve">
-		<value />
+		<value>pour les personnes vivant là-haut ?</value>
 	</data>
 	<data name="N5_1_P2" xml:space="preserve">
-		<value />
+		<value>Pauvres gens…</value>
 	</data>
 	<data name="N5_1Cut2" xml:space="preserve">
-		<value />
+		<value>La Porte s’est ouverte !</value>
 	</data>
 	<data name="N6_1" xml:space="preserve">
-		<value />
+		<value>Tu as lu “In This Place” à la bibliothèque ?</value>
 	</data>
 	<data name="N6_1P1" xml:space="preserve">
-		<value />
+		<value>On a de la chance d’être là...</value>
 	</data>
 	<data name="N7_1" xml:space="preserve">
-		<value />
+		<value>1 et 2 sont partis entourés de scientifiques</value>
 	</data>
 	<data name="N7_1_P1" xml:space="preserve">
-		<value />
+		<value>il y a deux jours, j'espère que c’est</value>
 	</data>
 	<data name="N7_1_P10" xml:space="preserve">
-		<value />
+		<value>pas trop grave…</value>
 	</data>
 	<data name="N8_1" xml:space="preserve">
-		<value />
+		<value>La porte n’a pas bougé aujourd’hui.</value>
 	</data>
 	<data name="N8_1P1" xml:space="preserve">
-		<value />
+		<value>Numéro 4 raconte qu’il l’a déjà vue s’ouvrir,</value>
 	</data>
 	<data name="N8_1P2" xml:space="preserve">
-		<value />
+		<value>ça fait froid dans le dos…
+</value>
 	</data>
 	<data name="N9_1" xml:space="preserve">
-		<value />
+		<value>Il y a encore une fuite d’eau,</value>
 	</data>
 	<data name="N9_1_P1Cut1" xml:space="preserve">
-		<value />
+		<value>On peut enfin voir derrière La Porte !</value>
 	</data>
 	<data name="N9_1Cut1" xml:space="preserve">
-		<value />
+		<value>Allons-y</value>
 	</data>
 	<data name="N9_1P1" xml:space="preserve">
-		<value />
+		<value>à côté de la chambre de numéro 6,</value>
 	</data>
 	<data name="N9_1P2" xml:space="preserve">
-		<value />
+		<value>c’est la deuxième fois en 2 semaines.</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>22 janvier 2045 
