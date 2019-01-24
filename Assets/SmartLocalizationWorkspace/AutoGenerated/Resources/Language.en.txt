@@ -409,7 +409,7 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>When you retrieve an object, it appears at the bottom right of your screen.
-You can launch an item you are carrying by pressing &lt;color=#ff0000ff&gt;[SHIFT]&lt;color&gt;.
+You can launch an item you are carrying by pressing &lt;color=#ff0000ff&gt;[SHIFT]&lt;/color&gt;.
 The longer you hold the key plus the throw will go far.</value>
 	</data>
 	<data name="ThrowAndHold_1_Title" xml:space="preserve">
