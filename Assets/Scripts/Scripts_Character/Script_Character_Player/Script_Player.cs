@@ -62,8 +62,9 @@ public class Script_Player : MonoBehaviour
 
     #region Distort variable
 
+    public bool b_can_use_powers = true ;
     public int playerLevel = 0;
-    public bool b_can_Distort = true ;
+    private bool b_can_Distort = true ;
     private bool b_have_use_distort = false;
     private GameObject g_current_distortable_target;
 
@@ -71,7 +72,7 @@ public class Script_Player : MonoBehaviour
 
     #region Alter variable
 
-    public bool b_can_alter = true;
+    private bool b_can_alter = true;
     private bool b_have_use_alter = false ;
     private GameObject g_current_alterable_target;
     private GameObject g_last_transformation;
@@ -181,32 +182,32 @@ public class Script_Player : MonoBehaviour
                 UseItem();
             }
 
-            if(Input.GetButton("Distort") && b_can_Distort && !b_have_use_distort)
+            if(Input.GetButton("Distort") && b_can_Distort && !b_have_use_distort && b_can_use_powers)
             {
                 Distort();
             }
 
-            if (Input.GetButtonDown("Distort") && b_can_Distort)
+            if (Input.GetButtonDown("Distort") && b_can_Distort && b_can_use_powers)
             {
                 StartDistort();
             }
 
-            if (Input.GetButtonUp("Distort") && b_can_Distort)
+            if (Input.GetButtonUp("Distort") && b_can_Distort && b_can_use_powers)
             {
                 StopDistort();
             }
 
-            if (Input.GetButton("Alter") && b_can_alter && !b_have_use_alter)
+            if (Input.GetButton("Alter") && b_can_alter && !b_have_use_alter && b_can_use_powers)
             {
                 Alter();
             }
 
-            if (Input.GetButtonDown("Alter") && b_can_alter)
+            if (Input.GetButtonDown("Alter") && b_can_alter && b_can_use_powers)
             {
                 StartAlter();
             }
 
-            if (Input.GetButtonUp("Alter") && b_can_alter)
+            if (Input.GetButtonUp("Alter") && b_can_alter && b_can_use_powers)
             {
                 StopAlter();
             }

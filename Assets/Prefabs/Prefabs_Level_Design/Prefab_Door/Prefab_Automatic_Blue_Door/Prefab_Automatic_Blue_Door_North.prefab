@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50e4efae194d2d84bae2d4634040387f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  d_door_type: 1
+  d_door_type: 2
   g_character_in_trigger: []
 --- !u!95 &3021971232277044420
 Animator:
