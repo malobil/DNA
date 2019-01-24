@@ -33,7 +33,7 @@ public class Script_Localization_Manager : MonoBehaviour
                 break;
 
             case "english":
-                LanguageManager.Instance.ChangeLanguage("eng");
+                LanguageManager.Instance.ChangeLanguage("en");
                 break;
         }
 
