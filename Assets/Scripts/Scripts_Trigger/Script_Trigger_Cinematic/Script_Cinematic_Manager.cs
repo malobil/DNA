@@ -4,12 +4,14 @@ using UnityEngine;
 using UnityEditor;
 
 //[CanEditMultipleObjects]
-public enum CinematicType { Resumegame, LightClip }
+public enum CinematicType { Resumegame, MaincharacterLight}
 
 public class Script_Cinematic_Manager : MonoBehaviour
 {
 
     public CinematicType c_cinematic_type;
+
+    public Light l_light_main_character;
 
     public void OnEnable()
     {
@@ -19,8 +21,8 @@ public class Script_Cinematic_Manager : MonoBehaviour
             BackToMainCamera();
             break;
 
-            case "LightClip":
-                
+            case "MaincharacterLight":
+                ActivateN12Light();
                 break;
         }
     }
@@ -31,8 +33,8 @@ public class Script_Cinematic_Manager : MonoBehaviour
         Script_Game_Manager.Instance.LeaveACinematic();
     }
 
-    public void ChangeIntensityLight()
+    public void ActivateN12Light()
     {
-
+        l_light_main_character.enabled = true;
     }
 }
