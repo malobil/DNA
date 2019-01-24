@@ -210,29 +210,27 @@
 		<value>this is the second time in 2 weeks.</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
-		<value>January 22 2045
+		<value>January 22, 2045
 
-It happened a rare thing today scientists came to talk with me in the room. For them number 1 and mewe are ready for the next step. I do not know what to think ... they will come back soon they are already preparing us ...
+It happened a rare thing today. Scientists came to talk with me in the room. According to them with number 1 we are ready for the rest.I do not know what to think ... they will come back soon. They are already preparing us ...
 
+January 25, 2045
 
-January 25 2045
+It's been two days since scientists come and go. We had not seen so much in a long time. They give us mostly injections. This is for our sake clearly emphasize this. We can soon go to the surface to help.
+I can not wait to be useful to something ...
 
-It's been two days since the scientists come from there and from there it's been a long time since we've seen so much. They mostly give us injections they insist that it's for our good we'll soon be able to go to the surface to help.
-Finally it's not so bad ...
+January 27, 2045
 
-
-January 27 2045
-
-It's in two days! In two days we will pass the test with number 1 we are really impatient! Passing the test is finally becoming someone who can help people make me so happy!
-</value>
+It's in two days! In two days I will take the test in the company of number 1. We are so impatient!</value>
 	</data>
 	<data name="NG1_1_1_Title" xml:space="preserve">
 		<value>Journal of Number 2</value>
 	</data>
 	<data name="NG1_1_2" xml:space="preserve">
-		<value>[...] humanity is dying the SeArch labs are the best facilities for the safeguarding of humanity for us our priority is you because we think you are the future. World is destroyed because of human stupidity you are the best hope of humanity. Be proud to belong to the ""New Dawn"" project of SeArch 
-It's pride you must feel ! The pride of belonging to the New Dawn project and living in a place sheltered from the horrors of life and the surface. [...]
-</value>
+		<value>[...] humanity is dying SeArch research centers are the best facilities for safeguarding humanity. Our priority is you.
+We think you are the future. The world ravaged by human stupidity makes you the best hope of humanity.
+Be proud to belong to the "New Dawn" project of the SeArch research centers.
+It is this pride that you must feel. The pride of rebuilding our planet.</value>
 	</data>
 	<data name="NG1_1_2_Title" xml:space="preserve">
 		<value>Excerpt From "In This Place"</value>
@@ -266,7 +264,7 @@ Completely crazy
 Notes: Watch carefully
 
 Number 12: Did not have breakfast
-Finished reading ""A Quest For Quest""
+Finished reading "A Quest For Quest"
 Very discretly
 
 Notes: irrelevant requires less attention
@@ -289,14 +287,16 @@ Poor young people ...
 		<value>Journal of a guard</value>
 	</data>
 	<data name="NG1_4_1" xml:space="preserve">
-		<value>Number 1 looks healthy we have not tested a number for a long time.This new generation is normally much more enduring we are very proud of it and we really hope that it will reach all the hopes that we have in them
-I really hope that number 1 and a 2 will pass their tests I really hope so ...</value>
+		<value>Number 1 looks healthy, we have not tested a number for a long time. This new generation should be much more enduring. We really hope that it will meet all our expectations.
+Provided that number 1 and a 2 pass their tests ...</value>
 	</data>
 	<data name="NG1_4_1_Title " xml:space="preserve">
 		<value>Report of number 1 medical tests</value>
 	</data>
 	<data name="NG1_4_2" xml:space="preserve">
-		<value>Hello Mr. VILLALBA I make you go back a recurring problem that we noticed since the surveillance room of the zone of life 08M the numbers begin to have a kind of ... fascination for the door of entry and exit of their zone They see it as a kind of divinity. Other watch rooms notice this kind of problem you should pay attention it could quickly become uncontrollable ...</value>
+		<value>Hello Mr. VILLALBA I make you go back a recurring problem that we noticed in the zone of life 08M.
+The numbers seem to develop a kind of ... fascination for the gateway to their living area considering it a kind of deity.
+Other watchrooms are seeing the same behavior. Stay alert and do not forget to report any disturbing feedback.</value>
 	</data>
 	<data name="NG1_4_2_Title" xml:space="preserve">
 		<value>Note on the life of the numbers</value>
@@ -306,7 +306,7 @@ I really hope that number 1 and a 2 will pass their tests I really hope so ...</
 
 Henrick: 22
 Cameron: 18
-James: 14</value>
+James: 14</value>
 	</data>
 	<data name="NG1_4_3_Title" xml:space="preserve">
 		<value>Scribbled notes</value>
