@@ -29,7 +29,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
                 break;
 
             case "BlockedDoor":
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                gameObject.GetComponent<BoxCollider2D>().enabled = true;
                 break;
 
             case "Bluecard":
