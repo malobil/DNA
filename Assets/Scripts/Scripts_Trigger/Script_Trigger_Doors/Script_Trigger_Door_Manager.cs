@@ -29,7 +29,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
                 break;
 
             case "BlockedDoor":
-                Debug.Log("BLOCKED DOOR");
+                gameObject.GetComponent<BoxCollider2D>().enabled = false;
                 break;
 
             case "Bluecard":
@@ -96,6 +96,12 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     public void ActivateDoor()
     {
         d_door_type = Doortype.Nocard;
+        VerifyCard();
+    }
+
+    public void DeactiveDoor()
+    {
+        d_door_type = Doortype.BlockedDoor;
         VerifyCard();
     }
 }
