@@ -48,7 +48,7 @@ public class Script_Interactable_Editor : Editor
 
 #endregion
 
-public enum InteractableType { readable, holdable, talkable, teleport, card, launchCinematic }
+public enum InteractableType { readable, holdable, talkable, teleport, card, launchCinematic, spawner }
 public enum CardType { blue }
 
 [RequireComponent(typeof(Outline))]
@@ -75,6 +75,11 @@ public class Script_Interactable : MonoBehaviour
 
     [Header("Cinematic")]
     public TimelineAsset cinematic_to_play;
+
+
+    [Header("Spawner")]
+    public GameObject obj_to_spawn;
+    public Transform t_spawn_point;
 
     public void Interact(Script_Player player)
     {
@@ -105,6 +110,10 @@ public class Script_Interactable : MonoBehaviour
                 case "launchCinematic":
                     Script_Cinematic_Controller.Instance.PlayCinematic(cinematic_to_play);
                     break;
+
+                case "spawner":
+                    Spawn();
+                    break;
             }
         }
     }
@@ -112,6 +121,13 @@ public class Script_Interactable : MonoBehaviour
     private void Read()
     {
         Script_UI_Manager.Instance.ShowNote(note_key_title,note_key);
+    }
+
+    private void Spawn()
+    {
+        GameObject spawn_object = Instantiate(obj_to_spawn, t_spawn_point.position, Quaternion.identity);
+        Script_Player.Instance.SelectTarget(spawn_object);
+        Script_Player.Instance.Hold();
     }
 
     public void Talk()
