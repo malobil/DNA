@@ -132,7 +132,7 @@
 		<value>Tout le monde est là ?</value>
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
-		<value>Vous pouvez interragir avec les éléments entourés d'un halo avec la touche [E]</value>
+		<value>Vous pouvez interragir avec les éléments entourés d'un halo avec la touche &lt;color=#ff0000ff&gt;[E]&lt;/color&gt;</value>
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
@@ -411,14 +411,14 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 		<value>pourquoi ça marcherait avec lui ?</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
-		<value>Vous pouvez utiliser l'objet que vous portez en appuyant sur la touche [ESPACE]</value>
+		<value>Vous pouvez utiliser l'objet que vous portez en appuyant sur la touche &lt;color=#ff0000ff&gt;[ESPACE]&lt;/color&gt;</value>
 	</data>
 	<data name="Special_Interaction_1_Title" xml:space="preserve">
 		<value>Utiliser un objet</value>
 	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>Quand vous récupererez un objet, il apparait en bas à droite de votre écran.
-Vous pouvez lancer un objet que vous portez en appuyant sur [SHIFT].
+Vous pouvez lancer un objet que vous portez en appuyant sur &lt;color=#ff0000ff&gt;[SHIFT]&lt;/color&gt;.
 Plus vous maintenez la touche plus le lancer ira loin.</value>
 	</data>
 	<data name="ThrowAndHold_1_Title" xml:space="preserve">
