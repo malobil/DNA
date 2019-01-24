@@ -76,12 +76,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300002, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  m_Sprite: {fileID: 21300010, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.12, y: 0.12}
+  m_Size: {x: 0.33333334, y: 0.375}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -104,21 +104,21 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.5, y: 0.5}
-    newSize: {x: 0.12, y: 0.12}
+    oldSize: {x: 0.33333334, y: 0.375}
+    newSize: {x: 0.33333334, y: 0.375}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.12574792, y: 0.25509787}
-      - {x: -0.1183818, y: 0.044186115}
-      - {x: -0.24999994, y: -0.09000528}
-      - {x: -0.25111467, y: -0.20875323}
-      - {x: -0.12931406, y: -0.20986795}
+    - - {x: 0.08198357, y: 0.19049072}
+      - {x: -0.12046528, y: -0.001663208}
+      - {x: -0.16844463, y: -0.060020447}
+      - {x: -0.16955853, y: -0.14998627}
+      - {x: -0.08613777, y: -0.14510345}
       - {x: 0.1752308, y: 0.118135095}
-      - {x: 0.25, y: 0.25}
+      - {x: 0.17289066, y: 0.18748093}
 --- !u!50 &414898970920439862
 Rigidbody2D:
   serializedVersion: 4
@@ -169,8 +169,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_type: 1
+  note_key_title: 
+  note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_dialog_box: {fileID: 0}
+  txt_dialog: {fileID: 0}
+  s_dialog_key: []
+  card: 0
+  cinematic_to_play: {fileID: 0}
 --- !u!114 &8473374036296623463
 MonoBehaviour:
   m_ObjectHideFlags: 0
