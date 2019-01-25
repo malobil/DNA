@@ -11,6 +11,7 @@ public class Script_Trigger_Deactive_Door : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             s_script_trigger_door_manager.DeactiveDoor();
+            s_script_trigger_door_manager.CloseDoor();
             GetComponent<BoxCollider2D>().enabled = false;
         }
     }
