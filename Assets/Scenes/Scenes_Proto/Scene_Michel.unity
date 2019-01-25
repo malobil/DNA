@@ -416,6 +416,38 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcd603519298f5499bdd5e7e4cdf558, type: 3}
+--- !u!84 &53907446
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1920
+  m_Height: 1080
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!1 &58931128
 GameObject:
   m_ObjectHideFlags: 0
@@ -5047,15 +5079,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 0, y: 63, z: 0}
-    second:
-      m_TileIndex: 4
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 9
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 1, y: 63, z: 0}
     second:
       m_TileIndex: 1
@@ -5461,24 +5484,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: 2, y: 67, z: 0}
-    second:
-      m_TileIndex: 6
-      m_TileSpriteIndex: 9
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 9
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
-  - first: {x: 3, y: 67, z: 0}
-    second:
-      m_TileIndex: 8
-      m_TileSpriteIndex: 11
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 9
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: 4, y: 67, z: 0}
     second:
       m_TileIndex: 6
@@ -5767,15 +5772,6 @@ Tilemap:
       m_ObjectToInstantiate: {fileID: 0}
       m_TileFlags: 1
       m_ColliderType: 1
-  - first: {x: -9, y: 69, z: 0}
-    second:
-      m_TileIndex: 4
-      m_TileSpriteIndex: 7
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 9
-      m_ObjectToInstantiate: {fileID: 0}
-      m_TileFlags: 1
-      m_ColliderType: 1
   - first: {x: -8, y: 69, z: 0}
     second:
       m_TileIndex: 4
@@ -5966,15 +5962,15 @@ Tilemap:
     m_Data: {fileID: 11400000, guid: bd10c6a908d3cdf4a8c3841387fc0104, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: a79a70790a8482043acc9f780d4e3047, type: 2}
-  - m_RefCount: 119
+  - m_RefCount: 117
     m_Data: {fileID: 11400000, guid: 1033104eb74f73b41a5013b10778c801, type: 2}
   - m_RefCount: 11
     m_Data: {fileID: 11400000, guid: d9f89650e3ed91a4495711eeec38c378, type: 2}
-  - m_RefCount: 67
+  - m_RefCount: 66
     m_Data: {fileID: 11400000, guid: b46a0b1f69a90b7469fa336ae67cb492, type: 2}
   - m_RefCount: 64
     m_Data: {fileID: 11400000, guid: d49f70cc63f4d6a45bf38a4c39b042d5, type: 2}
-  - m_RefCount: 252
+  - m_RefCount: 251
     m_Data: {fileID: 11400000, guid: 94d432fb43786e14f81eef8f4a89b0a5, type: 2}
   - m_RefCount: 3
     m_Data: {fileID: 11400000, guid: c8631027f0d186349b78e927830d6b66, type: 2}
@@ -6019,15 +6015,15 @@ Tilemap:
     m_Data: {fileID: 21300088, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300136, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
-  - m_RefCount: 119
+  - m_RefCount: 117
     m_Data: {fileID: 21300086, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
   - m_RefCount: 11
     m_Data: {fileID: 21300092, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
-  - m_RefCount: 67
+  - m_RefCount: 66
     m_Data: {fileID: 21300110, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
   - m_RefCount: 64
     m_Data: {fileID: 21300108, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
-  - m_RefCount: 252
+  - m_RefCount: 251
     m_Data: {fileID: 21300134, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
   - m_RefCount: 3
     m_Data: {fileID: 21300142, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
@@ -6052,7 +6048,7 @@ Tilemap:
   - m_RefCount: 1
     m_Data: {fileID: 21300124, guid: 02dae01a69ff99c46bff3bfde3eddd9b, type: 3}
   m_TileMatrixArray:
-  - m_RefCount: 606
+  - m_RefCount: 602
     m_Data:
       e00: 1
       e01: 0
@@ -6089,7 +6085,7 @@ Tilemap:
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
   - m_RefCount: 0
     m_Data: {r: NaN, g: NaN, b: NaN, a: NaN}
-  - m_RefCount: 606
+  - m_RefCount: 602
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -8321,6 +8317,38 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 6379144544242523526}
   m_PrefabAsset: {fileID: 0}
+--- !u!84 &486007852
+RenderTexture:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_ImageContentsHash:
+    serializedVersion: 2
+    Hash: 00000000000000000000000000000000
+  m_ForcedFallbackFormat: 4
+  m_DownscaleFallback: 0
+  m_Width: 1920
+  m_Height: 1080
+  m_AntiAliasing: 1
+  m_DepthFormat: 1
+  m_ColorFormat: 7
+  m_MipMap: 0
+  m_GenerateMips: 1
+  m_SRGB: 0
+  m_UseDynamicScale: 0
+  m_BindMS: 0
+  m_TextureSettings:
+    serializedVersion: 2
+    m_FilterMode: 1
+    m_Aniso: 1
+    m_MipBias: 0
+    m_WrapU: 1
+    m_WrapV: 1
+    m_WrapW: 1
+  m_Dimension: 2
+  m_VolumeDepth: 1
 --- !u!4 &503372791 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1492842234397491187, guid: a23ad8c2713a6f44ea0352dfa9c16e81,
@@ -8971,38 +8999,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 594757662}
   m_PrefabAsset: {fileID: 0}
---- !u!84 &612033280
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1920
-  m_Height: 1080
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &612185303
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10540,38 +10536,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 131918eed2b7e2e4fac3ae9359169653, type: 3}
---- !u!84 &1034635972
-RenderTexture:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_Name: 
-  m_ImageContentsHash:
-    serializedVersion: 2
-    Hash: 00000000000000000000000000000000
-  m_ForcedFallbackFormat: 4
-  m_DownscaleFallback: 0
-  m_Width: 1920
-  m_Height: 1080
-  m_AntiAliasing: 1
-  m_DepthFormat: 1
-  m_ColorFormat: 7
-  m_MipMap: 0
-  m_GenerateMips: 1
-  m_SRGB: 0
-  m_UseDynamicScale: 0
-  m_BindMS: 0
-  m_TextureSettings:
-    serializedVersion: 2
-    m_FilterMode: 1
-    m_Aniso: 1
-    m_MipBias: 0
-    m_WrapU: 1
-    m_WrapV: 1
-    m_WrapW: 1
-  m_Dimension: 2
-  m_VolumeDepth: 1
 --- !u!1001 &1058494336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18535,11 +18499,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6595538908143025206, guid: 8b748ff68771d294f8671cc697dda42c,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: b4323cee1e6359a49a4d436c5c673e35, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b748ff68771d294f8671cc697dda42c, type: 3}
 --- !u!4 &1832130593 stripped
@@ -18781,7 +18740,7 @@ PrefabInstance:
     - target: {fileID: 1734699155, guid: a23ad8c2713a6f44ea0352dfa9c16e81, type: 3}
       propertyPath: m_TargetTexture
       value: 
-      objectReference: {fileID: 612033280}
+      objectReference: {fileID: 53907446}
     - target: {fileID: 1734699155, guid: a23ad8c2713a6f44ea0352dfa9c16e81, type: 3}
       propertyPath: orthographic size
       value: 10
