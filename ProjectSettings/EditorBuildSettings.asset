@@ -11,7 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scenes_Proto/Scene_Michel.unity
     guid: 78d3c123b99b21f47a175eec7fefb7f6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Scenes_Proto/Scene_Enregistrement.unity
     guid: 721166b313d87d74a8dfe7a2314a14a4
   m_configObjects: {}
