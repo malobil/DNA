@@ -33,6 +33,15 @@ AnimationClip:
     path: Prefab_Button_down
     classID: 212
     script: {fileID: 0}
+  - curve:
+    - time: 0
+      value: {fileID: 21300000, guid: b878e911df0bcae48b22318af1dc10e7, type: 3}
+    - time: 0.33333334
+      value: {fileID: 21300002, guid: b878e911df0bcae48b22318af1dc10e7, type: 3}
+    attribute: m_Sprite
+    path: Cable_Trigger_0
+    classID: 212
+    script: {fileID: 0}
   m_SampleRate: 60
   m_WrapMode: 0
   m_Bounds:
@@ -47,12 +56,21 @@ AnimationClip:
       typeID: 212
       customType: 23
       isPPtrCurve: 1
+    - serializedVersion: 2
+      path: 2526872761
+      attribute: 0
+      script: {fileID: 0}
+      typeID: 212
+      customType: 23
+      isPPtrCurve: 1
     pptrCurveMapping:
     - {fileID: 21300000, guid: 5df4f16e32f8e7f4fb9cb159bac4a513, type: 3}
     - {fileID: 21300002, guid: 5df4f16e32f8e7f4fb9cb159bac4a513, type: 3}
     - {fileID: 21300004, guid: 5df4f16e32f8e7f4fb9cb159bac4a513, type: 3}
     - {fileID: 21300006, guid: 5df4f16e32f8e7f4fb9cb159bac4a513, type: 3}
     - {fileID: 21300008, guid: 5df4f16e32f8e7f4fb9cb159bac4a513, type: 3}
+    - {fileID: 21300000, guid: b878e911df0bcae48b22318af1dc10e7, type: 3}
+    - {fileID: 21300002, guid: b878e911df0bcae48b22318af1dc10e7, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
