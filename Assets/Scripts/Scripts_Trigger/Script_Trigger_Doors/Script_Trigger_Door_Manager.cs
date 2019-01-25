@@ -24,12 +24,12 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         switch (d_door_type.ToString(""))
         {
             case "Nocard":
-                gameObject.GetComponent<BoxCollider2D>().enabled = false;
+                
                 OpenDoor();
                 break;
 
             case "BlockedDoor":
-                gameObject.GetComponent<BoxCollider2D>().enabled = true;
+
                 break;
 
             case "Bluecard":
@@ -84,6 +84,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         {
             a_door_animator.SetTrigger("Open");
             b_door_is_open = true;
+            gameObject.GetComponent<BoxCollider2D>().enabled = false;
         }
     }
 
@@ -91,6 +92,7 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     {
             a_door_animator.SetTrigger("Close");
             b_door_is_open = false;
+            gameObject.GetComponent<BoxCollider2D>().enabled = true;
     }
 
     public void ActivateDoor()
