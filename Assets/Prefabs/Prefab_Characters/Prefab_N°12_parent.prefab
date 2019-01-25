@@ -76,7 +76,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.017201066, y: -0.10957879}
+  m_Offset: {x: 0.017201066, y: -0.23596996}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -87,7 +87,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.3, y: 0.57259166}
+  m_Size: {x: 0.3, y: 0.35}
   m_EdgeRadius: 0
 --- !u!114 &1265377065
 MonoBehaviour:
@@ -473,8 +473,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c656ce0799a6344c9715e527c46040c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  f_move_speed_horizontal: 3
-  f_move_speed_vertical: 3
+  f_move_speed_horizontal: 5
+  f_move_speed_vertical: 5
   f_knockback_force: 5
   f_knockback_duration: 0.3
   t_interaction_holder_trigger: {fileID: 793496116}
@@ -503,7 +503,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &4236260653039994421
 Transform:
   m_ObjectHideFlags: 0
@@ -525,7 +525,7 @@ Light:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4236260653039994427}
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 8
   m_Type: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
