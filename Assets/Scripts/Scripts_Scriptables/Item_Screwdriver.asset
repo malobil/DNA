@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
   m_Name: Item_Screwdriver
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 21300002, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
-  s_item_CSV_key: 
+  s_item_sprite: {fileID: 21300016, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  s_item_CSV_name_key: Screwdriver
+  s_item_CSV_description_key: 
   i_item_level: 1
   g_item_prefab: {fileID: 1384062008740358762, guid: d0639eb898c9cfa4fb5a26d46c338553,
     type: 3}

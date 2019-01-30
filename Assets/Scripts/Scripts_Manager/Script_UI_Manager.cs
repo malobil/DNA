@@ -137,6 +137,18 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
+    #region Item
+
+    public GameObject obj_item_overview;
+    public TextMeshProUGUI t_item_name ;
+    public TextMeshProUGUI t_item_level ;
+
+    public Color under_level_color;
+    public Color over_level_color;
+    
+
+    #endregion
+
     [Header("General UI")]
     public Image hold_object;
 
@@ -222,7 +234,31 @@ public class Script_UI_Manager : MonoBehaviour
         Script_Game_Manager.Instance.LoadAScene(s_scene_to_load);
     }
 
+    #region ItemHeader
 
+    public void ShowItemHeader(Script_Scriptable_Item info_to_show)
+    {
+        t_item_name.text = Script_Localization_Manager.Instance.GetLocalisedText(info_to_show.s_item_CSV_name_key) ;
+        t_item_level.text = info_to_show.i_item_level.ToString("") ;
+
+        if(info_to_show.i_item_level > Script_Player.Instance.GetPlayerLevel())
+        {
+            t_item_level.color = over_level_color;
+        }
+        else if (info_to_show.i_item_level <= Script_Player.Instance.GetPlayerLevel())
+        {
+            t_item_level.color = under_level_color;
+        }
+
+        obj_item_overview.SetActive(true);
+    }
+
+    public void HideItemHeader()
+    {
+        obj_item_overview.SetActive(false);
+    }
+
+    #endregion
 
     #region Tutorial
 

@@ -5,18 +5,22 @@ using UnityEngine;
 
 public class Script_Air_Vent : Script_ISpecialInteraction
 {
-    public Animator anim_animator ;
-    public Script_Air_Vent s_corresponding_air_vent;
+    public Sprite anim_animator ;
+    public GameObject s_corresponding_air_vent;
 
     public override void SpecialInteraction()
     {
-        anim_animator.SetTrigger("Open");
         Destroy(obj_indication_UI);
         GetComponent<Script_Interactable>().AllowInteraction();
 
         if(s_corresponding_air_vent != null)
         {
-            s_corresponding_air_vent.SpecialInteraction();
+            s_corresponding_air_vent.GetComponent<Script_Interactable>().AllowInteraction();
+            s_corresponding_air_vent.GetComponent<SpriteRenderer>().sprite = s_corresponding_air_vent.GetComponent<Script_Air_Vent>().anim_animator;
+            Destroy(s_corresponding_air_vent.GetComponent<Script_Air_Vent>());
         }
+
+        GetComponent<SpriteRenderer>().sprite = anim_animator;
+        Destroy(this);
     }
 }

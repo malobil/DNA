@@ -8,7 +8,8 @@ using UnityEngine.UI;
 public class Script_Scriptable_Item : ScriptableObject
 {
     public Sprite s_item_sprite;
-    public string s_item_CSV_key;
+    public string s_item_CSV_name_key;
+    public string s_item_CSV_description_key;
     public int i_item_level;
     public GameObject g_item_prefab;
 }

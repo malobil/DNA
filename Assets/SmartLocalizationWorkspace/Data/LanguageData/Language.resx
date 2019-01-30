@@ -137,6 +137,9 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction tutorial Title</value>
 	</data>
+	<data name="Meel_Tray" xml:space="preserve">
+		<value>Meel Tray</value>
+	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>Number 3 Dialog</value>
 	</data>
@@ -352,5 +355,8 @@
 	</data>
 	<data name="ThrowAndHold_1_Title" xml:space="preserve">
 		<value>Throw and Hold tutorial Title</value>
+	</data>
+	<data name="Screwdriver" xml:space="preserve">
+		<value>Screwdriver</value>
 	</data>
 </root>

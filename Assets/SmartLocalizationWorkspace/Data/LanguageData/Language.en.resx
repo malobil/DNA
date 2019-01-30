@@ -137,6 +137,9 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
+	<data name="Meel_Tray" xml:space="preserve">
+		<value>Meel Tray</value>
+	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>I could not sleep last night</value>
 	</data>
@@ -306,7 +309,8 @@ Other watchrooms are seeing the same behavior. Stay alert and do not forget to r
 
 Henrick: 22
 Cameron: 18
-James: 14</value>
+James: 14
+</value>
 	</data>
 	<data name="NG1_4_3_Title" xml:space="preserve">
 		<value>Scribbled notes</value>
@@ -400,6 +404,9 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	</data>
 	<data name="S3_1P6Cut4" xml:space="preserve">
 		<value />
+	</data>
+	<data name="Screwdriver" xml:space="preserve">
+		<value>Screwdriver</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>You can use the object you are carrying by pressing the &lt;color=#ff0000ff&gt;[SPACE]&lt;/color&gt; key</value>

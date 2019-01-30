@@ -137,6 +137,9 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
+	<data name="Meel_Tray" xml:space="preserve">
+		<value>Meel Tray</value>
+	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>J’ai pas réussi à dormir hier soir,</value>
 	</data>
@@ -409,6 +412,9 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	</data>
 	<data name="S3_1P6Cut4" xml:space="preserve">
 		<value>pourquoi ça marcherait avec lui ?</value>
+	</data>
+	<data name="Screwdriver" xml:space="preserve">
+		<value>Screwdriver</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Vous pouvez utiliser l'objet que vous portez en appuyant sur la touche &lt;color=#ff0000ff&gt;[ESPACE]&lt;/color&gt;</value>
