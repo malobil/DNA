@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
-  m_Name: Item_DNA_Booster
+  m_Name: Item_Chair
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 21300000, guid: 03b76c3d030540f4590c12ba7b710688, type: 3}
+  s_item_sprite: {fileID: 21300018, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
-  i_item_level: 6
-  g_item_prefab: {fileID: 4400455443766684655, guid: 3a9f0e11722b1a14e97585489a1b5d00,
+  i_item_level: 1
+  g_item_prefab: {fileID: 9090572786235250073, guid: 68920ff8382206b448d8917961b24a92,
     type: 3}
