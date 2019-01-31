@@ -12,6 +12,11 @@ GameObject:
   - component: {fileID: 3758599848552821000}
   - component: {fileID: 1882595312182095767}
   - component: {fileID: 6505786234129336161}
+  - component: {fileID: 1822962556}
+  - component: {fileID: 1822962563}
+  - component: {fileID: 1822962561}
+  - component: {fileID: 1822962562}
+  - component: {fileID: 1822962564}
   m_Layer: 0
   m_Name: Prefab_Canteen_Trash_Can
   m_TagString: Untagged
@@ -120,3 +125,93 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item_info: {fileID: 0}
+--- !u!50 &1822962556
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496575126819928642}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 55
+  m_LinearDrag: 10
+  m_AngularDrag: 0.05
+  m_GravityScale: 0
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
+--- !u!58 &1822962563
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496575126819928642}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  serializedVersion: 2
+  m_Radius: 0.8
+--- !u!114 &1822962561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496575126819928642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ddec914a9a13041a97c127457206b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object_type: 6
+  note_key_title: 
+  note_key: 
+  b_can_interact: 1
+  t_teleport_point: {fileID: 0}
+  obj_dialog_box: {fileID: 0}
+  txt_dialog: {fileID: 0}
+  s_dialog_key: []
+  card: 0
+  cinematic_to_play: {fileID: 0}
+  obj_to_spawn: {fileID: 0}
+  t_spawn_point: {fileID: 0}
+--- !u!114 &1822962562
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496575126819928642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf3575480402db40813e763382412fb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  color: 0
+  eraseRenderer: 0
+  originalLayer: 0
+  originalMaterials: []
+--- !u!114 &1822962564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496575126819928642}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d2850019509f72e4a93fd5f1e4b4cb97, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  list_object_in: []

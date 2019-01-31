@@ -97,6 +97,8 @@ public class Script_Player : MonoBehaviour
     {
         player_rb = GetComponent<Rigidbody2D>();
         a_player_animator = GetComponent<Animator>();
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void Update()
@@ -371,13 +373,13 @@ public class Script_Player : MonoBehaviour
 
     #region Hold & Drop
 
-    public void Hold()
+    public void Hold(GameObject obj_to_hold)
     {
         if (obj_current_object_hold != null)
         {
             Drop();
         }
-            obj_current_object_hold = obj_current_target.gameObject;
+            obj_current_object_hold = obj_to_hold;
             obj_current_object_hold.transform.SetParent(transform);
             obj_current_object_hold.gameObject.SetActive(false);
             obj_current_object_hold.transform.localPosition = new Vector2(0, 0);
