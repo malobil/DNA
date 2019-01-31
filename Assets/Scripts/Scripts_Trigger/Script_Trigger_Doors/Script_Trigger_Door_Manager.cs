@@ -101,9 +101,10 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         VerifyCard();
     }
 
-    public void DeactiveDoor()
+    public void DisableDoor()
     {
         d_door_type = Doortype.BlockedDoor;
+        CloseDoor() ;
         VerifyCard();
     }
 }
