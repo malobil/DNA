@@ -64,6 +64,8 @@ public class Script_UI_Manager : MonoBehaviour
     public GameObject obj_transformation_choice;
     public GameObject obj_no_transformation_text;
     public Transform t_transformation_layout;
+
+    private List<GameObject> b_list_transformation = new List<GameObject>() ;
     #endregion
 
     #region Distort
@@ -182,7 +184,7 @@ public class Script_UI_Manager : MonoBehaviour
         {
             Destroy(child.gameObject);
         }
-
+        b_list_transformation.Clear();
         obj_transformation_choice.SetActive(true);
 
         foreach(Script_Scriptable_Item item in Script_Collection.Instance.l_item_in_collection)
@@ -191,8 +193,15 @@ public class Script_UI_Manager : MonoBehaviour
             {
                 GameObject obj_new_tile = Instantiate(obj_transformation_tile, t_transformation_layout);
                 obj_new_tile.GetComponent<Script_Tile_Transformation>().SetupTile(item);
+                b_list_transformation.Add(obj_new_tile);
                 obj_no_transformation_text.SetActive(false);
             }
+        }
+
+        if (b_list_transformation.Count > 0)
+        {
+            event_system.SetSelectedGameObject(b_list_transformation[0]);
+            b_list_transformation[0].GetComponent<Button>().OnSelect(null);
         }
     }
 
