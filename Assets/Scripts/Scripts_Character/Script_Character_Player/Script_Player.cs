@@ -237,17 +237,7 @@ public class Script_Player : MonoBehaviour
             if(target.GetComponent<Script_ISpecialInteraction>())
             {
                 target.GetComponent<Script_ISpecialInteraction>().EnableSpecialIndication();
-            } 
-
-            if(!Script_Game_Manager.Instance.GetTutorialState().b_do_interaction_tuto)
-            {
-                Script_Game_Manager.Instance.LaunchInteractionTutorial();
-            }
-            else if(!Script_Game_Manager.Instance.GetTutorialState().b_do_special_interaction_tuto && target.GetComponent<Script_ISpecialInteraction>())
-            {
-                Script_Game_Manager.Instance.LaunchSpecialInteractionTutorial();
-            }
-                
+            }   
         }
         else
         {
@@ -393,13 +383,7 @@ public class Script_Player : MonoBehaviour
             obj_current_object_hold.transform.localPosition = new Vector2(0, 0);
             Script_UI_Manager.Instance.NewObjectHold(obj_current_object_hold.GetComponent<SpriteRenderer>().sprite); // UI
             RemoveInteractibleObject(obj_current_target); // Remove object from the list
-            SelectTarget(null); // Remove the target
-
-            if(!Script_Game_Manager.Instance.GetTutorialState().b_do_throw_tuto)
-            {
-                Script_Game_Manager.Instance.LaunchThrowTutorial();
-            }
-        
+            SelectTarget(null); // Remove the target        
     }
 
     public void DestroyHoldObject()
@@ -454,7 +438,6 @@ public class Script_Player : MonoBehaviour
             if(playerLevel >= g_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem().i_item_level)
             {
                 Script_Collection.Instance.AddItemToCollection(g_current_distortable_target.GetComponent<Script_Distortable>().GetScriptableItem());
-                Destroy(g_current_distortable_target);
             }
             else
             {

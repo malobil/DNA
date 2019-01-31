@@ -8,8 +8,6 @@ public class Script_Game_Manager : MonoBehaviour
 {
     public static Script_Game_Manager Instance { get; private set; }
 
-    public Tutorial tutorials_state;
-
     private bool b_game_is_pause = false;
     private bool b_game_is_over = false;
     private bool b_is_in_cinematic = false;
@@ -108,35 +106,6 @@ public class Script_Game_Manager : MonoBehaviour
         return b_game_is_over;
     }
 
-    #region Tutorial
-
-    public void LaunchInteractionTutorial()
-    {
-        SetTimePause();
-        Script_UI_Manager.Instance.LaunchInteractionTutorial();
-        tutorials_state.b_do_interaction_tuto = true;
-    }
-
-    public void LaunchThrowTutorial()
-    {
-        SetTimePause();
-        Script_UI_Manager.Instance.LaunchThrowTutorial();
-        tutorials_state.b_do_throw_tuto = true;
-    }
-
-    public void LaunchSpecialInteractionTutorial()
-    {
-        SetTimePause();
-        Script_UI_Manager.Instance.LaunchSpecialInteractionTutorial();
-        tutorials_state.b_do_special_interaction_tuto = true;
-    }
-
-    public Tutorial GetTutorialState()
-    {
-        return tutorials_state;
-    }
-
-    #endregion
 
     #region Save & Load
 
@@ -213,14 +182,6 @@ public class Script_Game_Manager : MonoBehaviour
             SendPlayerToEntryPoint();
         }
     }
-}
-
-[Serializable]
-public class Tutorial
-{
-    public bool b_do_interaction_tuto;
-    public bool b_do_throw_tuto;
-    public bool b_do_special_interaction_tuto;
 }
 
 

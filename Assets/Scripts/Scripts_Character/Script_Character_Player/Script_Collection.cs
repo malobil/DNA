@@ -27,6 +27,7 @@ public class Script_Collection : MonoBehaviour
         {
             l_item_in_collection.Add(item_to_add);
             Script_UI_Manager.Instance.AddTileToCollection(item_to_add);
+            Script_UI_Manager.Instance.ShowNewItemUI(item_to_add);
         }
     }
 }

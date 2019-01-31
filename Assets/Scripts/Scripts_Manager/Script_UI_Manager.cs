@@ -4,19 +4,26 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class Script_UI_Manager : MonoBehaviour
 {
     public static Script_UI_Manager Instance { get; private set; }
 
+    public EventSystem event_system;
+
     #region Pause
 
+    [Header("Pause menu")]
     public GameObject obj_pause_menu;
     public Transform obj_menu_parent;
+    public GameObject obj_base_button_selected;
 
     public void ShowPauseMenu()
     {
         obj_pause_menu.SetActive(true);
+        event_system.SetSelectedGameObject(obj_base_button_selected);
+        obj_base_button_selected.GetComponent<Button>().OnSelect(null);
     }
 
     #endregion
@@ -59,12 +66,16 @@ public class Script_UI_Manager : MonoBehaviour
     public Transform t_transformation_layout;
     #endregion
 
-    #region Menu Manager
+    #region Distort
 
-    [Header("Menu Manager")]
+    [Header("New items UI")]
+    public GameObject obj_new_item_ui;
+    public TextMeshProUGUI t_obj_name ;
+    public TextMeshProUGUI t_obj_description ;
+    public Image img_obj_sprite ;
 
-    public GameObject[] g_all_menu;
-    private int i_current_menu;
+    #endregion
+
 
     public void QuitGame()
     {
@@ -80,16 +91,6 @@ public class Script_UI_Manager : MonoBehaviour
     {
         SceneManager.LoadScene("Scene_Arthur");
     }
-
-    public void ChangeMenu(int i_menu_to_activate)
-    {
-        g_all_menu[i_current_menu].SetActive(false);
-        g_all_menu[i_menu_to_activate].SetActive(true);
-        i_current_menu = i_menu_to_activate;
-    }
-
-
-    #endregion
 
     #region GameOver
 
@@ -127,16 +128,6 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
-    #region Tutorial
-
-    [Header("Tutorial")]
-    public GameObject obj_tutorial_holder;
-    public GameObject obj_interact_tutorial;
-    public GameObject obj_throw_tutorial;
-    public GameObject obj_special_interaction_tutorial;
-
-    #endregion
-
     #region Item
 
     public GameObject obj_item_overview;
@@ -164,12 +155,6 @@ public class Script_UI_Manager : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void Start()
-    {
-        i_current_menu = 0;
-    }
-
 
     public void NewObjectHold(Sprite new_object)
     {
@@ -260,25 +245,22 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
-    #region Tutorial
+    #region NewItem
 
-    public void LaunchInteractionTutorial()
+    public void ShowNewItemUI(Script_Scriptable_Item object_data)
     {
-        obj_tutorial_holder.SetActive(true);
-        obj_interact_tutorial.SetActive(true);
+        t_obj_name.text = Script_Localization_Manager.Instance.GetLocalisedText(object_data.s_item_CSV_name_key);
+        t_obj_description.text = Script_Localization_Manager.Instance.GetLocalisedText(object_data.s_item_CSV_description_key);
+        img_obj_sprite.sprite = object_data.s_item_sprite;
+        obj_new_item_ui.SetActive(true);
+        Script_Game_Manager.Instance.SetTimePause();
     }
 
-    public void LaunchThrowTutorial()
+    public void HideItemUI()
     {
-        obj_tutorial_holder.SetActive(true);
-        obj_throw_tutorial.SetActive(true);
-    }
-
-    public void LaunchSpecialInteractionTutorial()
-    {
-        obj_tutorial_holder.SetActive(true);
-        obj_special_interaction_tutorial.SetActive(true);
+        obj_new_item_ui.SetActive(false);
     }
 
     #endregion
+
 }
