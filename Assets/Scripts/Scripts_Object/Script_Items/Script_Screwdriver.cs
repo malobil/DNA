@@ -11,9 +11,5 @@ public class Script_Screwdriver : Script_IObject
             player_target.GetComponent<Script_Air_Vent>().SpecialInteraction();
             DestroySelf();
         }
-        else
-        {
-            Attack();
-        }
     }
 }
