@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8516984887676220108}
   - component: {fileID: 8516984887676220099}
   - component: {fileID: 8516984887676220098}
+  - component: {fileID: 8570098884159465383}
   m_Layer: 11
   m_Name: Prefab_Bed_Down
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.3333334, y: 2.0886319}
   m_EdgeRadius: 0
+--- !u!114 &8570098884159465383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8516984887676220097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

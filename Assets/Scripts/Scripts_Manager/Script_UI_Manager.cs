@@ -232,16 +232,20 @@ public class Script_UI_Manager : MonoBehaviour
 
     public void ShowItemHeader(Script_Scriptable_Item info_to_show)
     {
-        t_item_name.text = Script_Localization_Manager.Instance.GetLocalisedText(info_to_show.s_item_CSV_name_key) ;
-        t_item_level.text = info_to_show.i_item_level.ToString("") ;
+        if(info_to_show != null)
+        {
+            t_item_name.text = Script_Localization_Manager.Instance.GetLocalisedText(info_to_show.s_item_CSV_name_key);
+            t_item_level.text = info_to_show.i_item_level.ToString("");
 
-        if(info_to_show.i_item_level > Script_Player.Instance.GetPlayerLevel())
-        {
-            t_item_level.color = over_level_color;
-        }
-        else if (info_to_show.i_item_level <= Script_Player.Instance.GetPlayerLevel())
-        {
-            t_item_level.color = under_level_color;
+            if (info_to_show.i_item_level > Script_Player.Instance.GetPlayerLevel())
+            {
+                t_item_level.color = over_level_color;
+            }
+            else if (info_to_show.i_item_level <= Script_Player.Instance.GetPlayerLevel())
+            {
+                t_item_level.color = under_level_color;
+            }
+
         }
 
         obj_item_overview.SetActive(true);

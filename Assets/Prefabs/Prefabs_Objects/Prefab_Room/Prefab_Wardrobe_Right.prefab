@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6580291792910527863}
   - component: {fileID: 6580291792910527862}
   - component: {fileID: 6580291792910527861}
+  - component: {fileID: 7237211082940734808}
   m_Layer: 0
   m_Name: Prefab_Wardrobe_Right
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.38091022, y: 1.6232289}
   m_EdgeRadius: 0
+--- !u!114 &7237211082940734808
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6580291792910527860}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

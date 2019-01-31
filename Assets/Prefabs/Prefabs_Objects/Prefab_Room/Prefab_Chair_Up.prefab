@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3383816556246093851}
   - component: {fileID: 3383816556246093850}
   - component: {fileID: 3383816556246093845}
+  - component: {fileID: 6706766523424549871}
   m_Layer: 0
   m_Name: Prefab_Chair_Up
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.41666666, y: 0.6231265}
   m_EdgeRadius: 0
+--- !u!114 &6706766523424549871
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3383816556246093844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1968638525086482025}
   - component: {fileID: 1968638525086482024}
   - component: {fileID: 1968638525086482031}
+  - component: {fileID: 3525223577680064275}
   m_Layer: 0
   m_Name: Prefab_Wardrobe_Left
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.37387687, y: 1.6251087}
   m_EdgeRadius: 0
+--- !u!114 &3525223577680064275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1968638525086482030}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

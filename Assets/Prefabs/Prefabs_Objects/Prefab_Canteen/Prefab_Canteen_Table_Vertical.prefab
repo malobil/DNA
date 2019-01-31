@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 48435911300669469}
   - component: {fileID: 5702642610313086249}
   - component: {fileID: 6414130310646780704}
+  - component: {fileID: 5057137730615807713}
   m_Layer: 11
   m_Name: Prefab_Canteen_Table_Vertical
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1.3333334}
   m_EdgeRadius: 0
+--- !u!114 &5057137730615807713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7388663166263206096}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

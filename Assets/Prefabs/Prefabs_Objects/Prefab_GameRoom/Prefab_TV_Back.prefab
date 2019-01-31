@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5575670806425880578}
   - component: {fileID: 304464817179042766}
   - component: {fileID: 5623997518348588573}
+  - component: {fileID: 6539964037047330551}
   m_Layer: 0
   m_Name: Prefab_TV_Back
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.33333334}
   m_EdgeRadius: 0
+--- !u!114 &6539964037047330551
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5623997518348588572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

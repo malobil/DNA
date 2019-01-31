@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 1851722011902397307}
   - component: {fileID: 1851722011902397308}
   - component: {fileID: 3582801570327125172}
+  - component: {fileID: 28312732512890283}
   m_Layer: 0
   m_Name: Prefab_TV_Up
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.8333333, y: 0.5833333}
   m_EdgeRadius: 0
+--- !u!114 &28312732512890283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1851722011902397309}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

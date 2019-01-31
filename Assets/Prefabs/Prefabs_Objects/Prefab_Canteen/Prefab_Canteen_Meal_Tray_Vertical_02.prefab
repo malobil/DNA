@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3425236936274551117}
   - component: {fileID: 8772770640950880012}
   - component: {fileID: 2138300858110358780}
+  - component: {fileID: 197887558079909834}
   m_Layer: 8
   m_Name: Prefab_Canteen_Meal_Tray_Vertical_02
   m_TagString: Untagged
@@ -159,6 +160,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   object_type: 1
+  note_key_title: 
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
@@ -167,3 +169,18 @@ MonoBehaviour:
   s_dialog_key: []
   card: 0
   cinematic_to_play: {fileID: 0}
+  obj_to_spawn: {fileID: 0}
+  t_spawn_point: {fileID: 0}
+--- !u!114 &197887558079909834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 312134458298269301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

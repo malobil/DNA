@@ -22,6 +22,9 @@ public class Script_MainMenu_Manager : MonoBehaviour
         {
             Destroy(Script_Player.Instance.gameObject);
         }
+
+        Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Confined;
     }
 
     public void QuitGame()

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2426883907675850318}
   - component: {fileID: 2426883907675850313}
   - component: {fileID: 2426883907675850312}
+  - component: {fileID: 488629077282146444}
   m_Layer: 0
   m_Name: Prefab_Chair_Left
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.33333334, y: 0.7506162}
   m_EdgeRadius: 0
+--- !u!114 &488629077282146444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426883907675850315}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

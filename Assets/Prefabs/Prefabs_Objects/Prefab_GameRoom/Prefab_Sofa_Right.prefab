@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 6711919870729117745}
   - component: {fileID: 5623469231024667280}
   - component: {fileID: 8624520768934683710}
+  - component: {fileID: 6944912659465250764}
   m_Layer: 0
   m_Name: Prefab_Sofa_Right
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7083333, y: 1.6737003}
   m_EdgeRadius: 0
+--- !u!114 &6944912659465250764
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1909074937135594685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}

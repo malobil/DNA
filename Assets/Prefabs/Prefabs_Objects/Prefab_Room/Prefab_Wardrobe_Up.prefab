@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4703186697691315068}
   - component: {fileID: 4057194601968659150}
   - component: {fileID: 8344788512997839278}
+  - component: {fileID: 2780676637177299792}
   m_Layer: 0
   m_Name: Prefab_Wardrobe_Up
   m_TagString: Untagged
@@ -106,3 +107,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.9166667, y: 1.2566171}
   m_EdgeRadius: 0
+--- !u!114 &2780676637177299792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204325033881308381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 0}
