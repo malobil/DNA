@@ -116,6 +116,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Apple_1" xml:space="preserve">
+		<value>Se lance dans une direction,
+est détruite lorsqu'elle touche quelque chose.</value>
+	</data>
+	<data name="Apple_Title" xml:space="preserve">
+		<value>Pomme</value>
+	</data>
+	<data name="Box_1" xml:space="preserve">
+		<value>Les boites de rangements peuvent etre poussés.</value>
+	</data>
+	<data name="Box_Title" xml:space="preserve">
+		<value>Boite de rangement </value>
+	</data>
+	<data name="Cabinet_1" xml:space="preserve">
+		<value>Bloque le champ de vison des gardes et des caméras.</value>
+	</data>
+	<data name="Cabinet_Title" xml:space="preserve">
+		<value>Armoire</value>
+	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>d’être là !</value>
 	</data>
@@ -136,6 +155,13 @@
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
+	</data>
+	<data name="Laser_1" xml:space="preserve">
+		<value>Ce laser s'arrête s'il rencontre un obstacle.
+Il vous repousse si vous le touchez.</value>
+	</data>
+	<data name="Laser_Title" xml:space="preserve">
+		<value>Laser</value>
 	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
@@ -335,6 +361,12 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes d’un scientifique</value>
 	</data>
+	<data name="Pressureplate_1" xml:space="preserve">
+		<value>Active un mécanisme si un objet lourd est posé dessus.</value>
+	</data>
+	<data name="Pressureplate_Title" xml:space="preserve">
+		<value>Plaque de pression</value>
+	</data>
 	<data name="S1_1_P1Cut4" xml:space="preserve">
 		<value>J’ai bien cru qu’on courait</value>
 	</data>
@@ -416,6 +448,12 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	<data name="Screwdriver" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
+	<data name="Spawner_1" xml:space="preserve">
+		<value>La fiole permet de vous faire gagner un niveau.</value>
+	</data>
+	<data name="Spawner_Title" xml:space="preserve">
+		<value>Fiole de D'N'A</value>
+	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Vous pouvez utiliser l'objet que vous portez en appuyant sur la touche &lt;color=#ff0000ff&gt;[ESPACE]&lt;/color&gt;</value>
 	</data>
@@ -429,5 +467,12 @@ Plus vous maintenez la touche plus le lancer ira loin.</value>
 	</data>
 	<data name="ThrowAndHold_1_Title" xml:space="preserve">
 		<value>&lt;size=23&gt;Porter et lancer un objet&lt;/size&gt;  </value>
+	</data>
+	<data name="Trashcan_1" xml:space="preserve">
+		<value>Un objet déposé au dessus rentre dans la poubelle, 
+la poubelle peut contenir 3 objets.</value>
+	</data>
+	<data name="Trashcan_Title" xml:space="preserve">
+		<value>Poubelle</value>
 	</data>
 </root>

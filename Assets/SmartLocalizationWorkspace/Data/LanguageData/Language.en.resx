@@ -116,6 +116,25 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Apple_1" xml:space="preserve">
+		<value>Go in one direction,
+is destroyed when it hits something.</value>
+	</data>
+	<data name="Apple_Title" xml:space="preserve">
+		<value>Apple</value>
+	</data>
+	<data name="Box_1" xml:space="preserve">
+		<value>Storage boxes can be pushed.</value>
+	</data>
+	<data name="Box_Title" xml:space="preserve">
+		<value>Storage Box</value>
+	</data>
+	<data name="Cabinet_1" xml:space="preserve">
+		<value>Block the field of view of guards and cameras.</value>
+	</data>
+	<data name="Cabinet_Title" xml:space="preserve">
+		<value>Cabinet</value>
+	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>How did you get here?</value>
 	</data>
@@ -137,8 +156,15 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
+	<data name="Laser_1" xml:space="preserve">
+		<value>This laser stops if it encounters an obstacle,
+He pushes you away if you touch him.</value>
+	</data>
+	<data name="Laser_Title" xml:space="preserve">
+		<value>Laser</value>
+	</data>
 	<data name="Meel_Tray" xml:space="preserve">
-		<value>Meel Tray</value>
+		<value>Meal Tray</value>
 	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>I could not sleep last night</value>
@@ -327,6 +353,12 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist</value>
 	</data>
+	<data name="Pressureplate_1" xml:space="preserve">
+		<value>A mechanism is activated if a heavy object is placed on it.</value>
+	</data>
+	<data name="Pressureplate_Title" xml:space="preserve">
+		<value>Pressure Plate</value>
+	</data>
 	<data name="S1_1_P1Cut4" xml:space="preserve">
 		<value>I thought we were running the disaster</value>
 	</data>
@@ -408,6 +440,12 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	<data name="Screwdriver" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
+	<data name="Spawner_1" xml:space="preserve">
+		<value>The flask allows you to gain a level.</value>
+	</data>
+	<data name="Spawner_Title" xml:space="preserve">
+		<value>Flask of D'N'A</value>
+	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>You can use the object you are carrying by pressing the &lt;color=#ff0000ff&gt;[SPACE]&lt;/color&gt; key</value>
 	</data>
@@ -421,5 +459,12 @@ if you hold the key long the throw will go far.</value>
 	</data>
 	<data name="ThrowAndHold_1_Title" xml:space="preserve">
 		<value>Throwing and hold objects</value>
+	</data>
+	<data name="Trashcan_1" xml:space="preserve">
+		<value>An object deposited above goes into the trash,
+the trash can hold 3 objects.</value>
+	</data>
+	<data name="Trashcan_Title" xml:space="preserve">
+		<value>Trashcan</value>
 	</data>
 </root>
