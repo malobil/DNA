@@ -16,6 +16,7 @@ GameObject:
   - component: {fileID: 396776518860534405}
   - component: {fileID: 8976454273258841127}
   - component: {fileID: 2610243927808330973}
+  - component: {fileID: 3852904947718143618}
   m_Layer: 0
   m_Name: Prefab_Wardrobe_Up
   m_TagString: Untagged
@@ -178,3 +179,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item_scriptable: {fileID: 11400000, guid: 87f7992d1f0c7ee43b0d2b3d95e26817, type: 2}
+--- !u!50 &3852904947718143618
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7204325033881308381}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
