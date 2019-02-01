@@ -30,6 +30,7 @@ public class Script_Player : MonoBehaviour
 
     [Header("Interaction")]
     public Transform t_interaction_holder_trigger;
+    public float f_drop_distance;
 
     private List<GameObject> list_interactible_objects = new List<GameObject>() ;
     private GameObject obj_current_target;
@@ -140,7 +141,7 @@ public class Script_Player : MonoBehaviour
 
             if (Input.GetButtonDown("Drop") && obj_current_object_hold != null)
             {
-                Drop();
+                Drop(f_drop_distance);
             }
 
             if (Input.GetButtonDown("SwitchTarget") && list_interactible_objects.Count > 1)
@@ -387,7 +388,7 @@ public class Script_Player : MonoBehaviour
     {
         if (obj_current_object_hold != null)
         {
-            Drop();
+            Drop(f_drop_distance);
         }
             obj_current_object_hold = obj_to_hold;
             obj_current_object_hold.transform.SetParent(transform);
@@ -405,11 +406,11 @@ public class Script_Player : MonoBehaviour
         Script_UI_Manager.Instance.NewObjectHold(null);
     }
 
-    private void Drop()
+    public void Drop(float force)
     {
         obj_current_object_hold.transform.SetParent(null);
         obj_current_object_hold.gameObject.SetActive(true);
-        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * 2f, ForceMode2D.Impulse);
+        obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * force, ForceMode2D.Impulse);
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
     }
