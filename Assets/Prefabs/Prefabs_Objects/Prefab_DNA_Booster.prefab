@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4993092228911604604}
   - component: {fileID: 8762000912751335548}
   - component: {fileID: 3157036779919100924}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prefab_DNA_Booster
   m_TagString: Untagged
   m_Icon: {fileID: 0}

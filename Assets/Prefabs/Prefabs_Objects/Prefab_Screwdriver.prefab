@@ -139,7 +139,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &7844618011421277776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,7 +204,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851aa2feea1d6a24bae1b671970f7676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_scriptable: {fileID: 11400000, guid: 914d957f16aef6147a5e61730882edac, type: 2}
 --- !u!114 &3913218258975303103
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -217,7 +216,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_scriptable: {fileID: 11400000, guid: 914d957f16aef6147a5e61730882edac, type: 2}
 --- !u!114 &2133402221085563709
 MonoBehaviour:
   m_ObjectHideFlags: 0
