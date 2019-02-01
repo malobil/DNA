@@ -40,7 +40,8 @@ public class Script_PressurePlate : MonoBehaviour
 
     public void AddAnObjectIn(GameObject object_to_add)
     {
-        if(!obj_in.Contains(object_to_add))
+        f_current_weight = 0;
+        if (!obj_in.Contains(object_to_add))
         {
             obj_in.Add(object_to_add);
         }
