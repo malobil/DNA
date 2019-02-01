@@ -9,36 +9,46 @@ public class Script_PressurePlate : MonoBehaviour
     private float f_current_weight;
     private bool b_is_active = false;
 
+    private List<GameObject> obj_in = new List<GameObject>() ;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.gameObject.GetComponent<Script_ItemInfo>())
+        if(collision.gameObject.GetComponentInParent<Script_ItemInfo>())
         {
-            AddWeight(collision.gameObject.GetComponentInParent<Rigidbody2D>().mass);
-            collision.gameObject.GetComponent<Script_ItemInfo>().AddAPressurePlate(this);
+            AddAnObjectIn(collision.gameObject);
+            collision.gameObject.GetComponentInParent<Script_ItemInfo>().AddAPressurePlate(this);
         }
 
         if(collision.CompareTag("Player"))
         {
-            AddWeight(100f);
+            AddAnObjectIn(collision.gameObject);
         }
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (collision.gameObject.GetComponent<Rigidbody2D>())
+        if (collision.gameObject.GetComponentInParent<Rigidbody2D>())
         {
-            RemoveWeight(collision.gameObject.GetComponentInParent<Rigidbody2D>().mass);
+            RemoveAnObjectIn(collision.gameObject);
         }
 
         if (collision.CompareTag("Player"))
         {
-            RemoveWeight(100f);
+            RemoveAnObjectIn(collision.gameObject);
         }
     }
 
-    public void AddWeight(float f_weight_to_add)
+    public void AddAnObjectIn(GameObject object_to_add)
     {
-        f_current_weight += f_weight_to_add;
+        if(!obj_in.Contains(object_to_add))
+        {
+            obj_in.Add(object_to_add);
+        }
+        
+        foreach(GameObject obj in obj_in)
+        {
+            f_current_weight += obj.GetComponentInParent<Rigidbody2D>().mass;
+        }
 
         if (f_current_weight >= f_weight_to_activate && !b_is_active)
         {
@@ -46,9 +56,13 @@ public class Script_PressurePlate : MonoBehaviour
         }
     }
 
-    public void RemoveWeight(float f_weight_to_remove)
+    public void RemoveAnObjectIn(GameObject object_to_remove)
     {
-        f_current_weight -= f_weight_to_remove;
+        if (obj_in.Contains(object_to_remove))
+        {
+            f_current_weight -= object_to_remove.GetComponentInParent<Rigidbody2D>().mass;
+            obj_in.Remove(object_to_remove);
+        }
 
         if (f_current_weight < f_weight_to_activate && b_is_active)
         {

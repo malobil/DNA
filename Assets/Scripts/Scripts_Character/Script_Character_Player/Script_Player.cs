@@ -521,8 +521,6 @@ public class Script_Player : MonoBehaviour
         Script_UI_Manager.Instance.HideAllMenu();
     }
 
-    
-
     public void AllowAlter()
     {
         b_can_alter = true;

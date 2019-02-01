@@ -20,7 +20,7 @@ public class Script_ItemInfo : MonoBehaviour
 
     public void RemovePressurePlate()
     {
-        pressure_plate.RemoveWeight(GetComponent<Rigidbody2D>().mass);
+        pressure_plate.RemoveAnObjectIn(gameObject);
         pressure_plate = null ;
     }
 
