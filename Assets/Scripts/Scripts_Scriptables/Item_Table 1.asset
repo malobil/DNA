@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
-  m_Name: Item_Note
+  m_Name: Item_Table 1
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 21300036, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
+  s_item_sprite: {fileID: 21300006, guid: 454ea17ebfde21044a75b652bc600d6b, type: 3}
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
   i_item_level: 1
-  g_item_prefab: {fileID: 2682756661957911653, guid: 2036354f9a2eb38488ef7fe48620e1cf,
+  g_item_prefab: {fileID: 825609091317142360, guid: 1b8e343d31b5bdf4c8e6914f19d96e79,
     type: 3}
