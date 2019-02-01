@@ -250,23 +250,33 @@ public class Script_Player : MonoBehaviour
 
     public void RemoveInteractibleObject(GameObject obj_interactible_object)
     {
-        list_interactible_objects.Remove(obj_interactible_object);
-        obj_interactible_object.GetComponent<Outline>().DisableOutline();
-
-        if (obj_interactible_object.GetComponent<Script_ISpecialInteraction>())
+        
+        if(obj_interactible_object != null)
         {
-            obj_interactible_object.GetComponent<Script_ISpecialInteraction>().DisableSpecialIndication();
-        }
+            list_interactible_objects.Remove(obj_interactible_object);
 
-        if (obj_interactible_object == obj_current_target)
-        {
-            SelectTarget(null);
-
-            if (list_interactible_objects.Count > 0)
+            if (obj_interactible_object.GetComponent<Outline>())
             {
-                SelectTarget(list_interactible_objects[0]);
+                obj_interactible_object.GetComponent<Outline>().DisableOutline();
+            }
+
+
+            if (obj_interactible_object.GetComponent<Script_ISpecialInteraction>())
+            {
+                obj_interactible_object.GetComponent<Script_ISpecialInteraction>().DisableSpecialIndication();
+            }
+
+            if (obj_interactible_object == obj_current_target)
+            {
+                SelectTarget(null);
+
+                if (list_interactible_objects.Count > 0)
+                {
+                    SelectTarget(list_interactible_objects[0]);
+                }
             }
         }
+        
     }
 
     private void AllowInteract()
@@ -387,6 +397,7 @@ public class Script_Player : MonoBehaviour
             RemoveInteractibleObject(obj_current_target); // Remove object from the list
             SelectTarget(null); // Remove the target        
     }
+
 
     public void DestroyHoldObject()
     {
@@ -537,7 +548,11 @@ public class Script_Player : MonoBehaviour
 
     private void UseItem()
     {
-        obj_current_object_hold.GetComponent<Script_IObject>().Use(obj_current_target);
+        if (obj_current_object_hold.GetComponent<Script_IObject>())
+        {
+            obj_current_object_hold.GetComponent<Script_IObject>().Use(obj_current_target);
+        }
+        
     }
 
     public void AllowUse()
