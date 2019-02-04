@@ -659,4 +659,13 @@ public class Script_Player : MonoBehaviour
     }
 
     #endregion
+
+    #region Level
+
+    public void LevelUp()
+    {
+        playerLevel++;
+    }
+
+    #endregion
 }
