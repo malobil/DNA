@@ -5,23 +5,20 @@ using UnityEngine;
 public class Script_Laser : MonoBehaviour
 {
     public float f_max_range = 10f;
-    private LineRenderer lineRenderer_component;
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        lineRenderer_component = GetComponent<LineRenderer>();
-    }
+    public LayerMask collision_layer;
+    public LineRenderer lineRenderer_component;
 
     // Update is called once per frame
-    void FixedUpdate()
+    void Update()
     {
-        RaycastHit2D hit = Physics2D.Raycast(transform.position, Vector2.up, f_max_range);
+        //Debug.DrawLine(transform.position, transform.up, Color.red, f_max_range);
 
-
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, transform.up, f_max_range, collision_layer);
+      
         if (hit.collider != null)
         {
-            //lineRenderer_component.SetPosition(1, new Vector3(0,0,hit.transform.position.z));
+            float f_z_distance = Vector3.Distance(transform.position, hit.point);
+            lineRenderer_component.SetPosition(1, new Vector3(0,0, f_z_distance)); 
             Debug.Log(hit.collider.gameObject.name);
         }
         else
