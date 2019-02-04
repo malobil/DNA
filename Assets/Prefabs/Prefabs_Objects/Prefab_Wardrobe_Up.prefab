@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 8976454273258841127}
   - component: {fileID: 2610243927808330973}
   - component: {fileID: 3852904947718143618}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Prefab_Wardrobe_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

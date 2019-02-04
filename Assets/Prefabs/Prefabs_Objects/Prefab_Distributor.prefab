@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 7504019914744626742}
   - component: {fileID: 2637726456498391652}
   - component: {fileID: 8633744271944712988}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Prefab_Distributor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -182,7 +182,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

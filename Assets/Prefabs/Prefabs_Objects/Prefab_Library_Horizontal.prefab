@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 4553349540205646877}
   - component: {fileID: 4237208630129877970}
   - component: {fileID: 659409068504234194}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Prefab_Library_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -190,7 +190,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
+  m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
