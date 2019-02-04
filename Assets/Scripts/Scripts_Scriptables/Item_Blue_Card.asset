@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
-  m_Name: Item_Note
+  m_Name: Item_Blue_Card
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 21300036, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
+  s_item_sprite: {fileID: 21300000, guid: 629f4cfb2092d61439710600346231f6, type: 3}
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
-  i_item_level: 1
-  g_item_prefab: {fileID: 2682756661957911653, guid: 2036354f9a2eb38488ef7fe48620e1cf,
+  i_item_level: 6
+  g_item_prefab: {fileID: 414647110475950471, guid: 7da37a1fb55d49a4c96153c7ca17cf00,
     type: 3}

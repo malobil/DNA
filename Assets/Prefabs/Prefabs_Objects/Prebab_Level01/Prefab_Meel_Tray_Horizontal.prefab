@@ -19,7 +19,7 @@ GameObject:
   - component: {fileID: 1893444211}
   - component: {fileID: 8495964971387584915}
   m_Layer: 8
-  m_Name: Prefab_Meel_Tray
+  m_Name: Prefab_Meel_Tray_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

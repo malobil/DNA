@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
   m_Name: Item_Book
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 0}
+  s_item_sprite: {fileID: 21300054, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
-  i_item_level: 0
-  g_item_prefab: {fileID: 0}
+  i_item_level: 1
+  g_item_prefab: {fileID: 8770662106432939844, guid: 7921a8cbfb0c7104687f3fe02d5ffce6,
+    type: 3}
