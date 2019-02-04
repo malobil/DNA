@@ -155,12 +155,6 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction tutorial Title</value>
 	</data>
-	<data name="Laser_1" xml:space="preserve">
-		<value>Laser Object</value>
-	</data>
-	<data name="Laser_Title" xml:space="preserve">
-		<value>Laser Object Title</value>
-	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
 	</data>
@@ -235,6 +229,42 @@
 	</data>
 	<data name="N9_1P2" xml:space="preserve">
 		<value>Number 9 Dialog</value>
+	</data>
+	<data name="Speakers_1" xml:space="preserve">
+		<value>Speakers Dialog </value>
+	</data>
+	<data name="N11_1" xml:space="preserve">
+		<value>N11 Dialog</value>
+	</data>
+	<data name="N11_2" xml:space="preserve">
+		<value>N11 Dialog</value>
+	</data>
+	<data name="SP1_1" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_2" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_3" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_4" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_5" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_6" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_7" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_8" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_9" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>Journal of Number 2 text</value>

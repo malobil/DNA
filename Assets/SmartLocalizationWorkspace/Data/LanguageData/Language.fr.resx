@@ -117,20 +117,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="Apple_1" xml:space="preserve">
-		<value>Se lance dans une direction,
-est détruite lorsqu'elle touche quelque chose.</value>
+		<value>Elle a l'air bien juteuse...</value>
 	</data>
 	<data name="Apple_Title" xml:space="preserve">
 		<value>Pomme</value>
 	</data>
 	<data name="Box_1" xml:space="preserve">
-		<value>Les boites de rangements peuvent etre poussés.</value>
+		<value>Assez légére pour etre poussée...</value>
 	</data>
 	<data name="Box_Title" xml:space="preserve">
 		<value>Boite de rangement </value>
 	</data>
 	<data name="Cabinet_1" xml:space="preserve">
-		<value>Bloque le champ de vison des gardes et des caméras.</value>
+		<value>Ça ferait une bonne cachette ! </value>
 	</data>
 	<data name="Cabinet_Title" xml:space="preserve">
 		<value>Armoire</value>
@@ -156,15 +155,17 @@ est détruite lorsqu'elle touche quelque chose.</value>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
-	<data name="Laser_1" xml:space="preserve">
-		<value>Ce laser s'arrête s'il rencontre un obstacle.
-Il vous repousse si vous le touchez.</value>
-	</data>
-	<data name="Laser_Title" xml:space="preserve">
-		<value>Laser</value>
-	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
+	</data>
+	<data name="N11_1" xml:space="preserve">
+		<value>Salut ! Quoi de neuf aujourd'hui ? Pas trop nerveux pour ton premier test ? 
+Oh non ! Les gardes ont encore fait tomber les poubelles.
+Tu veux bien m'aider à remettre les pommes dans la poubelle ?</value>
+	</data>
+	<data name="N11_2" xml:space="preserve">
+		<value>Merci de m'avoir aidé ! Tu devrais te rendre aux tests maintenant, on se voit
+tout à l'heure</value>
 	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>J’ai pas réussi à dormir hier soir,</value>
@@ -448,11 +449,43 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	<data name="Screwdriver" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
+	<data name="SP1_1" xml:space="preserve">
+		<value>Bonjour Numéro 12 ! Aujourd'hui nous allons éveiller vos pouvoirs.</value>
+	</data>
+	<data name="SP1_2" xml:space="preserve">
+		<value>Commençons...Prenez et ingurgiter la fiole devant vous s'il vous plait.</value>
+	</data>
+	<data name="SP1_3" xml:space="preserve">
+		<value>Parfait ! ça a l'air d'avoir marché.</value>
+	</data>
+	<data name="SP1_4" xml:space="preserve">
+		<value>Essayez d'utiliser votre pouvoir sur un objet proche.</value>
+	</data>
+	<data name="SP1_5" xml:space="preserve">
+		<value>Excellent ! Vous avez appris la structure moléculaire de cet objet, on appelle ça le DIstort.</value>
+	</data>
+	<data name="SP1_6" xml:space="preserve">
+		<value>Maintenant, faites de même avec l'objet suivant.</value>
+	</data>
+	<data name="SP1_7" xml:space="preserve">
+		<value>Bien ! Passons à la transformation ! Nous appellons ceci l'Alter.</value>
+	</data>
+	<data name="SP1_8" xml:space="preserve">
+		<value>Seuls les objets dont tu as déja assimiler la structure moléculaire peuvent être transformer.</value>
+	</data>
+	<data name="SP1_9" xml:space="preserve">
+		<value>Ah oui ! J'ai oublié de te dire ! Tu ne peux pas Distort et Alter tous les objets,
+tu doit d'abord d'améliorer tes pouvoirs.</value>
+	</data>
 	<data name="Spawner_1" xml:space="preserve">
 		<value>La fiole permet de vous faire gagner un niveau.</value>
 	</data>
 	<data name="Spawner_Title" xml:space="preserve">
 		<value>Fiole de D'N'A</value>
+	</data>
+	<data name="Speakers_1" xml:space="preserve">
+		<value>Numéro 12 est attendu pour les tests.
+Je répéte, Numéro 12 est attendu pour les tests.</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Vous pouvez utiliser l'objet que vous portez en appuyant sur la touche &lt;color=#ff0000ff&gt;[ESPACE]&lt;/color&gt;</value>
@@ -469,8 +502,7 @@ Plus vous maintenez la touche plus le lancer ira loin.</value>
 		<value>&lt;size=23&gt;Porter et lancer un objet&lt;/size&gt;  </value>
 	</data>
 	<data name="Trashcan_1" xml:space="preserve">
-		<value>Un objet déposé au dessus rentre dans la poubelle, 
-la poubelle peut contenir 3 objets.</value>
+		<value>Y'a moyen de mettre 2-3 trucs là dedans...</value>
 	</data>
 	<data name="Trashcan_Title" xml:space="preserve">
 		<value>Poubelle</value>

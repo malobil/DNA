@@ -117,20 +117,19 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
 	<data name="Apple_1" xml:space="preserve">
-		<value>Go in one direction,
-is destroyed when it hits something.</value>
+		<value>She looks very juicy ...</value>
 	</data>
 	<data name="Apple_Title" xml:space="preserve">
 		<value>Apple</value>
 	</data>
 	<data name="Box_1" xml:space="preserve">
-		<value>Storage boxes can be pushed.</value>
+		<value>Light enough to be pushed ...</value>
 	</data>
 	<data name="Box_Title" xml:space="preserve">
 		<value>Storage Box</value>
 	</data>
 	<data name="Cabinet_1" xml:space="preserve">
-		<value>Block the field of view of guards and cameras.</value>
+		<value>It would be a good hiding place!</value>
 	</data>
 	<data name="Cabinet_Title" xml:space="preserve">
 		<value>Cabinet</value>
@@ -156,15 +155,17 @@ is destroyed when it hits something.</value>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
-	<data name="Laser_1" xml:space="preserve">
-		<value>This laser stops if it encounters an obstacle,
-He pushes you away if you touch him.</value>
-	</data>
-	<data name="Laser_Title" xml:space="preserve">
-		<value>Laser</value>
-	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meal Tray</value>
+	</data>
+	<data name="N11_1" xml:space="preserve">
+		<value>Hi ! What's new today ? Not too nervous for your first test?
+Oh no ! The guards still dropped the garbage cans.
+Will you help me put the apples back in the trash?"</value>
+	</data>
+	<data name="N11_2" xml:space="preserve">
+		<value>Thank you for helping me ! You should go to the tests now, see you
+see you later</value>
 	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>I could not sleep last night</value>
@@ -440,11 +441,45 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	<data name="Screwdriver" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
+	<data name="SP1_1" xml:space="preserve">
+		<value>Hello Number 12! Today we will awaken your powers.</value>
+	</data>
+	<data name="SP1_2" xml:space="preserve">
+		<value>Let's start ... Take and swallow the vial in front of you please.</value>
+	</data>
+	<data name="SP1_3" xml:space="preserve">
+		<value>Perfect ! it seems to have worked.</value>
+	</data>
+	<data name="SP1_4" xml:space="preserve">
+		<value>Try to use your power on a nearby object.</value>
+	</data>
+	<data name="SP1_5" xml:space="preserve">
+		<value>Excellent ! You have learned the molecular structure of this object,
+ this is called the DIstort.</value>
+	</data>
+	<data name="SP1_6" xml:space="preserve">
+		<value>Now do the same with the next object.</value>
+	</data>
+	<data name="SP1_7" xml:space="preserve">
+		<value>Well ! Let's move on to transformation! We call this the Alter.</value>
+	</data>
+	<data name="SP1_8" xml:space="preserve">
+		<value>Only objects that you have already assimilated
+ the molecular structure can be transformed.</value>
+	</data>
+	<data name="SP1_9" xml:space="preserve">
+		<value>Ah yes ! I forgot to tell you ! You can not Distort and Alter all objects,
+you must first improve your powers.</value>
+	</data>
 	<data name="Spawner_1" xml:space="preserve">
 		<value>The flask allows you to gain a level.</value>
 	</data>
 	<data name="Spawner_Title" xml:space="preserve">
 		<value>Flask of D'N'A</value>
+	</data>
+	<data name="Speakers_1" xml:space="preserve">
+		<value>Number 12 is expected for testing.
+I repeat, Number 12 is expected for testing.</value>
 	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>You can use the object you are carrying by pressing the &lt;color=#ff0000ff&gt;[SPACE]&lt;/color&gt; key</value>
@@ -461,8 +496,7 @@ if you hold the key long the throw will go far.</value>
 		<value>Throwing and hold objects</value>
 	</data>
 	<data name="Trashcan_1" xml:space="preserve">
-		<value>An object deposited above goes into the trash,
-the trash can hold 3 objects.</value>
+		<value>There's a way to put 2-3 things in there ...</value>
 	</data>
 	<data name="Trashcan_Title" xml:space="preserve">
 		<value>Trashcan</value>
