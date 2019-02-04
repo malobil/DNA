@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 2957740721031237031}
   - component: {fileID: 5527029934478876366}
   m_Layer: 8
-  m_Name: Prefab_Burette_Right
+  m_Name: Prefab_Burette_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

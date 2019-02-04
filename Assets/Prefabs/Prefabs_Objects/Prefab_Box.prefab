@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 8803454591791470359}
   - component: {fileID: 1036932903825465417}
   - component: {fileID: 8638797838257235609}
-  - component: {fileID: 155677796727406597}
   - component: {fileID: 1415270118043229625}
+  - component: {fileID: 4928430375026071200}
   m_Layer: 0
   m_Name: Prefab_Box
   m_TagString: Untagged
@@ -99,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.0035543442}
   m_SpriteTilingProperty:
     border: {x: 0.0625, y: 0.0625, z: 0.0625, w: 0.0625}
     pivot: {x: 0.5, y: 0.5}
@@ -110,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.75, y: 1.09375}
+  m_Size: {x: 0.62198496, y: 0.97291756}
   m_EdgeRadius: 0
 --- !u!114 &4838597292967531020
 MonoBehaviour:
@@ -136,7 +136,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851aa2feea1d6a24bae1b671970f7676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_scriptable: {fileID: 0}
 --- !u!114 &1036932903825465417
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,31 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_scriptable: {fileID: 0}
---- !u!114 &155677796727406597
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8592656375475176328}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a6ddec914a9a13041a97c127457206b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  object_type: 0
-  note_key_title: 
-  note_key: 
-  b_can_interact: 1
-  t_teleport_point: {fileID: 0}
-  obj_dialog_box: {fileID: 0}
-  txt_dialog: {fileID: 0}
-  s_dialog_key: []
-  card: 0
-  cinematic_to_play: {fileID: 0}
-  obj_to_spawn: {fileID: 0}
-  t_spawn_point: {fileID: 0}
 --- !u!50 &1415270118043229625
 Rigidbody2D:
   serializedVersion: 4
@@ -210,4 +184,17 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
+--- !u!114 &4928430375026071200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8592656375475176328}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 11400000, guid: 5bb3b12d3ace8ca43921fea9d4c9706e, type: 2}
