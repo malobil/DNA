@@ -116,6 +116,24 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="Apple_1" xml:space="preserve">
+		<value>Apple Object</value>
+	</data>
+	<data name="Apple_Title" xml:space="preserve">
+		<value>Apple Object Title</value>
+	</data>
+	<data name="Box_1" xml:space="preserve">
+		<value>Box Object</value>
+	</data>
+	<data name="Box_Title" xml:space="preserve">
+		<value>Box Object Title</value>
+	</data>
+	<data name="Cabinet_1" xml:space="preserve">
+		<value>Cabinet</value>
+	</data>
+	<data name="Cabinet_Title" xml:space="preserve">
+		<value>Cabinet Title</value>
+	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>Guard 1 Dialog Cutscene #2</value>
 	</data>
@@ -136,6 +154,12 @@
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction tutorial Title</value>
+	</data>
+	<data name="Laser_1" xml:space="preserve">
+		<value>Laser Object</value>
+	</data>
+	<data name="Laser_Title" xml:space="preserve">
+		<value>Laser Object Title</value>
 	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
@@ -266,6 +290,12 @@
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist Title</value>
 	</data>
+	<data name="Pressureplate_1" xml:space="preserve">
+		<value>Pressure Plate</value>
+	</data>
+	<data name="Pressureplate_Title" xml:space="preserve">
+		<value>Pressure Plate Title</value>
+	</data>
 	<data name="S1_1_P1Cut4" xml:space="preserve">
 		<value>Scientist 1 Dialog Cutscene #4</value>
 	</data>
@@ -347,6 +377,12 @@
 	<data name="Screwdriver" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
+	<data name="Spawner_1" xml:space="preserve">
+		<value>Spawner Object</value>
+	</data>
+	<data name="Spawner_Title" xml:space="preserve">
+		<value>Spawner Object Title</value>
+	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Special Interaction tutorial</value>
 	</data>
@@ -359,46 +395,25 @@
 	<data name="ThrowAndHold_1_Title" xml:space="preserve">
 		<value>Throw and Hold tutorial Title</value>
 	</data>
-	<data name="Apple_Title" xml:space="preserve">
-		<value>Apple Object Title</value>
-	</data>
-	<data name="Apple_1" xml:space="preserve">
-		<value>Apple Object</value>
-	</data>
-	<data name="Box_Title" xml:space="preserve">
-		<value>Box Object Title</value>
-	</data>
-	<data name="Box_1" xml:space="preserve">
-		<value>Box Object</value>
-	</data>
-	<data name="Laser_Title" xml:space="preserve">
-		<value>Laser Object Title</value>
-	</data>
-	<data name="Laser_1" xml:space="preserve">
-		<value>Laser Object</value>
-	</data>
-	<data name="Spawner_Title" xml:space="preserve">
-		<value>Spawner Object Title</value>
-	</data>
-	<data name="Spawner_1" xml:space="preserve">
-		<value>Spawner Object</value>
-	</data>
-	<data name="Pressureplate_Title" xml:space="preserve">
-		<value>Pressure Plate Title</value>
-	</data>
-	<data name="Pressureplate_1" xml:space="preserve">
-		<value>Pressure Plate</value>
+	<data name="Trashcan_1" xml:space="preserve">
+		<value>Trashcan </value>
 	</data>
 	<data name="Trashcan_Title" xml:space="preserve">
 		<value>Trashcan Title</value>
 	</data>
-	<data name="Trashcan_1" xml:space="preserve">
-		<value>Trashcan </value>
+	<data name="Tuto_1" xml:space="preserve">
+		<value>Take Object</value>
 	</data>
-	<data name="Cabinet_Title" xml:space="preserve">
-		<value>Cabinet Title</value>
+	<data name="Tuto_2" xml:space="preserve">
+		<value>Distort</value>
 	</data>
-	<data name="Cabinet_1" xml:space="preserve">
-		<value>Cabinet</value>
+	<data name="Tuto_3" xml:space="preserve">
+		<value>Alter</value>
+	</data>
+	<data name="Tuto_4" xml:space="preserve">
+		<value>Laser</value>
+	</data>
+	<data name="Tuto_5" xml:space="preserve">
+		<value>Pressure Plate</value>
 	</data>
 </root>

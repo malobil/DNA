@@ -467,4 +467,19 @@ the trash can hold 3 objects.</value>
 	<data name="Trashcan_Title" xml:space="preserve">
 		<value>Trashcan</value>
 	</data>
+	<data name="Tuto_1" xml:space="preserve">
+		<value>Press [E] to pick up an object.</value>
+	</data>
+	<data name="Tuto_2" xml:space="preserve">
+		<value>Press [K] to distort an object in front of you.</value>
+	</data>
+	<data name="Tuto_3" xml:space="preserve">
+		<value>Press [O] to alter an object in front of you.</value>
+	</data>
+	<data name="Tuto_4" xml:space="preserve">
+		<value>A laser can be stopped by certain objects.</value>
+	</data>
+	<data name="Tuto_5" xml:space="preserve">
+		<value>Heavy objects can be placed on pressure plates.</value>
+	</data>
 </root>

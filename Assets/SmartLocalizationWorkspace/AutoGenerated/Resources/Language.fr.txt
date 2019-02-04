@@ -475,4 +475,19 @@ la poubelle peut contenir 3 objets.</value>
 	<data name="Trashcan_Title" xml:space="preserve">
 		<value>Poubelle</value>
 	</data>
+	<data name="Tuto_1" xml:space="preserve">
+		<value>Appuyez sur [E] pour ramasser un objet.</value>
+	</data>
+	<data name="Tuto_2" xml:space="preserve">
+		<value>Appuyez sur [K] pour distort un objet devant vous.</value>
+	</data>
+	<data name="Tuto_3" xml:space="preserve">
+		<value>Appuyez sur [O] pour alter un objet devant vous.</value>
+	</data>
+	<data name="Tuto_4" xml:space="preserve">
+		<value>Un laser peut être stoppé par certains objets.</value>
+	</data>
+	<data name="Tuto_5" xml:space="preserve">
+		<value>Vous pouvez mettre des objets lourds sur des plaques de pression.</value>
+	</data>
 </root>
