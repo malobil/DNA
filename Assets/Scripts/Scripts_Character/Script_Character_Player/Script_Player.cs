@@ -240,7 +240,12 @@ public class Script_Player : MonoBehaviour
             if(target.GetComponent<Script_ISpecialInteraction>())
             {
                 target.GetComponent<Script_ISpecialInteraction>().EnableSpecialIndication();
-            }   
+            }
+
+            if(target.GetComponent<Script_Interactable>())
+            {
+
+            }
         }
         else
         {
