@@ -10,8 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6379144544078766426}
   - component: {fileID: 6379144544078766429}
-  - component: {fileID: 8851296316256234514}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Prefab_Paper_Up
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -80,16 +79,3 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &8851296316256234514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6379144544078766428}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  item_info: {fileID: 0}
