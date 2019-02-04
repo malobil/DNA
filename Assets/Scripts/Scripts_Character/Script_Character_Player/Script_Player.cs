@@ -351,9 +351,20 @@ public class Script_Player : MonoBehaviour
         a_player_animator.SetFloat("vertical_movement", f_vertical_move_raw);
     }
 
-    void Knockback(Vector3 direction)
+    public void Knockback()
     {
-        player_rb.AddForce(direction * f_knockback_force, ForceMode2D.Impulse);
+        Vector2 test = player_rb.velocity;
+        player_rb.velocity = Vector2.zero;
+
+        if (test != Vector2.zero)
+        {
+            player_rb.AddForce(-test.normalized * f_knockback_force, ForceMode2D.Impulse);
+        }
+        else
+        {
+            player_rb.AddForce(-t_interaction_holder_trigger.transform.up * f_knockback_force, ForceMode2D.Impulse);
+        }
+       
         b_is_knockback = true;
     }
 
@@ -462,7 +473,7 @@ public class Script_Player : MonoBehaviour
             {
                 Vector3 ejectDirection = transform.position - g_current_distortable_target.transform.position;
                 ejectDirection = ejectDirection.normalized;
-                Knockback(ejectDirection);
+                Knockback();
             }
         }
 
@@ -522,7 +533,7 @@ public class Script_Player : MonoBehaviour
             {
                 Vector3 ejectDirection = transform.position - g_current_alterable_target.transform.position;
                 ejectDirection = ejectDirection.normalized;
-                Knockback(ejectDirection);
+                Knockback();
             }
         }
 

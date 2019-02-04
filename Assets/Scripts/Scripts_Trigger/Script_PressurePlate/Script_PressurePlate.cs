@@ -82,7 +82,7 @@ public class Script_PressurePlate : MonoBehaviour
         b_is_active = true;
         associate_door.ActivateDoor();
         animator_Component.SetTrigger("Activate");
-        Debug.Log("Activate");
+        //Debug.Log("Activate");
     }
 
     private void Disable()
@@ -90,6 +90,6 @@ public class Script_PressurePlate : MonoBehaviour
         b_is_active = false;
         associate_door.DisableDoor();
         animator_Component.SetTrigger("Disable");
-        Debug.Log("Disable");
+        //Debug.Log("Disable");
     }
 }
