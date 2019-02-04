@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
+  m_Name: Item_Scientist_Table
+  m_EditorClassIdentifier: 
+  s_item_sprite: {fileID: 21300060, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
+  s_item_CSV_name_key: 
+  s_item_CSV_description_key: 
+  i_item_level: 1
+  g_item_prefab: {fileID: 448946338465083289, guid: 571cb2339bff90347ae0c2c7d6b2f7ec,
+    type: 3}
