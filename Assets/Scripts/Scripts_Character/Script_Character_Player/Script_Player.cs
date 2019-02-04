@@ -513,7 +513,7 @@ public class Script_Player : MonoBehaviour
     {
         if (g_current_alterable_target != null && g_current_alterable_target == obj_current_target)
         {
-            if (playerLevel >= g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem().i_item_level)
+            if (playerLevel >= g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem().i_item_level && Script_Collection.Instance.l_item_in_collection.Contains(g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem()))
             {
                 Script_Game_Manager.Instance.SetTimePause();
                 Script_UI_Manager.Instance.OpenTransformationChoice(g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem());
