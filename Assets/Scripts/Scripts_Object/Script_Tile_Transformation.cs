@@ -12,6 +12,7 @@ public class Script_Tile_Transformation : MonoBehaviour
     {
         item_scriptable = item_to_setup;
         img_item_image.sprite = item_scriptable.s_item_sprite;
+        img_item_image.preserveAspect = true;
     }
 
     public void ConfirmTransformation()

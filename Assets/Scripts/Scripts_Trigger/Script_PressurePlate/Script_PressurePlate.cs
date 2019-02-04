@@ -8,8 +8,14 @@ public class Script_PressurePlate : MonoBehaviour
     public Script_Trigger_Door_Manager associate_door;
     private float f_current_weight;
     private bool b_is_active = false;
+    private Animator animator_Component;
 
     private List<GameObject> obj_in = new List<GameObject>() ;
+
+    private void Start()
+    {
+        animator_Component = GetComponent<Animator>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -75,6 +81,7 @@ public class Script_PressurePlate : MonoBehaviour
     {
         b_is_active = true;
         associate_door.ActivateDoor();
+        animator_Component.SetTrigger("Activate");
         Debug.Log("Activate");
     }
 
@@ -82,6 +89,7 @@ public class Script_PressurePlate : MonoBehaviour
     {
         b_is_active = false;
         associate_door.DisableDoor();
+        animator_Component.SetTrigger("Disable");
         Debug.Log("Disable");
     }
 }
