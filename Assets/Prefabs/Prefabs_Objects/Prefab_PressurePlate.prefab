@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 5132423465034836736}
   - component: {fileID: 5132423465034836737}
   - component: {fileID: 5132423465034836766}
+  - component: {fileID: 511083544}
   m_Layer: 0
   m_Name: Prefab_PressurePlate
   m_TagString: Untagged
@@ -121,3 +122,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   f_weight_to_activate: 1
   associate_door: {fileID: 0}
+--- !u!95 &511083544
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5132423465034836738}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cd9fdcf2862b6f245b3d7aa5a8c76619, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
