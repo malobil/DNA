@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
-  m_Name: Item_Chest_Of_Drawers
+  m_Name: Item_Burette
   m_EditorClassIdentifier: 
-  s_item_sprite: {fileID: 0}
+  s_item_sprite: {fileID: 21300038, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
-  i_item_level: 0
-  g_item_prefab: {fileID: 0}
+  i_item_level: 1
+  g_item_prefab: {fileID: 5913314118300251257, guid: 0a8642a91f0e275409566fcdc7ab442f,
+    type: 3}
