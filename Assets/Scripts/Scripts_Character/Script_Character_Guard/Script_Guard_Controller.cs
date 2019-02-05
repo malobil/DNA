@@ -27,7 +27,7 @@ public class Script_Guard_Controller : MonoBehaviour
 
     private void SetGuardDirection(string direction)
     {
-        anim_guard_animator.SetTrigger(direction);
+       /* anim_guard_animator.SetTrigger(direction);
 
         switch (guard_idle_direction.ToString(""))
         {
@@ -46,7 +46,7 @@ public class Script_Guard_Controller : MonoBehaviour
             case "Down":
                 obj_guard_sign_of_view.localRotation = Quaternion.Euler(0, 0, 0);
                 break;
-        }
+        }*/
         
     }
 
