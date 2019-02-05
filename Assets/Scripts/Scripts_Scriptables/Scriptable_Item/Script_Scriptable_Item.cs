@@ -11,5 +11,6 @@ public class Script_Scriptable_Item : ScriptableObject
     public string s_item_CSV_name_key;
     public string s_item_CSV_description_key;
     public int i_item_level;
+    public float f_item_weight ;
     public GameObject g_item_prefab;
 }

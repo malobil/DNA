@@ -47,6 +47,7 @@ public class Script_PressurePlate : MonoBehaviour
     public void AddAnObjectIn(GameObject object_to_add)
     {
         f_current_weight = 0;
+
         if (!obj_in.Contains(object_to_add))
         {
             obj_in.Add(object_to_add);
@@ -54,7 +55,15 @@ public class Script_PressurePlate : MonoBehaviour
         
         foreach(GameObject obj in obj_in)
         {
-            f_current_weight += obj.GetComponentInParent<Rigidbody2D>().mass;
+            if(obj.gameObject.GetComponentInParent<Script_ItemInfo>())
+            {
+                f_current_weight += obj.gameObject.GetComponentInParent<Script_ItemInfo>().item_info.f_item_weight;
+            }
+            else if(obj.CompareTag("Player"))
+            {
+                f_current_weight += 100;
+            }
+            
         }
 
         if (f_current_weight >= f_weight_to_activate && !b_is_active)
@@ -67,7 +76,15 @@ public class Script_PressurePlate : MonoBehaviour
     {
         if (obj_in.Contains(object_to_remove))
         {
-            f_current_weight -= object_to_remove.GetComponentInParent<Rigidbody2D>().mass;
+            if (object_to_remove.gameObject.GetComponentInParent<Script_ItemInfo>())
+            {
+                f_current_weight -= object_to_remove.GetComponentInParent<Rigidbody2D>().mass;
+            }
+            else if (object_to_remove.CompareTag("Player"))
+            {
+                f_current_weight -= 100;
+            }
+
             obj_in.Remove(object_to_remove);
         }
 
