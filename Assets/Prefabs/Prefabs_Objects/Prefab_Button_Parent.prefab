@@ -209,6 +209,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []
@@ -253,7 +254,7 @@ GameObject:
   - component: {fileID: 7034589814758343850}
   - component: {fileID: 7034589814758343851}
   m_Layer: 0
-  m_Name: Prefab_Button_down_parent
+  m_Name: Prefab_Button_Parent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
