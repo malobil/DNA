@@ -14,6 +14,8 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
     public List<GameObject> g_character_in_trigger;
     #endregion
 
+    public GameObject obj_discover_land;
+
     private void Start()
     {
         a_door_animator = GetComponent<Animator>();
@@ -85,6 +87,11 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
             a_door_animator.SetTrigger("Open");
             b_door_is_open = true;
             gameObject.GetComponent<BoxCollider2D>().enabled = false;
+
+            if(obj_discover_land != null && obj_discover_land.activeSelf)
+            {
+                obj_discover_land.SetActive(false);
+            }
         }
     }
 

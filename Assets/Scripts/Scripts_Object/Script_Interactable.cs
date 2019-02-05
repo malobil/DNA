@@ -61,7 +61,10 @@ public class Script_Interactable : MonoBehaviour
     public string note_key;
 
     public bool b_can_interact = true;
+
+    [Header("Teleport")]
     public Transform t_teleport_point;
+    public GameObject obj_discover_land;
 
     [Header("Dialogue")]
 
@@ -173,8 +176,12 @@ public class Script_Interactable : MonoBehaviour
 
     private void Teleport()
     {
-        Debug.Log("teleport");   // do something
         Script_Player.Instance.Teleport(t_teleport_point.position);
+
+        if(obj_discover_land != null && obj_discover_land.activeSelf)
+        {
+            obj_discover_land.SetActive(false);
+        }
     }
 
     private void Hold(Script_Player player)

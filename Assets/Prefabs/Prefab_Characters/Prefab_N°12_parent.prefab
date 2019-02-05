@@ -378,8 +378,9 @@ MonoBehaviour:
   f_knockback_force: 5
   f_knockback_duration: 0.3
   t_interaction_holder_trigger: {fileID: 793496116}
-  b_can_use_powers: 0
-  playerLevel: 5
+  f_drop_distance: 1
+  b_can_use_powers: 1
+  playerLevel: 0
 --- !u!1 &4236260653039994427
 GameObject:
   m_ObjectHideFlags: 0
