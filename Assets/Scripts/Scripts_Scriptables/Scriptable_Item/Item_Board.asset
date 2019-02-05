@@ -16,5 +16,6 @@ MonoBehaviour:
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
   i_item_level: 1
+  f_item_weight: 100
   g_item_prefab: {fileID: 3405300130795728149, guid: 5ec446e01f7e3b54b83127796874178d,
     type: 3}

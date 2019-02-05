@@ -16,5 +16,6 @@ MonoBehaviour:
   s_item_CSV_name_key: Screwdriver
   s_item_CSV_description_key: 
   i_item_level: 1
+  f_item_weight: 1
   g_item_prefab: {fileID: 1384062008740358762, guid: d0639eb898c9cfa4fb5a26d46c338553,
     type: 3}

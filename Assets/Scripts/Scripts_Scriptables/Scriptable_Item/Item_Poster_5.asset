@@ -16,5 +16,5 @@ MonoBehaviour:
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
   i_item_level: 0
-  f_item_weight: 0
+  f_item_weight: 1
   g_item_prefab: {fileID: 0}
