@@ -116,7 +116,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 5
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -176,7 +176,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_scriptable: {fileID: 11400000, guid: 50e779e76d04ffc4f9971d6ab7401e34, type: 2}
 --- !u!114 &730684031656455560
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -201,7 +200,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 851aa2feea1d6a24bae1b671970f7676, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_scriptable: {fileID: 11400000, guid: 50e779e76d04ffc4f9971d6ab7401e34, type: 2}
 --- !u!114 &3138623362694028037
 MonoBehaviour:
   m_ObjectHideFlags: 0

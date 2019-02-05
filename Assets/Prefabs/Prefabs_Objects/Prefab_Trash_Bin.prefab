@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2312661457207936450}
   - component: {fileID: 7901142005667375097}
   - component: {fileID: 8760056950412571505}
+  - component: {fileID: 5127864176950402352}
   m_Layer: 0
   m_Name: Prefab_Trash_Bin
   m_TagString: Untagged
@@ -74,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300012, guid: 2cea9d0f55aae214a8fd18d5332b90e2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -137,7 +138,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 55
+  m_Mass: 50
   m_LinearDrag: 10
   m_AngularDrag: 0.05
   m_GravityScale: 0
@@ -220,3 +221,16 @@ MonoBehaviour:
   - {fileID: 21300006, guid: 2cea9d0f55aae214a8fd18d5332b90e2, type: 3}
   - {fileID: 21300008, guid: 2cea9d0f55aae214a8fd18d5332b90e2, type: 3}
   - {fileID: 21300010, guid: 2cea9d0f55aae214a8fd18d5332b90e2, type: 3}
+--- !u!114 &5127864176950402352
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5127864176950402351}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item_info: {fileID: 11400000, guid: afafd1cfa028acc40a2ffaf694104404, type: 2}
