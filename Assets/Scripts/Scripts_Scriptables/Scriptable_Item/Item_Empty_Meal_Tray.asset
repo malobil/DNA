@@ -15,7 +15,7 @@ MonoBehaviour:
   s_item_sprite: {fileID: 21300012, guid: 454ea17ebfde21044a75b652bc600d6b, type: 3}
   s_item_CSV_name_key: Meel_Tray
   s_item_CSV_description_key: 
-  i_item_level: 1
+  i_item_level: 0
   f_item_weight: 1
-  g_item_prefab: {fileID: 8975315207595823412, guid: 832b785a8d1f2574188b54140058cbbc,
+  g_item_prefab: {fileID: 8982453318346201723, guid: ebb744983af66c24595206acf0ff4b12,
     type: 3}

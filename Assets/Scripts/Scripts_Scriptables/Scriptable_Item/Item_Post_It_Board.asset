@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: ba7aa20f3512f9d4ab73921463232409, type: 3}
-  m_Name: Item_Board
+  m_Name: Item_Post_It_Board
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300094, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
   s_item_CSV_name_key: 

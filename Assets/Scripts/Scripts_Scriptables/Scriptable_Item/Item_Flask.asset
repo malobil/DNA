@@ -15,7 +15,7 @@ MonoBehaviour:
   s_item_sprite: {fileID: 21300032, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   s_item_CSV_name_key: 
   s_item_CSV_description_key: 
-  i_item_level: 1
+  i_item_level: 2
   f_item_weight: 1
   g_item_prefab: {fileID: 8190582946964187130, guid: f1cdd6ea5450e00478b0b111cdf67144,
     type: 3}
