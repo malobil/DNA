@@ -16,8 +16,9 @@ GameObject:
   - component: {fileID: 7700348620302759401}
   - component: {fileID: 1787252510456868092}
   - component: {fileID: 7131491267273145294}
+  - component: {fileID: 3087306078481434276}
   m_Layer: 0
-  m_Name: Prefab_Board
+  m_Name: Prefab_Post_it_Board
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.01701355}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -109,7 +110,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 0.875}
+  m_Size: {x: 1, y: 0.8409729}
   m_EdgeRadius: 0
 --- !u!114 &7531733057371163285
 MonoBehaviour:
@@ -176,3 +177,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &3087306078481434276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3405300130795728149}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6ddec914a9a13041a97c127457206b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  object_type: 0
+  note_key_title: 
+  note_key: 
+  b_can_interact: 1
+  t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
+  obj_dialog_box: {fileID: 0}
+  txt_dialog: {fileID: 0}
+  s_dialog_key: []
+  card: 0
+  cinematic_to_play: {fileID: 0}
+  obj_to_spawn: {fileID: 0}
+  t_spawn_point: {fileID: 0}

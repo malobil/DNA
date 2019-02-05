@@ -53,7 +53,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: b4323cee1e6359a49a4d436c5c673e35, type: 2}
+  - {fileID: 2100000, guid: af5d341c2fc062647a3f2aef73c25831, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -130,6 +130,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []

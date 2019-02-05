@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26105805f4ee5d14bb83bf4797b3e14b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item_info: {fileID: 0}
+  item_info: {fileID: 11400000, guid: 520754a0cf102e24ebbb2bbb03525cac, type: 2}
 --- !u!50 &8547352427271107582
 Rigidbody2D:
   serializedVersion: 4
@@ -181,6 +181,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []

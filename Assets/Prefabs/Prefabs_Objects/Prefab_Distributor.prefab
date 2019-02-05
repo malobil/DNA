@@ -162,6 +162,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []
@@ -182,7 +183,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 100
-  m_LinearDrag: 10
+  m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}

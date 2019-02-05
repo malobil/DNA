@@ -14,9 +14,6 @@ GameObject:
   - component: {fileID: 6272499612766050970}
   - component: {fileID: 3873187445783139066}
   - component: {fileID: 5366352490548144183}
-  - component: {fileID: 4993092228911604604}
-  - component: {fileID: 8762000912751335548}
-  - component: {fileID: 3157036779919100924}
   - component: {fileID: 4400455443766684657}
   - component: {fileID: 4400455443766684659}
   - component: {fileID: 4400455443766684656}
@@ -141,6 +138,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []
@@ -161,42 +159,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   item_info: {fileID: 11400000, guid: 73cb830de70a21d4dadd09e483067273, type: 2}
---- !u!114 &4993092228911604604
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4400455443766684655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 501368656ca56f0489cd36c3269bb6b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &8762000912751335548
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4400455443766684655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 851aa2feea1d6a24bae1b671970f7676, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &3157036779919100924
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4400455443766684655}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!50 &4400455443766684657
 Rigidbody2D:
   serializedVersion: 4
