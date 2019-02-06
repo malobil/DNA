@@ -140,7 +140,7 @@ GameObject:
   - component: {fileID: 1226975269}
   m_Layer: 0
   m_Name: Prefab_Soldier_parent
-  m_TagString: Untagged
+  m_TagString: Ennemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -318,9 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  targets: []
   delay: 0
 --- !u!1 &2660854396943926600
 GameObject:
