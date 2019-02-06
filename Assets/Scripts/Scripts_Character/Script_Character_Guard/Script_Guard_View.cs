@@ -4,11 +4,14 @@ using UnityEngine;
 
 public class Script_Guard_View : MonoBehaviour
 {
+    public Script_Guard_Controller associate_guard_controller;
+
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player"))
         {
-            Script_Game_Manager.Instance.GameOver();
+            associate_guard_controller.SeePlayer();
+            //Script_Game_Manager.Instance.GameOver();
         }
     }
 }

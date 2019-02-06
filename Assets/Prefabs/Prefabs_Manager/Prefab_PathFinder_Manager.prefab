@@ -1,0 +1,120 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1201688688058557974
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1201688688058557972}
+  - component: {fileID: 1201688688058557973}
+  m_Layer: 0
+  m_Name: Prefab_PathFinder_Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1201688688058557972
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201688688058557974}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1201688688058557973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201688688058557974}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78396926cbbfc4ac3b48fc5fc34a87d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  version: 1
+  data:
+    dataString: UEsDBBQAAAgIAAAIIezi4OG7WQIAAAIFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzk1G9hAovbWEkB5IMqGZXHwR1hprkCWPPgIkw3+vVraxoVMuyO+93X27WvuLCGVryJ02SyP4SnMgP0YEz+TbqCcf4cC2Wq3FJ3Sad8FdiSIWNa/MCR3wBMOsrsAZkf9UW4liGkCvRKFNteBbmGvrbIALJi0EymiH0SpAXyNyCH83Mww5hlM6xdNnOM3o6BSOOSgHppd2wk7WqLzKJatq4Gi5Fyd3txR/SRuU0Ns0At9jlAq9tQH0doLFtJTCttaIO9ax9XVdggHsnQsWOo12MGUJYls6dD2MfS4KC661aNjxXpgwsCYp+aWbKVbM7hqfH0x6LJPSceOqybr6R3CTRLowunrsCicUi7hS5LtXdsyZdYM5D+H7S+de7ZncsY2E9xLUk14a7RUPpDMeQ72F9L5/PPc2LyHf9Xhj9Qr09f9vC3s4xfYPcymqTZz8uAHWUsd5x10AE+7mdzAcN8W2KQKKLt4s/GHb4Uq1xIMw1gWq7VKhvY32BqVkEWeG3Xg310ZBhFvTNSgm3fElpHHXd3jFDcpeMQ8MX562eMt178RVSIR7PaVX1Iveny/Llnq/Als+eyeFgt40Ek9hTnOtVLNi9pLEqLU3BcsHUVsv+OVmkTs+4dOEFpTT8WYC6c2ETWGWpClls3Ryx3ISV0+o0CaTL43Pdjrh0lSfXIU16z4po6Vhddx2bth+KT4rPfAnVKHXuQFQz02GbkIWTCgSXku+4CLMZw3OCRWvm3xlROp8Bzw7J8pip4uDMyzrs2SkFh/aIZKRefyGZORETn8BUEsDBBQAAAgIAAAIIey1SPIpbAAAAHcAAAAJACQAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0Bq1YqSy0qzszPU7JSMNEz0jPRUVBKL0osyCgGChiCOKWZKSB2tJJpilmKuaFBmkGKgUmSWaqRrlmieaqloZGRQaKlkZlpYrJSLFB9SWVBql9ibipET0BiSUZaZl5KZl66nntRZoo7yGil2FoAUEsBAi0AFAAACAgAAAgh7OLg4btZAgAAAgUAAAsAJAAAAAAAAAAAAAAAAAAAAGdyYXBoMC5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsBAi0AFAAACAgAAAgh7LVI8ilsAAAAdwAAAAkAJAAAAAAAAAAAAAAApgIAAG1ldGEuanNvbgoAIAAAAAAAAQAYAACAPtXesZ0BAIA+1d6xnQEAgD7V3rGdAVBLBQYAAAAAAgACALgAAABdAwAAAAA=
+    upgradeData: 
+    file_cachedStartup: {fileID: 0}
+    data_cachedStartup: 
+    cacheStartup: 0
+  showNavGraphs: 1
+  showUnwalkableNodes: 1
+  debugMode: 0
+  debugFloor: 0
+  debugRoof: 1
+  manualDebugFloorRoof: 0
+  showSearchTree: 0
+  unwalkableNodeDebugSize: 0.3
+  logPathResults: 1
+  maxNearestNodeDistance: 100
+  scanOnStartup: 1
+  fullGetNearestSearch: 0
+  prioritizeGraphs: 0
+  prioritizeGraphsLimit: 1
+  colorSettings:
+    _SolidColor: {r: 0.11764706, g: 0.4, b: 0.7882353, a: 0.9}
+    _UnwalkableNode: {r: 1, g: 0, b: 0, a: 0.5}
+    _BoundsHandles: {r: 0.29, g: 0.454, b: 0.741, a: 0.9}
+    _ConnectionLowLerp: {r: 0, g: 1, b: 0, a: 0.5}
+    _ConnectionHighLerp: {r: 1, g: 0, b: 0, a: 0.5}
+    _MeshEdgeColor: {r: 0, g: 0, b: 0, a: 0.5}
+    _AreaColors:
+    - {r: 0, g: 0, b: 0, a: 0}
+  tagNames:
+  - Basic Ground
+  - 1
+  - 2
+  - 3
+  - 4
+  - 5
+  - 6
+  - 7
+  - 8
+  - 9
+  - 10
+  - 11
+  - 12
+  - 13
+  - 14
+  - 15
+  - 16
+  - 17
+  - 18
+  - 19
+  - 20
+  - 21
+  - 22
+  - 23
+  - 24
+  - 25
+  - 26
+  - 27
+  - 28
+  - 29
+  - 30
+  - 31
+  heuristic: 2
+  heuristicScale: 1
+  threadCount: 1
+  maxFrameTime: 10
+  batchGraphUpdates: 0
+  graphUpdateBatchingInterval: 0.2
+  euclideanEmbedding:
+    mode: 0
+    seed: 0
+    pivotPointRoot: {fileID: 0}
+    spreadOutCount: 1
+  showGraphs: 1

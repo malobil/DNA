@@ -2,14 +2,14 @@ fileFormatVersion: 2
 guid: cd998c40e2afbeb45a311385229268ba
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Soldier_0
-    21300002: Soldier_1
-    21300004: Soldier_2
-    21300006: Soldier_3
-    21300008: Soldier_4
-    21300010: Soldier_5
-    21300012: Soldier_6
-    21300014: Soldier_7
+    21300000: Guard_Idle_Down
+    21300002: Guard_Idle_Down01
+    21300004: Guard_Down_Walk01
+    21300006: Guard_Down_Walk02
+    21300008: Guard_Down_Walk03
+    21300010: Guard_Down_Walk04
+    21300012: Guard_Idle_Walk05
+    21300014: Guard_Idle_Walk06
     21300016: Soldier_8
     21300018: Soldier_9
     21300020: Soldier_10
@@ -146,7 +146,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier_0
+      name: Guard_Idle_Down
       rect:
         serializedVersion: 2
         x: 9
@@ -166,15 +166,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_1
+      name: Guard_Idle_Down01
       rect:
         serializedVersion: 2
         x: 36
         y: 245
         width: 17
         height: 23
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -186,7 +186,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_2
+      name: Guard_Down_Walk01
       rect:
         serializedVersion: 2
         x: 72
@@ -206,7 +206,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_3
+      name: Guard_Down_Walk02
       rect:
         serializedVersion: 2
         x: 102
@@ -226,7 +226,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_4
+      name: Guard_Down_Walk03
       rect:
         serializedVersion: 2
         x: 130
@@ -246,15 +246,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_5
+      name: Guard_Down_Walk04
       rect:
         serializedVersion: 2
         x: 161
         y: 245
         width: 17
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -266,15 +266,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_6
+      name: Guard_Idle_Walk05
       rect:
         serializedVersion: 2
         x: 189
         y: 245
         width: 17
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,15 +286,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_7
+      name: Guard_Idle_Walk06
       rect:
         serializedVersion: 2
         x: 219
         y: 245
         width: 17
         height: 24
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.55, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

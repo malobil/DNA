@@ -162,10 +162,12 @@ namespace Pathfinding {
 		/// <summary>Helper which calculates points along the current path</summary>
 		protected PathInterpolator interpolator = new PathInterpolator();
 
-		#region IAstarAI implementation
+        private Vector3 simulatedNextPosition;
 
-		/// <summary>\copydoc Pathfinding::IAstarAI::Teleport</summary>
-		public override void Teleport (Vector3 newPosition, bool clearPath = true) {
+        #region IAstarAI implementation
+
+        /// <summary>\copydoc Pathfinding::IAstarAI::Teleport</summary>
+        public override void Teleport (Vector3 newPosition, bool clearPath = true) {
 			if (clearPath) interpolator.SetPath(null);
 			reachedEndOfPath = false;
 			base.Teleport(newPosition, clearPath);
@@ -328,6 +330,8 @@ namespace Pathfinding {
 				// Get our current position. We read from transform.position as few times as possible as it is relatively slow
 				// (at least compared to a local variable)
 				simulatedPosition = tr.position;
+                simulatedNextPosition = simulatedPosition;
+                //Debug.Log(simulatedPosition);
 			}
 			if (updateRotation) simulatedRotation = tr.rotation;
 
@@ -465,5 +469,10 @@ namespace Pathfinding {
 			if (version < 1) rotationSpeed *= 90;
 			return 2;
 		}
-	}
+
+        public Vector3 GetNextPosition()
+        {
+            return simulatedNextPosition;
+        }
+    }
 }
