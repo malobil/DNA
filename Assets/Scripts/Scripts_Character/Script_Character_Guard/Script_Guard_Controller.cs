@@ -13,6 +13,8 @@ public class Script_Guard_Controller : MonoBehaviour
     [Header("Sign of view")]
     public Transform obj_guard_sign_of_view;
     public Vector3 f_guard_alarm_sign_of_view;
+    public float f_sign_of_view_rotation_speed_player_saw = 25f ;
+    public float f_sign_of_view_rotation_normal = 5f ;
     private Vector3 f_guard_normal_sign_of_view;
     private bool b_see_the_player = false;
 
@@ -20,7 +22,7 @@ public class Script_Guard_Controller : MonoBehaviour
     public float f_time_chase_player = 5f;
     private float f_current_time_chase_player;
     public float f_time_to_shot = 1f;
-    public float f_current_time_to_shot ;
+    private float f_current_time_to_shot ;
 
     [Header("Pathfinder")]
     public AIPath ai_path_component;
@@ -41,16 +43,35 @@ public class Script_Guard_Controller : MonoBehaviour
 
     private void Update()
     {
-        if(f_current_time_chase_player >= 0 && !b_see_the_player)
-        {
-            f_current_time_chase_player -= Time.deltaTime;
-        }
-        else if (f_current_time_chase_player < 0 && !b_see_the_player)
-        {
-            StopChasing();
-        }
+       
 
-        float hDistance = Mathf.Abs(ai_path_component.GetNextPosition().x - transform.position.x);
+        if(b_see_the_player)
+        {
+            if (f_current_time_to_shot >= 0)
+            {
+                f_current_time_to_shot -= Time.deltaTime;
+            }
+            else if (f_current_time_to_shot < 0)
+            {
+                Shot();
+            }
+
+            Quaternion newRotation = Quaternion.LookRotation(Script_Player.Instance.transform.position - obj_guard_sign_of_view.position, Vector3.forward);
+            LookAtSomething(newRotation, f_sign_of_view_rotation_speed_player_saw);
+            
+        }
+        else
+        {
+            if (f_current_time_chase_player >= 0)
+            {
+                f_current_time_chase_player -= Time.deltaTime;
+            }
+            else if (f_current_time_chase_player < 0)
+            {
+                StopChasing();
+            }
+
+            float hDistance = Mathf.Abs(ai_path_component.GetNextPosition().x - transform.position.x);
             float vDistance = Mathf.Abs(ai_path_component.GetNextPosition().y - transform.position.y);
 
             if (vDistance >= hDistance)
@@ -74,7 +95,7 @@ public class Script_Guard_Controller : MonoBehaviour
                 {
                     guard_idle_direction = GuardBaseDirection.Right;
                     SetGuardDirection();
-                   // Debug.Log("GO right");
+                    // Debug.Log("GO right");
                 }
                 else if (transform.position.x < ai_path_component.GetNextPosition().x)
                 {
@@ -82,9 +103,11 @@ public class Script_Guard_Controller : MonoBehaviour
                     SetGuardDirection();
                     //Debug.Log("GO left");
                 }
+            }
         }
 
-        
+       
+
     }
 
     private void SetGuardDirection()
@@ -92,19 +115,19 @@ public class Script_Guard_Controller : MonoBehaviour
         switch (guard_idle_direction.ToString(""))
         {
             case "Left":
-                obj_guard_sign_of_view.localRotation = Quaternion.Euler(0, 0, -90);
+                LookAtSomething(Quaternion.Euler(0, 0, -90), f_sign_of_view_rotation_normal) ;
                 break;
 
             case "Right":
-                obj_guard_sign_of_view.localRotation = Quaternion.Euler(0, 0, 90);
+                LookAtSomething(Quaternion.Euler(0, 0, 90), f_sign_of_view_rotation_normal);
                 break;
 
             case "Up":
-                obj_guard_sign_of_view.localRotation = Quaternion.Euler(0, 0, 180);
+                LookAtSomething(Quaternion.Euler(0, 0, 180), f_sign_of_view_rotation_normal);
                 break;
 
             case "Down":
-                obj_guard_sign_of_view.localRotation = Quaternion.Euler(0, 0, 0);
+                LookAtSomething(Quaternion.Euler(0, 0, 0), f_sign_of_view_rotation_normal);
                 break;
         }
         
@@ -129,6 +152,7 @@ public class Script_Guard_Controller : MonoBehaviour
         ai_path_component.canMove = false;
         obj_guard_sign_of_view.localScale = f_guard_alarm_sign_of_view;
         b_see_the_player = true;
+        f_current_time_to_shot = f_time_to_shot;
     }
 
     public void LostPlayer()
@@ -148,5 +172,23 @@ public class Script_Guard_Controller : MonoBehaviour
         ai_path_component.canMove = true;
         ai_patrol_component.enabled = true ;
         obj_guard_sign_of_view.transform.localScale = f_guard_normal_sign_of_view;
+    }
+
+    private void Shot()
+    {
+        RaycastHit2D hit = Physics2D.Raycast(transform.position, Script_Player.Instance.transform.position - transform.position, 25f);
+        Debug.DrawRay(transform.position, Script_Player.Instance.transform.position - transform.position, Color.red, 25f);
+        Debug.Log("SHOT");
+        if (hit.collider.CompareTag("Player"))
+        {
+            Script_Game_Manager.Instance.GameOver();
+        }
+    }
+
+    private void LookAtSomething(Quaternion directionToLookAt, float f_rotation_Speed)
+    {
+        directionToLookAt.x = 0.0f;
+        directionToLookAt.y = 0.0f;
+        obj_guard_sign_of_view.rotation = Quaternion.Slerp(obj_guard_sign_of_view.rotation, directionToLookAt, Time.deltaTime * f_rotation_Speed);
     }
 }

@@ -177,9 +177,10 @@ MonoBehaviour:
   guard_idle_direction: 3
   obj_guard_sign_of_view: {fileID: 930616038}
   f_guard_alarm_sign_of_view: {x: 4, y: 4, z: 0}
+  f_sign_of_view_rotation_speed_player_saw: 25
+  f_sign_of_view_rotation_normal: 2
   f_time_chase_player: 5
-  f_time_to_shot: 1
-  f_current_time_to_shot: 0
+  f_time_to_shot: 5
   ai_path_component: {fileID: 1226975264}
   ai_destination_component: {fileID: 1226975263}
   ai_patrol_component: {fileID: 1226975269}
