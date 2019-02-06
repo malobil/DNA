@@ -11,6 +11,7 @@ public class Script_Trigger_Door_Detection : Script_ITrigger
         if (other.gameObject.CompareTag("Player") || other.gameObject.CompareTag("Ennemy"))
         {
             s_associate_door_manager.AddCharacterInList(other.gameObject);
+            Debug.Log(other.gameObject);
         }
     }
 

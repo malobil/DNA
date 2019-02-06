@@ -60,6 +60,10 @@ public class Script_Trigger_Door_Manager : MonoBehaviour
         {
             VerifyCard();
         }
+        else
+        {
+            OpenDoor();
+        }
     }
 
     public void RemoveCharacterInList(GameObject g_character_exit)
