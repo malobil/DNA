@@ -133,6 +133,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 1
   t_teleport_point: {fileID: 0}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []
@@ -186,7 +187,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
