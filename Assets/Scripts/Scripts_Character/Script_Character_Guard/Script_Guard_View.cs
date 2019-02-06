@@ -11,7 +11,14 @@ public class Script_Guard_View : MonoBehaviour
         if(other.CompareTag("Player"))
         {
             associate_guard_controller.SeePlayer();
-            //Script_Game_Manager.Instance.GameOver();
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            associate_guard_controller.LostPlayer();
         }
     }
 }
