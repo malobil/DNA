@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 6981960050465261667}
   - component: {fileID: 8274314297185939517}
   - component: {fileID: 628620034339488892}
-  m_Layer: 0
+  m_Layer: 12
   m_Name: Prefab_Desk_Horizontal
   m_TagString: Untagged
   m_Icon: {fileID: 0}
