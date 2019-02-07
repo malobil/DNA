@@ -56,7 +56,6 @@ public class Script_Guard_Controller : MonoBehaviour
 
             Quaternion newRotation = Quaternion.LookRotation(Script_Player.Instance.transform.position - obj_guard_sign_of_view.position, Vector3.forward);
             LookAtSomething(newRotation, f_sign_of_view_rotation_speed_player_saw);
-            
         }
         else
         {
@@ -113,9 +112,6 @@ public class Script_Guard_Controller : MonoBehaviour
                 anim_guard_animator.SetFloat("VMove", 0);
             }
         }
-
-       
-
     }
 
     private void SetGuardDirection()
@@ -165,13 +161,15 @@ public class Script_Guard_Controller : MonoBehaviour
 
     public void LostPlayer()
     {
-        Debug.Log("LOST");
-        ai_path_component.canMove = true ;
-        ai_patrol_component.enabled = false;
-        ai_destination_component.target = Script_Player.Instance.transform;
-        ai_destination_component.enabled = true ;
-        b_see_the_player = false;
-
+        if(b_see_the_player)
+        {
+            Debug.Log("LOST");
+            ai_path_component.canMove = true;
+            ai_patrol_component.enabled = false;
+            ai_destination_component.target = Script_Player.Instance.transform;
+            ai_destination_component.enabled = true;
+            b_see_the_player = false;
+        }
     }
 
     public void StopChasing()

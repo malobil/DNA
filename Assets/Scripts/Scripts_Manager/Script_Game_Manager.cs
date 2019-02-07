@@ -36,10 +36,7 @@ public class Script_Game_Manager : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown("p"))
-        {
-            GameOver();
-        }
+
     }
 
     #region Pause
