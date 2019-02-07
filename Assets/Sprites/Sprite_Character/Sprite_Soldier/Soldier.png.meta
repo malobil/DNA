@@ -10,68 +10,68 @@ TextureImporter:
     21300010: Guard_Down_Walk04
     21300012: Guard_Idle_Walk05
     21300014: Guard_Idle_Walk06
-    21300016: Soldier_8
-    21300018: Soldier_9
-    21300020: Soldier_10
-    21300022: Soldier_11
-    21300024: Soldier_12
-    21300026: Soldier_13
-    21300028: Soldier_14
-    21300030: Soldier_15
-    21300032: Soldier_16
-    21300034: Soldier_17
-    21300036: Soldier_18
-    21300038: Soldier_19
-    21300040: Soldier_20
-    21300042: Soldier_21
-    21300044: Soldier_22
-    21300046: Soldier_23
-    21300048: Soldier_24
-    21300050: Soldier_25
-    21300052: Soldier_26
-    21300054: Soldier_27
-    21300056: Soldier_28
-    21300058: Soldier_29
-    21300060: Soldier_30
-    21300062: Soldier_31
-    21300064: Soldier_32
-    21300066: Soldier_33
-    21300068: Soldier_34
-    21300070: Soldier_35
-    21300072: Soldier_36
-    21300074: Soldier_37
-    21300076: Soldier_38
-    21300078: Soldier_39
-    21300080: Soldier_40
+    21300016: Soldier_Idle_Right
+    21300018: Soldier_Idle_Right02
+    21300020: Soldier_Walk_Right
+    21300022: Soldier_Walk_Right02
+    21300024: Soldier_Walk_Right03
+    21300026: Soldier_Walk_Right04
+    21300028: Soldier_Idle_Left
+    21300030: Soldier_Idle_Left02
+    21300032: Soldier_Walk_Left
+    21300034: Soldier_Walk_Left02
+    21300036: Soldier_Walk_Left03
+    21300038: Soldier_Walk_Left04
+    21300040: Soldier_Idle_Up
+    21300042: Soldier_Idle_Up02
+    21300044: Soldier_Walk_Up
+    21300046: Soldier_Walk_Up02
+    21300048: Soldier_Walk_Up03
+    21300050: Soldier_Walk_Up04
+    21300052: Soldier_Walk_Up05
+    21300054: Soldier_Walk_Up06
+    21300056: Soldier_Shot_Down
+    21300058: Soldier_Shot_Down02
+    21300060: Soldier_Shot_Down03
+    21300062: Soldier_Shot_Down04
+    21300064: Soldier_Shot_Down05
+    21300066: Soldier_Shot_Down06
+    21300068: Soldier_Shot_Down07
+    21300070: Soldier_Shot_Right
+    21300072: Soldier_Shot_Right02
+    21300074: Soldier_Shot_Right03
+    21300076: Soldier_Shot_Right04
+    21300078: Soldier_Shot_Right05
+    21300080: Soldier_Shot_Right06
     21300082: Soldier_41
     21300084: Soldier_42
-    21300086: Soldier_43
-    21300088: Soldier_44
-    21300090: Soldier_45
-    21300092: Soldier_46
-    21300094: Soldier_47
-    21300096: Soldier_48
+    21300086: Soldier_Shot_Left
+    21300088: Soldier_Shot_Left02
+    21300090: Soldier_Shot_Left03
+    21300092: Soldier_Shot_Left04
+    21300094: Soldier_Shot_Left05
+    21300096: Soldier_Shot_Left06
     21300098: Soldier_49
     21300100: Soldier_50
-    21300102: Soldier_51
-    21300104: Soldier_52
-    21300106: Soldier_53
-    21300108: Soldier_54
-    21300110: Soldier_55
-    21300112: Soldier_56
+    21300102: Soldier_Shot_Up
+    21300104: Soldier_Shot_Up02
+    21300106: Soldier_Shot_Up03
+    21300108: Soldier_Shot_Up04
+    21300110: Soldier_Shot_Up05
+    21300112: Soldier_Shot_Up06
     21300114: Soldier_57
     21300116: Soldier_58
     21300118: Soldier_59
     21300120: Soldier_60
     21300122: Soldier_61
-    21300124: Soldier_0
-    21300126: Soldier_1
-    21300128: Soldier_2
-    21300130: Soldier_3
-    21300132: Soldier_4
-    21300134: Soldier_5
-    21300136: Soldier_6
-    21300138: Soldier_7
+    21300124: Soldier_Idle_Down
+    21300126: Soldier_Idle_Down02
+    21300128: Soldier_Walk_Down
+    21300130: Soldier_Walk_Down02
+    21300132: Soldier_Walk_Down03
+    21300134: Soldier_Walk_Down04
+    21300136: Soldier_Walk_Down05
+    21300138: Soldier_Walk_Down06
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -154,7 +154,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Soldier_0
+      name: Soldier_Idle_Down
       rect:
         serializedVersion: 2
         x: 4
@@ -162,7 +162,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -174,15 +174,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_1
+      name: Soldier_Idle_Down02
       rect:
         serializedVersion: 2
         x: 31
         y: 234
         width: 17
         height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -194,7 +194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_2
+      name: Soldier_Walk_Down
       rect:
         serializedVersion: 2
         x: 67
@@ -202,7 +202,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_3
+      name: Soldier_Walk_Down02
       rect:
         serializedVersion: 2
         x: 97
@@ -222,7 +222,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,7 +234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_4
+      name: Soldier_Walk_Down03
       rect:
         serializedVersion: 2
         x: 125
@@ -242,7 +242,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -254,15 +254,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_5
+      name: Soldier_Walk_Down04
       rect:
         serializedVersion: 2
         x: 157
         y: 234
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.525, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -274,15 +274,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_6
+      name: Soldier_Walk_Down05
       rect:
         serializedVersion: 2
         x: 185
         y: 234
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.525, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -294,15 +294,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_7
+      name: Soldier_Walk_Down06
       rect:
         serializedVersion: 2
         x: 215
         y: 234
         width: 16
         height: 24
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.525, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -314,7 +314,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_8
+      name: Soldier_Idle_Right
       rect:
         serializedVersion: 2
         x: 4
@@ -322,7 +322,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -334,15 +334,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_9
+      name: Soldier_Idle_Right02
       rect:
         serializedVersion: 2
         x: 30
         y: 202
         width: 18
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,7 +354,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_10
+      name: Soldier_Walk_Right
       rect:
         serializedVersion: 2
         x: 68
@@ -362,7 +362,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -374,7 +374,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_11
+      name: Soldier_Walk_Right02
       rect:
         serializedVersion: 2
         x: 98
@@ -382,7 +382,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -394,7 +394,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_12
+      name: Soldier_Walk_Right03
       rect:
         serializedVersion: 2
         x: 126
@@ -402,7 +402,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -414,7 +414,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_13
+      name: Soldier_Walk_Right04
       rect:
         serializedVersion: 2
         x: 156
@@ -422,7 +422,7 @@ TextureImporter:
         width: 16
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -434,7 +434,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_14
+      name: Soldier_Idle_Left
       rect:
         serializedVersion: 2
         x: 4
@@ -442,7 +442,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,15 +454,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_15
+      name: Soldier_Idle_Left02
       rect:
         serializedVersion: 2
         x: 30
         y: 172
         width: 18
         height: 22
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -474,7 +474,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_16
+      name: Soldier_Walk_Left
       rect:
         serializedVersion: 2
         x: 70
@@ -482,7 +482,7 @@ TextureImporter:
         width: 16
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -494,7 +494,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_17
+      name: Soldier_Walk_Left02
       rect:
         serializedVersion: 2
         x: 98
@@ -502,7 +502,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -514,7 +514,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_18
+      name: Soldier_Walk_Left03
       rect:
         serializedVersion: 2
         x: 125
@@ -522,7 +522,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -534,7 +534,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_19
+      name: Soldier_Walk_Left04
       rect:
         serializedVersion: 2
         x: 155
@@ -542,7 +542,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -554,7 +554,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_20
+      name: Soldier_Idle_Up
       rect:
         serializedVersion: 2
         x: 4
@@ -562,7 +562,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -574,15 +574,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_21
+      name: Soldier_Idle_Up02
       rect:
         serializedVersion: 2
         x: 31
         y: 141
         width: 17
         height: 23
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.5, y: 0.52}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -594,7 +594,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_22
+      name: Soldier_Walk_Up
       rect:
         serializedVersion: 2
         x: 67
@@ -602,7 +602,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -614,7 +614,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_23
+      name: Soldier_Walk_Up02
       rect:
         serializedVersion: 2
         x: 97
@@ -622,7 +622,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -634,7 +634,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_24
+      name: Soldier_Walk_Up03
       rect:
         serializedVersion: 2
         x: 126
@@ -642,7 +642,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -654,7 +654,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_25
+      name: Soldier_Walk_Up04
       rect:
         serializedVersion: 2
         x: 158
@@ -662,7 +662,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -674,7 +674,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_26
+      name: Soldier_Walk_Up05
       rect:
         serializedVersion: 2
         x: 186
@@ -682,7 +682,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -694,7 +694,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_27
+      name: Soldier_Walk_Up06
       rect:
         serializedVersion: 2
         x: 216
@@ -702,7 +702,7 @@ TextureImporter:
         width: 17
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -714,7 +714,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_28
+      name: Soldier_Shot_Down
       rect:
         serializedVersion: 2
         x: 6
@@ -722,7 +722,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -734,7 +734,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_29
+      name: Soldier_Shot_Down02
       rect:
         serializedVersion: 2
         x: 33
@@ -742,7 +742,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -754,7 +754,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_30
+      name: Soldier_Shot_Down03
       rect:
         serializedVersion: 2
         x: 62
@@ -762,7 +762,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -774,7 +774,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_31
+      name: Soldier_Shot_Down04
       rect:
         serializedVersion: 2
         x: 93
@@ -782,7 +782,7 @@ TextureImporter:
         width: 16
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -794,7 +794,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_32
+      name: Soldier_Shot_Down05
       rect:
         serializedVersion: 2
         x: 121
@@ -802,7 +802,7 @@ TextureImporter:
         width: 17
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -814,7 +814,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_33
+      name: Soldier_Shot_Down06
       rect:
         serializedVersion: 2
         x: 149
@@ -822,7 +822,7 @@ TextureImporter:
         width: 18
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -834,7 +834,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_34
+      name: Soldier_Shot_Down07
       rect:
         serializedVersion: 2
         x: 177
@@ -842,7 +842,7 @@ TextureImporter:
         width: 18
         height: 25
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -854,7 +854,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_35
+      name: Soldier_Shot_Right
       rect:
         serializedVersion: 2
         x: 6
@@ -862,7 +862,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -874,7 +874,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_36
+      name: Soldier_Shot_Right02
       rect:
         serializedVersion: 2
         x: 33
@@ -882,7 +882,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -894,7 +894,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_37
+      name: Soldier_Shot_Right03
       rect:
         serializedVersion: 2
         x: 61
@@ -902,7 +902,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -914,7 +914,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_38
+      name: Soldier_Shot_Right04
       rect:
         serializedVersion: 2
         x: 93
@@ -922,7 +922,7 @@ TextureImporter:
         width: 20
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -934,7 +934,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_39
+      name: Soldier_Shot_Right05
       rect:
         serializedVersion: 2
         x: 121
@@ -942,7 +942,7 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -954,7 +954,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_40
+      name: Soldier_Shot_Right06
       rect:
         serializedVersion: 2
         x: 150
@@ -962,7 +962,7 @@ TextureImporter:
         width: 20
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -982,7 +982,7 @@ TextureImporter:
         width: 6
         height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1002,7 +1002,7 @@ TextureImporter:
         width: 8
         height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1014,7 +1014,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_43
+      name: Soldier_Shot_Left
       rect:
         serializedVersion: 2
         x: 3
@@ -1022,7 +1022,7 @@ TextureImporter:
         width: 20
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1034,7 +1034,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_44
+      name: Soldier_Shot_Left02
       rect:
         serializedVersion: 2
         x: 31
@@ -1042,7 +1042,7 @@ TextureImporter:
         width: 21
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1054,7 +1054,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_45
+      name: Soldier_Shot_Left03
       rect:
         serializedVersion: 2
         x: 60
@@ -1062,7 +1062,7 @@ TextureImporter:
         width: 20
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1074,7 +1074,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_46
+      name: Soldier_Shot_Left04
       rect:
         serializedVersion: 2
         x: 94
@@ -1082,7 +1082,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1094,7 +1094,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_47
+      name: Soldier_Shot_Left05
       rect:
         serializedVersion: 2
         x: 122
@@ -1102,7 +1102,7 @@ TextureImporter:
         width: 18
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1114,7 +1114,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_48
+      name: Soldier_Shot_Left06
       rect:
         serializedVersion: 2
         x: 148
@@ -1122,7 +1122,7 @@ TextureImporter:
         width: 19
         height: 23
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1142,7 +1142,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1162,7 +1162,7 @@ TextureImporter:
         width: 10
         height: 10
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1174,7 +1174,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_51
+      name: Soldier_Shot_Up
       rect:
         serializedVersion: 2
         x: 7
@@ -1182,7 +1182,7 @@ TextureImporter:
         width: 16
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1194,7 +1194,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_52
+      name: Soldier_Shot_Up02
       rect:
         serializedVersion: 2
         x: 36
@@ -1202,7 +1202,7 @@ TextureImporter:
         width: 19
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1214,7 +1214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_53
+      name: Soldier_Shot_Up03
       rect:
         serializedVersion: 2
         x: 64
@@ -1222,7 +1222,7 @@ TextureImporter:
         width: 18
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1234,7 +1234,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_54
+      name: Soldier_Shot_Up04
       rect:
         serializedVersion: 2
         x: 95
@@ -1242,7 +1242,7 @@ TextureImporter:
         width: 18
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1254,7 +1254,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_55
+      name: Soldier_Shot_Up05
       rect:
         serializedVersion: 2
         x: 124
@@ -1262,7 +1262,7 @@ TextureImporter:
         width: 20
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1274,7 +1274,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Soldier_56
+      name: Soldier_Shot_Up06
       rect:
         serializedVersion: 2
         x: 151
@@ -1282,7 +1282,7 @@ TextureImporter:
         width: 19
         height: 24
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1302,7 +1302,7 @@ TextureImporter:
         width: 12
         height: 12
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

@@ -43,8 +43,6 @@ public class Script_Guard_Controller : MonoBehaviour
 
     private void Update()
     {
-       
-
         if(b_see_the_player)
         {
             if (f_current_time_to_shot >= 0)
@@ -80,14 +78,19 @@ public class Script_Guard_Controller : MonoBehaviour
                 {
                     guard_idle_direction = GuardBaseDirection.Up;
                     SetGuardDirection();
+                    anim_guard_animator.SetFloat("VMove", 1);
                     //Debug.Log("GO UP");
                 }
                 else if (transform.position.y < ai_path_component.GetNextPosition().y)
                 {
                     guard_idle_direction = GuardBaseDirection.Down;
                     SetGuardDirection();
+                    anim_guard_animator.SetFloat("VMove", -1);
                     //Debug.Log("GO DOWN");
                 }
+
+                
+                anim_guard_animator.SetFloat("HMove", 0);
             }
             else
             {
@@ -95,14 +98,19 @@ public class Script_Guard_Controller : MonoBehaviour
                 {
                     guard_idle_direction = GuardBaseDirection.Right;
                     SetGuardDirection();
+                    anim_guard_animator.SetFloat("HMove", 1);
                     // Debug.Log("GO right");
                 }
                 else if (transform.position.x < ai_path_component.GetNextPosition().x)
                 {
                     guard_idle_direction = GuardBaseDirection.Left;
                     SetGuardDirection();
+                    anim_guard_animator.SetFloat("HMove", -1);
                     //Debug.Log("GO left");
                 }
+
+                
+                anim_guard_animator.SetFloat("VMove", 0);
             }
         }
 

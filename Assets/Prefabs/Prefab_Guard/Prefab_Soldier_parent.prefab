@@ -69,7 +69,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300000, guid: 6ff2d569e49d1b849b5f4d8b2ce476fe, type: 3}
   m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_FlipX: 0
@@ -174,12 +174,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69b850cf4eaef71469d415c2842bbe2d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  guard_idle_direction: 3
+  guard_idle_direction: 2
   obj_guard_sign_of_view: {fileID: 930616038}
-  f_guard_alarm_sign_of_view: {x: 4, y: 4, z: 0}
+  f_guard_alarm_sign_of_view: {x: 5, y: 5, z: 0}
   f_sign_of_view_rotation_speed_player_saw: 25
   f_sign_of_view_rotation_normal: 2
-  f_time_chase_player: 5
+  f_time_chase_player: 18.75
   f_time_to_shot: 5
   ai_path_component: {fileID: 1226975264}
   ai_destination_component: {fileID: 1226975263}
@@ -260,8 +260,8 @@ MonoBehaviour:
   height: 0.01
   repathRate: 0.5
   canSearch: 1
-  canMove: 1
-  maxSpeed: 2
+  canMove: 0
+  maxSpeed: 1
   gravity: {x: 0, y: 0, z: 0}
   groundMask:
     serializedVersion: 2
@@ -412,7 +412,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 4
   m_Sprite: {fileID: 21300124, guid: cd998c40e2afbeb45a311385229268ba, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
