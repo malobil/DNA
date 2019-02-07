@@ -122,6 +122,18 @@
 	<data name="Apple_Title" xml:space="preserve">
 		<value>Apple Object Title</value>
 	</data>
+	<data name="Bed_1" xml:space="preserve">
+		<value>Bed</value>
+	</data>
+	<data name="Bed_Title" xml:space="preserve">
+		<value>Bed Title</value>
+	</data>
+	<data name="Blue_Card_1" xml:space="preserve">
+		<value>Blue Card</value>
+	</data>
+	<data name="Blue_Card_Title" xml:space="preserve">
+		<value>Blue Card Title</value>
+	</data>
 	<data name="Box_1" xml:space="preserve">
 		<value>Box Object</value>
 	</data>
@@ -133,6 +145,18 @@
 	</data>
 	<data name="Cabinet_Title" xml:space="preserve">
 		<value>Cabinet Title</value>
+	</data>
+	<data name="Desk_1" xml:space="preserve">
+		<value>Desk</value>
+	</data>
+	<data name="Desk_Title" xml:space="preserve">
+		<value>Desk Title</value>
+	</data>
+	<data name="Dnabooster_1" xml:space="preserve">
+		<value>Dna Booster</value>
+	</data>
+	<data name="Dnabooster_Title" xml:space="preserve">
+		<value>Dna Bosster Title</value>
 	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>Guard 1 Dialog Cutscene #2</value>
@@ -155,8 +179,20 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction tutorial Title</value>
 	</data>
+	<data name="Library_1" xml:space="preserve">
+		<value>Library</value>
+	</data>
+	<data name="Library_Title" xml:space="preserve">
+		<value>Library Title</value>
+	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
+	</data>
+	<data name="N11_1" xml:space="preserve">
+		<value>N11 Dialog</value>
+	</data>
+	<data name="N11_2" xml:space="preserve">
+		<value>N11 Dialog</value>
 	</data>
 	<data name="N3_1" xml:space="preserve">
 		<value>Number 3 Dialog</value>
@@ -229,42 +265,6 @@
 	</data>
 	<data name="N9_1P2" xml:space="preserve">
 		<value>Number 9 Dialog</value>
-	</data>
-	<data name="Speakers_1" xml:space="preserve">
-		<value>Speakers Dialog </value>
-	</data>
-	<data name="N11_1" xml:space="preserve">
-		<value>N11 Dialog</value>
-	</data>
-	<data name="N11_2" xml:space="preserve">
-		<value>N11 Dialog</value>
-	</data>
-	<data name="SP1_1" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_2" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_3" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_4" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_5" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_6" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_7" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_8" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
-	</data>
-	<data name="SP1_9" xml:space="preserve">
-		<value>Scientific Speakers Dialogs</value>
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>Journal of Number 2 text</value>
@@ -401,11 +401,38 @@
 	<data name="S3_1P5Cut4" xml:space="preserve">
 		<value>Scientist 3 Dialog Cutscene #4</value>
 	</data>
-	<data name="S3_1P6Cut4" xml:space="preserve">
-		<value>Scientist 3 Dialog Cutscene #4</value>
-	</data>
-	<data name="Screwdriver" xml:space="preserve">
+	<data name="Screwdriver_1" xml:space="preserve">
 		<value>Screwdriver</value>
+	</data>
+	<data name="Screwdriver_Title" xml:space="preserve">
+		<value>Screwdriver_Title</value>
+	</data>
+	<data name="SP1_1" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_2" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_3" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_4" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_5" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_6" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_7" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_8" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
+	</data>
+	<data name="SP1_9" xml:space="preserve">
+		<value>Scientific Speakers Dialogs</value>
 	</data>
 	<data name="Spawner_1" xml:space="preserve">
 		<value>Spawner Object</value>
@@ -413,11 +440,20 @@
 	<data name="Spawner_Title" xml:space="preserve">
 		<value>Spawner Object Title</value>
 	</data>
+	<data name="Speakers_1" xml:space="preserve">
+		<value>Speakers Dialog </value>
+	</data>
 	<data name="Special_Interaction_1" xml:space="preserve">
 		<value>Special Interaction tutorial</value>
 	</data>
 	<data name="Special_Interaction_1_Title" xml:space="preserve">
 		<value>Special Interaction tutorial Title</value>
+	</data>
+	<data name="Table_1" xml:space="preserve">
+		<value>Table</value>
+	</data>
+	<data name="Table_Title" xml:space="preserve">
+		<value>Table Title</value>
 	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>Throw and Hold tutorial</value>

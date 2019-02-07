@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Item_FullApple
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300000, guid: 19987788a58f2b64b850143d55a9af48, type: 3}
-  s_item_CSV_name_key: 
-  s_item_CSV_description_key: 
+  s_item_CSV_name_key: Apple_Title
+  s_item_CSV_description_key: Apple_1
   i_item_level: 1
   f_item_weight: 1
   g_item_prefab: {fileID: 8992960759502479141, guid: 1affdab7ce6c6ac438df95bf4ae009ab,

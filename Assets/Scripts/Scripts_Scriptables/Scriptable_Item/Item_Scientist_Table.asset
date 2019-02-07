@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Item_Scientist_Table
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300060, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
-  s_item_CSV_name_key: 
-  s_item_CSV_description_key: 
+  s_item_CSV_name_key: Table_Title
+  s_item_CSV_description_key: Table_1
   i_item_level: 1
   f_item_weight: 100
   g_item_prefab: {fileID: 448946338465083289, guid: 571cb2339bff90347ae0c2c7d6b2f7ec,

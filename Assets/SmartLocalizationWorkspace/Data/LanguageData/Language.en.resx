@@ -122,6 +122,18 @@
 	<data name="Apple_Title" xml:space="preserve">
 		<value>Apple</value>
 	</data>
+	<data name="Bed_1" xml:space="preserve">
+		<value>To take a nap.</value>
+	</data>
+	<data name="Bed_Title" xml:space="preserve">
+		<value>Bed</value>
+	</data>
+	<data name="Blue_Card_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Blue_Card_Title" xml:space="preserve">
+		<value>Blue Card</value>
+	</data>
 	<data name="Box_1" xml:space="preserve">
 		<value>Light enough to be pushed ...</value>
 	</data>
@@ -133,6 +145,18 @@
 	</data>
 	<data name="Cabinet_Title" xml:space="preserve">
 		<value>Cabinet</value>
+	</data>
+	<data name="Desk_1" xml:space="preserve">
+		<value>Big enough to block a passage.</value>
+	</data>
+	<data name="Desk_Title" xml:space="preserve">
+		<value>Desk</value>
+	</data>
+	<data name="Dnabooster_1" xml:space="preserve">
+		<value>And one more !                 </value>
+	</data>
+	<data name="Dnabooster_Title" xml:space="preserve">
+		<value>&lt;size=25&gt;D'N'A Booster&lt;/size&gt;</value>
 	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>How did you get here?</value>
@@ -154,6 +178,12 @@
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
+	</data>
+	<data name="Library_1" xml:space="preserve">
+		<value>The way of the knowledge </value>
+	</data>
+	<data name="Library_Title" xml:space="preserve">
+		<value>Library</value>
 	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meal Tray</value>
@@ -263,7 +293,7 @@ Be proud to belong to the "New Dawn" project of the SeArch research centers.
 It is this pride that you must feel. The pride of rebuilding our planet.</value>
 	</data>
 	<data name="NG1_1_2_Title" xml:space="preserve">
-		<value>Excerpt From "In This Place"</value>
+		<value>&lt;size=24&gt;Excerpt From "In This Place"&lt;/size&gt;</value>
 	</data>
 	<data name="NG1_1_3" xml:space="preserve">
 		<value>Here is the list of medical appointments for this month
@@ -435,10 +465,10 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	<data name="S3_1P5Cut4" xml:space="preserve">
 		<value>why would it work with him?</value>
 	</data>
-	<data name="S3_1P6Cut4" xml:space="preserve">
-		<value />
+	<data name="Screwdriver_1" xml:space="preserve">
+		<value>This will open some passages.</value>
 	</data>
-	<data name="Screwdriver" xml:space="preserve">
+	<data name="Screwdriver_Title" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
 	<data name="SP1_1" xml:space="preserve">
@@ -486,6 +516,12 @@ I repeat, Number 12 is expected for testing.</value>
 	</data>
 	<data name="Special_Interaction_1_Title" xml:space="preserve">
 		<value>Object usage</value>
+	</data>
+	<data name="Table_1" xml:space="preserve">
+		<value>It's just a table.</value>
+	</data>
+	<data name="Table_Title" xml:space="preserve">
+		<value>Table</value>
 	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>When you retrieve an object, it appears at the bottom right of your screen.

@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Item_Desk
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300002, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
-  s_item_CSV_name_key: 
-  s_item_CSV_description_key: 
+  s_item_CSV_name_key: Desk_Title
+  s_item_CSV_description_key: Desk_1
   i_item_level: 1
   f_item_weight: 100
   g_item_prefab: {fileID: 4112703124478510848, guid: f116becbd7bbbbb4b9c358e82eee447a,

@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Item_Blue_Card
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300000, guid: 629f4cfb2092d61439710600346231f6, type: 3}
-  s_item_CSV_name_key: 
+  s_item_CSV_name_key: Blue_Card_Title
   s_item_CSV_description_key: 
   i_item_level: 6
   f_item_weight: 1

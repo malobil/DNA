@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Item_Trash
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300012, guid: 2cea9d0f55aae214a8fd18d5332b90e2, type: 3}
-  s_item_CSV_name_key: 
-  s_item_CSV_description_key: 
+  s_item_CSV_name_key: Trashcan_Title
+  s_item_CSV_description_key: Trashcan_1
   i_item_level: 2
   f_item_weight: 50
   g_item_prefab: {fileID: 0}

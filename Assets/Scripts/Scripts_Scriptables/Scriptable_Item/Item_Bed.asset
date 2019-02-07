@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Item_Bed
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300084, guid: db34cf8ccc1fa8e418f444ef7cd6a7a8, type: 3}
-  s_item_CSV_name_key: 
-  s_item_CSV_description_key: 
+  s_item_CSV_name_key: Bed_Title
+  s_item_CSV_description_key: Bed_1
   i_item_level: 2
   f_item_weight: 100
   g_item_prefab: {fileID: 1317452072558495534, guid: 45bb266904939774a92c4cfd490cc04b,

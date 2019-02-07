@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: Item_Important_Book
   m_EditorClassIdentifier: 
   s_item_sprite: {fileID: 21300000, guid: 0b5f3ba180bd23d4fa1d4078a30fb2cd, type: 3}
-  s_item_CSV_name_key: 
-  s_item_CSV_description_key: 
+  s_item_CSV_name_key: NG1_1_2_Title
+  s_item_CSV_description_key: NG1_1_2
   i_item_level: 1
   f_item_weight: 1
   g_item_prefab: {fileID: 6273309444575545639, guid: adc913b51de49174a9e4ac856a20c0ca,

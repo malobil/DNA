@@ -122,6 +122,18 @@
 	<data name="Apple_Title" xml:space="preserve">
 		<value>Pomme</value>
 	</data>
+	<data name="Bed_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Bed_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Blue_Card_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Blue_Card_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Box_1" xml:space="preserve">
 		<value>Assez légére pour etre poussée...</value>
 	</data>
@@ -133,6 +145,18 @@
 	</data>
 	<data name="Cabinet_Title" xml:space="preserve">
 		<value>Armoire</value>
+	</data>
+	<data name="Desk_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Desk_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Dnabooster_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Dnabooster_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>d’être là !</value>
@@ -154,6 +178,12 @@
 	</data>
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
+	</data>
+	<data name="Library_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Library_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
@@ -443,11 +473,11 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	<data name="S3_1P5Cut4" xml:space="preserve">
 		<value>Si ça ne marche pas avec les autres,</value>
 	</data>
-	<data name="S3_1P6Cut4" xml:space="preserve">
-		<value>pourquoi ça marcherait avec lui ?</value>
-	</data>
-	<data name="Screwdriver" xml:space="preserve">
+	<data name="Screwdriver_1" xml:space="preserve">
 		<value>Screwdriver</value>
+	</data>
+	<data name="Screwdriver_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="SP1_1" xml:space="preserve">
 		<value>Bonjour Numéro 12 ! Aujourd'hui nous allons éveiller vos pouvoirs.</value>
@@ -492,6 +522,12 @@ Je répéte, Numéro 12 est attendu pour les tests.</value>
 	</data>
 	<data name="Special_Interaction_1_Title" xml:space="preserve">
 		<value>Utiliser un objet</value>
+	</data>
+	<data name="Table_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Table_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>Quand vous récupérez un objet, il apparait en bas à droite de votre écran.
