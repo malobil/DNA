@@ -116,6 +116,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="" xml:space="preserve">
+		<value />
+	</data>
+	<data name="0" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Apple_1" xml:space="preserve">
 		<value>She looks very juicy ...</value>
 	</data>
@@ -125,8 +131,20 @@
 	<data name="Bed_1" xml:space="preserve">
 		<value>To take a nap.</value>
 	</data>
+	<data name="Bed_10" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Bed_Title" xml:space="preserve">
 		<value>Bed</value>
+	</data>
+	<data name="Bed_Title0" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Bench_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Bench_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="Blue_Card_1" xml:space="preserve">
 		<value />
@@ -134,11 +152,47 @@
 	<data name="Blue_Card_Title" xml:space="preserve">
 		<value>Blue Card</value>
 	</data>
+	<data name="Book_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Book_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Box_1" xml:space="preserve">
 		<value>Light enough to be pushed ...</value>
 	</data>
 	<data name="Box_Title" xml:space="preserve">
 		<value>Storage Box</value>
+	</data>
+	<data name="Burette_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Burette_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="C4_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="C4_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Chair_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Chair_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Chest of drawers_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Chest of drawers_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Computer_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Computer_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="Desk_1" xml:space="preserve">
 		<value>Big enough to block a passage.</value>
@@ -151,6 +205,30 @@
 	</data>
 	<data name="Dnabooster_Title" xml:space="preserve">
 		<value>&lt;size=30&gt;D'N'A Booster&lt;/size&gt;</value>
+	</data>
+	<data name="Experimental_Chair_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Experimental_Chair_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Flashlight_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Flashlight_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Flask_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Flask_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Flower_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Flower_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>How did you get here?</value>
@@ -167,6 +245,24 @@
 	<data name="G2_1Cut2" xml:space="preserve">
 		<value>Everybody is here ?</value>
 	</data>
+	<data name="Grenade_Echo_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Grenade_Echo_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Grenade_IEM_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Grenade_IEM_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Guard_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Guard_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Important_Book_1" xml:space="preserve">
 		<value>Post a text</value>
 	</data>
@@ -179,14 +275,50 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction</value>
 	</data>
+	<data name="Lamp_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Lamp_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Library_1" xml:space="preserve">
 		<value>The way of the knowledge </value>
 	</data>
 	<data name="Library_Title" xml:space="preserve">
 		<value>Library</value>
 	</data>
+	<data name="Locker_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Locker_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Magnet_Negative_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Magnet_Negative_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Magnet_Positive_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Magnet_Positive_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Medic_Tools_" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Medic_Tools_1" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meal Tray</value>
+	</data>
+	<data name="Microscope_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Microscope_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="N11_1" xml:space="preserve">
 		<value>Hi ! What's new today ? Not too nervous for your first test?
@@ -268,6 +400,12 @@ see you later</value>
 	</data>
 	<data name="N9_1P2" xml:space="preserve">
 		<value>this is the second time in 2 weeks.</value>
+	</data>
+	<data name="Naughty_Magazine_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Naughty_Magazine_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>January 22, 2045
@@ -384,6 +522,30 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist</value>
 	</data>
+	<data name="Note_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Note_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Pillow_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Pillow_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Plush_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Plush_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Poster_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Poster_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Pressureplate_1" xml:space="preserve">
 		<value>A mechanism is activated if a heavy object is placed on it.</value>
 	</data>
@@ -465,11 +627,29 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	<data name="S3_1P5Cut4" xml:space="preserve">
 		<value>why would it work with him?</value>
 	</data>
+	<data name="Scientist_Table_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Scientist_Table_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Screwdriver_1" xml:space="preserve">
 		<value>This will open some passages.</value>
 	</data>
 	<data name="Screwdriver_Title" xml:space="preserve">
 		<value>Screwdriver</value>
+	</data>
+	<data name="Server_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Server_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Sofa_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Sofa_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="SP1_1" xml:space="preserve">
 		<value>Hello Number 12! Today we will awaken your powers.</value>
@@ -523,6 +703,18 @@ I repeat, Number 12 is expected for testing.</value>
 	<data name="Table_Title" xml:space="preserve">
 		<value>Table</value>
 	</data>
+	<data name="Taser_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Taser_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Test_Tube_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Test_Tube_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>When you retrieve an object, it appears at the bottom right of your screen.
 You can launch an item you are carrying by pressing &lt;color=#ff0000ff&gt;[SHIFT]&lt;/color&gt;.
@@ -552,10 +744,22 @@ if you hold the key long the throw will go far.</value>
 	<data name="Tuto_5" xml:space="preserve">
 		<value>Heavy objects can be placed on pressure plates.</value>
 	</data>
+	<data name="TV_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="TV_Title" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Wardrobe_1" xml:space="preserve">
 		<value>It would be a good hiding place!</value>
 	</data>
+	<data name="Wardrobe_10" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Wardrobe_Title" xml:space="preserve">
 		<value>Cabinet</value>
+	</data>
+	<data name="Wardrobe_Title0" xml:space="preserve">
+		<value />
 	</data>
 </root>

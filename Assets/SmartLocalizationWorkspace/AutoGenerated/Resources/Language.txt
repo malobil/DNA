@@ -116,6 +116,12 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+	<data name="" xml:space="preserve">
+		<value>New Value</value>
+	</data>
+	<data name="0" xml:space="preserve">
+		<value>New Value</value>
+	</data>
 	<data name="Apple_1" xml:space="preserve">
 		<value>Apple Object</value>
 	</data>
@@ -125,8 +131,20 @@
 	<data name="Bed_1" xml:space="preserve">
 		<value>Bed</value>
 	</data>
+	<data name="Bed_10" xml:space="preserve">
+		<value>Bed </value>
+	</data>
 	<data name="Bed_Title" xml:space="preserve">
 		<value>Bed Title</value>
+	</data>
+	<data name="Bed_Title0" xml:space="preserve">
+		<value>Bed Title</value>
+	</data>
+	<data name="Bench_1" xml:space="preserve">
+		<value>Bench</value>
+	</data>
+	<data name="Bench_Title" xml:space="preserve">
+		<value>Bench Title</value>
 	</data>
 	<data name="Blue_Card_1" xml:space="preserve">
 		<value>Blue Card</value>
@@ -134,11 +152,47 @@
 	<data name="Blue_Card_Title" xml:space="preserve">
 		<value>Blue Card Title</value>
 	</data>
+	<data name="Book_1" xml:space="preserve">
+		<value>Book</value>
+	</data>
+	<data name="Book_Title" xml:space="preserve">
+		<value>Book Title</value>
+	</data>
 	<data name="Box_1" xml:space="preserve">
 		<value>Box Object</value>
 	</data>
 	<data name="Box_Title" xml:space="preserve">
 		<value>Box Object Title</value>
+	</data>
+	<data name="Burette_1" xml:space="preserve">
+		<value>Burette </value>
+	</data>
+	<data name="Burette_Title" xml:space="preserve">
+		<value>Burette Title</value>
+	</data>
+	<data name="C4_1" xml:space="preserve">
+		<value>C4</value>
+	</data>
+	<data name="C4_Title" xml:space="preserve">
+		<value>C4 Title</value>
+	</data>
+	<data name="Chair_1" xml:space="preserve">
+		<value>Chair </value>
+	</data>
+	<data name="Chair_Title" xml:space="preserve">
+		<value>Chair Title</value>
+	</data>
+	<data name="Chest of drawers_1" xml:space="preserve">
+		<value>Chest of drawers </value>
+	</data>
+	<data name="Chest of drawers_Title" xml:space="preserve">
+		<value>Chest of drawers Title</value>
+	</data>
+	<data name="Computer_1" xml:space="preserve">
+		<value>Computer</value>
+	</data>
+	<data name="Computer_Title" xml:space="preserve">
+		<value>Computer Title</value>
 	</data>
 	<data name="Desk_1" xml:space="preserve">
 		<value>Desk</value>
@@ -151,6 +205,30 @@
 	</data>
 	<data name="Dnabooster_Title" xml:space="preserve">
 		<value>Dna Bosster Title</value>
+	</data>
+	<data name="Experimental_Chair_1" xml:space="preserve">
+		<value>Experimental Chair </value>
+	</data>
+	<data name="Experimental_Chair_Title" xml:space="preserve">
+		<value>Experimental Chair  1</value>
+	</data>
+	<data name="Flashlight_1" xml:space="preserve">
+		<value>Flashlight</value>
+	</data>
+	<data name="Flashlight_Title" xml:space="preserve">
+		<value>Flashlight Title</value>
+	</data>
+	<data name="Flask_1" xml:space="preserve">
+		<value>Flask </value>
+	</data>
+	<data name="Flask_Title" xml:space="preserve">
+		<value>Flask Title</value>
+	</data>
+	<data name="Flower_1" xml:space="preserve">
+		<value>Flower</value>
+	</data>
+	<data name="Flower_Title" xml:space="preserve">
+		<value>Flower Title</value>
 	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>Guard 1 Dialog Cutscene #2</value>
@@ -167,6 +245,24 @@
 	<data name="G2_1Cut2" xml:space="preserve">
 		<value>Guard 2 Dialog Cutscene #2</value>
 	</data>
+	<data name="Grenade_Echo_1" xml:space="preserve">
+		<value>Grenade Echo</value>
+	</data>
+	<data name="Grenade_Echo_Title" xml:space="preserve">
+		<value>Grenade Echo 1 </value>
+	</data>
+	<data name="Grenade_IEM_1" xml:space="preserve">
+		<value>Grenade IEM </value>
+	</data>
+	<data name="Grenade_IEM_Title" xml:space="preserve">
+		<value>Grenade IEM Title</value>
+	</data>
+	<data name="Guard_1" xml:space="preserve">
+		<value>Guard</value>
+	</data>
+	<data name="Guard_Title" xml:space="preserve">
+		<value>Guard Title</value>
+	</data>
 	<data name="Important_Book_1" xml:space="preserve">
 		<value>Important Book</value>
 	</data>
@@ -179,14 +275,50 @@
 	<data name="Interaction_1_Title" xml:space="preserve">
 		<value>Interaction tutorial Title</value>
 	</data>
+	<data name="Lamp_1" xml:space="preserve">
+		<value>Lamp</value>
+	</data>
+	<data name="Lamp_Title" xml:space="preserve">
+		<value>Lamp Title</value>
+	</data>
 	<data name="Library_1" xml:space="preserve">
 		<value>Library</value>
 	</data>
 	<data name="Library_Title" xml:space="preserve">
 		<value>Library Title</value>
 	</data>
+	<data name="Locker_1" xml:space="preserve">
+		<value>Locker</value>
+	</data>
+	<data name="Locker_Title" xml:space="preserve">
+		<value>Locker Title</value>
+	</data>
+	<data name="Magnet_Negative_1" xml:space="preserve">
+		<value>Magnet Negative </value>
+	</data>
+	<data name="Magnet_Negative_Title" xml:space="preserve">
+		<value>Magnet Negative Title</value>
+	</data>
+	<data name="Magnet_Positive_1" xml:space="preserve">
+		<value>Magnet Positive </value>
+	</data>
+	<data name="Magnet_Positive_Title" xml:space="preserve">
+		<value>Magnet Positive Title</value>
+	</data>
+	<data name="Medic_Tools_" xml:space="preserve">
+		<value>Medic Tools Title</value>
+	</data>
+	<data name="Medic_Tools_1" xml:space="preserve">
+		<value>Medic Tools </value>
+	</data>
 	<data name="Meel_Tray" xml:space="preserve">
 		<value>Meel Tray</value>
+	</data>
+	<data name="Microscope_1" xml:space="preserve">
+		<value>Microscope </value>
+	</data>
+	<data name="Microscope_Title" xml:space="preserve">
+		<value>Microscope Title</value>
 	</data>
 	<data name="N11_1" xml:space="preserve">
 		<value>N11 Dialog</value>
@@ -266,6 +398,12 @@
 	<data name="N9_1P2" xml:space="preserve">
 		<value>Number 9 Dialog</value>
 	</data>
+	<data name="Naughty_Magazine_1" xml:space="preserve">
+		<value>Naughty Magazine</value>
+	</data>
+	<data name="Naughty_Magazine_Title" xml:space="preserve">
+		<value>Naughty Magazine Title</value>
+	</data>
 	<data name="NG1_1_1" xml:space="preserve">
 		<value>Journal of Number 2 text</value>
 	</data>
@@ -319,6 +457,30 @@
 	</data>
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist Title</value>
+	</data>
+	<data name="Note_1" xml:space="preserve">
+		<value>Note</value>
+	</data>
+	<data name="Note_Title" xml:space="preserve">
+		<value>Note Title</value>
+	</data>
+	<data name="Pillow_1" xml:space="preserve">
+		<value>Pillow</value>
+	</data>
+	<data name="Pillow_Title" xml:space="preserve">
+		<value>Pillow Title</value>
+	</data>
+	<data name="Plush_1" xml:space="preserve">
+		<value>Plush </value>
+	</data>
+	<data name="Plush_Title" xml:space="preserve">
+		<value>Plush Title</value>
+	</data>
+	<data name="Poster_1" xml:space="preserve">
+		<value>Poster</value>
+	</data>
+	<data name="Poster_Title" xml:space="preserve">
+		<value>Poster Title</value>
 	</data>
 	<data name="Pressureplate_1" xml:space="preserve">
 		<value>Pressure Plate</value>
@@ -401,11 +563,29 @@
 	<data name="S3_1P5Cut4" xml:space="preserve">
 		<value>Scientist 3 Dialog Cutscene #4</value>
 	</data>
+	<data name="Scientist_Table_1" xml:space="preserve">
+		<value>Scientist Table</value>
+	</data>
+	<data name="Scientist_Table_Title" xml:space="preserve">
+		<value>Scientist Table Title </value>
+	</data>
 	<data name="Screwdriver_1" xml:space="preserve">
 		<value>Screwdriver</value>
 	</data>
 	<data name="Screwdriver_Title" xml:space="preserve">
 		<value>Screwdriver_Title</value>
+	</data>
+	<data name="Server_1" xml:space="preserve">
+		<value>Server</value>
+	</data>
+	<data name="Server_Title" xml:space="preserve">
+		<value>Server Title</value>
+	</data>
+	<data name="Sofa_1" xml:space="preserve">
+		<value>Sofa</value>
+	</data>
+	<data name="Sofa_Title" xml:space="preserve">
+		<value>Sofa Title</value>
 	</data>
 	<data name="SP1_1" xml:space="preserve">
 		<value>Scientific Speakers Dialogs</value>
@@ -455,6 +635,18 @@
 	<data name="Table_Title" xml:space="preserve">
 		<value>Table Title</value>
 	</data>
+	<data name="Taser_1" xml:space="preserve">
+		<value>Taser</value>
+	</data>
+	<data name="Taser_Title" xml:space="preserve">
+		<value>Taser Title</value>
+	</data>
+	<data name="Test_Tube_1" xml:space="preserve">
+		<value>Test Tube</value>
+	</data>
+	<data name="Test_Tube_Title" xml:space="preserve">
+		<value>Test Tube 1</value>
+	</data>
 	<data name="ThrowAndHold_1" xml:space="preserve">
 		<value>Throw and Hold tutorial</value>
 	</data>
@@ -482,10 +674,22 @@
 	<data name="Tuto_5" xml:space="preserve">
 		<value>Pressure Plate</value>
 	</data>
+	<data name="TV_1" xml:space="preserve">
+		<value>TV</value>
+	</data>
+	<data name="TV_Title" xml:space="preserve">
+		<value>Tv Title</value>
+	</data>
 	<data name="Wardrobe_1" xml:space="preserve">
 		<value>Wardrobe</value>
 	</data>
+	<data name="Wardrobe_10" xml:space="preserve">
+		<value>Wardrobe</value>
+	</data>
 	<data name="Wardrobe_Title" xml:space="preserve">
+		<value>Wardrobe Title</value>
+	</data>
+	<data name="Wardrobe_Title0" xml:space="preserve">
 		<value>Wardrobe Title</value>
 	</data>
 </root>
