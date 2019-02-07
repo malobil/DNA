@@ -140,12 +140,6 @@
 	<data name="Box_Title" xml:space="preserve">
 		<value>Storage Box</value>
 	</data>
-	<data name="Cabinet_1" xml:space="preserve">
-		<value>It would be a good hiding place!</value>
-	</data>
-	<data name="Cabinet_Title" xml:space="preserve">
-		<value>Cabinet</value>
-	</data>
 	<data name="Desk_1" xml:space="preserve">
 		<value>Big enough to block a passage.</value>
 	</data>
@@ -156,7 +150,7 @@
 		<value>And one more !                 </value>
 	</data>
 	<data name="Dnabooster_Title" xml:space="preserve">
-		<value>&lt;size=25&gt;D'N'A Booster&lt;/size&gt;</value>
+		<value>&lt;size=30&gt;D'N'A Booster&lt;/size&gt;</value>
 	</data>
 	<data name="G1_1_P1Cut2" xml:space="preserve">
 		<value>How did you get here?</value>
@@ -172,6 +166,12 @@
 	</data>
 	<data name="G2_1Cut2" xml:space="preserve">
 		<value>Everybody is here ?</value>
+	</data>
+	<data name="Important_Book_1" xml:space="preserve">
+		<value>Post a text</value>
+	</data>
+	<data name="Important_Book_Title" xml:space="preserve">
+		<value>Book</value>
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
 		<value>You can interact with the highlighted elements using the &lt;color=#ff0000ff&gt;[E]&lt;/color&gt; key</value>
@@ -551,5 +551,11 @@ if you hold the key long the throw will go far.</value>
 	</data>
 	<data name="Tuto_5" xml:space="preserve">
 		<value>Heavy objects can be placed on pressure plates.</value>
+	</data>
+	<data name="Wardrobe_1" xml:space="preserve">
+		<value>It would be a good hiding place!</value>
+	</data>
+	<data name="Wardrobe_Title" xml:space="preserve">
+		<value>Cabinet</value>
 	</data>
 </root>

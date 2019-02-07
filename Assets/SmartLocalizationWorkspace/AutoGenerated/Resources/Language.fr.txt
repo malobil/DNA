@@ -140,12 +140,6 @@
 	<data name="Box_Title" xml:space="preserve">
 		<value>Boite de rangement </value>
 	</data>
-	<data name="Cabinet_1" xml:space="preserve">
-		<value>Ça ferait une bonne cachette ! </value>
-	</data>
-	<data name="Cabinet_Title" xml:space="preserve">
-		<value>Armoire</value>
-	</data>
 	<data name="Desk_1" xml:space="preserve">
 		<value />
 	</data>
@@ -172,6 +166,12 @@
 	</data>
 	<data name="G2_1Cut2" xml:space="preserve">
 		<value>Tout le monde est là ?</value>
+	</data>
+	<data name="Important_Book_1" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Important_Book_Title" xml:space="preserve">
+		<value />
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
 		<value>Vous pouvez interagir avec les éléments entourés d'un halo avec la touche &lt;color=#ff0000ff&gt;[E]&lt;/color&gt;</value>
@@ -557,5 +557,11 @@ Plus vous maintenez la touche plus le lancer ira loin.</value>
 	</data>
 	<data name="Tuto_5" xml:space="preserve">
 		<value>Vous pouvez mettre des objets lourds sur des plaques de pression.</value>
+	</data>
+	<data name="Wardrobe_1" xml:space="preserve">
+		<value>Ça ferait une bonne cachette ! </value>
+	</data>
+	<data name="Wardrobe_Title" xml:space="preserve">
+		<value>Armoire</value>
 	</data>
 </root>

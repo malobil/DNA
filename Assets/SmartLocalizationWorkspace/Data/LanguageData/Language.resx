@@ -140,12 +140,6 @@
 	<data name="Box_Title" xml:space="preserve">
 		<value>Box Object Title</value>
 	</data>
-	<data name="Cabinet_1" xml:space="preserve">
-		<value>Cabinet</value>
-	</data>
-	<data name="Cabinet_Title" xml:space="preserve">
-		<value>Cabinet Title</value>
-	</data>
 	<data name="Desk_1" xml:space="preserve">
 		<value>Desk</value>
 	</data>
@@ -172,6 +166,12 @@
 	</data>
 	<data name="G2_1Cut2" xml:space="preserve">
 		<value>Guard 2 Dialog Cutscene #2</value>
+	</data>
+	<data name="Important_Book_1" xml:space="preserve">
+		<value>Important Book</value>
+	</data>
+	<data name="Important_Book_Title" xml:space="preserve">
+		<value>Important Book Title</value>
 	</data>
 	<data name="Interaction_1" xml:space="preserve">
 		<value>Interaction tutorial</value>
@@ -481,5 +481,11 @@
 	</data>
 	<data name="Tuto_5" xml:space="preserve">
 		<value>Pressure Plate</value>
+	</data>
+	<data name="Wardrobe_1" xml:space="preserve">
+		<value>Wardrobe</value>
+	</data>
+	<data name="Wardrobe_Title" xml:space="preserve">
+		<value>Wardrobe Title</value>
 	</data>
 </root>
