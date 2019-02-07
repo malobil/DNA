@@ -45,20 +45,22 @@ public class Script_Guard_Controller : MonoBehaviour
     {
         if(b_see_the_player)
         {
-            if (f_current_time_to_shot >= 0)
+            /*if (f_current_time_to_shot >= 0)
             {
                 f_current_time_to_shot -= Time.deltaTime;
             }
             else if (f_current_time_to_shot < 0)
             {
                 Shot();
-            }
+            }*/
 
             Quaternion newRotation = Quaternion.LookRotation(Script_Player.Instance.transform.position - obj_guard_sign_of_view.position, Vector3.forward);
             LookAtSomething(newRotation, f_sign_of_view_rotation_speed_player_saw);
+            anim_guard_animator.SetBool("IsAiming", true);
         }
         else
         {
+            anim_guard_animator.SetBool("IsAiming", false);
             if (f_current_time_chase_player >= 0)
             {
                 f_current_time_chase_player -= Time.deltaTime;
@@ -180,7 +182,7 @@ public class Script_Guard_Controller : MonoBehaviour
         obj_guard_sign_of_view.transform.localScale = f_guard_normal_sign_of_view;
     }
 
-    private void Shot()
+    public void Shot()
     {
         RaycastHit2D hit = Physics2D.Raycast(transform.position, Script_Player.Instance.transform.position - transform.position, 25f);
         Debug.DrawRay(transform.position, Script_Player.Instance.transform.position - transform.position, Color.red, 25f);
