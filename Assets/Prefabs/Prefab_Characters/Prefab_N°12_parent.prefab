@@ -459,12 +459,13 @@ MonoBehaviour:
   f_knockback_duration: 0.3
   obj_player_Thought: {fileID: 6489532451238288430}
   text_player_Thought: {fileID: 6165589476795161344}
+  f_time_text_display: 3
   t_interaction_holder_trigger: {fileID: 793496116}
   b_can_use_powers: 1
   playerLevel: 0
-  s_loca_key_distort_level_too_low: 
-  s_loca_key_alter_level_too_low: 
-  s_loca_key_target_not_distort: 
+  s_loca_key_distort_level_too_low: Distort_Not_Level
+  s_loca_key_alter_level_too_low: Alter_Not_Level
+  s_loca_key_target_not_distort: Not_Alter_Because_Distort
 --- !u!1 &4236260653039994427
 GameObject:
   m_ObjectHideFlags: 0
@@ -632,7 +633,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   version: 1
-  uniqueID: 2452923443167655168
+  uniqueID: 1056668222463240163
   updateError: 1
   checkTime: 0.1
 --- !u!58 &1319233759
