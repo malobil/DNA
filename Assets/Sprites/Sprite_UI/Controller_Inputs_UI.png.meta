@@ -2,30 +2,30 @@ fileFormatVersion: 2
 guid: c75e84e1dd3ff524b8b808057683e641
 TextureImporter:
   fileIDToRecycleName:
-    21300000: Controller_Inputs_UI_0
-    21300002: Controller_Inputs_UI_1
-    21300004: Controller_Inputs_UI_2
-    21300006: Controller_Inputs_UI_3
-    21300008: Controller_Inputs_UI_4
+    21300000: Y_button
+    21300002: B_Button
+    21300004: Left_Stick_Neutral
+    21300006: Left_Stick_Right
+    21300008: Left_Stick_Down
     21300010: Controller_Inputs_UI_5
-    21300012: Controller_Inputs_UI_6
-    21300014: Controller_Inputs_UI_7
-    21300016: Controller_Inputs_UI_8
-    21300018: Controller_Inputs_UI_9
-    21300020: Controller_Inputs_UI_10
-    21300022: Controller_Inputs_UI_11
-    21300024: Controller_Inputs_UI_12
-    21300026: Controller_Inputs_UI_13
-    21300028: Controller_Inputs_UI_14
-    21300030: Controller_Inputs_UI_15
-    21300032: Controller_Inputs_UI_16
-    21300034: Controller_Inputs_UI_17
-    21300036: Controller_Inputs_UI_18
-    21300038: Controller_Inputs_UI_19
-    21300040: Controller_Inputs_UI_20
-    21300042: Controller_Inputs_UI_21
-    21300044: Controller_Inputs_UI_22
-    21300046: Controller_Inputs_UI_23
+    21300012: Right_Stick_Right
+    21300014: A_Button
+    21300016: X_Button
+    21300018: Left_Stick_Up
+    21300020: Left_Stick_Left
+    21300022: Right_Stick_Down
+    21300024: Right_Stick_Up
+    21300026: Right_Stick_Left
+    21300028: Right_Button
+    21300030: Left_Trigger
+    21300032: Right_Trigger
+    21300034: Pause_Button
+    21300036: Select_Button
+    21300038: Up_Arrow
+    21300040: Down_Arrow
+    21300042: Left_Button
+    21300044: Right_Arrow
+    21300046: Left_Arrow
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -108,7 +108,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Controller_Inputs_UI_0
+      name: Y_button
       rect:
         serializedVersion: 2
         x: 0
@@ -116,7 +116,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -128,7 +128,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_1
+      name: B_Button
       rect:
         serializedVersion: 2
         x: 43
@@ -136,7 +136,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,7 +148,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_2
+      name: Left_Stick_Neutral
       rect:
         serializedVersion: 2
         x: 91
@@ -156,7 +156,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -168,7 +168,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_3
+      name: Left_Stick_Right
       rect:
         serializedVersion: 2
         x: 135
@@ -176,7 +176,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -188,7 +188,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_4
+      name: Left_Stick_Down
       rect:
         serializedVersion: 2
         x: 179
@@ -196,7 +196,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -216,7 +216,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,7 +228,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_6
+      name: Right_Stick_Right
       rect:
         serializedVersion: 2
         x: 268
@@ -236,7 +236,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,7 +248,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_7
+      name: A_Button
       rect:
         serializedVersion: 2
         x: 0
@@ -256,7 +256,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -268,7 +268,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_8
+      name: X_Button
       rect:
         serializedVersion: 2
         x: 44
@@ -276,7 +276,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -288,7 +288,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_9
+      name: Left_Stick_Up
       rect:
         serializedVersion: 2
         x: 91
@@ -296,7 +296,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -308,7 +308,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_10
+      name: Left_Stick_Left
       rect:
         serializedVersion: 2
         x: 135
@@ -316,7 +316,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_11
+      name: Right_Stick_Down
       rect:
         serializedVersion: 2
         x: 179
@@ -336,7 +336,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -348,7 +348,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_12
+      name: Right_Stick_Up
       rect:
         serializedVersion: 2
         x: 224
@@ -356,7 +356,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -368,7 +368,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_13
+      name: Right_Stick_Left
       rect:
         serializedVersion: 2
         x: 268
@@ -376,7 +376,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -388,7 +388,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_14
+      name: Right_Button
       rect:
         serializedVersion: 2
         x: 0
@@ -396,7 +396,7 @@ TextureImporter:
         width: 48
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -408,7 +408,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_15
+      name: Left_Trigger
       rect:
         serializedVersion: 2
         x: 65
@@ -416,7 +416,7 @@ TextureImporter:
         width: 25
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -428,7 +428,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_16
+      name: Right_Trigger
       rect:
         serializedVersion: 2
         x: 104
@@ -436,7 +436,7 @@ TextureImporter:
         width: 25
         height: 43
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -448,7 +448,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_17
+      name: Pause_Button
       rect:
         serializedVersion: 2
         x: 144
@@ -456,7 +456,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -468,7 +468,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_18
+      name: Select_Button
       rect:
         serializedVersion: 2
         x: 188
@@ -476,7 +476,7 @@ TextureImporter:
         width: 30
         height: 30
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -488,7 +488,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_19
+      name: Up_Arrow
       rect:
         serializedVersion: 2
         x: 234
@@ -496,7 +496,7 @@ TextureImporter:
         width: 14
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,7 +508,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_20
+      name: Down_Arrow
       rect:
         serializedVersion: 2
         x: 260
@@ -516,7 +516,7 @@ TextureImporter:
         width: 14
         height: 15
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -528,7 +528,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_21
+      name: Left_Button
       rect:
         serializedVersion: 2
         x: 1
@@ -536,7 +536,7 @@ TextureImporter:
         width: 48
         height: 19
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -548,7 +548,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_22
+      name: Right_Arrow
       rect:
         serializedVersion: 2
         x: 232
@@ -556,7 +556,7 @@ TextureImporter:
         width: 15
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -568,7 +568,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Controller_Inputs_UI_23
+      name: Left_Arrow
       rect:
         serializedVersion: 2
         x: 260
@@ -576,7 +576,7 @@ TextureImporter:
         width: 15
         height: 14
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
