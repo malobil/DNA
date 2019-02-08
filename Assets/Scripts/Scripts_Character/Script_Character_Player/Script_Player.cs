@@ -265,7 +265,6 @@ public class Script_Player : MonoBehaviour
     void CheckUI()
     {
         Script_UI_Manager.Instance.HideInteractionUI();
-        Script_UI_Manager.Instance.HideInteractionDisableUI();
 
         if (obj_current_target != null)
         {
@@ -278,18 +277,18 @@ public class Script_Player : MonoBehaviour
 
             if (obj_current_target.GetComponent<Script_Interactable>() && !obj_current_target.GetComponent<Script_ObjectRelatedInteraction>())
             {
-                Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform);
+                Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform, UIIndicationButton.A, true);
             }
 
             if (obj_current_target.GetComponent<Script_ObjectRelatedInteraction>())
             {
                 if (obj_current_object_hold != null && obj_current_target.GetComponent<Script_ObjectRelatedInteraction>().CheckIfPlayerHaveCorrectItem(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info))
                 {
-                    Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform);
+                    Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform, UIIndicationButton.A, true);
                 }
                 else
                 {
-                    Script_UI_Manager.Instance.ShowInteractionDisableUI(obj_current_target.transform);
+                    Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform, UIIndicationButton.A, false);
                 }
             }
         }

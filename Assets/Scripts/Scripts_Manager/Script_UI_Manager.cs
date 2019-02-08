@@ -6,6 +6,8 @@ using TMPro;
 using UnityEngine.SceneManagement;
 using UnityEngine.EventSystems;
 
+public enum UIIndicationButton { A, X, B, Y}
+
 public class Script_UI_Manager : MonoBehaviour
 {
     public static Script_UI_Manager Instance { get; private set; }
@@ -78,9 +80,19 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
+    #region Interaction UI
+
+    [Header("Interaction UI")]
 
     public GameObject obj_interaction_ui_canvas;
-    public GameObject obj_interaction_disable_ui_canvas;
+    public GameObject obj_disable_ui;
+    public Image img_interaction_button;
+    public Sprite a_button;
+    public Sprite b_button;
+    public Sprite x_button;
+    public Sprite y_button;
+
+    #endregion
 
     public void QuitGame()
     {
@@ -279,29 +291,45 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
-    public void ShowInteractionUI(Transform t_object)
+    public void ShowInteractionUI(Transform t_object, UIIndicationButton button_to_show, bool b_enable)
     {
         obj_interaction_ui_canvas.transform.position = new Vector3(t_object.position.x, t_object.position.y + 0.6f, 0f);
         obj_interaction_ui_canvas.transform.SetParent(t_object);
-        obj_interaction_ui_canvas.SetActive(true);
-    }
 
-    public void ShowInteractionDisableUI(Transform t_object)
-    {
-        obj_interaction_disable_ui_canvas.transform.position = new Vector3(t_object.position.x, t_object.position.y + 0.6f, 0f);
-        obj_interaction_disable_ui_canvas.transform.SetParent(t_object);
-        obj_interaction_disable_ui_canvas.SetActive(true);
+        switch(button_to_show.ToString(""))
+        {
+            case "A":
+                img_interaction_button.sprite = a_button;
+                break;
+
+            case "X":
+                img_interaction_button.sprite = x_button;
+                break;
+
+            case "B":
+                img_interaction_button.sprite = b_button;
+                break;
+
+            case "Y":
+                img_interaction_button.sprite = y_button;
+                break;
+        }
+
+        if(!b_enable)
+        {
+            obj_disable_ui.SetActive(true);
+        }
+        else
+        {
+            obj_disable_ui.SetActive(false);
+        }
+
+        obj_interaction_ui_canvas.SetActive(true);
     }
 
     public void HideInteractionUI()
     {
         obj_interaction_ui_canvas.SetActive(false);
         obj_interaction_ui_canvas.transform.SetParent(null);
-    }
-
-    public void HideInteractionDisableUI()
-    {
-        obj_interaction_disable_ui_canvas.SetActive(false);
-        obj_interaction_disable_ui_canvas.transform.SetParent(null);
     }
 }
