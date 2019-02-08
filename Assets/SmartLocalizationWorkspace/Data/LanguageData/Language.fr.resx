@@ -122,6 +122,9 @@
 	<data name="0" xml:space="preserve">
 		<value />
 	</data>
+	<data name="Alter_Not_Level" xml:space="preserve">
+		<value />
+	</data>
 	<data name="Apple_1" xml:space="preserve">
 		<value>Elle a l'air bien juteuse...</value>
 	</data>
@@ -198,6 +201,9 @@
 		<value />
 	</data>
 	<data name="Desk_Title" xml:space="preserve">
+		<value />
+	</data>
+	<data name="Distort_Not_Level" xml:space="preserve">
 		<value />
 	</data>
 	<data name="Dnabooster_1" xml:space="preserve">
@@ -529,6 +535,9 @@ PS : N’oublie pas que la carte d'accès de la salle d'expérience est dans le 
 	</data>
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes d’un scientifique</value>
+	</data>
+	<data name="Not_Alter_Because_Distort" xml:space="preserve">
+		<value />
 	</data>
 	<data name="Note_1" xml:space="preserve">
 		<value />

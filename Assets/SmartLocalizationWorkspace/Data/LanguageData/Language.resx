@@ -122,6 +122,9 @@
 	<data name="0" xml:space="preserve">
 		<value>New Value</value>
 	</data>
+	<data name="Alter_Not_Level" xml:space="preserve">
+		<value>If the player wants to alter an object too high level in relation to him</value>
+	</data>
 	<data name="Apple_1" xml:space="preserve">
 		<value>Apple Object</value>
 	</data>
@@ -199,6 +202,9 @@
 	</data>
 	<data name="Desk_Title" xml:space="preserve">
 		<value>Desk Title</value>
+	</data>
+	<data name="Distort_Not_Level" xml:space="preserve">
+		<value>If an object is more level than player</value>
 	</data>
 	<data name="Dnabooster_1" xml:space="preserve">
 		<value>Dna Booster</value>
@@ -457,6 +463,9 @@
 	</data>
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist Title</value>
+	</data>
+	<data name="Not_Alter_Because_Distort" xml:space="preserve">
+		<value>If the player wants to alter an object he has not distorted</value>
 	</data>
 	<data name="Note_1" xml:space="preserve">
 		<value>Note</value>

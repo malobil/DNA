@@ -122,6 +122,9 @@
 	<data name="0" xml:space="preserve">
 		<value />
 	</data>
+	<data name="Alter_Not_Level" xml:space="preserve">
+		<value>I did not assimilate the object, in addition it seems complex.</value>
+	</data>
 	<data name="Apple_1" xml:space="preserve">
 		<value>She looks very juicy ...</value>
 	</data>
@@ -199,6 +202,9 @@
 	</data>
 	<data name="Desk_Title" xml:space="preserve">
 		<value>Desk</value>
+	</data>
+	<data name="Distort_Not_Level" xml:space="preserve">
+		<value>This object is rather complex, I must become more powerful ...</value>
 	</data>
 	<data name="Dnabooster_1" xml:space="preserve">
 		<value>And one more !                 </value>
@@ -521,6 +527,9 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 	</data>
 	<data name="NG1_4_4_Title " xml:space="preserve">
 		<value>Notes of a scientist</value>
+	</data>
+	<data name="Not_Alter_Because_Distort" xml:space="preserve">
+		<value>I must first assimilate the object before I can Alter it.</value>
 	</data>
 	<data name="Note_1" xml:space="preserve">
 		<value />
