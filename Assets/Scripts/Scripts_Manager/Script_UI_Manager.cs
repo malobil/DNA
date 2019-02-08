@@ -80,6 +80,7 @@ public class Script_UI_Manager : MonoBehaviour
 
 
     public GameObject obj_interaction_ui_canvas;
+    public GameObject obj_interaction_disable_ui_canvas;
 
     public void QuitGame()
     {
@@ -280,8 +281,14 @@ public class Script_UI_Manager : MonoBehaviour
 
     public void ShowInteractionUI(Vector3 new_position)
     {
-        obj_interaction_ui_canvas.transform.position = new Vector3(new_position.x, new_position.y + 0.5f, 0f);
+        obj_interaction_ui_canvas.transform.position = new Vector3(new_position.x, new_position.y + 0.6f, 0f);
         obj_interaction_ui_canvas.SetActive(true);
+    }
+
+    public void ShowInteractionDisableUI(Vector3 new_position)
+    {
+        obj_interaction_disable_ui_canvas.transform.position = new Vector3(new_position.x, new_position.y + 0.6f, 0f);
+        obj_interaction_disable_ui_canvas.SetActive(true);
     }
 
     public void HideInteractionUI()
@@ -289,4 +296,8 @@ public class Script_UI_Manager : MonoBehaviour
         obj_interaction_ui_canvas.SetActive(false);
     }
 
+    public void HideInteractionDisableUI()
+    {
+        obj_interaction_disable_ui_canvas.SetActive(false);
+    }
 }

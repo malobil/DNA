@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class Script_Air_Vent : Script_ISpecialInteraction
+public class Script_Air_Vent : Script_ObjectRelatedInteraction
 {
     public Sprite anim_animator ;
     public GameObject s_corresponding_air_vent;
@@ -13,7 +13,6 @@ public class Script_Air_Vent : Script_ISpecialInteraction
         if(obj_player_hold_item == obj_corresponding_item_info)
         {
             GetComponent<Script_Interactable>().AllowInteraction();
-
             if (s_corresponding_air_vent != null)
             {
                 s_corresponding_air_vent.GetComponent<Script_Interactable>().AllowInteraction();

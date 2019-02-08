@@ -95,8 +95,6 @@ public class Script_Player : MonoBehaviour
 
     private bool b_can_use_item = true;
 
-    private List<Vector2> v_list_last_position = new List<Vector2>();
-
     private void Awake()
     {
         if (Instance == null)
@@ -215,9 +213,9 @@ public class Script_Player : MonoBehaviour
 
     public void Interact()
     {
-        if (obj_current_target.GetComponent<Script_ISpecialInteraction>() && obj_current_object_hold != null)
+        if (obj_current_target.GetComponent<Script_ObjectRelatedInteraction>() && obj_current_object_hold != null)
         {
-            obj_current_target.GetComponent<Script_ISpecialInteraction>().SpecialInteraction(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info);
+            obj_current_target.GetComponent<Script_ObjectRelatedInteraction>().SpecialInteraction(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info);
             return;
         }
 
@@ -259,6 +257,7 @@ public class Script_Player : MonoBehaviour
 
         obj_current_target = target;
         Script_UI_Manager.Instance.HideInteractionUI();
+        Script_UI_Manager.Instance.HideInteractionDisableUI();
 
         if (target != null)
         {
@@ -269,9 +268,21 @@ public class Script_Player : MonoBehaviour
                 Script_UI_Manager.Instance.ShowItemHeader(target.GetComponent<Script_ItemInfo>().GetItemInfo());
             }
 
-            if(target.GetComponent<Script_Interactable>())
+            if(target.GetComponent<Script_Interactable>() && !target.GetComponent<Script_ObjectRelatedInteraction>())
             {
                 Script_UI_Manager.Instance.ShowInteractionUI(target.transform.position);
+            }
+            
+            if(target.GetComponent<Script_ObjectRelatedInteraction>())
+            {
+                if(obj_current_object_hold != null && target.GetComponent<Script_ObjectRelatedInteraction>().CheckIfPlayerHaveCorrectItem(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info))
+                {
+                    Script_UI_Manager.Instance.ShowInteractionUI(target.transform.position);
+                }
+                else
+                {
+                    Script_UI_Manager.Instance.ShowInteractionDisableUI(target.transform.position);
+                }
             }
         }
         else
