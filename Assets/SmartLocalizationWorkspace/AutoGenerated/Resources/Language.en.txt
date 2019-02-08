@@ -123,7 +123,7 @@
 		<value />
 	</data>
 	<data name="Alter_Not_Level" xml:space="preserve">
-		<value>This object is too complex...</value>
+		<value>I am not strong enought to &lt;color=blue&gt;Alter&lt;/color&gt; this.</value>
 	</data>
 	<data name="Apple_1" xml:space="preserve">
 		<value>She looks very juicy ...</value>
@@ -204,7 +204,7 @@
 		<value>Desk</value>
 	</data>
 	<data name="Distort_Not_Level" xml:space="preserve">
-		<value>This object is too complex...</value>
+		<value>I am not strong enought to &lt;color=red&gt;Distort&lt;/color&gt; this.</value>
 	</data>
 	<data name="Dnabooster_1" xml:space="preserve">
 		<value>And one more !                 </value>
@@ -529,7 +529,7 @@ PS: Do not forget that the key to the experimental room is in the central lab.
 		<value>Notes of a scientist</value>
 	</data>
 	<data name="Not_Alter_Because_Distort" xml:space="preserve">
-		<value>I must first assimilate the object.</value>
+		<value>I must first &lt;color=red&gt;Distort&lt;/color&gt; this object.</value>
 	</data>
 	<data name="Note_1" xml:space="preserve">
 		<value />
