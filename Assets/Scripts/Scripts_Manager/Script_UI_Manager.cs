@@ -279,25 +279,29 @@ public class Script_UI_Manager : MonoBehaviour
 
     #endregion
 
-    public void ShowInteractionUI(Vector3 new_position)
+    public void ShowInteractionUI(Transform t_object)
     {
-        obj_interaction_ui_canvas.transform.position = new Vector3(new_position.x, new_position.y + 0.6f, 0f);
+        obj_interaction_ui_canvas.transform.position = new Vector3(t_object.position.x, t_object.position.y + 0.6f, 0f);
+        obj_interaction_ui_canvas.transform.SetParent(t_object);
         obj_interaction_ui_canvas.SetActive(true);
     }
 
-    public void ShowInteractionDisableUI(Vector3 new_position)
+    public void ShowInteractionDisableUI(Transform t_object)
     {
-        obj_interaction_disable_ui_canvas.transform.position = new Vector3(new_position.x, new_position.y + 0.6f, 0f);
+        obj_interaction_disable_ui_canvas.transform.position = new Vector3(t_object.position.x, t_object.position.y + 0.6f, 0f);
+        obj_interaction_disable_ui_canvas.transform.SetParent(t_object);
         obj_interaction_disable_ui_canvas.SetActive(true);
     }
 
     public void HideInteractionUI()
     {
         obj_interaction_ui_canvas.SetActive(false);
+        obj_interaction_ui_canvas.transform.SetParent(null);
     }
 
     public void HideInteractionDisableUI()
     {
         obj_interaction_disable_ui_canvas.SetActive(false);
+        obj_interaction_disable_ui_canvas.transform.SetParent(null);
     }
 }

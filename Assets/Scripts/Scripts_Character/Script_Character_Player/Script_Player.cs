@@ -216,12 +216,14 @@ public class Script_Player : MonoBehaviour
         if (obj_current_target.GetComponent<Script_ObjectRelatedInteraction>() && obj_current_object_hold != null)
         {
             obj_current_target.GetComponent<Script_ObjectRelatedInteraction>().SpecialInteraction(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info);
+            CheckUI();
             return;
         }
 
         if (obj_current_target.GetComponent<Script_Interactable>())
         {
             obj_current_target.GetComponent<Script_Interactable>().Interact(this);
+            CheckUI();
         }
     }
 
@@ -256,32 +258,38 @@ public class Script_Player : MonoBehaviour
         }
 
         obj_current_target = target;
+        CheckUI();
+       
+    }
+
+    void CheckUI()
+    {
         Script_UI_Manager.Instance.HideInteractionUI();
         Script_UI_Manager.Instance.HideInteractionDisableUI();
 
-        if (target != null)
+        if (obj_current_target != null)
         {
             obj_current_target.GetComponent<Outline>().EnableOutline();
 
-            if(target.GetComponent<Script_ItemInfo>())
+            if (obj_current_target.GetComponent<Script_ItemInfo>())
             {
-                Script_UI_Manager.Instance.ShowItemHeader(target.GetComponent<Script_ItemInfo>().GetItemInfo());
+                Script_UI_Manager.Instance.ShowItemHeader(obj_current_target.GetComponent<Script_ItemInfo>().GetItemInfo());
             }
 
-            if(target.GetComponent<Script_Interactable>() && !target.GetComponent<Script_ObjectRelatedInteraction>())
+            if (obj_current_target.GetComponent<Script_Interactable>() && !obj_current_target.GetComponent<Script_ObjectRelatedInteraction>())
             {
-                Script_UI_Manager.Instance.ShowInteractionUI(target.transform.position);
+                Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform);
             }
-            
-            if(target.GetComponent<Script_ObjectRelatedInteraction>())
+
+            if (obj_current_target.GetComponent<Script_ObjectRelatedInteraction>())
             {
-                if(obj_current_object_hold != null && target.GetComponent<Script_ObjectRelatedInteraction>().CheckIfPlayerHaveCorrectItem(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info))
+                if (obj_current_object_hold != null && obj_current_target.GetComponent<Script_ObjectRelatedInteraction>().CheckIfPlayerHaveCorrectItem(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info))
                 {
-                    Script_UI_Manager.Instance.ShowInteractionUI(target.transform.position);
+                    Script_UI_Manager.Instance.ShowInteractionUI(obj_current_target.transform);
                 }
                 else
                 {
-                    Script_UI_Manager.Instance.ShowInteractionDisableUI(target.transform.position);
+                    Script_UI_Manager.Instance.ShowInteractionDisableUI(obj_current_target.transform);
                 }
             }
         }
@@ -290,7 +298,6 @@ public class Script_Player : MonoBehaviour
             Script_UI_Manager.Instance.HideItemHeader();
         }
     }
-
 
     public void RemoveInteractibleObject(GameObject obj_interactible_object)
     {
@@ -461,6 +468,7 @@ public class Script_Player : MonoBehaviour
         obj_current_object_hold.GetComponent<Rigidbody2D>().AddForce(t_interaction_holder_trigger.up * 2f, ForceMode2D.Impulse);
         Script_UI_Manager.Instance.NewObjectHold(null);
         obj_current_object_hold = null;
+        CheckUI();
     }
 
     #endregion
