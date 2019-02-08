@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 8473374036296623463}
   - component: {fileID: 9220055703320662085}
   - component: {fileID: 3913218258975303103}
-  - component: {fileID: 2133402221085563709}
   - component: {fileID: 4449762088098375739}
   m_Layer: 8
   m_Name: Prefab_Screwdriver
@@ -216,18 +215,6 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &2133402221085563709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1384062008740358762}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53fbc5918b417a841a1a0320301cdcbf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!114 &4449762088098375739

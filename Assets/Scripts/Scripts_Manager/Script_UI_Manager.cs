@@ -79,6 +79,8 @@ public class Script_UI_Manager : MonoBehaviour
     #endregion
 
 
+    public GameObject obj_interaction_ui_canvas;
+
     public void QuitGame()
     {
         Application.Quit();
@@ -275,5 +277,16 @@ public class Script_UI_Manager : MonoBehaviour
     }
 
     #endregion
+
+    public void ShowInteractionUI(Vector3 new_position)
+    {
+        obj_interaction_ui_canvas.transform.position = new Vector3(new_position.x, new_position.y + 0.5f, 0f);
+        obj_interaction_ui_canvas.SetActive(true);
+    }
+
+    public void HideInteractionUI()
+    {
+        obj_interaction_ui_canvas.SetActive(false);
+    }
 
 }

@@ -6,26 +6,20 @@ using cakeslice;
 [RequireComponent(typeof(Outline))]
 public class Script_ISpecialInteraction : MonoBehaviour
 {
-    public GameObject obj_indication_UI;
+    public Script_Scriptable_Item obj_corresponding_item_info ;
 
-    public virtual void SpecialInteraction()
+    public virtual void SpecialInteraction(Script_Scriptable_Item obj_player_hold_item)
     {
-        Debug.Log("USE ME SPECIAL");
+
     }
 
     public virtual void EnableSpecialIndication()
     {
-        if (obj_indication_UI != null)
-        {
-            obj_indication_UI.SetActive(true);
-        }
+
     }
 
     public virtual void DisableSpecialIndication()
     {
-        if(obj_indication_UI != null)
-        {
-            obj_indication_UI.SetActive(false);
-        }
+
     }
 }

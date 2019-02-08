@@ -402,7 +402,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72d34506e5b140a43bae373edb7f227c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  obj_indication_UI: {fileID: 3739192114244030886}
+  obj_corresponding_item_info: {fileID: 11400000, guid: 914d957f16aef6147a5e61730882edac,
+    type: 2}
   anim_animator: {fileID: 21300014, guid: 7a5e05d6e1bc8f7459c2153cb7fc0702, type: 3}
   s_corresponding_air_vent: {fileID: 0}
 --- !u!114 &1795668456576775926
@@ -438,6 +439,7 @@ MonoBehaviour:
   note_key: 
   b_can_interact: 0
   t_teleport_point: {fileID: 505580706964355493}
+  obj_discover_land: {fileID: 0}
   obj_dialog_box: {fileID: 0}
   txt_dialog: {fileID: 0}
   s_dialog_key: []

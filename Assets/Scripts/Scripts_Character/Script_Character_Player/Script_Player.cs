@@ -215,6 +215,12 @@ public class Script_Player : MonoBehaviour
 
     public void Interact()
     {
+        if (obj_current_target.GetComponent<Script_ISpecialInteraction>() && obj_current_object_hold != null)
+        {
+            obj_current_target.GetComponent<Script_ISpecialInteraction>().SpecialInteraction(obj_current_object_hold.GetComponent<Script_ItemInfo>().item_info);
+            return;
+        }
+
         if (obj_current_target.GetComponent<Script_Interactable>())
         {
             obj_current_target.GetComponent<Script_Interactable>().Interact(this);
@@ -252,6 +258,7 @@ public class Script_Player : MonoBehaviour
         }
 
         obj_current_target = target;
+        Script_UI_Manager.Instance.HideInteractionUI();
 
         if (target != null)
         {
@@ -262,14 +269,9 @@ public class Script_Player : MonoBehaviour
                 Script_UI_Manager.Instance.ShowItemHeader(target.GetComponent<Script_ItemInfo>().GetItemInfo());
             }
 
-            if(target.GetComponent<Script_ISpecialInteraction>())
-            {
-                target.GetComponent<Script_ISpecialInteraction>().EnableSpecialIndication();
-            }
-
             if(target.GetComponent<Script_Interactable>())
             {
-
+                Script_UI_Manager.Instance.ShowInteractionUI(target.transform.position);
             }
         }
         else
@@ -289,12 +291,6 @@ public class Script_Player : MonoBehaviour
             if (obj_interactible_object.GetComponent<Outline>())
             {
                 obj_interactible_object.GetComponent<Outline>().DisableOutline();
-            }
-
-
-            if (obj_interactible_object.GetComponent<Script_ISpecialInteraction>())
-            {
-                obj_interactible_object.GetComponent<Script_ISpecialInteraction>().DisableSpecialIndication();
             }
 
             if (obj_interactible_object == obj_current_target)
