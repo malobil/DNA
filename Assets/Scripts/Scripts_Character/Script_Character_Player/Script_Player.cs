@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using cakeslice;
+using TMPro;
 
 [RequireComponent(typeof(Rigidbody2D))]
 public class Script_Player : MonoBehaviour
@@ -9,6 +10,7 @@ public class Script_Player : MonoBehaviour
     public static Script_Player Instance { get; private set; }
 
     #region Movement variables
+
     [Header("Movement")]
     public float f_move_speed_horizontal = 10f ;
     public float f_move_speed_vertical = 10f ;
@@ -23,6 +25,17 @@ public class Script_Player : MonoBehaviour
     private float f_current_knockback_duration = 0f;
 
     private Rigidbody2D player_rb;
+
+    #endregion
+
+    #region PLayer Thought
+
+    [Header("Player Thought")]
+
+    public GameObject obj_player_Thought;
+    public TextMeshProUGUI text_player_Thought;
+    public float f_time_text_display = 3f;
+    private float f_current_time_text_display;
 
     #endregion
 
@@ -46,9 +59,10 @@ public class Script_Player : MonoBehaviour
     #endregion
 
     #region Distort variable
-
+    [Header("Distort")]
     public bool b_can_use_powers = true ;
     public int playerLevel = 0;
+    public string s_loca_key_distort_level_too_low;
     private bool b_can_Distort = true ;
     private bool b_have_use_distort = false;
     private GameObject g_current_distortable_target;
@@ -56,7 +70,9 @@ public class Script_Player : MonoBehaviour
     #endregion
 
     #region Alter variable
-
+    [Header("Alter")]
+    public string s_loca_key_alter_level_too_low;
+    public string s_loca_key_target_not_distort ;
     private bool b_can_alter = true;
     private bool b_have_use_alter = false ;
     private GameObject g_current_alterable_target;
@@ -104,6 +120,16 @@ public class Script_Player : MonoBehaviour
     public void Update()
     {
         Move();
+
+        if(f_current_time_text_display > 0)
+        {
+            f_current_time_text_display -= Time.deltaTime;
+        }
+        else if(f_current_time_text_display < 0)
+        {
+           obj_player_Thought.SetActive(false);
+            f_current_time_text_display = 0;
+        }
 
         if(Input.GetKeyDown(KeyCode.R) && Script_Game_Manager.Instance.GetGameOver())
         {
@@ -470,9 +496,9 @@ public class Script_Player : MonoBehaviour
             }
             else
             {
-                Vector3 ejectDirection = transform.position - g_current_distortable_target.transform.position;
-                ejectDirection = ejectDirection.normalized;
-                Knockback();
+                text_player_Thought.text = Script_Localization_Manager.Instance.GetLocalisedText(s_loca_key_distort_level_too_low);
+                obj_player_Thought.SetActive(true);
+                f_current_time_text_display = f_time_text_display;
             }
         }
 
@@ -528,11 +554,19 @@ public class Script_Player : MonoBehaviour
                 Script_Game_Manager.Instance.SetTimePause();
                 Script_UI_Manager.Instance.OpenTransformationChoice(g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem());
             }
-            else
+            else if(playerLevel < g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem().i_item_level)
             {
-                Vector3 ejectDirection = transform.position - g_current_alterable_target.transform.position;
-                ejectDirection = ejectDirection.normalized;
-                Knockback();
+                text_player_Thought.text = Script_Localization_Manager.Instance.GetLocalisedText(s_loca_key_alter_level_too_low);
+                obj_player_Thought.SetActive(true);
+                f_current_time_text_display = f_time_text_display;
+                Debug.Log("No level");
+            }
+            else if(!Script_Collection.Instance.l_item_in_collection.Contains(g_current_alterable_target.GetComponent<Script_Alterable>().GetScriptableItem()))
+            {
+                text_player_Thought.text = Script_Localization_Manager.Instance.GetLocalisedText(s_loca_key_target_not_distort);
+                obj_player_Thought.SetActive(true);
+                f_current_time_text_display = f_time_text_display;
+                Debug.Log("Not in collection");
             }
         }
 
