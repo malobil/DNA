@@ -784,7 +784,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '"Tab":Switch Target'
+  m_text: '"LB" : Switch Target'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a098bd4cfa6731244947034e2472f702, type: 2}
   m_sharedMaterial: {fileID: 21288317202205498, guid: a098bd4cfa6731244947034e2472f702,
@@ -854,9 +854,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.6457223, w: 0}
   m_textInfo:
     textComponent: {fileID: 594824997}
-    characterCount: 19
+    characterCount: 20
     spriteCount: 0
-    spaceCount: 1
+    spaceCount: 3
     wordCount: 3
     linkCount: 0
     lineCount: 1
@@ -1283,7 +1283,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '"K":Distort'
+  m_text: '"Y" : Distort'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a098bd4cfa6731244947034e2472f702, type: 2}
   m_sharedMaterial: {fileID: 21288317202205498, guid: a098bd4cfa6731244947034e2472f702,
@@ -1353,9 +1353,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0.4167176, w: 0}
   m_textInfo:
     textComponent: {fileID: 732932167}
-    characterCount: 11
+    characterCount: 13
     spriteCount: 0
-    spaceCount: 0
+    spaceCount: 2
     wordCount: 2
     linkCount: 0
     lineCount: 1
@@ -2783,7 +2783,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '"O":Alter'
+  m_text: '"B" : Alter'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a098bd4cfa6731244947034e2472f702, type: 2}
   m_sharedMaterial: {fileID: 21288317202205498, guid: a098bd4cfa6731244947034e2472f702,
@@ -2853,9 +2853,9 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 2.6133883, w: 0}
   m_textInfo:
     textComponent: {fileID: 1779543751}
-    characterCount: 9
+    characterCount: 11
     spriteCount: 0
-    spaceCount: 0
+    spaceCount: 2
     wordCount: 2
     linkCount: 0
     lineCount: 1
@@ -3448,7 +3448,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_text: '"Z,Q,S,D":Move'
+  m_text: '"Left stick" : Move'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a098bd4cfa6731244947034e2472f702, type: 2}
   m_sharedMaterial: {fileID: 21288317202205498, guid: a098bd4cfa6731244947034e2472f702,
@@ -3518,10 +3518,10 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 3.3860934, w: 0}
   m_textInfo:
     textComponent: {fileID: 2031657297}
-    characterCount: 14
+    characterCount: 19
     spriteCount: 0
-    spaceCount: 0
-    wordCount: 5
+    spaceCount: 3
+    wordCount: 3
     linkCount: 0
     lineCount: 1
     pageCount: 1
@@ -4412,11 +4412,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
@@ -6423,11 +6423,11 @@ MonoBehaviour:
     lineCount: 1
     pageCount: 1
     materialCount: 1
-  m_havePropertiesChanged: 1
+  m_havePropertiesChanged: 0
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_spriteAnimator: {fileID: 0}
-  m_isInputParsingRequired: 1
+  m_isInputParsingRequired: 0
   m_inputSource: 0
   m_hasFontAssetChanged: 0
   m_subTextObjects:
