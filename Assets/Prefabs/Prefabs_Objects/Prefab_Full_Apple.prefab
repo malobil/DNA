@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 3994363333266696716}
   - component: {fileID: 7018453924071413653}
   - component: {fileID: 6463884098387096039}
-  - component: {fileID: 8992960759502479142}
   - component: {fileID: 6633898840848623804}
   m_Layer: 8
   m_Name: Prefab_Full_Apple
@@ -190,20 +189,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf052758bd42b4240acc37e796c480e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &8992960759502479142
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8992960759502479141}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea2da6a9b22e16e4d80f588363768eb5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  obj_eaten_apple_prefab: {fileID: 3743501708166336867, guid: ed94476b943097a4c9a8a58624881caa,
-    type: 3}
 --- !u!114 &6633898840848623804
 MonoBehaviour:
   m_ObjectHideFlags: 0
