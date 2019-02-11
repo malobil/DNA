@@ -462,7 +462,7 @@ MonoBehaviour:
   f_time_text_display: 3
   t_interaction_holder_trigger: {fileID: 793496116}
   b_can_use_powers: 1
-  playerLevel: 0
+  playerLevel: 1
   s_loca_key_distort_level_too_low: Distort_Not_Level
   s_loca_key_alter_level_too_low: Alter_Not_Level
   s_loca_key_target_not_distort: Not_Alter_Because_Distort
@@ -710,7 +710,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 100
+  m_SortingOrder: 150
   m_TargetDisplay: 0
 --- !u!114 &7544233043307584693
 MonoBehaviour:
